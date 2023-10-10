@@ -5,21 +5,31 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement-bar-0": {
+        "99d6ee15-d810-4ac9-8688-d8b39b14cc55": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to our store",
-            "link": ""
+            "text": "Free Shipping",
+            "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"24\" height=\"16\" viewbox=\"0 0 24 16\" fill=\"none\">\n  <path d=\"M9.39233 5.01183L15.1376 7.54094V15.231L9.39233 12.681V5.01183Z\" stroke=\"#00FF00\"><\/path>\n  <path d=\"M21.7842 2.92024L16.4466 5.29329L11.1089 2.92024L16.4466 0.547188L21.7842 2.92024Z\" stroke=\"#00FF00\"><\/path>\n  <path d=\"M23.5001 5.01183V12.681L17.7549 15.231V7.54094L23.5001 5.01183Z\" stroke=\"#00FF00\"><\/path>\n  <path d=\"M7.25133 4.51538H3.25977V5.47924H7.25133V4.51538Z\" fill=\"#00FF00\"><\/path>\n  <path d=\"M7.27526 8.28912H1.6416V9.25298H7.27526V8.28912Z\" fill=\"#00FF00\"><\/path>\n  <path d=\"M7.25049 12.1295H0V13.0934H7.25049V12.1295Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
+            "link": "shopify:\/\/collections"
+          }
+        },
+        "5e3bcf14-eede-44f4-a511-ecab29f41d73": {
+          "type": "announcement",
+          "settings": {
+            "text": "1 year Warranty",
+            "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"12\" height=\"16\" viewbox=\"0 0 12 16\" fill=\"none\">\n  <path d=\"M9.49636 0H2.50364L0 2.59048V10.4127L6.07091 16L12 10.4071V2.59048L9.49636 0ZM10.9091 9.91041L6.06545 14.4818L1.09091 9.90476V3.05326L2.95091 1.12875H9.04909L10.9091 3.05326V9.91041Z\" fill=\"#00FF00\"><\/path>\n  <path d=\"M6.00009 8.23422L3.11463 5.24304L2.34009 6.04445L6.00009 9.82576L9.66009 6.04445L8.88554 5.24304L6.00009 8.23422Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
+            "link": "shopify:\/\/collections"
           }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "99d6ee15-d810-4ac9-8688-d8b39b14cc55",
+        "5e3bcf14-eede-44f4-a511-ecab29f41d73"
       ],
       "settings": {
         "color_scheme": "background-1",
-        "show_line_separator": true,
-        "show_social": false,
+        "show_line_separator": false,
+        "show_social": true,
         "auto_rotate": false,
         "change_slides_speed": 5,
         "enable_country_selector": false,
@@ -31,17 +41,17 @@
       "settings": {
         "logo_position": "middle-left",
         "menu": "main-menu",
-        "menu_type_desktop": "dropdown",
+        "menu_type_desktop": "mega",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
         "color_scheme": "background-1",
         "menu_color_scheme": "background-1",
         "enable_country_selector": true,
         "enable_language_selector": true,
-        "mobile_logo_position": "center",
+        "mobile_logo_position": "left",
         "margin_bottom": 0,
-        "padding_top": 20,
-        "padding_bottom": 20
+        "padding_top": 6,
+        "padding_bottom": 6
       }
     }
   },

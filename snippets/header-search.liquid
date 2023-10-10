@@ -12,8 +12,8 @@
   <details>
     <summary class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
       <span>
-        <svg class="modal__toggle-open icon icon-search" aria-hidden="true" focusable="false">
-          <use href="#icon-search">
+        <svg class="modal__toggle-open icon icon-search" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M17.6125 15.4913C18.7935 13.8785 19.4999 11.8975 19.4999 9.74998C19.4999 4.37403 15.1259 0 9.74993 0C4.37398 0 0 4.37403 0 9.74998C0 15.1259 4.37403 19.5 9.74998 19.5C11.8975 19.5 13.8787 18.7934 15.4915 17.6124L21.8789 23.9999L24 21.8788C24 21.8787 17.6125 15.4913 17.6125 15.4913ZM9.74998 16.4999C6.02781 16.4999 3.00001 13.4721 3.00001 9.74998C3.00001 6.02781 6.02781 3.00001 9.74998 3.00001C13.4721 3.00001 16.4999 6.02781 16.4999 9.74998C16.4999 13.4721 13.4721 16.4999 9.74998 16.4999Z" fill="white"/>
         </svg>
         <svg class="modal__toggle-close icon icon-close" aria-hidden="true" focusable="false">
           <use href="#icon-close">
@@ -57,18 +57,24 @@
                   </svg>
                 </button>
                 <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
-                  <svg class="icon icon-search" aria-hidden="true" focusable="false">
+                    <svg class="icon icon-search" aria-hidden="true" focusable="false">
                     <use href="#icon-search">
-                  </svg>
+                  </svg> 
+
+                  
                 </button>
               </div>
 
               {%- if settings.predictive_search_enabled -%}
                 <div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search>
                   <div class="predictive-search__loading-state">
-                    <svg aria-hidden="true" focusable="false" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                    <!-- <svg aria-hidden="true" focusable="false" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
                       <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                    </svg>
+                    </svg> -->
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M17.6125 15.4913C18.7935 13.8785 19.4999 11.8975 19.4999 9.74998C19.4999 4.37403 15.1259 0 9.74993 0C4.37398 0 0 4.37403 0 9.74998C0 15.1259 4.37403 19.5 9.74998 19.5C11.8975 19.5 13.8787 18.7934 15.4915 17.6124L21.8789 23.9999L24 21.8788C24 21.8787 17.6125 15.4913 17.6125 15.4913ZM9.74998 16.4999C6.02781 16.4999 3.00001 13.4721 3.00001 9.74998C3.00001 6.02781 6.02781 3.00001 9.74998 3.00001C13.4721 3.00001 16.4999 6.02781 16.4999 9.74998C16.4999 13.4721 13.4721 16.4999 9.74998 16.4999Z" fill="white"/>
+</svg>
                   </div>
                 </div>
 

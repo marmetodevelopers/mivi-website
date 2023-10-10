@@ -1,6 +1,16 @@
 {{ 'component-slideshow.css' | asset_url | stylesheet_tag }}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
-
+{{ 'custome.css' | asset_url | stylesheet_tag }}
+{% style %}
+  .utility-bar.color-background-1.gradient{
+        display:flex;
+         
+        background: radial-gradient(127.94% 79% at 73.5% 4.92%, #5B6378 0%, #303642 39.67%, #111216 99.2%);
+  }
+  .announcement-bar__announcement>svg{
+    margin-top:12px;
+  }
+  {% endstyle %}
 {%- liquid
   assign social_icons = true
   if settings.social_facebook_link == blank and settings.social_instagram_link == blank and settings.social_youtube_link == blank and settings.social_tiktok_link == blank and settings.social_twitter_link == blank and settings.social_pinterest_link == blank and settings.social_snapchat_link == blank and settings.social_tumblr_link == blank and settings.social_vimeo_link == blank
@@ -40,10 +50,11 @@
               class="announcement-bar__link link link--text focus-inset animate-arrow"
             >
           {%- endif -%}
+
           <p class="announcement-bar__message h5">
             <span>{{ section.blocks.first.settings.text | escape }}</span>
             {%- if section.blocks.first.settings.link != blank -%}
-              {% render 'icon-arrow' %}
+              {% comment %} {% render 'icon-arrow' %}  {% endcomment %}
             {%- endif -%}
           </p>
           {%- if section.blocks.first.settings.link != blank -%}
@@ -52,14 +63,14 @@
         {%- endif -%}
       </div>
     {%- elsif section.blocks.size > 1 -%}
-      <slideshow-component
+      <div
         class="announcement-bar"
         role="region"
         aria-roledescription="{{ 'sections.announcements.carousel' | t }}"
         aria-label="{{ 'sections.announcements.announcement_bar' | t }}"
       >
         <div class="announcement-bar-slider slider-buttons">
-          <button
+          <!-- <button
             type="button"
             class="slider-button slider-button--prev"
             name="previous"
@@ -67,7 +78,7 @@
             aria-controls="Slider-{{ section.id }}"
           >
             {% render 'icon-caret' %}
-          </button>
+          </button> -->
           <div
             class="grid grid--1-col slider slider--everywhere"
             id="Slider-{{ section.id }}"
@@ -78,7 +89,7 @@
           >
             {%- for block in section.blocks -%}
               <div
-                class="slideshow__slide slider__slide grid__item grid--1-col"
+                class="announcement-bar__first-text"
                 id="Slide-{{ section.id }}-{{ forloop.index }}"
                 {{ block.shopify_attributes }}
                 role="group"
@@ -92,28 +103,37 @@
                   aria-label="{{ 'sections.header.announcement' | t }}"
                   {{ block.shopify_attributes }}
                 >
+
+                  {% if block.settings.html !=blank %}
                   {%- if block.settings.text != blank -%}
                     {%- if block.settings.link != blank -%}
+                      
                       <a
                         href="{{ block.settings.link }}"
                         class="announcement-bar__link link link--text focus-inset animate-arrow"
                       >
                     {%- endif -%}
-                    <p class="announcement-bar__message h5">
+                 
+                    {{ block.settings.html }} 
+                     
+                    <p class="announcement-bar__message font-semibold">
                       <span>{{ block.settings.text | escape }}</span>
+                     
                       {%- if block.settings.link != blank -%}
-                        {% render 'icon-arrow' %}
+                          
+                   {% comment %}     {% render 'icon-arrow' %}{% endcomment %}
                       {%- endif -%}
                     </p>
                     {%- if block.settings.link != blank -%}
                       </a>
                     {%- endif -%}
+                    {% endif %}
                   {%- endif -%}
                 </div>
               </div>
             {%- endfor -%}
           </div>
-          <button
+          <!-- <button
             type="button"
             class="slider-button slider-button--next"
             name="next"
@@ -121,9 +141,9 @@
             aria-controls="Slider-{{ section.id }}"
           >
             {% render 'icon-caret' %}
-          </button>
+          </button> -->
         </div>
-      </slideshow-component>
+      </div>
       {%- if request.design_mode -%}
         <script src="{{ 'theme-editor.js' | asset_url }}" defer="defer"></script>
       {%- endif -%}
@@ -297,6 +317,12 @@
           "id": "text",
           "default": "Welcome to our store",
           "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"
+        },
+        {
+          "type":"html",
+          "id":"html",
+          "label":"Html"
+          
         },
         {
           "type": "url",

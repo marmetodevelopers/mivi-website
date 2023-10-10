@@ -1,0 +1,244 @@
+<div class="container">
+  <section>
+    <h2 class="pb-2 center h2">Typography</h2>
+    <p class="pb-4 center">Display different font size and font family going to be used in the theme</p>
+    <div class="flex flex-column">
+      <h1>This is typed in H1</h1>
+      <h2>This is typed in H2</h2>
+      <h3>This is typed in H3</h3>
+      <h4>This is typed in H4</h4>
+      <h5>This is typed in H5</h5>
+      <p>This is body</p>
+    </div>
+  </section>
+  <section>
+    <h2 class="pb-2 center h1 text-underline">Fonts</h2>
+    <p class="pb-4 center">Add according to usage</p>
+    <div class="flex justify-evenly">
+      <div>
+        <h3 class="font-primary">Primary Font</h3>
+        <small class="pb-4">Theme Fonts</small>
+        <p class="font-thin font-primary">Font Weights 100</p>
+        <p class="font-primary font-extralight">Font Weights 200</p>
+        <p class="font-light font-primary">Font Weights 300</p>
+        <p class="font-normal font-primary">Font Weights 400</p>
+        <p class="font-medium font-primary">Font Weights 500</p>
+        <p class="font-semibold font-primary">Font Weights 600</p>
+        <p class="font-bold font-primary">Font Weights 700</p>
+        <p class="font-extrabold font-primary">Font Weights 800</p>
+        <p class="font-black font-primary">Font Weights 900</p>
+      </div>
+      <div>
+        <h3 class="font-secondary">Secondary Font</h3>
+        <small class="pb-4">Google Fonts</small>
+        <p class="font-thin font-secondary">Font Weights 100</p>
+        <p class="font-secondary font-extralight">Font Weights 200</p>
+        <p class="font-light font-secondary">Font Weights 300</p>
+        <p class="font-normal font-secondary">Font Weights 400</p>
+        <p class="font-medium font-secondary">Font Weights 500</p>
+        <p class="font-semibold font-secondary">Font Weights 600</p>
+        <p class="font-bold font-secondary">Font Weights 700</p>
+        <p class="font-extrabold font-secondary">Font Weights 800</p>
+        <p class="font-black font-secondary">Font Weights 900</p>
+      </div>
+      <div>
+        <h3 class="font-tertiary">Tertiary Font</h3>
+        <small class="pb-1 font-tertiary">Custom Fonts</small>
+        <small class="pb-4 font-tertiary">Update the font accordingly</small>
+        <p class="font-normal font-tertiary">Font Weights 400</p>
+        <p class="italic font-normal font-tertiary">Font Weights 400 Italic</p>
+        <p class="font-bold font-tertiary ">Font Weights 700</p>
+        <p class="italic font-bold font-tertiary">Font Weights 700 Italic</p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h2 class="pb-2 center h1">Buttons</h2>
+    <p class="pb-4 center">Add button design here</p>
+    <div class="flex pt-3 pb-3 justify-center gap-4">
+      <div>
+        <button class="button-primary"> Button Primary </button>
+        <p class="pt-3">Class to use <pre>.button-primary</pre></p>
+      </div>
+      <div>
+        <button class="button-secondary"> Button Secondary </button>
+        <p class="pt-3">Class to use <pre>.button-secondary</pre></p>
+      </div>
+      <div>
+        <button class="button-tertiary"> Button Tertiary </button>
+        <p class="pt-3">Class to use <pre>.button-tertiary</pre></p>
+      </div>
+       <div>
+        <button class="button-view-all"> View all > </button>
+        <p class="pt-3">Class to use <pre>.button-view-all</pre></p>
+      </div>
+    </div>
+    <p class="pb-4 center">Add button disabled Style</p>
+    <div class="flex pt-3 pb-3 justify-center gap-4">
+      <div>
+        <button class="button-primary disabled"> Button Primary </button>
+        <p class="pt-3">Attibutes can be use <pre>disabled</pre></p>
+      </div>
+      <div>
+        <button class="button-secondary disabled"> Button Secondary </button>
+        <p class="pt-3">Class can be use <pre>.button-secondary.disabled</pre></p>
+      </div>
+      
+    </div>
+  </section>
+  <section>
+    <h2 class="pb-2 center h1">Accordion(drop down)</h2>
+    <div class="container p-10 flex  gap-4 justify-center flex-column center">
+        <details>
+          <summary>
+             <div class="summary__title">
+                <h4 class="h4 accordion__title">
+                  Plant
+                </h4>
+              </div>
+          </summary>
+          <div class="accordion__content rte">
+              Plants are predominantly photosynthetic eukaryotes of the kingdom Plantae.
+              Historically, the plant kingdom encompassed all living things that were not
+              animals, and included algae and fungi; however, all current definitions of
+              Plantae exclude the fungi and some algae, as well as the prokaryotes.
+            </div>
+      </details>
+    
+      <details>
+          <summary>
+            <div class="summary__title">
+              <h4 class="h4 accordion__title">
+                Snowflake
+              </h4>
+            </div>
+          </summary>
+          <div class="accordion__content rte">
+            A snowflake is a single ice crystal that has achieved a sufficient size, and
+              may have amalgamated with others, which falls through the Earth's atmosphere
+              as snow. Each flake nucleates around a dust particle in
+              supersaturated air masses by attracting supercooled cloud water droplets,
+              which freeze and accrete in crystal form.
+          </div>
+      </details>
+    </div>
+  </section>
+  <section>
+    <h2 class="pb-2 mb-10 center h1">Quantity Input</h2>
+    <div class="container flex items-center gap-4 flex-column">
+      <quantity-input class="quantity quantity-border">
+        <input class="quantity__input"
+            type="number"
+            name="quantity"
+            min="0"
+            value="1"
+          >
+          <button class="quantity__button no-js-hidden" name="minus" type="button">
+            <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
+            {% render 'icon-minus' %}
+          </button>
+          <button class="quantity__button no-js-hidden" name="plus" type="button">
+            <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
+            {% render 'icon-plus' %}
+          </button>
+      </quantity-input>
+      <quantity-input class="quantity quantity-border">
+        <button class="quantity__button no-js-hidden" name="minus" type="button">
+          <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
+          {% render 'icon-minus' %}
+        </button>
+        <input class="quantity__input"
+            type="number"
+            name="quantity"
+            min="0"
+            value="1"
+          >
+        <button class="quantity__button no-js-hidden" name="plus" type="button">
+          <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
+          {% render 'icon-plus' %}
+        </button>
+      </quantity-input>
+      <quantity-input class="quantity quantity-border">
+        <button class="quantity__button no-js-hidden" name="minus" type="button">
+          <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
+          {% render 'icon-minus' %}
+        </button>
+        <button class="quantity__button no-js-hidden" name="plus" type="button">
+          <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
+          {% render 'icon-plus' %}
+        </button>
+        <input class="quantity__input"
+            type="number"
+            name="quantity"
+            min="0"
+            value="1"
+            {% comment %} 
+              Form ID can be used to link it with form if its outside the form
+              form="Put same form id here"
+            {% endcomment %}
+          >
+      </quantity-input>
+    </div>
+  </section>
+  <section>
+    <h2 class="pb-2 mb-10 center h1">Badges</h2>
+    <div class="container flex flex-wrap justify-center gap-4">
+      <span class="badge">Default</span>
+      <span class="badge badge--light">Dark</span>
+      <span class="badge badge--color">Red</span>
+    </div>
+  </section>
+  <section>
+    <h2 class="pb-2 mb-10 center h1">Variants Pills</h2>
+    {% comment %} Add an existing product handle from the current store {% endcomment %}
+    {% liquid
+        assign product = section.settings.product
+        if product == blank 
+          echo "Please select product in page.styleguide.liquid"
+        endif
+    %}
+    <div class="container flex flex-wrap justify-center gap-4">
+      <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}">
+        <h2 class="mb-6 h2">{{ product.title | capitalize }}</h2>
+        {%- for option in product.options_with_values -%}
+            <fieldset class="js product-form__input">
+              <legend class="form__label">{{ option.name }}</legend>
+              {% assign outer_forloop = forloop %}
+              {%- for value in option.values -%}
+                <input type="radio"
+                      class="js option-{{ outer_forloop.index }}"
+                      id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                      name="{{ option.name }}"
+                      value="{{ value | escape }}"
+                      {% if option.selected_value == value %}checked{% endif %}
+                >
+                <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+                  {{ value }}
+                </label>
+              {%- endfor -%}
+            </fieldset>
+        {%- endfor -%}
+        <script type="application/json">
+          {{ product.variants | json }}
+        </script>
+      </variant-radios>
+    </div>
+  </section>
+</div>
+{% schema %}
+  {
+    "name": "Style Guideline",
+    "settings": [
+      {
+        "type": "product",
+        "id": "product",
+        "label": "Product"
+      }      
+    ],
+    "presets": [
+    {
+      "name": "Style Guideline"
+    }
+  ]  
+}
+{% endschema %}

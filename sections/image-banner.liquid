@@ -138,9 +138,13 @@
                   {% else %}
                     href="{{ block.settings.button_link_1 }}"
                   {% endif %}
-                  class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"
+                  class="button-view-all{% if block.settings.button_style_secondary_1 %}button--secondary{% else %} button--primary{% endif %}"
                 >
+
+                  
                   {{- block.settings.button_label_1 | escape -}}
+
+                  {% render 'greater-icon' %}
                 </a>
               {%- endif -%}
               {%- if block.settings.button_label_2 != blank -%}
@@ -150,7 +154,7 @@
                   {% else %}
                     href="{{ block.settings.button_link_2 }}"
                   {% endif %}
-                  class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}"
+                  class="button{% if block.settings.button_style_secondary_2 %}aa button--secondary{% else %} button--primary{% endif %}"
                 >
                   {{- block.settings.button_label_2 | escape -}}
                 </a>
