@@ -90,6 +90,12 @@
 .gap-4 {
   gap: 1rem;
 }
+
+/* background-color */
+
+.bg-color{
+  background: #F6F6F7;
+}
 /* Spacing */
 .pb-1 {
   padding-bottom: 0.25rem;
@@ -533,7 +539,7 @@ h5,
 @media only screen and (min-width: 750px) {
   h5,
   .h5 {
-    font-size: calc(var(--font-heading-scale) * 2rem);
+    font-size: calc(var(--font-heading-scale) * 1.4rem);
   }
 }
 h6,
