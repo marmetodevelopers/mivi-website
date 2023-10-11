@@ -39,15 +39,42 @@
                       <a
                         id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
                         href="{{ childlink.url }}"
-                        class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active{% endif %}"
+                        class="mega-menu__link mega-menu__link--level-2 font-bold link{% if childlink.current %} mega-menu__link--active{% endif %}"
                         {% if childlink.current %}
                           aria-current="page"
                         {% endif %}
                       >
                         {{ childlink.title | escape }}
                       </a>
+                       <div class="megamenu_images_container">
+                        {%- assign linkTitle = link.title | upcase -%}
+                        {% for block in section.blocks %}
+                          {% assign blockTitle = block.settings.megamenu_link_text | upcase %}
+                          {% if blockTitle contains linkTitle %}
+                             {% assign level2_title = block.settings.megamenu_link_text_level2 | upcase %}
+                            {% assign child_title = childlink.title | upcase %}
+                           
+                            {% if child_title == level2_title %}
+                              
+                              {% assign headerId = link.title | downcase | replace: ' ', '' %}
+                              {% assign blockId = block.settings.megamenu_link_text | downcase | replace: ' ', '' %}
+                              {% if headerId == blockId %}
+                                <div class="megamenu_images_wrapper">
+                                  <div class="child_link_images font-bold">
+                                    <img
+                                      src="{{ block.settings.megamenu_image | image_url }}"
+                                      loading="lazy"
+                                      alt="megamenu_image"
+                                    >
 
-                     
+                                    <p>{{ block.settings.megamenu_text }}</p>
+                                  </div>
+                                </div>
+                              {% endif %}
+                            {% endif %}
+                          {% endif %}
+                        {% endfor %}
+                      </div>
                       {%- if childlink.links != blank -%}
                         <ul class="list-unstyled" role="list">
                           {%- for grandchildlink in childlink.links -%}
@@ -94,5 +121,3 @@
     {%- endfor -%}
   </ul>
 </nav>
- 
- 

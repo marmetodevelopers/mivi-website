@@ -5,7 +5,7 @@
   {% render 'header-drawer' %}
 {% endcomment %}
 
-<header-drawer data-breakpoint="{% if section.settings.menu_type_desktop == 'drawer' %}desktop{% else %}tablet{% endif %}">
+<header-drawer  data-breakpoint="{% if section.settings.menu_type_desktop == 'drawer' %}desktop{% else %}tablet{% endif %}">
   <details id="Details-menu-drawer-container" class="menu-drawer-container">
     <summary
       class="header__icon header__icon--menu header__icon--summary link focus-inset"
@@ -20,19 +20,24 @@
       <div class="menu-drawer__inner-container">
         <div class="menu-drawer__navigation-container">
           <nav class="menu-drawer__navigation">
+            <img class="image_image_div" src="{{ block.settings.mobile_image | image_url }}"  alt="megamenu_image" />
+            {% render 'image' class = 'image-{{ block.id }}' mobileSrc:block.settings.mobile_image %}
+
             <ul class="menu-drawer__menu has-submenu list-menu" role="list">
-              {%- for link in section.settings.menu.links -%}
+              {%- for link in section.settings.mobile-menu.links -%}
                 <li>
                   {%- if link.links != blank -%}
                     <details id="Details-menu-drawer-menu-item-{{ forloop.index }}">
                       <summary
                         id="HeaderDrawer-{{ link.handle }}"
-                        class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.child_active %} menu-drawer__menu-item--active{% endif %}"
+                        class= "menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.child_active %} menu-drawer__menu-item--active{% endif %}"
                       >
+                      
                         {{ link.title | escape }}
                         {% render 'icon-arrow' %}
                         {% render 'icon-caret' %}
                       </summary>
+                     
                       <div
                         id="link-{{ link.handle | escape }}"
                         class="menu-drawer__submenu has-submenu gradient motion-reduce"
@@ -47,6 +52,7 @@
                             {%- for childlink in link.links -%}
                               <li>
                                 {%- if childlink.links == blank -%}
+
                                   <a
                                     id="HeaderDrawer-{{ link.handle }}-{{ childlink.handle }}"
                                     href="{{ childlink.url }}"
@@ -57,16 +63,76 @@
                                   >
                                     {{ childlink.title | escape }}
                                   </a>
+                                   {% comment %} <div class="megamenu_images_container">
+                                    {%- assign linkTitle = link.title | upcase -%}
+                                  
+                                    
+                                    {% for block in section.blocks %}
+                                      {% assign blockTitle = block.settings.megamenu_link_text | upcase %}
+                                   
+                                      {% if blockTitle contains linkTitle %}
+                                         {% assign level2_title = block.settings.megamenu_link_text_level2 | upcase %}
+                                        {% assign child_title = childlink.title | upcase %}
+                                       
+                                        {% if child_title == level2_title %}
+                                          
+                                          {% assign headerId = link.title | downcase | replace: ' ', '' %}
+                                          {% assign blockId = block.settings.megamenu_link_text | downcase | replace: ' ', '' %}
+                                          {% if headerId == blockId %}
+                                              <div class="megamenu_images_wrapper">
+                                              <div class="child_link_images font-bold">
+                                                <img
+                                                  src="{{ block.settings.megamenu_image | image_url }}"
+                                                  loading="lazy"
+                                                  alt="megamenu_image"
+                                                >
+            
+                                                <p>{{ block.settings.megamenu_text }}</p>
+                                              </div> 
+                                            </div>
+                                          {% endif %}
+                                        {% endif %}
+                                      {% endif %}
+                                    {% endfor %}
+                                  </div>    
+            
+                                  <div class="megamenu_images_container">
+                                    {%- assign linkTitle = link.title | upcase -%}
+                                    <h1>{{linkTitle}}</h1>
+                                    {% for block in section.blocks %}
+                                    {% assign blockTitle = block.settings.mobile-megamenu_link_text | upcase %}
+                                    {{blockTitle}}
+                                    {% if blockTitle contains linkTitle %} 
+                                    {% assign headerId = link.title | downcase | replace: " ", "" %}
+                                    {% assign blockId = block.settings.mobile-megamenu_link_text | downcase | replace: " ", "" %} 
+                                    {% if headerId == blockId %} 
+                                    <div class="megamenu_images_wrapper">
+                                       <div class="child_link_images">
+                                          <img src="{{ block.settings.mobile_image | img_url: master }}" loading="lazy" alt="megamenu_image" />
+           {% comment %}
+                                          {% render 'image' class = 'image-{{ block.id }}' mobileSrc:block.settings.megamenu_image, desktopSrc: block.settings.megamenu_image %}
+                                          {% endcomment %}
+                                      <p>{{ block.settings.mobile-megamenu_text }}</p>
+                                       </div>
+                                    </div>
+                                    {% endif %}
+                                    {% endif %}
+                                    {% endfor %}
+                                 </div>                                   {% endcomment %}
                                 {%- else -%}
                                   <details id="Details-menu-drawer-{{ link.handle }}-{{ childlink.handle }}">
                                     <summary
                                       id="HeaderDrawer-{{ link.handle }}-{{ childlink.handle }}"
-                                      class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
+                                      class="menu-drawer__menu-item link link--text list-menu__item focus-inset kdfdk"
                                     >
                                       {{ childlink.title | escape }}
                                       {% render 'icon-arrow' %}
                                       {% render 'icon-caret' %}
                                     </summary>
+
+                                     
+
+
                                     <div
                                       id="childlink-{{ childlink.handle | escape }}"
                                       class="menu-drawer__submenu has-submenu gradient motion-reduce"
@@ -88,7 +154,7 @@
                                             <a
                                               id="HeaderDrawer-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}"
                                               href="{{ grandchildlink.url }}"
-                                              class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"
+                                              class="menu-drawer__menu-item link link--text list-menu__item focus-inset dkfldk{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"
                                               {% if grandchildlink.current %}
                                                 aria-current="page"
                                               {% endif %}
