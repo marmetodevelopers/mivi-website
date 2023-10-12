@@ -507,7 +507,7 @@ sticky-header.header-wrapper.color-background-1.gradient.header-wrapper--border-
 {
   "name": "t:sections.header.name",
   "class": "section-header",
-  "max_blocks": 3,
+  
   "settings": [
     {
       "type": "select",
@@ -540,6 +540,13 @@ sticky-header.header-wrapper.color-background-1.gradient.header-wrapper--border-
       "default": "main-menu",
       "label": "t:sections.header.settings.menu.label"
     },
+    {
+      "type": "link_list",
+      "id": "mobile-menu",
+      "default": "main-menu",
+      "label": "t:sections.header.settings.menu.label"
+    },
+
     {
       "type": "select",
       "id": "menu_type_desktop",
@@ -690,7 +697,35 @@ sticky-header.header-wrapper.color-background-1.gradient.header-wrapper--border-
   ],
   "blocks": [
     {
-      "type": "@app"
+      "name": "megamenu",
+      "type": "block",
+      "settings":[
+         {
+          "type":"text",
+          "id":"megamenu_link_text",
+          "label":"Megamenu Title"
+        },
+        {
+          "type":"text",
+          "id":"megamenu_link_text_level2",
+          "label":"Megamenu level 2"
+        },
+        {
+         "type":"image_picker",
+          "id":"megamenu_image",
+          "label":"Megamenu Image"
+        },
+          {
+         "type":"text",
+          "id":"megamenu_text",
+          "label":"Megamenu Text"
+        },
+        {
+        "type":"image_picker",
+        "id":"mobile_image",
+        "label":"Mobile Image"
+      }
+      ]
     }
   ]
 }
