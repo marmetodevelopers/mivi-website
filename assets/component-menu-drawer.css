@@ -60,7 +60,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
  .js .menu-drawer__navigation .submenu-open {
-  visibility: hidden; /* hide menus from screen readers when hidden by submenu */
+  visibility: visible; /* hide menus from screen readers when hidden by submenu */
 }  
 
 @media screen and (min-width: 750px) {
@@ -79,7 +79,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 .menu-drawer__inner-container {
   position: relative;
   height: 100%;
-  background: #F6F6F7;
+   
 }
 
 .menu-drawer__navigation-container {
@@ -89,11 +89,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   overflow-y: auto;
   height: 100%;
 }
-
-.menu-drawer__navigation {
-  padding: 3rem 0;
-}
-
+ 
 .menu-drawer__inner-submenu {
   height: 100%;
   overflow-x: hidden;
@@ -118,10 +114,12 @@ details[open].menu-opening > .menu-drawer__submenu {
 }
 
 .menu-drawer__menu-item {
-  padding: 1.1rem 3rem;
+  padding: 20px 20px 20px 0px;
   text-decoration: none;
-  font-size: 1.8rem;
+   
+  border-bottom: 1px solid #ECECEC ;
 }
+
 
 .no-js .menu-drawer__menu-item {
   font-size: 1.6rem;
@@ -149,7 +147,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 .menu-drawer__menu-item:hover,
 .menu-drawer__close-button:hover {
   color: rgb(var(--color-foreground));
-  background-color: rgba(var(--color-foreground), 0.04);
+  /* background-color: rgba(var(--color-foreground), 0.04); */
 }
 
 .menu-drawer__menu-item--active:hover {
@@ -163,13 +161,13 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 .menu-drawer__menu-item > .icon-arrow {
   position: absolute;
-  right: 3rem;
+  right: 20px;
   top: 50%;
   transform: translateY(-50%);
 }
 
 .js .menu-drawer__submenu {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   width: 100%;
   bottom: 0;

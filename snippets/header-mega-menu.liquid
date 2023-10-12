@@ -26,8 +26,8 @@
                 {% render 'icon-caret' %}
               </summary>
               <div
-                id="MegaMenu-Content-{{ forloop.index }}"
-                class="mega-menu__content color-{{ section.settings.menu_color_scheme }} gradient motion-reduce global-settings-popup"
+                id="aaa MegaMenu-Content-{{ forloop.index }}"
+                class="mega-menu__content color-{{ section.settings.menu_color_scheme }} motion-reduce  bg-color"
                 tabindex="-1"
               >
                 <ul
@@ -39,7 +39,7 @@
                       <a
                         id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
                         href="{{ childlink.url }}"
-                        class="mega-menu__link mega-menu__link--level-2 font-bold link{% if childlink.current %} mega-menu__link--active{% endif %}"
+                        class="mega-menu__link h5 mega-menu__link--level-2 font-bold link{% if childlink.current %} mega-menu__link--active{% endif %}"
                         {% if childlink.current %}
                           aria-current="page"
                         {% endif %}
@@ -47,33 +47,7 @@
                         {{ childlink.title | escape }}
                       </a>
                        <div class="megamenu_images_container">
-                        {%- assign linkTitle = link.title | upcase -%}
-                        {% for block in section.blocks %}
-                          {% assign blockTitle = block.settings.megamenu_link_text | upcase %}
-                          {% if blockTitle contains linkTitle %}
-                             {% assign level2_title = block.settings.megamenu_link_text_level2 | upcase %}
-                            {% assign child_title = childlink.title | upcase %}
-                           
-                            {% if child_title == level2_title %}
-                              
-                              {% assign headerId = link.title | downcase | replace: ' ', '' %}
-                              {% assign blockId = block.settings.megamenu_link_text | downcase | replace: ' ', '' %}
-                              {% if headerId == blockId %}
-                                <div class="megamenu_images_wrapper">
-                                  <div class="child_link_images font-bold">
-                                    <img
-                                      src="{{ block.settings.megamenu_image | image_url }}"
-                                      loading="lazy"
-                                      alt="megamenu_image"
-                                    >
-
-                                    <p>{{ block.settings.megamenu_text }}</p>
-                                  </div>
-                                </div>
-                              {% endif %}
-                            {% endif %}
-                          {% endif %}
-                        {% endfor %}
+                        
                       </div>
                       {%- if childlink.links != blank -%}
                         <ul class="list-unstyled" role="list">
@@ -86,9 +60,14 @@
                                 {% if grandchildlink.current %}
                                   aria-current="page"
                                 {% endif %}
-                              >
-                                {{ grandchildlink.title | escape }}
+                              >     
+                               <div class="grandchildlink_content">
+                                <a href="" class="grandchild_image">
+                            {% render 'image' class="" desktopSrc:grandchildlink.object.featured_image %}
+                               <div class="grandchildlink_title font-bold">   {{ grandchildlink.object.title }} </div> 
+                                 </a> 
                               </a>
+                            </div>
                             </li>
                           {%- endfor -%}
                         </ul>

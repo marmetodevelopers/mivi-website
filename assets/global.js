@@ -798,7 +798,7 @@ class SlideshowComponent extends SliderComponent {
 
   setSlidePosition(position) {
     if (this.setPositionTimeout) clearTimeout(this.setPositionTimeout);
-    this.setPositionTimeout = setTimeout (() => {
+    this.setPositionTimeout = setTimeout(() => {
       this.slider.scrollTo({
         left: position,
       });
@@ -1257,3 +1257,13 @@ class ProductRecommendations extends HTMLElement {
 }
 
 customElements.define('product-recommendations', ProductRecommendations);
+
+
+// Mobile mega-menu 
+const mobileFiltersOptions = document.querySelectorAll('.mobile_navigation-options');
+mobileFiltersOptions.forEach((eachOption) => {
+
+  eachOption.addEventListener("click", () => {
+    mobileFiltersOptions.forEach((each) => each.classList.toggle('show-navigation-options'));
+  })
+})

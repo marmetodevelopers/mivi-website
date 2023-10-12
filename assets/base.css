@@ -142,7 +142,6 @@
   font-style: normal;
   font-weight: 800;
   line-height: 100%;
-  /* 12px */
   letter-spacing: 2.4px;
   text-transform: capitalize;
   border: none;
@@ -186,7 +185,6 @@
   font-style: normal;
   font-weight: 800;
   line-height: 100%;
-  /* 24px */
   letter-spacing: 4.8px;
   text-transform: uppercase;
 }
@@ -205,7 +203,6 @@
   font-style: normal;
   font-weight: 800;
   line-height: 100%;
-  /* 12px */
   letter-spacing: 2.4px;
   text-transform: uppercase;
   border: none;
@@ -218,6 +215,11 @@
   min-width: calc(9rem + var(--buttons-border-width) * 2);
   min-height: calc(3.5rem + var(--buttons-border-width) * 2);
   opacity: 0.5;
+}
+
+/* background color */
+.bg-color{
+  background: #F6F6F7;
 }
 :root {
   --alpha-button-background: 1;
@@ -533,7 +535,7 @@ h5,
 @media only screen and (min-width: 750px) {
   h5,
   .h5 {
-    font-size: calc(var(--font-heading-scale) * 2rem);
+    font-size: calc(var(--font-heading-scale) * 1.4rem);
   }
 }
 h6,
@@ -541,6 +543,10 @@ h6,
   color: rgba(var(--color-foreground), 0.75);
   margin-block-start: 1.67em;
   margin-block-end: 1.67em;
+}
+
+.text__txt-body{
+  font-size: 18px;
 }
 blockquote {
   font-style: italic;
@@ -658,7 +664,7 @@ h6:empty {
   text-underline-offset: 0.3rem;
   color: rgb(var(--color-link));
   background-color: transparent;
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
   font-family: inherit;
 }
 .link--text {
@@ -2624,6 +2630,7 @@ details[open] > .header__submenu {
 .header__menu-item:hover span {
   text-decoration: underline;
   text-underline-offset: 0.3rem;
+  text-decoration-color: #0f0;
 }
 details[open] > .header__menu-item {
   text-decoration: underline;
