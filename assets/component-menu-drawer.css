@@ -115,12 +115,10 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 .menu-drawer__menu-item {
   padding: 20px 20px 20px 0px;
-  text-decoration: none;
-   
+  text-decoration: none; 
   border-bottom: 1px solid #ECECEC ;
 }
-
-
+ 
 .no-js .menu-drawer__menu-item {
   font-size: 1.6rem;
 }
@@ -207,7 +205,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 .menu-drawer__utility-links {
   padding: 0;
-  background-color: rgba(var(--color-foreground), 0.03);
+  /* background-color: rgba(var(--color-foreground), 0.03); */
   position: relative;
 }
 
@@ -217,7 +215,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 @media screen and (max-width: 749px) {
   .header--has-account:where(:not(.header--has-social):not(.header--has-localizations)) .menu-drawer__utility-links {
-    padding: 2rem 3rem;
+    padding: 20px 0 0 0;
   }
 }
 

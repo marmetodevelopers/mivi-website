@@ -139,12 +139,11 @@
                     href="{{ block.settings.button_link_1 }}"
                   {% endif %}
                   class="button-view-all{% if block.settings.button_style_secondary_1 %}button--secondary{% else %} button--primary{% endif %}"
-                >
-
-                  
+                > 
+                <div class="button__greater-icon">
                   {{- block.settings.button_label_1 | escape -}}
-
-                  {% render 'greater-icon' %}
+                   {% render 'greater-icon' %}
+                </div>
                 </a>
               {%- endif -%}
               {%- if block.settings.button_label_2 != blank -%}

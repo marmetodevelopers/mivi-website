@@ -27,9 +27,10 @@
         "button"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
+        "image": "shopify:\/\/shop_images\/Group_675_1.png",
+        "image_overlay_opacity": 0,
         "image_height": "adapt",
-        "desktop_content_position": "bottom-left",
+        "desktop_content_position": "middle-left",
         "show_text_box": false,
         "desktop_content_alignment": "left",
         "color_scheme": "inverse",
@@ -42,14 +43,14 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
+        "title": "True Wireless Earbuds",
         "heading_size": "h2",
-        "description": "",
+        "description": "<p>Engineered to fit. Great calls and music, designed for compact comfort.<\/p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "all",
+        "collection": "earbuds",
         "products_to_show": 8,
-        "columns_desktop": 4,
+        "columns_desktop": 3,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
@@ -61,7 +62,7 @@
         "show_vendor": false,
         "show_rating": false,
         "enable_quick_add": true,
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 44,
         "padding_bottom": 36
