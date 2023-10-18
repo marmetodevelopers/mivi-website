@@ -27,18 +27,19 @@
     {% endif %}
 
     {% render 'meta-tags' %}
-     {%style%}
+     {% comment %} {%style%}
     @font-face {
         font-family: "Gilroy";
         src: url({{ 'Gilroy-Black.ttf' | asset_url }}) format("opentype");
         font-weight: 800;
         font-style:normal;
       }
-    {%endstyle%}
+    {%endstyle%} {% endcomment %}
 
     <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'custom-components.js' | asset_url }}" defer="defer"></script>
     {%- if settings.animations_reveal_on_scroll -%}
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
@@ -90,12 +91,12 @@
       }
 
       :root {
-        --font-body-family: Gilroy;
+        --font-body-family:  ;
         --font-body-style: {{ settings.type_body_font.style }};
         --font-body-weight: {{ settings.type_body_font.weight }};
         --font-body-weight-bold: {{ settings.type_body_font.weight | plus: 300 | at_most: 1000 }};
 
-        --font-heading-family: Gilroy;
+        --font-heading-family:  ;
         --font-heading-style: {{ settings.type_header_font.style }};
         --font-heading-weight: {{ settings.type_header_font.weight }};
 

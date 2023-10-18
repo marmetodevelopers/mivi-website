@@ -18,7 +18,7 @@
               >
                 <span
                   {%- if link.child_active %}
-                    class="header__active-menu-item"
+                    class="header__active-menu-item line-text-height"
                   {% endif %}
                 >
                   {{- link.title | escape -}}
@@ -26,7 +26,7 @@
                 {% render 'icon-caret' %}
               </summary>
               <div
-                id="aaa MegaMenu-Content-{{ forloop.index }}"
+                id="MegaMenu-Content-{{ forloop.index }}"
                 class="mega-menu__content color-{{ section.settings.menu_color_scheme }} motion-reduce  bg-color"
                 tabindex="-1"
               >
@@ -82,14 +82,14 @@
           <a
             id="HeaderMenu-{{ link.handle }}"
             href="{{ link.url }}"
-            class="header__menu-item list-menu__item link link--text focus-inset"
+            class="header__menu-item list-menu__item link link--text focus-inset "
             {% if link.current %}
               aria-current="page"
             {% endif %}
           >
             <span
               {%- if link.current %}
-                class="header__active-menu-item"
+                class="header__active-menu-item "
               {% endif %}
             >
               {{- link.title | escape -}}

@@ -49,6 +49,28 @@
   src: url("https://cdn.shopify.com/s/files/1/0081/9871/7493/files/PlayfairDisplay-Regular_5a5e3a87-b711-429c-b197-2b616f6eea72.ttf?v=1673240862") format("truetype");
   font-weight: 400;
 }
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("https://cdn.shopify.com/s/files/1/0828/1391/1317/files/Gilroy-Black.ttf?v=1697530724") format("truetype");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Gilroy Regular";
+  src: url("https://cdn.shopify.com/s/files/1/0828/1391/1317/files/Gilroy-Regular.ttf?v=1697531321") format("truetype");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Gilroy Medium";
+  src: url("https://cdn.shopify.com/s/files/1/0828/1391/1317/files/Gilroy-Medium.ttf?v=1697531571") format("truetype");
+  font-weight: 800;
+}
+
+/* p {
+  font-family: "Gilroy Medium";
+} */
 /* Font style */
 .font-primary {
   font-family: "Playfair Display";
@@ -69,7 +91,7 @@
   font-style: italic;
 }
 .font-bold1 {
-  font-weight: 800;
+  font-weight: 800 !important;
 }
 /* Flex */
 .flex {
@@ -180,13 +202,17 @@
   border: none;
   background: none;
   color: #fff;
-  font-family: Gilroy;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 100%;
+  font-size:20px;
+   font-weight: 800;
+   line-height: 100%;  
+  font-style: normal; 
   letter-spacing: 4.8px;
   text-transform: uppercase;
+}
+@media only screen and (max-width:749px){
+  .button-view-all{
+    font-size: 14px;
+  }
 }
 .button-view-all.disabled {
   background-color: #241410;
@@ -215,6 +241,10 @@
   min-width: calc(9rem + var(--buttons-border-width) * 2);
   min-height: calc(3.5rem + var(--buttons-border-width) * 2);
   opacity: 0.5;
+}
+
+.line-text-height{
+  line-height:100%;
 }
 
 /* background color */
@@ -353,7 +383,8 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   }
   .page-width-desktop {
     max-width: var(--page-width);
-    padding: 0 5rem;
+    /* padding: 0 5rem; */
+    padding: 0 130px;
   }
 }
 .isolate {
@@ -508,26 +539,25 @@ h2,
 h3,
 .h3 {
   font-size: calc(var(--font-heading-scale) * 2.4rem);
-  
+  font-weight: 800;
 }
 @media only screen and (min-width: 750px) {
   h3,
   .h3 {
     font-size: calc(var(--font-heading-scale) * 3.6rem);
-     
+     font-weight: 800;
   }
 }
 h4,
 .h4 {
-  font-family: var(--font-heading-family);
-  font-style: var(--font-heading-style);
+   
   font-size: calc(var(--font-heading-scale) * 1.4rem);
 }
 @media only screen and (min-width: 750px) {
   h4,
   .h4 {
     font-size: calc(var(--font-heading-scale) * 2.4rem);
-    font-weight: 500;
+     font-weight: 500;  
   }
 }
 h5,
@@ -546,12 +576,22 @@ h6,
   margin-block-start: 1.67em;
   margin-block-end: 1.67em;
 }
+.font-body-text{
+  font-size: 12px;
 
+}
 .text__txt-body{
   font-size: 18px;
 }
+
 .sub-text-txt{
-  font-size: 20px;
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 750px) {
+.sub-text-txt{
+  font-size:20px;
+  }
 }
 blockquote {
   font-style: italic;
@@ -1176,7 +1216,7 @@ summary::-webkit-details-marker {
 /* component-media */
 .media {
   display: block;
-  background-color: rgba(var(--color-foreground), 0.1);
+  /* background-color: rgba(var(--color-foreground), 0.1); */
   position: relative;
   overflow: hidden;
 }
@@ -2175,11 +2215,8 @@ product-info .loading-overlay:not(.hidden) ~ *,
   padding: 1.4rem 0;
   margin: 0;
   letter-spacing: 0.1rem;
-  min-height: 3.8rem;
-  font-family: Gilroy;
-  font-size: 12px;
-  font-style: normal;
-  line-height: 100%;
+  min-height: 3.8rem;  
+  font-style: normal; 
   text-transform: capitalize;
   color: #fff;
 }
@@ -3219,5 +3256,16 @@ details-disclosure > details {
     /* Prevent the border from growing on buttons when this effect is on. */
   }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 

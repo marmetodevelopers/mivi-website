@@ -10,6 +10,22 @@
             "heading_size": "h0"
           }
         },
+        "e1570ec2-4351-4cb9-8cc5-5f23fb495123": {
+          "type": "text",
+          "settings": {
+            "text": "DUOPODS M40",
+            "text_style": "body",
+            "text_color": "#00ff00"
+          }
+        },
+        "79f29ad4-60f1-49ca-b8b0-3e8ac2272670": {
+          "type": "banner-body-text",
+          "settings": {
+            "body_text": "True Wireless Earbuds",
+            "text_style": "body",
+            "body_text_color": "#ffffff"
+          }
+        },
         "button": {
           "type": "buttons",
           "settings": {
@@ -24,10 +40,13 @@
       },
       "block_order": [
         "heading",
+        "e1570ec2-4351-4cb9-8cc5-5f23fb495123",
+        "79f29ad4-60f1-49ca-b8b0-3e8ac2272670",
         "button"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Group_675_1.png",
+        "mobile_image": "shopify:\/\/shop_images\/Rectangle_4.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-left",
