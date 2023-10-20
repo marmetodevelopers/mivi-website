@@ -200,6 +200,7 @@
             {%- endif -%}
 
             {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %} 
+ 
           {%- if card_product.quantity_price_breaks_configured? -%}
               <div class="card__information-volume-pricing-note">
                 <span class="caption">{{ 'products.product.volume_pricing.note' | t }}</span>
@@ -219,8 +220,38 @@
             {{ card_product.metafields.custom.product_cards.value.text_3 }}
               </div>
             </div>
+            <div class="product_variants"> 
+              {% for options in card_product.options_with_values %}
+                <div class="product_option">
+                  <div class="product--variant__label">
+                    <h4 class="heading_color">{{ options.name }}</h4> 
+                  </div>
+                  {% for value in options.values %}
+                    <a href="{{ card_product.url}}" class=""> 
+                    <label for="{{ options.position }}-{{ forloop.index0 }}-{{ card_product.id }}" class="variant-checkbox" name="variant">
+                       {% if options.name == 'Color' %} <input
+                          id="{{ options.position }}-{{ forloop.index0 }}-{{ card_product.id }}"
+                          name="{{ options.name }}-{{ sectionId }}-{{ card_product.id }}"
+                          value="{{ value | escape }}"
+                          form="{{ product_form_id }}"
+                          {% if options.selected_value == value %}checked{% endif %}{% if option_disabled %}class="disabled"{% endif %}
+                          type="radio" 
+                          class="circle_radio"
+                          value="{{ forloop.index }}"
+                          style="background:{{ value }}"
+                        >
+                      {% endif %} 
+                      {% if options.name != 'Color' %} 
+                        <span class="variant_name">{{ value }}</span>
+                      {% endif %}
+                    </label>
+                  </a>
+                  {% endfor %}
+                </div>
+              {% endfor %} 
+            </div> 
           </div>
-        </div>  
+         
         {%- if show_quick_add -%}
           <div class="quick-add no-js-hidden">
             {%- liquid
@@ -337,6 +368,7 @@
             {%- endif -%}
           </div>
         {%- endif -%}
+      </div>  
         <div class="card__badge {{ settings.badge_position }}">
           {%- if card_product.available == false -%}
             <span

@@ -48,8 +48,7 @@
                             <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
                               {%- for childlink in link.links -%}
                                 <li>
-                                  {%- if childlink.links == blank -%}
-
+                                  {%- if childlink.links == blank -%} 
                                     {% comment %} <a
                                       id="HeaderDrawer-{{ link.handle }}-{{ childlink.handle }}"
                                       href="{{ childlink.url }}"
@@ -61,9 +60,7 @@
                                      <div class="childlink_content"> <a href="" class="child_image">
                                       <div class="mobile_menu_product_imag">
                                         {% render 'image' class="" desktopSrc:childlink.object.featured_image %}
-                                      </div>
-                              
-
+                                      </div> 
                                  <div class="childlink_title text__txt-body font-bold">   {{ childlink.object.title }} </div>
                                    </a>   
                                      {%- else -%}
@@ -77,22 +74,19 @@
                                         {% render 'icon-caret' %}
                                       </summary>
                                      <div
-                                        id=" nnn childlink-{{ childlink.handle | escape }}"
+                                        id="childlink-{{ childlink.handle | escape }}"
                                         class="menu-drawer__submenu has-submenu gradient motion-reduce">
                                         <button
                                           class="menu-drawer__close-button link link--text focus-inset"
                                           aria-expanded="true"
-                                        >
-
+                                        > 
                                         </button>
                                         <ul
                                           class="menu-drawer__menu list-menu"
                                           role="list"
                                           tabindex="-1"
-                                        >
-
-                                        </ul>  
-
+                                        > 
+                                        </ul> 
                                       </div>
                                     </details>  
                                   {%- endif -%}
@@ -109,8 +103,7 @@
                       {% endif %}
                     >
                       {{ link.title | escape }}
-                    </a>
- 
+                    </a> 
                   {%- endif -%}
                 </li>
               {%- endfor -%}
@@ -122,8 +115,7 @@
                 href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
                 class="menu-drawer__account link focus-inset h5 medium-hide large-up-hide"
               >
-                {% render 'icon-account' %}
-                
+                {% render 'icon-account' %} 
                 {%- liquid
                   if customer
                     echo 'customer.account_fallback' | t
@@ -168,8 +160,7 @@
                       </div>
                       <button class="button button--tertiary">{{ 'localization.update_country' | t }}</button>
                     {%- endform -%}
-                  </noscript>
-
+                  </noscript> 
                   <localization-form class="no-js-hidden">
                     {%- form 'localization', id: 'HeaderCountryMobileForm', class: 'localization-form' -%}
                       <div>
@@ -180,8 +171,7 @@
                       </div>
                     {%- endform -%}
                   </localization-form>
-                {% endif %}
-
+                {% endif %} 
                 {%- if localization.available_languages and localization.available_languages.size > 1 -%}
                   <noscript>
                     {%- form 'localization',
@@ -213,8 +203,7 @@
                       </div>
                       <button class="button button--tertiary">{{ 'localization.update_language' | t }}</button>
                     {%- endform -%}
-                  </noscript>
-
+                  </noscript> 
                   <localization-form class="no-js-hidden">
                     {%- form 'localization', id: 'HeaderLanguageMobileForm', class: 'localization-form' -%}
                       <div>
