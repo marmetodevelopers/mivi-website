@@ -39,8 +39,6 @@
   color: rgba(var(--color-foreground), 0.75);
   display: block;
   line-height: calc(1 + 0.3 / var(--font-body-scale));
-  /* padding-bottom: 0.6rem;
-  padding-top: 0.6rem; */
   text-decoration: none;
   transition: text-decoration var(--duration-short) ease;
   word-wrap: break-word;
@@ -70,10 +68,10 @@
   display: block;
 }
 .mega-menu__list--condensed .mega-menu__link {
-   padding-bottom: 26px;
-  padding-top: 39px;
-  color: #4B4955;
-  font-style: normal;
+ padding-bottom: 26px;
+ padding-top: 39px;
+ color: #4B4955;
+ font-style: normal;
   line-height: 100%;  
   letter-spacing: 2.8px;
   text-transform: uppercase;
