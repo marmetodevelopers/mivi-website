@@ -139,10 +139,10 @@ p.sub-text-txt  {
       height: auto;
       bottom: 0;
 }
-.test {
+.banner-block__heading {
   position: relative;
 }
-.test:after {
+.banner-block__heading:after {
   position: absolute;
   content: "";
   border-bottom: 3px solid white;

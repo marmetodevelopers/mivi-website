@@ -76,7 +76,7 @@
   aria-roledescription="{{ 'sections.slideshow.carousel' | t }}"
   aria-label="{{ section.settings.accessibility_info | escape }}"
 >   
-  {%- if section.settings.auto_rotate and 4 > 1 -%}
+  {%- if section.settings.auto_rotate and products_to_display > 1 -%}
     <div class="slideshow__controls slideshow__controls--top slider-buttons no-js-hidden{% if section.settings.show_text_below %} slideshow__controls--border-radius-mobile{% endif %}">
       <button
         type="button"
@@ -183,7 +183,7 @@
     {%- endfor -%}
   </div>
 
-  {%- if 4 > 1 -%}
+  {%- if products_to_display > 1 -%}
     <div class="slideshow__controls slider-buttons no-js-hidden{% if section.settings.show_text_below %} slideshow__controls--border-radius-mobile{% endif %}">
       <button
         type="button"
@@ -257,7 +257,7 @@
   {%- endif -%}
  
 </slideshow-component>
-{{ 'custome.css' | asset_url | stylesheet_tag }}
+ 
 {% schema %}
 {
   "name": "t:sections.featured-collection.name",
@@ -273,7 +273,7 @@
       "default": "Featured collection",
       "label": "t:sections.featured-collection.settings.title.label"
     },
-     {
+    {
       "type": "select",
       "id": "heading_size",
       "options": [

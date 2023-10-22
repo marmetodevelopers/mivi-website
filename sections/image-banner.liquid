@@ -1,5 +1,5 @@
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
-{{ 'custome.css' | asset_url | stylesheet_tag }}
+
 
 {%- if section.settings.image_height == 'adapt' and section.settings.image != blank -%}
   {%- style -%}
@@ -30,10 +30,10 @@
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
   {% for block in section.blocks %}
-    .banner_text--color {
+    .banner_text--color-{{ block.id }} {
       color: {{block.settings.text_color}};
     }
-    .banner_body_text--color {
+    .banner_body_text--color-{{ block.id }} {
       color: {{block.settings.body_text_color}};
     } 
   {% endfor %}
@@ -72,14 +72,14 @@
               class="banner__heading inline-richtext{{ block.settings.heading_size }}"
               {{ block.shopify_attributes }}
             >
-           <h2 class="h1 test">{{ block.settings.heading }}</h2>
+           <h2 class="h1 banner-block__heading">{{ block.settings.heading }}</h2>
             </h2>
           {%- when 'text' -%}
-            <div class="banner__text rte h3 font-bold1{{ block.settings.text_style }} banner_text--color" {{ block.shopify_attributes }}>
+            <div class="banner__text rte h3 font-bold1{{ block.settings.text_style }} banner_text--color-{{ block.id }}" {{ block.shopify_attributes }}>
               <p class=banner-txt-text>{{ block.settings.text }}</p>
             </div>
           {% when 'banner-body-text'%}
-            <div class="banner__text rte sub-text-txt {{ block.settings.text_style }} banner_body_text--color" {{ block.shopify_attributes }}>
+            <div class="banner__text rte sub-text-txt {{ block.settings.text_style }} banner_body_text--color-{{ block.id }}" {{ block.shopify_attributes }}>
               <p class="sub-text-txt font-bold1"> {{ block.settings.body_text}} </p>
             </div>
           {%- when 'buttons' -%}
