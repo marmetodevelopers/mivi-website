@@ -1,5 +1,5 @@
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
-{{ 'custome.css' | asset_url | stylesheet_tag }}
+{{ 'custom.css' | asset_url | stylesheet_tag }}
 
 {%- if section.settings.image_height == 'adapt' and section.settings.image != blank -%}
   {%- style -%}
@@ -72,7 +72,7 @@
               class="banner__heading inline-richtext{{ block.settings.heading_size }}"
               {{ block.shopify_attributes }}
             >
-           <h2 class="h1 test">{{ block.settings.heading }}</h2>
+           <h2 class="h1 banner-block__heading">{{ block.settings.heading }}</h2>
             </h2>
           {%- when 'text' -%}
             <div class="banner__text rte h3 font-bold1{{ block.settings.text_style }} banner_text--color" {{ block.shopify_attributes }}>

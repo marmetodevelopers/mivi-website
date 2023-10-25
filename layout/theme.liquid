@@ -27,14 +27,14 @@
     {% endif %}
 
     {% render 'meta-tags' %}
-     {% comment %} {%style%}
+      {%style%}
     @font-face {
         font-family: "Gilroy";
         src: url({{ 'Gilroy-Black.ttf' | asset_url }}) format("opentype");
         font-weight: 800;
         font-style:normal;
       }
-    {%endstyle%} {% endcomment %}
+    {%endstyle%}  
 
     <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
@@ -91,12 +91,12 @@
       }
 
       :root {
-        --font-body-family:  ;
+        --font-body-family: Gilroy  ;
         --font-body-style: {{ settings.type_body_font.style }};
         --font-body-weight: {{ settings.type_body_font.weight }};
         --font-body-weight-bold: {{ settings.type_body_font.weight | plus: 300 | at_most: 1000 }};
 
-        --font-heading-family:  ;
+        --font-heading-family: Gilroy;
         --font-heading-style: {{ settings.type_header_font.style }};
         --font-heading-weight: {{ settings.type_header_font.weight }};
 
@@ -247,6 +247,8 @@
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
+    {{ 'custom.css' | asset_url | stylesheet_tag }}
+    
 
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>

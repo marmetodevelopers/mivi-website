@@ -211,7 +211,7 @@
          {% render 'image' class="" desktopSrc:card_product.metafields.custom.product_cards.value.svg_1 %}      
             {{ card_product.metafields.custom.product_cards.value.text_1 }}
               </div>
-              <div class="font-semibold-2">
+              <div class="font-semibold-2 card-product__metafield">
             {% render 'image' class="" desktopSrc:card_product.metafields.custom.product_cards.value.svg_2 %}
             {{ card_product.metafields.custom.product_cards.value.text_2 }}
               </div>
@@ -224,7 +224,7 @@
               {% for options in card_product.options_with_values %}
                 <div class="product_option">
                   <div class="product--variant__label">
-                    <h4 class="heading_color">{{ options.name }}</h4> 
+                    <h4 class="heading_color">{{ options.name | pluralize: 'Color', 'Colors' }}</h4> 
                   </div>
                   {% for value in options.values %}
                     <a href="{{ card_product.url}}" class=""> 
@@ -274,7 +274,7 @@
                 >
                   {{ 'products.product.choose_options' | t }}
                   {%- if horizontal_quick_add -%}
-                    <span class="icon-wrap">{% render 'icon-arrow' %}</span>
+                      <span class="icon-wrap">{% render 'icon-arrow' %}</span>  
                   {%- endif -%}
                   <div class="loading-overlay__spinner hidden">
                     <svg

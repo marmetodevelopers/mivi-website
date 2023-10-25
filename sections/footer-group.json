@@ -29,6 +29,7 @@
         "sections--21063847248149__f0b69186-7290-42de-b3ba-d594977c8dad-paragraph-1",
         "sections--21063847248149__f0b69186-7290-42de-b3ba-d594977c8dad-email_form-1"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "background-2",
         "full_width": true,
@@ -74,6 +75,7 @@
         "32aaf3ec-06fc-4a47-a9e2-19b8b542bca6",
         "0cd2a900-7f5c-420a-8306-31cdcbb6d520"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "background-1",
         "newsletter_enable": false,

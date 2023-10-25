@@ -274,8 +274,9 @@
   }
 }
 .banner__box {
-  padding: 4rem 6rem;
-  position: relative;
+  /* padding: 4rem 6rem; */
+  padding: 4%;
+  position: absolute;
   height: fit-content;
   align-items: center;
   text-align: center;

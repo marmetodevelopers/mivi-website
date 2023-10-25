@@ -1,5 +1,4 @@
-{{ 'custome.css' | asset_url | stylesheet_tag }}
-{% style %}
+ {% style %}
   .padding-{{ section.id }} {
     padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
     padding-bottom: {{ section.settings.padding_bottom | divided_by: 2 }}px;
@@ -10,73 +9,68 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
-  .background-{{ section.id }} {
-      background: {{ section.settings.background_color }};
-    }
+
     .image_background-{{ section.id }} {
       background: {{ section.settings.image_background_color }};
     }
-      .heading__text--color {
+      .heading__text--color-{{ section.id }} {
         color: {{section.settings.heading_color}};
       }
-      .body_text--color {
+      .body_text--color-{{ section.id }} {
         color: {{section.settings.text_color}};  
       } 
     {% endstyle %}
 <div class="padding-{{ section.id }}">
-<div class="background-{{ section.id }}">
-    <div class="image_background-{{ section.id }}">
-        <div>
-            {% assign product = all_products[section.settings.product] %}
-        </div>
-        <a href="{{ product.url }}" class="product-card__link">
-            <div class="deal-of-the day-skeleton">
+   <div class="deal-of-the-day-container">
+    <div class="deal-of-the-day-content"> 
+    {% if section.settings.heading != blank  %}
+         <div class="heading__text--color-{{ section.id }} h3"> {{ section.settings.heading }}</div>
+    {% endif %} 
+    {% if section.settings.sub_text != blank %}
+         <div class="body_text--color-{{ section.id }} sub-text-txt deal-of-the-day-sub___text">{{ section.settings.sub_text }}</div>
+    {% endif %}
+    <div class="deal-of-the-day-svg">
+    {% if section.settings.html != blank %}
+         <div class="body_text--color-{{ section.id }} deal-of-the-day-html">  {{ section.settings.html }}</div>
+    {% endif %}  
+           
+    <div id="countdown-timer" class="text-white" data-time="{{section.settings.date}}"> 
+    <strong id="hours" class="bold-number h3"></strong> <span class="slim-countdown-text">H<span class="hide-words">RS</span><span class="timer"></span></span>    
+         <strong id="mins" class="bold-number h3"> 36 </strong> <span class="slim-countdown-text">M<span class="hide-words">INS</span><span class="timer"></span></span>
+         </div> 
+       </div>
+     </div>
+    </div> 
+    </div>
+        <div class="image_background-{{ section.id }} deal-of-the-day-product__info"> 
+            {% assign product = all_products[section.settings.product] %} 
+          <a href="{{ product.url }}" class="product-card__link">
+            <div class="deal-of-the-product__img">
                 {% render 'image', class: '', mobileSrc: product.featured_image, desktopSrc: product.featured_image %} 
             </div> 
-            <div>
-                {{ product.title }}
+            <div class="deal_of_the_day_product-content">
+              <span class="deal-product-title">  {{ product.title }}</span>
             </div>
-            <div>
-                {{  product.price | money_without_trailing_zeros }}
-            </div>
-            <div>
+            <div class="deal-of-the-day-product-price"> 
+             <span>   {{ product.price | money_without_trailing_zeros }}  </span>
                 <del>{{ product.compare_at_price | money_without_trailing_zeros }}</del>
             </div>
-        </a>
+            <div class="deal-of-the-day-button">
+            {% if section.settings.button_text != blank and section.settings.button_link != blank %}
+                <div class="deal-of-the-day-button-content">
+                    <a href="{{ section.settings.button_link }}" class="button-view-all font-body-text"> {{ section.settings.button_text }} </a>
+                </div>
+                <div class="deal-of-the-day-svg">
+                    {% render 'greater-icon-black' %}
+                </div>
+                {% endif %}
+            </div>
+        </a>   
     </div>
-    <div class="">
-        {% if section.settings.button_text != blank and section.settings.button_link != blank %}
-        <div class="">
-            <a href="{{ section.settings.button_link }}" class="button-view-all"> {{ section.settings.button_text }} </a>
+      
         </div>
-        <div>
-            {% render 'greater-icon' %}
-        </div>
-        {% endif %}
-    </div>
-    <div class=" ">
-        {% if section.settings.heading != blank  %}
-        <h3 class="heading__text--color"> {{ section.settings.heading }}</h3>
-        {% endif %}
-    </div>
-    <div>
-        {% if section.settings.sub_text != blank %}
-        <h4 class="body_text--color">  {{ section.settings.sub_text }}</h4>
-        {% endif %}
-    </div>
-    <div>
-        {% if section.settings.html != blank %}
-        <h4 class="body_text--color">  {{ section.settings.html }}</h4>
-        {% endif %}
-    </div>
-    <div>
-        {% if section.settings.target_time != blank %}
-        <h4 class="body_text--color">  {{ section.settings.target_time }}</h4>
-        {% endif %}
-    </div>
-</div>
-     
-</div>  
+    </div> 
+</div> 
 
 {% schema %}
 {
@@ -108,53 +102,46 @@
             "default":"#F6F6F7"
   
           },  
-      {
-          "type": "color",
-          "id": "background_color",
-          "label": "Background color",
-          "default":"#fff"
-
-        }, 
-      {
-          "type":"text",
-          "id":"heading",
-          "label":"Heading",
-          "default":"Deal of the Day"
-      },
-      {
-          "type": "color",
-          "id": "heading_color",
-          "label": "Headig Color",
-          "default": "#0f0"
+        {
+            "type":"text",
+            "id":"heading",
+            "label":"Heading",
+            "default":"Deal of the Day"
         },
-      {
-          "type":"text",
-          "id":"sub_text",
-          "label":"Sub Text",
-          "default":"ENDS IN"
-      },
-      {
-          "type": "color",
-          "id": "text_color",
-          "label": "Text Color",
-          "default": "#fff"
+        {
+            "type": "color",
+            "id": "heading_color",
+            "label": "Headig Color",
+            "default": "#0f0"
         },
-      {
-          "type":"html",
-          "id":"html",
-          "label":"html"
-      },
-      {
-          "type": "text", 
-          "id": "target_time",
-          "label": "Target Time",
-          "info": "Time format: HH:MM"
+        {
+            "type":"text",
+            "id":"sub_text",
+            "label":"Sub Text",
+            "default":"ENDS IN"
         },
+        {
+            "type": "color",
+            "id": "text_color",
+            "label": "Text Color",
+            "default": "#fff"
+            },
+        {
+            "type":"html",
+            "id":"html",
+            "label":"html"
+        },
+        {
+            "type": "text",
+            "id": "date",
+            "label": "Date",
+            "info": "Format: dd-mm-yyyy"
+        },  
         {
             "type": "header",
             "content": "Section padding"
           },
-          {
+        {
             "type": "range",
             "id": "padding_top",
             "min": 10,
@@ -163,8 +150,8 @@
             "unit": "px",
             "label": "Padding top",
             "default": 40
-          },
-          {
+        },
+        {
             "type": "range",
             "id": "padding_bottom",
             "min": 10,
@@ -173,7 +160,7 @@
             "unit": "px",
             "label": "Padding bottom",
             "default": 40
-          }
+        }
   ],
   "presets": [
       {
@@ -182,3 +169,4 @@
     ]
 }
 {% endschema %}
+
