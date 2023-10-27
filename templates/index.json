@@ -79,7 +79,7 @@
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "color_scheme": "background-1",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
@@ -112,7 +112,9 @@
     "94a0a182-a3aa-4bc1-964f-23cfd135c254": {
       "type": "featured-collection",
       "custom_css": [
-
+        "@media screen and (min-width: 990px) {.grid--3-col-desktop .grid__item {width: calc(30% - var(--grid-desktop-horizontal-spacing) * 2 \/ 3); max-width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 2 \/ 3); }}",
+        ".slider-buttons {justify-content: space-between;}",
+        "@media screen and (max-width: 749px) {.slider-buttons {justify-content: center; }}"
       ],
       "settings": {
         "title": "Wireless Speakers",
@@ -128,7 +130,7 @@
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "color_scheme": "",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
@@ -144,7 +146,8 @@
     "af3bf248-59fd-40c6-b0ed-28193696e6ec": {
       "type": "featured-collection",
       "custom_css": [
-
+        "@media screen and (min-width: 990px) {.grid--3-col-desktop .grid__item {width: calc(30% - var(--grid-desktop-horizontal-spacing) * 2 \/ 3); max-width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 2 \/ 3); }}",
+        "@media screen and (min-width: 750px) {button.slider-button.slider-button--next {display: none; } button.slider-button.slider-button--prev {display: none; }}"
       ],
       "settings": {
         "title": "Smart Phone Chargers",
@@ -160,7 +163,7 @@
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "color_scheme": "",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
@@ -222,6 +225,65 @@
         "padding_top": 40,
         "padding_bottom": 40
       }
+    },
+    "e7889233-c385-40c8-8f2a-3389dcbfa086": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--21280538493205__e7889233-c385-40c8-8f2a-3389dcbfa086-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Union_7.png",
+            "title": "",
+            "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"34\" height=\"28\" viewbox=\"0 0 34 28\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M27.943 0.362793C21.8107 5.09792 17.7742 13.0933 17.7742 18.6047C17.7742 23.8055 21.4225 27.3763 25.7695 27.3763C30.0389 27.3763 34.5412 22.9517 32.911 17.5179C24.9933 14.3353 22.354 6.65042 28.4088 0.750918L27.943 0.362793ZM10.1669 0.362793C4.03455 5.09792 -0.00195312 13.0933 -0.00195312 18.6047C-0.00195312 23.8055 3.64642 27.3763 7.99342 27.3763C12.2628 27.3763 16.765 22.9517 15.1349 17.5179C7.21717 14.3353 4.57792 6.65042 10.6327 0.750918L10.1669 0.362793Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
+            "text": "<p>A pair of sport headphones must ensure a perfect fit alongside an energetic and punchy sound to even approach worthiness. And the DuoPods M40 have absolutely achieved this..<\/p>",
+            "link_label": "Anant Kishore",
+            "link": ""
+          }
+        },
+        "template--21280538493205__e7889233-c385-40c8-8f2a-3389dcbfa086-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Union_7.png",
+            "title": "",
+            "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"34\" height=\"28\" viewbox=\"0 0 34 28\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M27.943 0.362793C21.8107 5.09792 17.7742 13.0933 17.7742 18.6047C17.7742 23.8055 21.4225 27.3763 25.7695 27.3763C30.0389 27.3763 34.5412 22.9517 32.911 17.5179C24.9933 14.3353 22.354 6.65042 28.4088 0.750918L27.943 0.362793ZM10.1669 0.362793C4.03455 5.09792 -0.00195312 13.0933 -0.00195312 18.6047C-0.00195312 23.8055 3.64642 27.3763 7.99342 27.3763C12.2628 27.3763 16.765 22.9517 15.1349 17.5179C7.21717 14.3353 4.57792 6.65042 10.6327 0.750918L10.1669 0.362793Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
+            "text": "<p>A pair of sport headphones must ensure a perfect fit alongside an energetic and punchy sound to even approach worthiness. And the DuoPods M40 have absolutely achieved this.<\/p>",
+            "link_label": "Anant Kishore",
+            "link": ""
+          }
+        },
+        "template--21280538493205__e7889233-c385-40c8-8f2a-3389dcbfa086-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Union_7.png",
+            "title": "",
+            "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"34\" height=\"28\" viewbox=\"0 0 34 28\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M27.943 0.362793C21.8107 5.09792 17.7742 13.0933 17.7742 18.6047C17.7742 23.8055 21.4225 27.3763 25.7695 27.3763C30.0389 27.3763 34.5412 22.9517 32.911 17.5179C24.9933 14.3353 22.354 6.65042 28.4088 0.750918L27.943 0.362793ZM10.1669 0.362793C4.03455 5.09792 -0.00195312 13.0933 -0.00195312 18.6047C-0.00195312 23.8055 3.64642 27.3763 7.99342 27.3763C12.2628 27.3763 16.765 22.9517 15.1349 17.5179C7.21717 14.3353 4.57792 6.65042 10.6327 0.750918L10.1669 0.362793Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
+            "text": "<p>A pair of sport headphones must ensure a perfect fit alongside an energetic and punchy sound to even approach worthiness. And the DuoPods M40 have absolutely achieved this.<\/p>",
+            "link_label": "Anant Kishore",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21280538493205__e7889233-c385-40c8-8f2a-3389dcbfa086-column-1",
+        "template--21280538493205__e7889233-c385-40c8-8f2a-3389dcbfa086-column-2",
+        "template--21280538493205__e7889233-c385-40c8-8f2a-3389dcbfa086-column-3"
+      ],
+      "settings": {
+        "title": "Our Customers Us",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -230,6 +292,7 @@
     "fee80e2b-57dd-40b2-8e88-b46478691cee",
     "94a0a182-a3aa-4bc1-964f-23cfd135c254",
     "af3bf248-59fd-40c6-b0ed-28193696e6ec",
-    "d9c0f073-8abf-43ad-94fc-a5e6d6061436"
+    "d9c0f073-8abf-43ad-94fc-a5e6d6061436",
+    "e7889233-c385-40c8-8f2a-3389dcbfa086"
   ]
 }

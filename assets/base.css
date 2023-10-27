@@ -349,7 +349,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 }
 @media screen and (min-width: 750px) {
   .page-width {
-    padding: 0 5rem;
+    padding: 0 13rem;
   }
   .header.page-width,
   .utility-bar__grid.page-width {
@@ -575,7 +575,6 @@ h6,
 .text__txt-body {
   font-size: 18px;
 }
-
 .sub-text-txt {
   font-size: 14px;
 }
@@ -2805,9 +2804,6 @@ details-disclosure > details {
   border-radius: var(--text-boxes-radius);
   box-shadow: var(--text-boxes-shadow-horizontal-offset) var(--text-boxes-shadow-vertical-offset) var(--text-boxes-shadow-blur-radius) rgba(var(--color-shadow), var(--text-boxes-shadow-opacity));
   z-index: -1;
-}
-.image-shadow {
-  box-shadow: 0 0 #0000, 0 0 #0000, 0 29px 21px -12px rgba(0, 0, 0, 0.1);
 }
 .content-container--full-width:after {
   left: 0;
