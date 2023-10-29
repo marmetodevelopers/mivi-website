@@ -32,6 +32,15 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "6c62d584-a2f5-4a34-98f9-88921e4eee6f": {
+          "type": "emailtext",
+          "settings": {
+            "email-heading": "Customer Service",
+            "email__subtext": "<p>(Mon-Sat, 10:00am-5:00pm)<\/p>",
+            "footer-mobile": "+91 8099973333",
+            "footer-email": "support@mivi.in"
+          }
+        },
         "6003e57b-f961-40c8-9f83-f7aab64612eb": {
           "type": "link_list",
           "settings": {
@@ -59,13 +68,46 @@
             "heading": "About Us",
             "menu": "about-us"
           }
+        },
+        "cb3873db-a99f-4d4a-b406-dacd164862a9": {
+          "type": "button",
+          "settings": {
+            "button": "Shop Speakers",
+            "button_link": "shopify:\/\/collections\/all"
+          }
+        },
+        "b4ffb8cc-d635-4af7-bbdd-8446a5cc3c5a": {
+          "type": "button",
+          "settings": {
+            "button": "Shop Earphones",
+            "button_link": "shopify:\/\/blogs\/news"
+          }
+        },
+        "005d1d26-1d93-486f-8aca-dc23697a8c64": {
+          "type": "button",
+          "settings": {
+            "button": "Shop Cables",
+            "button_link": "shopify:\/\/pages\/contact"
+          }
+        },
+        "ef7adf5c-04a6-42fd-b1b3-273f30de82ed": {
+          "type": "button",
+          "settings": {
+            "button": "Shop Chargers",
+            "button_link": "shopify:\/\/collections\/all"
+          }
         }
       },
       "block_order": [
+        "6c62d584-a2f5-4a34-98f9-88921e4eee6f",
         "6003e57b-f961-40c8-9f83-f7aab64612eb",
         "6631c70a-4d83-43f9-b8fa-e1fc6efef67e",
         "32aaf3ec-06fc-4a47-a9e2-19b8b542bca6",
-        "0cd2a900-7f5c-420a-8306-31cdcbb6d520"
+        "0cd2a900-7f5c-420a-8306-31cdcbb6d520",
+        "cb3873db-a99f-4d4a-b406-dacd164862a9",
+        "b4ffb8cc-d635-4af7-bbdd-8446a5cc3c5a",
+        "005d1d26-1d93-486f-8aca-dc23697a8c64",
+        "ef7adf5c-04a6-42fd-b1b3-273f30de82ed"
       ],
       "settings": {
         "color_scheme": "background-1",
@@ -78,8 +120,8 @@
         "payment_enable": true,
         "show_policy": false,
         "margin_top": 84,
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 52,
+        "padding_bottom": 32
       }
     },
     "458f6e28-5038-49a4-9863-fbfcdee700b1": {

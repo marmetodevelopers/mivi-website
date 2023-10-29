@@ -175,15 +175,16 @@
   opacity: 0.5;
 }
 .button-tertiary {
-  color: #818088;
+  color: #fff;
   font-family: Gilroy;
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 100%;
-  border: 1px solid #ededed;
+  border: 1px solid;
   background: #fff;
   padding: 16px;
+  opacity: 0.1; 
 }
 .button-tertiary.disabled {
   background-color: #241410;
@@ -331,7 +332,7 @@ html.no-js .no-js-hidden {
 .page-width {
   max-width: var(--page-width);
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 2rem;
 }
 body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   max-width: 100%;

@@ -41,10 +41,8 @@
   assign show_desktop_slider = false
   if section.settings.enable_desktop_slider and products_to_display > section.settings.columns_desktop
     assign show_desktop_slider = true
-  endif
-
--%}
-
+  endif 
+-%} 
  <div class="color-{{ section.settings.color_scheme }} isolate gradient {{section.id}}">
   <div class="collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
     <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
@@ -103,8 +101,7 @@
                 {%- else -%}
                   <span class="dot"></span>
                 {%- endif -%}
-              </button>
-             
+              </button> 
             {%- endfor -%}
           </div>
         {%- endif -%}
@@ -212,8 +209,7 @@
                 {%- else -%}
                   <span class="dot"></span>
                 {%- endif -%}
-              </button>
-                
+              </button>   
             {%- endfor -%}
           </div>
         {%- endif -%}
@@ -257,8 +253,7 @@
   {%- endif -%}
 </slideshow-component> 
 
-  {% style%}
-
+{% style%} 
 {%  if  collection_list_size < 4 %} 
 @media screen and (max-width: 749px ) {
   button.slider-button.slider-button--next {
@@ -271,16 +266,9 @@
 @media screen and (min-width: 750px ) {
   .{{section.id}} .slideshow__controls.slider-buttons.no-js-hidden {
     display: none;
-  }  
-  {% comment%} .{{section.id}} button.slider-button.slider-button--next {
-    display: none;
-  }
-  .{{section.id}} button.slider-button.slider-button--prev {
-    display: none;
-  } {% endcomment%}
+  }    
 }   
-{% endif%}
- 
+{% endif%} 
 {% endstyle%}  
 {% schema %}
 {
