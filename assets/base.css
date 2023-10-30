@@ -63,10 +63,7 @@
   font-family: "Gilroy Medium";
   src: url("https://cdn.shopify.com/s/files/1/0828/1391/1317/files/Gilroy-Medium.ttf?v=1697531571") format("truetype");
   font-weight: 800;
-}
-/* p {
-  font-family: "Gilroy Medium";
-} */
+} 
 /* Font style */
 .font-primary {
   font-family: "Playfair Display";
@@ -159,7 +156,7 @@
   font-size: 12px;
   font-style: normal;
   font-weight: 800;
-  line-height: 100%;
+  line-height: 100%; 
   letter-spacing: 2.4px;
   text-transform: capitalize;
   border: none;
@@ -378,8 +375,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   }
   .page-width-desktop {
     max-width: var(--page-width);
-    /* padding: 0 5rem; */
-    padding: 0 130px;
+     padding: 0 130px;
   }
 }
 .isolate {
@@ -2323,8 +2319,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
   }
   .header--middle-left {
     grid-template-areas: "heading navigation icons";
-    /* grid-template-columns: auto auto 1fr;
-    column-gap: 2rem; */
+     
   }
   .header--middle-center:not(.drawer-menu) {
     grid-template-areas: "navigation heading icons";
@@ -2423,8 +2418,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
   display: flex;
   grid-area: icons;
   justify-self: end;
-  /* column-gap:1rem;
-   padding-right: 0.8rem;*/
+   
 }
 .header__icons .shopify-app-block {
   max-width: 4.4rem;
@@ -2465,7 +2459,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
 }
 .header__icon--cart {
   position: relative;
-  /* margin-right: -1.2rem; */
+   
 }
 .header__icon--menu[aria-expanded="true"]::before {
   content: "";
@@ -2648,7 +2642,7 @@ details[open] > .header__submenu {
   padding: 0 1rem;
 }
 .header__menu-item {
-  /* padding: 1.2rem;*/
+   
   text-decoration: none;
   color: rgba(var(--color-foreground), 0.75);
 }
@@ -2676,8 +2670,7 @@ details[open] > .header__menu-item .icon-caret {
 .header__active-menu-item {
   transition: text-decoration-thickness var(--duration-short) ease;
   color: rgb(var(--color-foreground));
-  /* text-decoration: underline; */
-  text-underline-offset: 0.3rem;
+   text-underline-offset: 0.3rem;
 }
 .header__menu-item:hover .header__active-menu-item {
   text-decoration-thickness: 0.2rem;
