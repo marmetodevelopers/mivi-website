@@ -65,18 +65,21 @@
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
             {% endif %}
-          > 
+          >  
             {%- for block in section.blocks -%}
               <div
-                class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                class="footer-block grid__item {% if block.type == 'link_list' %} footer-block--menu {% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
-              >   
+              > 
                 {%- if block.settings.heading != blank -%}
+                  <div class="footer_title">
                   <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
+                    <span class="large-up-hide medium-hide">{% render 'icon-caret_up' %}</span> 
+                   </div>   
                 {%- endif -%}  
                 {%- case block.type -%}
                   {%- when '@app' -%}
@@ -84,33 +87,39 @@
                   {%- when 'text' -%} 
                     <div class="footer-block__details-content rte">
                       {{ block.settings.subtext }}
-                    </div> 
-                    {%- when 'emailtext' -%}  
-                    <div class="footer__email-heading">
-                      <span class="h4 accordion__title">{{ block.settings.email-heading | escape }}</span> 
-                    </div>   
-                      <div class="footer-block__details-mobile rte">
-                        <span>
-                           {% render 'contact-icon' %}
-                        </span>
-                        <span><a href="tel:{{ block.settings.footer-mobile }}">{{ block.settings.footer-mobile }}</a></span>
-                        <div class="footer-block__details-content rte">
+                    </div>  
+                    {%- when 'emailtext' -%}   
+                    <div class="footer__email-heading"> 
+                      <span class="h4 accordion__title">{{ block.settings.email-heading | escape }}</span>
+                      <span class="large-up-hide medium-hide">{% render 'icon-caret_up' %} </span>
+                    </div>  
+                      <div class="footer-block__details-mobile rte show__footer_menus_js">
+                        <div class="footer_contact--details">
+                          <span>
+                            {% render 'contact-icon' %}
+                          </span>
+                          <span><a href="tel:{{ block.settings.footer-mobile }}">{{ block.settings.footer-mobile }}</a></span>
+                        </div>
+                        <div class="footer-block__details-content rte ">
                           {{ block.settings.email__subtext }}
                         </div>
-                      </div> 
-                      <div class="footer-block__details-email rte">
-                         {% render 'email-icon' %}
-                        <span><a href="mailto:{{ block.settings.footer-email }}">{{ block.settings.footer-email }}</a></span>
-                      </div> 
+                        <div class="footer-block__details-email rte show__footer_menus_js">
+                          {% render 'email-icon' %}
+                         <span><a href="mailto:{{ block.settings.footer-email }}">{{ block.settings.footer-email }}</a></span>
+                       </div>                        
+                      </div>
+                        
                       {% when 'button' %}
-                        <div class="footer-button button-tertiary">
+                        <div class="footer-btn-buuton">
+                        <div align="center" class="footer-button button-tertiary">
                           {% if block.settings.button != blank and block.settings.button_link != blank %}
                            <a href="{{block.settings.button_link}}"> {{ block.settings.button }}</a>
                           {% endif %}
                         </div>
+                      </div>
                   {%- when 'link_list' -%}
                     {%- if block.settings.menu != blank -%}
-                      <ul class="footer-block__details-content list-unstyled">
+                      <ul class="footer-block__details-content list-unstyled footer__block-link-list show__footer_menus_js">
                         {%- for link in block.settings.menu.links -%}
                           <li>
                             <a
@@ -178,8 +187,7 @@
                 {%- endcase -%}
               </div>
             {%- endfor -%} 
-          </div>
-        {%- endif -%} 
+         
         <div
           class="footer-block--newsletter{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
           {% if settings.animations_reveal_on_scroll %}
@@ -264,6 +272,8 @@
             {%- render 'social-icons', class: 'footer__list-social' -%}
           {%- endif -%}
         </div>
+      </div>
+    {%- endif -%} 
       </div>
     {%- endunless -%}
   {%- endif -%}
@@ -372,6 +382,7 @@
     </div>
     <div class="footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
       <div class="footer__copyright caption">
+        <small>Copyright</small>
         <small class="copyright__content"
           >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
         </small>

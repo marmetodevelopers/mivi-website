@@ -57,16 +57,13 @@
 @font-face {
   font-family: "Gilroy Regular";
   src: url("https://cdn.shopify.com/s/files/1/0828/1391/1317/files/Gilroy-Regular.ttf?v=1697531321") format("truetype");
-  font-weight: 800;
+  font-weight: 400;
 }
 @font-face {
   font-family: "Gilroy Medium";
   src: url("https://cdn.shopify.com/s/files/1/0828/1391/1317/files/Gilroy-Medium.ttf?v=1697531571") format("truetype");
   font-weight: 800;
 }
-/* p {
-  font-family: "Gilroy Medium";
-} */
 /* Font style */
 .font-primary {
   font-family: "Playfair Display";
@@ -175,16 +172,13 @@
   opacity: 0.5;
 }
 .button-tertiary {
-  color: #fff;
   font-family: Gilroy;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: 100%;
-  border: 1px solid;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.1);
   padding: 16px;
-  opacity: 0.1; 
 }
 .button-tertiary.disabled {
   background-color: #241410;
@@ -378,7 +372,6 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   }
   .page-width-desktop {
     max-width: var(--page-width);
-    /* padding: 0 5rem; */
     padding: 0 130px;
   }
 }
@@ -700,7 +693,6 @@ h6:empty {
   text-underline-offset: 0.3rem;
   color: rgb(var(--color-link));
   background-color: transparent;
-  /* font-size: 1.6rem; */
   font-family: inherit;
 }
 .link--text {
@@ -1208,7 +1200,6 @@ summary::-webkit-details-marker {
 /* component-media */
 .media {
   display: block;
-  /* background-color: rgba(var(--color-foreground), 0.1); */
   position: relative;
   overflow: hidden;
 }
@@ -2192,9 +2183,6 @@ product-info .loading-overlay:not(.hidden) ~ *,
   align-items: center;
   gap: 10px;
 }
-/* .announcement-bar__link:hover {
-  text-decoration: underline;
-} */
 .announcement-bar__link .icon-arrow {
   display: inline-block;
   pointer-events: none;
@@ -2324,8 +2312,6 @@ product-info .loading-overlay:not(.hidden) ~ *,
   }
   .header--middle-left {
     grid-template-areas: "heading navigation icons";
-    /* grid-template-columns: auto auto 1fr;
-    column-gap: 2rem; */
   }
   .header--middle-center:not(.drawer-menu) {
     grid-template-areas: "navigation heading icons";
@@ -2424,8 +2410,6 @@ product-info .loading-overlay:not(.hidden) ~ *,
   display: flex;
   grid-area: icons;
   justify-self: end;
-  /* column-gap:1rem;
-   padding-right: 0.8rem;*/
 }
 .header__icons .shopify-app-block {
   max-width: 4.4rem;
@@ -2466,7 +2450,6 @@ product-info .loading-overlay:not(.hidden) ~ *,
 }
 .header__icon--cart {
   position: relative;
-  /* margin-right: -1.2rem; */
 }
 .header__icon--menu[aria-expanded="true"]::before {
   content: "";
@@ -2649,7 +2632,6 @@ details[open] > .header__submenu {
   padding: 0 1rem;
 }
 .header__menu-item {
-  /* padding: 1.2rem;*/
   text-decoration: none;
   color: rgba(var(--color-foreground), 0.75);
 }
@@ -2677,7 +2659,6 @@ details[open] > .header__menu-item .icon-caret {
 .header__active-menu-item {
   transition: text-decoration-thickness var(--duration-short) ease;
   color: rgb(var(--color-foreground));
-  /* text-decoration: underline; */
   text-underline-offset: 0.3rem;
 }
 .header__menu-item:hover .header__active-menu-item {
