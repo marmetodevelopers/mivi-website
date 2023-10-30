@@ -1,0 +1,172 @@
+ {% style %}
+  .padding-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | divided_by: 2 }}px;
+  }
+  @media (min-width: 750px) {
+    .padding-{{ section.id }} {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+    .image_background-{{ section.id }} {
+      background: {{ section.settings.image_background_color }};
+    }
+      .heading__text--color-{{ section.id }} {
+        color: {{section.settings.heading_color}};
+      }
+      .body_text--color-{{ section.id }} {
+        color: {{section.settings.text_color}};  
+      } 
+    {% endstyle %}
+<div class="padding-{{ section.id }}">
+   <div class="deal-of-the-day-container">
+    <div class="deal-of-the-day-content"> 
+    {% if section.settings.heading != blank  %}
+         <div class="heading__text--color-{{ section.id }} h3"> {{ section.settings.heading }}</div>
+    {% endif %} 
+    {% if section.settings.sub_text != blank %}
+         <div class="body_text--color-{{ section.id }} sub-text-txt deal-of-the-day-sub___text">{{ section.settings.sub_text }}</div>
+    {% endif %}
+    <div class="deal-of-the-day-svg">
+    {% if section.settings.html != blank %}
+         <div class="body_text--color-{{ section.id }} deal-of-the-day-html">  {{ section.settings.html }}</div>
+    {% endif %}  
+           
+    <div id="countdown-timer" class="text-white" data-time="{{section.settings.date}}"> 
+    <strong id="hours" class="bold-number h3"></strong> <span class="slim-countdown-text">H<span class="hide-words">RS</span><span class="timer"></span></span>    
+         <strong id="mins" class="bold-number h3"> 36 </strong> <span class="slim-countdown-text">M<span class="hide-words">INS</span><span class="timer"></span></span>
+         </div> 
+       </div>
+     </div>
+    </div> 
+    </div>
+        <div class="image_background-{{ section.id }} deal-of-the-day-product__info"> 
+            {% assign product = all_products[section.settings.product] %} 
+          <a href="{{ product.url }}" class="product-card__link">
+            <div class="deal-of-the-product__img">
+                {% render 'image', class: '', mobileSrc: product.featured_image, desktopSrc: product.featured_image %} 
+            </div> 
+            <div class="deal_of_the_day_product-content">
+              <span class="deal-product-title">  {{ product.title }}</span>
+            </div>
+            <div class="deal-of-the-day-product-price"> 
+             <span>   {{ product.price | money_without_trailing_zeros }}  </span>
+                <del>{{ product.compare_at_price | money_without_trailing_zeros }}</del>
+            </div>
+            <div class="deal-of-the-day-button">
+            {% if section.settings.button_text != blank and section.settings.button_link != blank %}
+                <div class="deal-of-the-day-button-content">
+                    <a href="{{ section.settings.button_link }}" class="button-view-all font-body-text"> {{ section.settings.button_text }} </a>
+                </div>
+                <div class="deal-of-the-day-svg">
+                    {% render 'greater-icon-black' %}
+                </div>
+                {% endif %}
+            </div>
+        </a>   
+    </div>
+      
+        </div>
+    </div> 
+</div> 
+
+{% schema %}
+{
+  "name": "deal-of-the-day",
+  "tag": "section",
+  "class": "section",
+  "settings": [ 
+      {
+          "type":"product",
+          "id":"product",
+          "label":"Product"
+      },
+      {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button label",
+          "default": "Shop Now"
+           
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        },
+        {
+            "type": "color",
+            "id": "image_background_color",
+            "label": " Image Background color",
+            "default":"#F6F6F7"
+  
+          },  
+        {
+            "type":"text",
+            "id":"heading",
+            "label":"Heading",
+            "default":"Deal of the Day"
+        },
+        {
+            "type": "color",
+            "id": "heading_color",
+            "label": "Headig Color",
+            "default": "#0f0"
+        },
+        {
+            "type":"text",
+            "id":"sub_text",
+            "label":"Sub Text",
+            "default":"ENDS IN"
+        },
+        {
+            "type": "color",
+            "id": "text_color",
+            "label": "Text Color",
+            "default": "#fff"
+            },
+        {
+            "type":"html",
+            "id":"html",
+            "label":"html"
+        },
+        {
+            "type": "text",
+            "id": "date",
+            "label": "Date",
+            "info": "Format: dd-mm-yyyy"
+        },  
+        {
+            "type": "header",
+            "content": "Section padding"
+          },
+        {
+            "type": "range",
+            "id": "padding_top",
+            "min": 10,
+            "max": 100,
+            "step": 5,
+            "unit": "px",
+            "label": "Padding top",
+            "default": 40
+        },
+        {
+            "type": "range",
+            "id": "padding_bottom",
+            "min": 10,
+            "max": 100,
+            "step": 5,
+            "unit": "px",
+            "label": "Padding bottom",
+            "default": 40
+        }
+  ],
+  "presets": [
+      {
+        "name": "deal-of-the-day"
+        }
+    ]
+}
+{% endschema %}
+

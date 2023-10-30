@@ -10,6 +10,22 @@
             "heading_size": "h0"
           }
         },
+        "e1570ec2-4351-4cb9-8cc5-5f23fb495123": {
+          "type": "text",
+          "settings": {
+            "text": "DUOPODS M40",
+            "text_style": "body",
+            "text_color": "#00ff00"
+          }
+        },
+        "79f29ad4-60f1-49ca-b8b0-3e8ac2272670": {
+          "type": "banner-body-text",
+          "settings": {
+            "body_text": "True Wireless Earbuds",
+            "text_style": "caption-with-letter-spacing",
+            "body_text_color": "#ffffff"
+          }
+        },
         "button": {
           "type": "buttons",
           "settings": {
@@ -24,12 +40,16 @@
       },
       "block_order": [
         "heading",
+        "e1570ec2-4351-4cb9-8cc5-5f23fb495123",
+        "79f29ad4-60f1-49ca-b8b0-3e8ac2272670",
         "button"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
+        "image": "shopify:\/\/shop_images\/Group_675_1.png",
+        "mobile_image": "shopify:\/\/shop_images\/Rectangle_4.png",
+        "image_overlay_opacity": 0,
         "image_height": "adapt",
-        "desktop_content_position": "bottom-left",
+        "desktop_content_position": "middle-left",
         "show_text_box": false,
         "desktop_content_alignment": "left",
         "color_scheme": "inverse",
@@ -41,35 +61,238 @@
     },
     "featured_collection": {
       "type": "featured-collection",
+      "custom_css": [
+        "@media screen and (max-width: 749px) {}",
+        "@media screen and (min-width: 750px) {.hideslide {display: none; }}"
+      ],
       "settings": {
-        "title": "Featured products",
+        "title": "True Wireless Earbuds",
         "heading_size": "h2",
-        "description": "",
+        "description": "<p>Engineered to fit. Great calls and music, designed for compact comfort.<\/p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "all",
+        "collection": "earbuds",
         "products_to_show": 8,
-        "columns_desktop": 4,
+        "columns_desktop": 3,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "color_scheme": "background-1",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
         "enable_quick_add": true,
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "swipe_on_mobile": false,
+        "slider_visual": "dots",
         "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "fee80e2b-57dd-40b2-8e88-b46478691cee": {
+      "type": "deal-of-the-day",
+      "settings": {
+        "product": "collar",
+        "button_text": "Shop Now",
+        "button_link": "shopify:\/\/collections\/all",
+        "image_background_color": "#f6f6f7",
+        "heading": "Deal of the Day",
+        "heading_color": "#00ff00",
+        "sub_text": "ENDS IN",
+        "text_color": "#ffffff",
+        "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"23\" height=\"26\" viewbox=\"0 0 23 26\" fill=\"none\">\n  <path d=\"M19.6446 7.73618L21.2792 6.18012L19.6708 4.64842L17.9222 6.31304C16.3247 5.23537 14.4606 4.57119 12.5125 4.38556V2.16571H14.7875V0H7.9625V2.16571H10.2375V4.38556C8.28935 4.57119 6.42526 5.23537 4.82784 6.31304L3.07922 4.64842L1.47079 6.18012L3.10538 7.73618C1.57959 9.27405 0.560385 11.2037 0.173625 13.2868C-0.213134 15.3698 0.0494919 17.5151 0.929071 19.4577C1.80865 21.4003 3.26666 23.0551 5.12304 24.2178C6.97943 25.3804 9.15288 26 11.375 26C13.5971 26 15.7706 25.3804 17.627 24.2178C19.4833 23.0551 20.9413 21.4003 21.8209 19.4577C22.7005 17.5151 22.9631 15.3698 22.5764 13.2868C22.1896 11.2037 21.1704 9.27405 19.6446 7.73618ZM11.375 23.8228C9.57519 23.8228 7.8158 23.3147 6.31931 22.3628C4.82283 21.411 3.65646 20.058 2.9677 18.4751C2.27894 16.8922 2.09873 15.1503 2.44986 13.4699C2.80098 11.7895 3.66767 10.2459 4.94033 9.03441C6.21299 7.82289 7.83445 6.99784 9.59968 6.66358C11.3649 6.32932 13.1946 6.50087 14.8574 7.15654C16.5202 7.81221 17.9414 8.92255 18.9414 10.3471C19.9413 11.7717 20.475 13.4466 20.475 15.16C20.4723 17.4567 19.5127 19.6586 17.8067 21.2827C16.1007 22.9067 13.7876 23.8202 11.375 23.8228Z\" fill=\"#00FF00\"><\/path>\n  <path d=\"M11.3748 8.66309V15.1602H4.5498C4.5498 16.4452 4.95008 17.7014 5.70002 18.7698C6.44996 19.8383 7.51588 20.671 8.76299 21.1628C10.0101 21.6545 11.3824 21.7832 12.7063 21.5325C14.0302 21.2818 15.2463 20.663 16.2008 19.7544C17.1553 18.8457 17.8053 17.6881 18.0687 16.4277C18.332 15.1674 18.1968 13.8611 17.6803 12.6739C17.1637 11.4867 16.2889 10.472 15.1666 9.75805C14.0442 9.04414 12.7247 8.66309 11.3748 8.66309Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
+        "date": "26-10-2023",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "94a0a182-a3aa-4bc1-964f-23cfd135c254": {
+      "type": "featured-collection",
+      "custom_css": [
+        "@media screen and (min-width: 990px) {.grid--3-col-desktop .grid__item {width: calc(30% - var(--grid-desktop-horizontal-spacing) * 2 \/ 3); max-width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 2 \/ 3); }}",
+        ".slider-buttons {justify-content: space-between;}",
+        "@media screen and (max-width: 749px) {.slider-buttons {justify-content: center; }}"
+      ],
+      "settings": {
+        "title": "Wireless Speakers",
+        "heading_size": "h2",
+        "description": "<p>Unmatched sound signature with powerfull bass, designed to be carried with you.<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "wireless-speakers",
+        "products_to_show": 5,
+        "columns_desktop": 5,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "slider_visual": "dots",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "af3bf248-59fd-40c6-b0ed-28193696e6ec": {
+      "type": "featured-collection",
+      "custom_css": [
+        "@media screen and (min-width: 990px) {.grid--3-col-desktop .grid__item {width: calc(30% - var(--grid-desktop-horizontal-spacing) * 2 \/ 3); max-width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 2 \/ 3); }}",
+        "@media screen and (min-width: 750px) {button.slider-button.slider-button--next {display: none; } button.slider-button.slider-button--prev {display: none; }}"
+      ],
+      "settings": {
+        "title": "Smart Phone Chargers",
+        "heading_size": "h2",
+        "description": "<p>Safely charge your mobile phones<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "smart-phone-chargers",
+        "products_to_show": 5,
+        "columns_desktop": 5,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "slider_visual": "dots",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "d9c0f073-8abf-43ad-94fc-a5e6d6061436": {
+      "type": "homepage-more-products",
+      "blocks": {
+        "75329905-3a84-4e28-957c-6ab9b27fd275": {
+          "type": "image-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DSC_6298_1_1.png",
+            "button_text": "SHOP SPEAKERS",
+            "button_link": "shopify:\/\/collections\/smart-phone-chargers"
+          }
+        },
+        "ffd7709e-fd8f-4656-80d8-db4f19d035cd": {
+          "type": "image-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DSC_6298_1.png",
+            "button_text": "SHOP EARPHONES",
+            "button_link": "shopify:\/\/collections\/earbuds"
+          }
+        },
+        "55193d12-8e72-4194-bff3-6035c29d68fa": {
+          "type": "image-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/android_1.png",
+            "button_text": "SHOP CABLES",
+            "button_link": "shopify:\/\/collections\/wireless-speakers"
+          }
+        },
+        "5034830b-9005-479d-9c97-e74d61044186": {
+          "type": "image-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_181_1.png",
+            "button_text": "SHOP CHARGERS",
+            "button_link": "shopify:\/\/collections\/smart-phone-chargers"
+          }
+        }
+      },
+      "block_order": [
+        "75329905-3a84-4e28-957c-6ab9b27fd275",
+        "ffd7709e-fd8f-4656-80d8-db4f19d035cd",
+        "55193d12-8e72-4194-bff3-6035c29d68fa",
+        "5034830b-9005-479d-9c97-e74d61044186"
+      ],
+      "settings": {
+        "heading": "More Products",
+        "heading_color": "#4b4955",
+        "heading_size": "h2",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "e7889233-c385-40c8-8f2a-3389dcbfa086": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--21280538493205__e7889233-c385-40c8-8f2a-3389dcbfa086-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Union_7.png",
+            "title": "",
+            "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"34\" height=\"28\" viewbox=\"0 0 34 28\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M27.943 0.362793C21.8107 5.09792 17.7742 13.0933 17.7742 18.6047C17.7742 23.8055 21.4225 27.3763 25.7695 27.3763C30.0389 27.3763 34.5412 22.9517 32.911 17.5179C24.9933 14.3353 22.354 6.65042 28.4088 0.750918L27.943 0.362793ZM10.1669 0.362793C4.03455 5.09792 -0.00195312 13.0933 -0.00195312 18.6047C-0.00195312 23.8055 3.64642 27.3763 7.99342 27.3763C12.2628 27.3763 16.765 22.9517 15.1349 17.5179C7.21717 14.3353 4.57792 6.65042 10.6327 0.750918L10.1669 0.362793Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
+            "text": "<p>A pair of sport headphones must ensure a perfect fit alongside an energetic and punchy sound to even approach worthiness. And the DuoPods M40 have absolutely achieved this..<\/p>",
+            "link_label": "Anant Kishore",
+            "link": ""
+          }
+        },
+        "template--21280538493205__e7889233-c385-40c8-8f2a-3389dcbfa086-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Union_7.png",
+            "title": "",
+            "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"34\" height=\"28\" viewbox=\"0 0 34 28\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M27.943 0.362793C21.8107 5.09792 17.7742 13.0933 17.7742 18.6047C17.7742 23.8055 21.4225 27.3763 25.7695 27.3763C30.0389 27.3763 34.5412 22.9517 32.911 17.5179C24.9933 14.3353 22.354 6.65042 28.4088 0.750918L27.943 0.362793ZM10.1669 0.362793C4.03455 5.09792 -0.00195312 13.0933 -0.00195312 18.6047C-0.00195312 23.8055 3.64642 27.3763 7.99342 27.3763C12.2628 27.3763 16.765 22.9517 15.1349 17.5179C7.21717 14.3353 4.57792 6.65042 10.6327 0.750918L10.1669 0.362793Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
+            "text": "<p>A pair of sport headphones must ensure a perfect fit alongside an energetic and punchy sound to even approach worthiness. And the DuoPods M40 have absolutely achieved this.<\/p>",
+            "link_label": "Anant Kishore",
+            "link": ""
+          }
+        },
+        "template--21280538493205__e7889233-c385-40c8-8f2a-3389dcbfa086-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Union_7.png",
+            "title": "",
+            "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"34\" height=\"28\" viewbox=\"0 0 34 28\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M27.943 0.362793C21.8107 5.09792 17.7742 13.0933 17.7742 18.6047C17.7742 23.8055 21.4225 27.3763 25.7695 27.3763C30.0389 27.3763 34.5412 22.9517 32.911 17.5179C24.9933 14.3353 22.354 6.65042 28.4088 0.750918L27.943 0.362793ZM10.1669 0.362793C4.03455 5.09792 -0.00195312 13.0933 -0.00195312 18.6047C-0.00195312 23.8055 3.64642 27.3763 7.99342 27.3763C12.2628 27.3763 16.765 22.9517 15.1349 17.5179C7.21717 14.3353 4.57792 6.65042 10.6327 0.750918L10.1669 0.362793Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
+            "text": "<p>A pair of sport headphones must ensure a perfect fit alongside an energetic and punchy sound to even approach worthiness. And the DuoPods M40 have absolutely achieved this.<\/p>",
+            "link_label": "Anant Kishore",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21280538493205__e7889233-c385-40c8-8f2a-3389dcbfa086-column-1",
+        "template--21280538493205__e7889233-c385-40c8-8f2a-3389dcbfa086-column-2",
+        "template--21280538493205__e7889233-c385-40c8-8f2a-3389dcbfa086-column-3"
+      ],
+      "settings": {
+        "title": "Our Customers Us",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
         "padding_bottom": 36
       }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "featured_collection",
+    "fee80e2b-57dd-40b2-8e88-b46478691cee",
+    "94a0a182-a3aa-4bc1-964f-23cfd135c254",
+    "af3bf248-59fd-40c6-b0ed-28193696e6ec",
+    "d9c0f073-8abf-43ad-94fc-a5e6d6061436",
+    "e7889233-c385-40c8-8f2a-3389dcbfa086"
   ]
 }

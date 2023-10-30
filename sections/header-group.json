@@ -29,7 +29,7 @@
       "settings": {
         "color_scheme": "background-1",
         "show_line_separator": false,
-        "show_social": true,
+        "show_social": false,
         "auto_rotate": false,
         "change_slides_speed": 5,
         "enable_country_selector": false,
@@ -38,93 +38,10 @@
     },
     "header": {
       "type": "header",
-      "blocks": {
-        "ed62ec5a-54fd-47ba-9007-4bdf9965f6d9": {
-          "type": "block",
-          "settings": {
-            "megamenu_link_text": "Headphones",
-            "megamenu_link_text_level2": "True Wireless Earphones",
-            "megamenu_image": "shopify:\/\/shop_images\/4_4.png",
-            "megamenu_text": "Duopods M40"
-          }
-        },
-        "8bc7d41e-0693-4e19-9762-7d62684159f4": {
-          "type": "block",
-          "settings": {
-            "megamenu_link_text": "Headphones",
-            "megamenu_link_text_level2": "True Wireless Earphones",
-            "megamenu_image": "shopify:\/\/shop_images\/4_4.png",
-            "megamenu_text": "Duopods M40"
-          }
-        },
-        "ee2c478f-66e0-4e4f-9412-6793221b0755": {
-          "type": "block",
-          "settings": {
-            "megamenu_link_text": "Headphones",
-            "megamenu_link_text_level2": "True Wireless Earphones",
-            "megamenu_image": "shopify:\/\/shop_images\/4_4.png",
-            "megamenu_text": "Duopods M40"
-          }
-        },
-        "5a35bf44-cf8c-429f-89c2-cbe65d5f98a5": {
-          "type": "block",
-          "settings": {
-            "megamenu_link_text": "Headphones",
-            "megamenu_link_text_level2": "True Wireless Earphones",
-            "megamenu_image": "shopify:\/\/shop_images\/4_4.png",
-            "megamenu_text": "Duopods M40"
-          }
-        },
-        "53ad931d-e5b9-481b-ab24-643093d2b1bf": {
-          "type": "block",
-          "settings": {
-            "megamenu_link_text": "Headphones",
-            "megamenu_link_text_level2": "Collar Wireless Earphones",
-            "megamenu_image": "shopify:\/\/shop_images\/4_4.png",
-            "megamenu_text": "Duopods M40"
-          }
-        },
-        "15411042-f376-4414-ac81-e03eb8739691": {
-          "type": "block",
-          "settings": {
-            "megamenu_link_text": "Headphones",
-            "megamenu_link_text_level2": "Collar Wireless Earphones",
-            "megamenu_image": "shopify:\/\/shop_images\/4_4.png",
-            "megamenu_text": "Duopods M40"
-          }
-        },
-        "dd1e5381-8c1b-41a9-ac0c-f0f095057c82": {
-          "type": "block",
-          "settings": {
-            "megamenu_link_text": "Headphones",
-            "megamenu_link_text_level2": "Collar Wireless Earphones",
-            "megamenu_image": "shopify:\/\/shop_images\/4_4.png",
-            "megamenu_text": "Duopods M40"
-          }
-        },
-        "38382b8f-330d-4100-b408-c03f86f90a0b": {
-          "type": "block",
-          "settings": {
-            "megamenu_link_text": "Headphones",
-            "megamenu_link_text_level2": "Collar Wireless Earphones",
-            "megamenu_image": "shopify:\/\/shop_images\/4_4.png",
-            "megamenu_text": "Duopods M40"
-          }
-        }
-      },
-      "block_order": [
-        "ed62ec5a-54fd-47ba-9007-4bdf9965f6d9",
-        "8bc7d41e-0693-4e19-9762-7d62684159f4",
-        "ee2c478f-66e0-4e4f-9412-6793221b0755",
-        "5a35bf44-cf8c-429f-89c2-cbe65d5f98a5",
-        "53ad931d-e5b9-481b-ab24-643093d2b1bf",
-        "15411042-f376-4414-ac81-e03eb8739691",
-        "dd1e5381-8c1b-41a9-ac0c-f0f095057c82",
-        "38382b8f-330d-4100-b408-c03f86f90a0b"
-      ],
       "settings": {
         "logo_position": "middle-left",
         "menu": "main-menu",
+        "mobile-menu": "mobile-menu",
         "menu_type_desktop": "mega",
         "sticky_header_type": "always",
         "show_line_separator": true,
