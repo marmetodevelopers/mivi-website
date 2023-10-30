@@ -15,10 +15,10 @@
         {% render 'icon-hamburger' %}
         {% render 'icon-close' %}
       </span>
-    </summary>
+    </summary> 
     <div id="menu-drawer" class="gradient menu-drawer motion-reduce color-{{ section.settings.menu_color_scheme }}">
        <div class="menu-drawer__inner-container bg-color menu-drawer__main">
-         <div class="menu-drawer__navigation-container">
+          <div class="menu-drawer__navigation-container">
           <nav class="menu-drawer__navigation">
             <ul class="menu-drawer__menu has-submenu list-menu" role="list">
               {%- for link in section.settings['mobile-menu'].links -%}
@@ -37,7 +37,7 @@
                         {% render 'icon-caret' %}
                       </summary>
                       <div
-                          id="link-{{ link.handle | escape }}"
+                           id="link-{{ link.handle | escape }}"
                           class="menu-drawer__submenu has-submenu gradient motion-reduce"
                           tabindex="-1">
                           <div class="menu-drawer__inner-submenu">
@@ -61,14 +61,14 @@
                                       <div class="mobile_menu_product_imag">
                                         {% render 'image' class="" desktopSrc:childlink.object.featured_image %}
                                       </div> 
-                                      <div class="childlink_title text__txt-body font-bold">   {{ childlink.object.title }} </div>
-                                   </a>   
+                                       <div class="childlink_title text__txt-body font-bold">   {{ childlink.object.title }} </div>
+                                    </a>   
                                      {%- else -%}
                                     <details id="Details-menu-drawer-{{ link.handle }}-{{ childlink.handle }}">
                                       <summary
                                         id="HeaderDrawer-{{ link.handle }}-{{ childlink.handle }}"
-                                        class="menu-drawer__menu-item link link--text list-menu__item focus-inset" 
-                                      >
+                                         class="menu-drawer__menu-item link link--text list-menu__item focus-inset" 
+                                       >
                                         {{ childlink.title | escape }}
  
                                         {% render 'icon-arrow' %}
@@ -80,23 +80,23 @@
                                         <button
                                           class="menu-drawer__close-button link link--text focus-inset"
                                           aria-expanded="true"
-                                        >
-
+                                        > 
                                         </button>
                                         <ul
                                           class="menu-drawer__menu list-menu"
                                           role="list"
-                                          tabindex="-1"
+                                          tabindex="-1" 
                                         >
                                          </ul>  
                                        </div>
+ 
                                     </details>  
                                   {%- endif -%}
                                 </li>
                               {%- endfor -%}  
                             </details>
                    {%- else -%}
-                    <a
+                     <a
                       id="HeaderDrawer-{{ link.handle }}"
                       href="{{ link.url }}"
                       class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"
@@ -105,8 +105,7 @@
                       {% endif %}
                     >
                       {{ link.title | escape }}
-                    </a>
- 
+                    </a> 
                   {%- endif -%}
                 </li>
               {%- endfor -%}
@@ -118,8 +117,7 @@
                 href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
                 class="menu-drawer__account link focus-inset h5 medium-hide large-up-hide"
               >
-                {% render 'icon-account' %}
-                
+                {% render 'icon-account' %} 
                 {%- liquid
                   if customer
                     echo 'customer.account_fallback' | t
@@ -164,8 +162,7 @@
                       </div>
                       <button class="button button--tertiary">{{ 'localization.update_country' | t }}</button>
                     {%- endform -%}
-                  </noscript>
-
+                  </noscript> 
                   <localization-form class="no-js-hidden">
                     {%- form 'localization', id: 'HeaderCountryMobileForm', class: 'localization-form' -%}
                       <div>
@@ -176,8 +173,7 @@
                       </div>
                     {%- endform -%}
                   </localization-form>
-                {% endif %}
-
+                {% endif %} 
                 {%- if localization.available_languages and localization.available_languages.size > 1 -%}
                   <noscript>
                     {%- form 'localization',
@@ -209,8 +205,7 @@
                       </div>
                       <button class="button button--tertiary">{{ 'localization.update_language' | t }}</button>
                     {%- endform -%}
-                  </noscript>
-
+                  </noscript> 
                   <localization-form class="no-js-hidden">
                     {%- form 'localization', id: 'HeaderLanguageMobileForm', class: 'localization-form' -%}
                       <div>
@@ -224,7 +219,7 @@
                 {%- endif -%}
               </div>
             {%- endif -%}
-            <ul class="list list-social list-unstyled" role="list">
+            <ul class="list list-social list-unstyled small-hide" role="list">
               {%- if settings.social_twitter_link != blank -%}
                 <li class="list-social__item">
                   <a href="{{ settings.social_twitter_link }}" class="list-social__link link">

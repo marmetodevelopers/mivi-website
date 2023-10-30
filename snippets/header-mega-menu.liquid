@@ -46,9 +46,9 @@
                       >
                         {{ childlink.title | escape }}
                       </a>
-                       <div class="megamenu_images_container">
+                        <div class="megamenu_images_container">
                        </div>
-                      {%- if childlink.links != blank -%}
+                       {%- if childlink.links != blank -%}
                         <ul class="list-unstyled" role="list">
                           {%- for grandchildlink in childlink.links -%}
                             <li>
