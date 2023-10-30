@@ -2187,9 +2187,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
   align-items: center;
   gap: 10px;
 }
-/* .announcement-bar__link:hover {
-  text-decoration: underline;
-} */
+ 
 .announcement-bar__link .icon-arrow {
   display: inline-block;
   pointer-events: none;
