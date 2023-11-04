@@ -16,13 +16,11 @@
         <span>Results for</span>
         <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
        "{{- collection.title | escape -}}"
-      </h1>
-
+      </h1> 
       {%- if section.settings.show_collection_description -%}
         <div class="collection-hero__description rte">{{ collection.description }}</div>
       {%- endif -%}
-    </div>
-
+    </div>  
     {%- if section.settings.show_collection_image and collection.image -%}
       <div class="collection-hero__image-container media gradient">
         <img
@@ -41,11 +39,10 @@
           width="{{ collection.image.width }}"
           height="{{ collection.image.height }}"
         >
-      </div>
-    {%- endif -%}
-  </div>
-</div>
-
+      </div> 
+    {%- endif -%} 
+  </div> 
+</div> 
 {% schema %}
 {
   "name": "t:sections.main-collection-banner.name",

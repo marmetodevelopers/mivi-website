@@ -116,12 +116,10 @@
                  
                     {{ block.settings.html }} 
                      
-                    <p class="announcement-bar__message font-semibold line-text-height font-body-text">
-                      <span>{{ block.settings.text | escape }}</span>
-                     
-                      {%- if block.settings.link != blank -%}
-                          
-                   {% comment %}     {% render 'icon-arrow' %}{% endcomment %}
+                    <p class="announcement-bar__message">
+                      <span>{{ block.settings.text | escape }}</span> 
+                      {%- if block.settings.link != blank -%}   
+                        <span class="hidden"> {% render 'icon-arrow' %} </span>
                       {%- endif -%}
                     </p>
                     {%- if block.settings.link != blank -%}

@@ -34,7 +34,7 @@
         <h2 class="title inline-richtext {{ section.settings.heading_size }}">
           {% assign multicolumnLoop = section.settings.title | split: ' ' %}
           {% for loop in multicolumnLoop  %}
-            <h2>{{ loop }}</h2>
+            <h4>{{ loop }}</h4>
             {% if forloop.index == 2 %}
                {% render 'icon-heart' %}
             {% endif %}
@@ -123,7 +123,10 @@
                     }}
                   </div>
                 </div>
-              {%- endif -%}      
+              {%- endif -%} 
+              {%- if block.settings.background_html != blank -%}
+                <span class="multicolumn-bacground__svg">{{ block.settings.background_html }}</span>
+              {%- endif -%}     
               <div class="multicolumn-card__info">
                 {%- if block.settings.title != blank -%}
                   <h3 class="inline-richtext">{{ block.settings.title }}</h3>
@@ -132,11 +135,11 @@
                   <span class="multicolumn-svg">{{ block.settings.html }}</span>
                 {%- endif -%} 
                 {%- if block.settings.text != blank -%}
-                  <div class="rte multicolumn-text text__txt-body">{{ block.settings.text }}</div>
+                  <div class="rte multicolumn-text small-element-5">{{ block.settings.text }}</div>
                 {%- endif -%}
                 {%- if block.settings.link_label != blank -%}
                   <a
-                    class="link animate-arrow"
+                    class="link animate-arrow small-element-5"
                     {% if block.settings.link == blank %}
                       role="link" aria-disabled="true"
                     {% else %}
@@ -393,6 +396,11 @@
           "type": "image_picker",
           "id": "image",
           "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+        },
+        {
+        "type":"html",
+        "id":"background_html",
+        "label":"Background Html"
         },
         {
           "type": "inline_richtext",

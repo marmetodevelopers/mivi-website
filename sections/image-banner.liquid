@@ -60,8 +60,7 @@
 <div
   id="Banner-{{ section.id }}"
   class="banner banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank %} banner--stacked{% endif %}{% if section.settings.image_height == 'adapt' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
->
-
+> 
   {% render 'image', class: "image_banner_home", mobileSrc: section.settings.mobile_image, desktopSrc: section.settings.image  %} 
   <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
@@ -72,15 +71,15 @@
               class="banner__heading inline-richtext{{ block.settings.heading_size }}"
               {{ block.shopify_attributes }}
             >
-           <h2 class="h1 banner-block__heading">{{ block.settings.heading }}</h2>
+           <h2 class="h2 banner-block__heading">{{ block.settings.heading }}</h2>
             </h2>
           {%- when 'text' -%}
-            <div class="banner__text rte h3 font-bold1{{ block.settings.text_style }} banner_text--color" {{ block.shopify_attributes }}>
+            <div class="banner__text rte h6 {{ block.settings.text_style }} banner_text--color" {{ block.shopify_attributes }}>
               <p class=banner-txt-text>{{ block.settings.text }}</p>
             </div>
           {% when 'banner-body-text'%}
-            <div class="banner__text rte sub-text-txt {{ block.settings.text_style }} banner_body_text--color" {{ block.shopify_attributes }}>
-              <p class="sub-text-txt font-bold1"> {{ block.settings.body_text}} </p>
+            <div class="banner__text rte {{ block.settings.text_style }} banner_body_text--color" {{ block.shopify_attributes }}>
+              <p class="sub-text-txt"> {{ block.settings.body_text}} </p>
             </div>
           {%- when 'buttons' -%}
             <div

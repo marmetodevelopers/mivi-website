@@ -9,7 +9,7 @@
   left: 0;
   overflow-y: auto;
   padding-bottom: 40px;
-  padding-top: 40px;  
+  padding-top: 40px;
   position: absolute;
   right: 0;
   top: 100%;
@@ -27,7 +27,6 @@
 .mega-menu[open] .mega-menu__content {
   opacity: 1;
   transform: translateY(0);
-   
 }
 .mega-menu__list {
   /* display: grid; */
@@ -47,6 +46,7 @@
 }
 .mega-menu__link--level-2 {
   font-weight: bold;
+  letter-spacing: 2.8px;
 }
 .header--top-center .mega-menu__list {
   display: flex;
@@ -74,10 +74,8 @@
   padding-top: 39px;
   color: #4B4955;
   font-style: normal;
-  line-height: 100%;  
+  line-height: 100%;
   letter-spacing: 2.8px;
   text-transform: uppercase;
   text-decoration: none;
 }
-
-

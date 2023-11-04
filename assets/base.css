@@ -49,7 +49,7 @@
   src: url("https://cdn.shopify.com/s/files/1/0081/9871/7493/files/PlayfairDisplay-Regular_5a5e3a87-b711-429c-b197-2b616f6eea72.ttf?v=1673240862") format("truetype");
   font-weight: 400;
 }
-@font-face {
+/* @font-face {
   font-family: "Gilroy";
   src: url("https://cdn.shopify.com/s/files/1/0828/1391/1317/files/Gilroy-Black.ttf?v=1697530724") format("truetype");
   font-weight: 800;
@@ -58,11 +58,26 @@
   font-family: "Gilroy Regular";
   src: url("https://cdn.shopify.com/s/files/1/0828/1391/1317/files/Gilroy-Regular.ttf?v=1697531321") format("truetype");
   font-weight: 400;
-}
+} */
 @font-face {
   font-family: "Gilroy Medium";
   src: url("https://cdn.shopify.com/s/files/1/0828/1391/1317/files/Gilroy-Medium.ttf?v=1697531571") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Gilroy black";
+  src: url("https://cdn.shopify.com/s/files/1/0828/1391/1317/files/Gilroy-Black.ttf?v=1698601278") format("truetype");
   font-weight: 800;
+}
+@font-face {
+  font-family: "Gilroy bold";
+  src: url("https://cdn.shopify.com/s/files/1/0828/1391/1317/files/Gilroy-Bold.ttf?v=1698601278") format("truetype");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Gilroy semibold";
+  src: url("https://cdn.shopify.com/s/files/1/0828/1391/1317/files/Gilroy-SemiBold.ttf?v=1698601278") format("truetype");
+  font-weight: 600;
 }
 /* Font style */
 .font-primary {
@@ -84,7 +99,7 @@
   font-style: italic;
 }
 .font-bold1 {
-  font-weight: 800 !important;
+  font-weight: 800;
 }
 /* Flex */
 .flex {
@@ -172,13 +187,13 @@
   opacity: 0.5;
 }
 .button-tertiary {
-  font-family: Gilroy;
+  font-family: Gilroy semibold;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: 100%;
   background: rgba(255, 255, 255, 0.1);
-  padding: 16px;
+  padding: 16px 0;
 }
 .button-tertiary.disabled {
   background-color: #241410;
@@ -193,17 +208,13 @@
   border: none;
   background: none;
   color: #fff;
-  font-size: 20px;
+  font-size: calc(14px + (24 - 14) * (100vw - 375px) / (1440 - 375));
   font-weight: 800;
   line-height: 100%;
   font-style: normal;
   letter-spacing: 4.8px;
   text-transform: uppercase;
-}
-@media only screen and (max-width:749px) {
-  .button-view-all {
-    font-size: 14px;
-  }
+  font-family: Gilroy bold;
 }
 .button-view-all.disabled {
   background-color: #241410;
@@ -500,82 +511,116 @@ h5,
     font-weight: 800;
   }
 }
-h1,
-.h1 {
-  font-size: calc(var(--font-heading-scale) * 3.6rem);
-  font-weight: 800;
-}
-@media only screen and (min-width: 750px) {
-  h1,
-  .h1 {
-    font-size: calc(var(--font-heading-scale) * 6.4rem);
-    font-weight: 800;
-  }
-}
 h2,
 .h2 {
-  font-size: calc(var(--font-heading-scale) * 3.2rem);
+  font-family: Gilroy black;
+  font-size: calc(36px + (64 - 36) * (100vw - 375px) / (1440 - 375));
   font-weight: 800;
-}
-@media only screen and (min-width: 750px) {
-  h2,
-  .h2 {
-    font-size: calc(var(--font-heading-scale) * 4.8rem);
-    font-weight: 800;
-  }
+  line-height: 100%;
 }
 h3,
 .h3 {
-  font-size: calc(var(--font-heading-scale) * 2.4rem);
+  font-family: Gilroy black;
+  font-size: calc(36px + (54 - 36) * (100vw - 375px) / (1440 - 375));
   font-weight: 800;
-}
-@media only screen and (min-width: 750px) {
-  h3,
-  .h3 {
-    font-size: calc(var(--font-heading-scale) * 3.6rem);
-    font-weight: 800;
-  }
+  line-height: 100%;
 }
 h4,
 .h4 {
-  font-size: calc(var(--font-heading-scale) * 1.4rem);
-}
-@media only screen and (min-width: 750px) {
-  h4,
-  .h4 {
-    font-size: calc(var(--font-heading-scale) * 2.4rem);
-    font-weight: 500;
-  }
+  font-family: Gilroy black;
+  font-size: calc(32px + (48 - 32) * (100vw - 375px) / (1440 - 375));
+  font-weight: 800;
+  line-height: 100%;
 }
 h5,
 .h5 {
-  font-size: calc(var(--font-heading-scale) * 1.4rem);
-}
-@media only screen and (min-width: 750px) {
-  h5,
-  .h5 {
-    font-size: calc(var(--font-heading-scale) * 1.4rem);
-  }
+  font-family: Gilroy black;
+  font-size: calc(32px + (40 - 32) * (100vw - 375px) / (1440 - 375));
+  font-weight: 800;
+  line-height: 100%;
 }
 h6,
 .h6 {
-  color: rgba(var(--color-foreground), 0.75);
-  margin-block-start: 1.67em;
-  margin-block-end: 1.67em;
+  font-family: Gilroy black;
+  font-size: calc(24px + (36 - 24) * (100vw - 375px) / (1440 - 375));
+  font-weight: 800;
+  line-height: 100%;
+}
+.small-element {
+  font-family: Gilroy Medium;
+  font-size: calc(14px + (24 - 14) * (100vw - 375px) / (1440 - 375));
+  font-weight: 500;
+  line-height: 32px;
+}
+@media screen and (max-width: 990px) {
+  .small-element {
+    line-height: 17px;
+  }
+}
+.small-element-1 {
+  font-family: Gilroy black;
+  font-size: calc(20px + (24 - 20) * (100vw - 375px) / (1440 - 375));
+  font-weight: 800;
+  line-height: 100%;
+  letter-spacing: 2.4px;
 }
 .font-body-text {
   font-size: 12px;
+  font-family: Gilroy black;
+  font-weight: 800;
+  letter-spacing: 100%;
+  letter-spacing: 2.4px;
+}
+.small-element-2 {
+  font-family: Gilroy Medium;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
 }
 .text__txt-body {
   font-size: 18px;
+  font-weight: 700;
+  line-height: 100%;
+  font-family: 'Gilroy semibold';
+}
+.small-element-3 {
+  font-size: 20px;
+  line-height: 100%;
+  font-family: 'Gilroy black';
+}
+.small-element-4 {
+  font-size: calc(10px + (20 - 10) * (100vw - 375px) / (1440 - 375));
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 4px;
+  font-family: Gilroy Medium;
+}
+.small-element-5 {
+  font-size: calc(16px + (18 - 16) * (100vw - 375px) / (1440 - 375));
+  font-weight: 600;
+  line-height: 160%;
+  font-family: Gilroy Medium;
 }
 .sub-text-txt {
-  font-size: 14px;
+  font-family: Gilroy bold;
+  font-size: calc(14px + (20 - 14) * (100vw - 375px) / (1440 - 375));
+  font-weight: 800;
+  line-height: 100%;
 }
-@media only screen and (min-width: 750px) {
-  .sub-text-txt {
-    font-size: 20px;
-  }
+.small-element-6 {
+  font-size: calc(14px + (18 - 14) * (100vw - 375px) / (1440 - 375));
+  color: #fff;
+  font-weight: 600;
+  line-height: 120%;
+  font-family: 'Gilroy Medium';
+}
+.small-element-7 {
+  font-size: calc(16px + (20 - 16) * (100vw - 375px) / (1440 - 375));
+  font-weight: 800;
+  line-height: 100%;
+  letter-spacing: 4px;
+  color: #fff;
+  font-family: 'Gilroy black';
 }
 blockquote {
   font-style: italic;
@@ -1196,6 +1241,9 @@ summary::-webkit-details-marker {
   .grid--1-col-tablet-down.grid--peek .grid__item {
     width: calc(100% - var(--grid-desktop-horizontal-spacing) - 3rem);
   }
+}
+.slider--desktop.grid--peek.grid--2-col-desktop .grid__item {
+  width: calc(175% - 3rem);
 }
 /* component-media */
 .media {
@@ -2194,11 +2242,13 @@ product-info .loading-overlay:not(.hidden) ~ *,
   text-align: center;
   padding: 1.4rem 0;
   margin: 0;
-  letter-spacing: 0.1rem;
   min-height: 3.8rem;
   font-style: normal;
   text-transform: capitalize;
   color: #fff;
+  font-size: 12px;
+  font-family: Gilroy semibold;
+  line-height: 100%;
 }
 .announcement-bar-slider--fade-in-next .announcement-bar__message,
 .announcement-bar-slider--fade-in-previous .announcement-bar__message,
@@ -2295,7 +2345,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
 }
 @media screen and (min-width: 990px) {
   .header {
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: minmax(100px, 1fr) auto 1fr;
   }
   .header--top-left,
   .header--middle-left:not(.header--has-menu) {
@@ -2641,6 +2691,8 @@ details[open] > .header__submenu {
 .header__menu-item span {
   transition: text-decoration var(--duration-short) ease;
   color: #fff;
+  font-family: 'Gilroy semibold';
+  letter-spacing: 0;
 }
 .header__menu-item:hover span {
   text-decoration: underline;
@@ -2956,7 +3008,7 @@ details-disclosure > details {
   transition: text-decoration-thickness var(--duration-short) ease;
 }
 .rte a:hover {
-  color: rgb(var(--color-link));
+  /* color: rgb(var(--color-link)); */
   text-decoration-thickness: 0.2rem;
 }
 .rte blockquote {
@@ -3223,5 +3275,16 @@ details-disclosure > details {
   .animate--hover-vertical-lift .button:not([disabled]).button--secondary:hover:after {
     --border-offset: 0px;
     /* Prevent the border from growing on buttons when this effect is on. */
+  }
+}
+/* footer for mobile */
+@media only screen and (max-width:990px) {
+  .footer__trigger-accordion + .footer-block__details-mobile,
+  .footer__trigger-accordion + .footer-block__details-content {
+    display: none;
+  }
+  .active .footer-block__details-mobile,
+  .active .footer-block__details-content {
+    display: block;
   }
 }

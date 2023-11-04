@@ -1,20 +1,12 @@
-/* .footer {
-  border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
-} */
 .footer:not(.color-background-1) {
   border-top: none;
 }
 .footer__content-top {
   display: block;
 }
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 990px) {
   .footer .grid {
-    display: block;
-  }
-  .footer-block.grid__item {
-    padding: 0;
-    margin: 4rem 0;
-    width: 100%;
+    display: flex;
   }
   .footer-block.grid__item:first-child {
     margin-top: 0;
@@ -43,7 +35,7 @@
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 990px) {
   .footer__content-bottom {
     flex-wrap: wrap;
     padding-top: 0;
@@ -101,7 +93,6 @@
 .footer-block--newsletter {
   display: flex;
   align-items: flex-end;
-  /* margin-top: 3rem; */
   gap: 1rem;
 }
 .footer-block--newsletter:only-child {
@@ -138,6 +129,7 @@
 }
 .footer__list-social.list-social:only-child {
   justify-content: center;
+  flex-wrap: nowrap;
 }
 .footer-block__newsletter {
   text-align: center;
@@ -177,7 +169,7 @@
     text-align: right;
   }
 }
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 990px) {
   /*
     On a small screen we want all the items to be centered
     because they will be stacked.
@@ -264,10 +256,10 @@
   .footer-block__details-content {
     margin-bottom: 0;
   }
-  .footer-block__details-content > p,
+  /* .footer-block__details-content > p,
   .footer-block__details-content > li {
     padding: 0;
-  }
+  } */
   .footer-block:only-child li {
     display: inline;
   }
@@ -321,7 +313,7 @@
 .footer-block-image.right {
   justify-content: flex-end;
 }
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 990px) {
   .footer-block-image,
   .footer-block-image.left,
   .footer-block-image.center,
@@ -364,7 +356,7 @@
   max-width: 20rem;
 }
 .copyright__content {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 .copyright__content a {
   color: currentColor;
@@ -403,7 +395,7 @@
 }
 /* check for flexbox gap in older Safari versions */
 @supports not (inset: 10px) {
-  @media screen and (max-width: 749px) {
+  @media screen and (max-width: 990px) {
     .footer .grid {
       margin-left: 0;
     }

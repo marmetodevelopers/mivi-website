@@ -318,7 +318,7 @@
                       open
                     {% endif %}
                   >
-                    <summary class="facets__summary caption-large focus-offset small-hide medium-hide large-up-hide">
+                    <summary class="facets__summary caption-large focus-offset hidden">
                       <div>
                         <span>{{ filter.label | escape }}</span>
                         {% render 'icon-caret' %}
@@ -499,7 +499,7 @@
             </div>
           {%- endif -%}
           <div class="product-count light" role="status">
-            <h2 class="product-count__text text-body">
+            {% comment %} <h2 class="product-count__text text-body">
               <span id="ProductCountDesktop">
                 {%- if results.results_count -%}
                   {{ 'templates.search.results_with_count' | t: terms: results.terms, count: results.results_count }}
@@ -512,7 +512,7 @@
                   }}
                 {%- endif -%}
               </span>
-            </h2>
+            </h2> {% endcomment %}
             <div class="loading-overlay__spinner">
               <svg
                 aria-hidden="true"
@@ -861,7 +861,7 @@
                   {% endcase %}
                 {%- endfor -%}
               {%- endif -%}
-
+{% comment %} 
               {%- if enable_sorting -%}
                 <div
                   class="mobile-facets__details js-filter{% if filter_type == 'drawer' %} medium-hide large-up-hide{% endif %}"
@@ -893,7 +893,7 @@
                     </div>
                   </div>
                 </div>
-              {%- endif -%}
+              {%- endif -%} {% endcomment %}
 
               <div class="mobile-facets__footer">
                 <facet-remove class="mobile-facets__clear-wrapper">
@@ -1026,7 +1026,7 @@
     class="product-count light{% if filter_type == 'vertical' or filter_type == 'horizontal' %} medium-hide large-up-hide{% endif %}"
     role="status"
   >
-    <h2 class="product-count__text text-body">
+    {% comment %} <h2 class="product-count__text text-body">
       <span id="ProductCount">
         {%- if results.results_count -%}
           {{ 'templates.search.results_with_count' | t: terms: results.terms, count: results.results_count }}
@@ -1039,7 +1039,7 @@
           }}
         {%- endif -%}
       </span>
-    </h2>
+    </h2> {% endcomment %}
     <div class="loading-overlay__spinner">
       <svg
         aria-hidden="true"
@@ -1102,4 +1102,39 @@
       </form>
     </facet-filters-form>
   {%- endif -%}
+
+  
+  {%- if enable_sorting -%}
+    <div
+      class="mobile-facets__details js-filter{% if filter_type == 'drawer' %} medium-hide large-up-hide{% endif %}"
+      data-index="mobile-{{ forloop.index }}"
+    >
+      <div class="mobile-facets__summary">
+        <div class="mobile-facets__sort">
+          <label for="SortBy-mobile">{{ 'products.facets.sort_by_label' | t }}</label>
+          <div class="select">
+            <select
+              name="sort_by"
+              class="select__select"
+              id="SortBy-mobile"
+              aria-describedby="a11y-refresh-page-message"
+            >
+              {%- for option in results.sort_options -%}
+                <option
+                  value="{{ option.value | escape }}"
+                  {% if option.value == sort_by %}
+                    selected="selected"
+                  {% endif %}
+                >
+                  {{ option.name | escape }}
+                </option>
+              {%- endfor -%}
+            </select>
+            {% render 'icon-caret' %}
+          </div>
+        </div>
+      </div>
+    </div>
+  {%- endif -%}
+
 </div>

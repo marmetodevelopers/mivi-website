@@ -119,7 +119,7 @@
               </a>
             </h3>
           </div>
-          <div class="card__badge {{ settings.badge_position }}">
+          {% comment %} <div class="card__badge {{ settings.badge_position }}">
             {%- if card_product.available == false -%}
               <span
                 id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
@@ -135,13 +135,13 @@
                 {{- 'products.product.on_sale' | t -}}
               </span>
             {%- endif -%} 
-          </div>
+          </div> {% endcomment %}
         </div>
       </div>
       <div class="card__content">
         <div class="card__information">
           <h3
-            class="card__heading {% if card_product.featured_media or settings.card_style == 'standard' %} font-bold1 h4{% endif %}"
+            class="card__heading {% if card_product.featured_media or settings.card_style == 'standard' %} small-element-1 {% endif %}"
             {% if card_product.featured_media or settings.card_style == 'card' %}
               id="title-{{ section_id }}-{{ card_product.id }}"
             {% endif %}
@@ -206,7 +206,7 @@
                 <span class="caption">{{ 'products.product.volume_pricing.note' | t }}</span>
               </div>
             {%- endif -%} 
-            <div class="h5 card-metafeild-description">
+            <div class="small-element-2 card-metafeild-description">
               <div class="font-semibold-1">
          {% render 'image' class="" desktopSrc:card_product.metafields.custom.product_cards.value.svg_1 %}      
             {{ card_product.metafields.custom.product_cards.value.text_1 }}
@@ -224,7 +224,7 @@
               {% for options in card_product.options_with_values %}
                 <div class="product_option">
                   <div class="product--variant__label">
-                    <h4 class="heading_color">{{ options.name | pluralize: 'Color', 'Colors' }}</h4> 
+                    <h4 class="heading_color small-element-2">{{ options.name | pluralize: 'Color', 'Colors' }}</h4> 
                   </div>
                   {% for value in options.values %}
                     <a href="{{ card_product.url}}" class=""> 
@@ -249,9 +249,14 @@
                   {% endfor %}
                 </div>
               {% endfor %} 
-            </div> 
-          </div>
-         
+            </div>
+            <div class="product___card-button">
+              <a href="{{product.url}}">
+                <button class="button-view-all-card font-body-text">shop now</button>
+                 <span> {% render 'greater-icon-black' %}</span> 
+              </a>
+            </div>
+          </div> 
         {%- if show_quick_add -%}
           <div class="quick-add no-js-hidden">
             {%- liquid
@@ -267,7 +272,7 @@
                   id="{{ product_form_id }}-submit"
                   type="submit"
                   name="add"
-                  class="quick-add__submit button--full-width button-view-all-card{% if horizontal_quick_add %} card--horizontal__quick-add animate-arrow{% endif %}"
+                  class="quick-add__submit button--full-width{% if horizontal_quick_add %} card--horizontal__quick-add animate-arrow{% endif %}"
                   aria-haspopup="dialog"
                   aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ card_product.id }}"
                   data-product-url="{{ card_product.url }}"
@@ -286,8 +291,7 @@
                     >
                       <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
                     </svg>
-                  </div>
-                  {% render 'greater-icon-black' %}
+                  </div> 
                 </button>
               </modal-opener>
               <quick-add-modal id="QuickAdd-{{ card_product.id }}" class="quick-add-modal">
@@ -426,7 +430,7 @@
               <div class="caption-with-letter-spacing light">{{ 'products.product.vendor' | t }}</div>
             {%- endif -%}
             {% render 'price', show_compare_at_price: true %}
-          </div> 
+          </div>
         </div>
       </div>
     </div>
