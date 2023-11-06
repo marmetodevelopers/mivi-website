@@ -390,9 +390,9 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   position: relative;
   z-index: 0;
 }
-.section + .section {
+/* .section + .section {
   margin-top: var(--spacing-sections-mobile);
-}
+} */
 @media screen and (min-width: 750px) {
   .section + .section {
     margin-top: var(--spacing-sections-desktop);
@@ -564,6 +564,11 @@ h6,
   line-height: 100%;
   letter-spacing: 2.4px;
 }
+@media screen and (max-width: 749px) {
+  .small-element-1 {
+    letter-spacing: 2px;
+  }
+}
 .font-body-text {
   font-size: 12px;
   font-family: Gilroy black;
@@ -622,6 +627,20 @@ h6,
   color: #fff;
   font-family: 'Gilroy black';
 }
+.small-element-8 {
+  color: #4B4955;
+  font-family: 'Gilroy bold';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
+.small-element-9 {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 100%;
+  font-family: Gilroy black;
+}
 blockquote {
   font-style: italic;
   color: rgba(var(--color-foreground), 0.75);
@@ -644,7 +663,7 @@ blockquote {
   }
 }
 .caption-with-letter-spacing {
-  font-size: 1rem;
+  font-size: 1.4rem;
   letter-spacing: 0.13rem;
   line-height: calc(1 + 0.2 / var(--font-body-scale));
   text-transform: uppercase;
@@ -996,7 +1015,6 @@ summary::-webkit-details-marker {
 }
 .title-wrapper--self-padded-tablet-down,
 .title-wrapper--self-padded-mobile {
-  padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
 @media screen and (min-width: 750px) {
@@ -1428,7 +1446,7 @@ button.shopify-payment-button__button--unbranded {
 .button-label,
 .shopify-challenge__button,
 .customer button {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   letter-spacing: 0.1rem;
   line-height: calc(1 + 0.2 / var(--font-body-scale));
 }

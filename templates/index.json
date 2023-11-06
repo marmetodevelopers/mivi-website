@@ -63,7 +63,8 @@
       "type": "featured-collection",
       "custom_css": [
         "@media screen and (max-width: 749px) {}",
-        "@media screen and (min-width: 750px) {.hideslide {display: none; }}"
+        "@media screen and (min-width: 750px) {.hideslide {display: none; }}",
+        ".card-product__view-details-button {display: none;}"
       ],
       "settings": {
         "title": "True Wireless Earbuds",
@@ -115,7 +116,8 @@
         "@media screen and (min-width: 990px) {.grid--3-col-desktop .grid__item {width: calc(30% - var(--grid-desktop-horizontal-spacing) * 2 \/ 3); max-width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 2 \/ 3); }}",
         ".slider-buttons {justify-content: space-between;}",
         "@media screen and (max-width: 749px) {.slider-buttons {justify-content: center; }}",
-        "slideshow-component.slider-mobile-gutter {padding-right: 0;}"
+        "slideshow-component.slider-mobile-gutter {padding-right: 0;}",
+        ".card-product__view-details-button {display: none;}"
       ],
       "settings": {
         "title": "Wireless Speakers",
@@ -213,7 +215,8 @@
       "type": "featured-collection",
       "custom_css": [
         "@media screen and (min-width: 990px) {.grid--3-col-desktop .grid__item {width: calc(30% - var(--grid-desktop-horizontal-spacing) * 2 \/ 3); max-width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 2 \/ 3); }}",
-        "@media screen and (min-width: 750px) {button.slider-button.slider-button--next {display: none; } button.slider-button.slider-button--prev {display: none; } slideshow-component.slider-mobile-gutter {padding-right: 0; }}"
+        "@media screen and (min-width: 750px) {button.slider-button.slider-button--next {display: none; } button.slider-button.slider-button--prev {display: none; } slideshow-component.slider-mobile-gutter {padding-right: 0; }}",
+        ".card-product__view-details-button {display: none;}"
       ],
       "settings": {
         "title": "Smart Phone Chargers",

@@ -26,16 +26,7 @@
       <meta name="description" content="{{ page_description | escape }}">
     {% endif %}
 
-    {% render 'meta-tags' %}
-      {% comment %} {%style%}
-    @font-face {
-        font-family: "Gilroy";
-        src: url({{ 'Gilroy-Black.ttf' | asset_url }}) format("opentype");
-        font-weight: 800;
-        font-style:normal;
-      }
-    {%endstyle%}    {% endcomment %}
-
+    {% render 'meta-tags' %} 
     <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'pubsub.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>

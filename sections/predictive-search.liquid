@@ -14,7 +14,7 @@
       {%- endif -%}
       {%- if predictive_search.resources.queries.size > 0 or predictive_search.resources.collections.size > 0 -%}
         <div>
-          <h2 id="predictive-search-queries" class="predictive-search__heading text-body caption-with-letter-spacing">
+          <h2 id="predictive-search-queries" class="predictive-search__heading text-body caption-with-letter-spacing small-element-2">
             {{- 'templates.search.suggestions' | t -}}
           </h2>
           <ul id="predictive-search-results-queries-list" class="predictive-search__results-list list-unstyled predictive__search_menus" role="group" aria-labelledby="predictive-search-queries">
@@ -31,7 +31,7 @@
               <li id="predictive-search-option-collection-{{ forloop.index }}" class="predictive-search__list-item" role="option" aria-selected="false">
                 <a href="{{ collection.url }}" class="predictive-search__item link link--text" tabindex="-1">
                   <div class="predictive-search__item-content predictive-search__item-content--centered">
-                    <p class="predictive-search__item-heading h5">{{ collection.title }}</p>
+                    <p class="predictive-search__item-heading small-element-8">{{ collection.title }}</p>
                   </div>
                 </a>
               </li>

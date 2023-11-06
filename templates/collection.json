@@ -14,13 +14,14 @@
       "block_order": [
         "template--21280538329365__ac3be60c-3e6f-4fd5-a13a-f47bb57a7327-heading-1"
       ],
-      "disabled": true,
+      "custom_css": [
+        ".banner-block__heading:after {display: none;}"
+      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Group_119_1.png",
         "mobile_image": "shopify:\/\/shop_images\/Group_217.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
-        "desktop_content_position": "middle-center",
+        "desktop_content_position": "top-left",
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "",
@@ -32,6 +33,7 @@
     },
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
@@ -40,9 +42,17 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
+      "custom_css": [
+        ".product___card-button {display: none;}",
+        ".card__content {padding: 0;}",
+        ".card-information {padding: 0 20px;}",
+        ".card__heading {padding-left: 20px;}",
+        ".image-shadow {box-shadow: none;}",
+        "@media screen and (min-width: 750px) {.card-product__view-details-button {margin-bottom: 10px; background: #000; color: #fff; margin-left: 10px; padding: 17px; } .quick-add__submit {padding: 12px; margin-bottom: 10px; background: #0f0; } .quick-add {margin-right: 10px; }}"
+      ],
       "settings": {
         "products_per_page": 16,
-        "columns_desktop": 4,
+        "columns_desktop": 3,
         "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": false,
