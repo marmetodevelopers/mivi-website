@@ -8,7 +8,7 @@
   src: url("https://cdn.shopify.com/s/files/1/0828/1391/1317/files/Gilroy-Black.ttf?v=1698601278") format("truetype");
   font-weight: 800;
 }
-@font-face {
+@font-face { 
   font-family: "Gilroy bold";
   src: url("https://cdn.shopify.com/s/files/1/0828/1391/1317/files/Gilroy-Bold.ttf?v=1698601278") format("truetype");
   font-weight: 800;
@@ -17,7 +17,17 @@
   font-family: "Gilroy semibold";
   src: url("https://cdn.shopify.com/s/files/1/0828/1391/1317/files/Gilroy-SemiBold.ttf?v=1698601278") format("truetype");
   font-weight: 600;
+} 
+  font-family: "Gilroy Regular";
+  src: url("https://cdn.shopify.com/s/files/1/0828/1391/1317/files/Gilroy-Regular.ttf?v=1697531321") format("truetype");
+  font-weight: 400;
 }
+@font-face {
+  font-family: "Gilroy Medium";
+  src: url("https://cdn.shopify.com/s/files/1/0828/1391/1317/files/Gilroy-Medium.ttf?v=1697531571") format("truetype");
+  font-weight: 800;
+} 
+ 
 /* Font style */
 .font-primary {
   font-family: "Playfair Display";
@@ -58,6 +68,12 @@
 }
 .gap-4 {
   gap: 1rem;
+}
+
+/* background-color */
+
+.bg-color{
+  background: #F6F6F7;
 }
 /* Spacing */
 .pb-1 {
@@ -110,7 +126,7 @@
   font-size: 12px;
   font-style: normal;
   font-weight: 800;
-  line-height: 100%;
+  line-height: 100%; 
   letter-spacing: 2.4px;
   text-transform: capitalize;
   border: none;
@@ -321,8 +337,8 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
     padding: 0;
   }
   .page-width-desktop {
-    max-width: var(--page-width);
-    padding: 0 130px;
+    max-width: var(--page-width); 
+    padding: 0 130px; 
   }
 }
 .isolate {
@@ -692,7 +708,7 @@ h6:empty {
   text-decoration: underline;
   text-underline-offset: 0.3rem;
   color: rgb(var(--color-link));
-  background-color: transparent;
+  background-color: transparent; 
   font-family: inherit;
 }
 .link--text {
@@ -2184,7 +2200,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
   justify-content: center;
   align-items: center;
   gap: 10px;
-}
+} 
 .announcement-bar__link .icon-arrow {
   display: inline-block;
   pointer-events: none;
@@ -2316,7 +2332,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
   }
   .header--middle-left {
     grid-template-areas: "heading navigation icons";
-  }
+   }
   .header--middle-center:not(.drawer-menu) {
     grid-template-areas: "navigation heading icons";
     grid-template-columns: 1fr auto 1fr;
@@ -2414,7 +2430,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
   display: flex;
   grid-area: icons;
   justify-self: end;
-}
+ }
 .header__icons .shopify-app-block {
   max-width: 4.4rem;
   max-height: 4.4rem;
@@ -2453,7 +2469,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
   padding: 0;
 }
 .header__icon--cart {
-  position: relative;
+  position: relative; 
 }
 .header__icon--menu[aria-expanded="true"]::before {
   content: "";
@@ -2635,7 +2651,7 @@ details[open] > .header__submenu {
 .header__menu {
   padding: 0 1rem;
 }
-.header__menu-item {
+.header__menu-item { 
   text-decoration: none;
   color: rgba(var(--color-foreground), 0.75);
 }
@@ -2664,8 +2680,8 @@ details[open] > .header__menu-item .icon-caret {
 }
 .header__active-menu-item {
   transition: text-decoration-thickness var(--duration-short) ease;
-  color: rgb(var(--color-foreground));
-  text-underline-offset: 0.3rem;
+  color: rgb(var(--color-foreground)); 
+  text-underline-offset: 0.3rem; 
 }
 .header__menu-item:hover .header__active-menu-item {
   text-decoration-thickness: 0.2rem;
