@@ -1,4 +1,4 @@
- {% style %}
+{% style %}
   .padding-{{ section.id }} {
     padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
     padding-bottom: {{ section.settings.padding_bottom | divided_by: 2 }}px;
@@ -9,7 +9,6 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
-
     .image_background-{{ section.id }} {
       background: {{ section.settings.image_background_color }};
     }
@@ -20,14 +19,14 @@
         color: {{section.settings.text_color}};  
       } 
     {% endstyle %}
-<div class="padding-{{ section.id }}">
+<div class="padding-{{ section.id }} deal-of__the-day-main">
    <div class="deal-of-the-day-container">
     <div class="deal-of-the-day-content"> 
     {% if section.settings.heading != blank  %}
-         <div class="heading__text--color-{{ section.id }} h3"> {{ section.settings.heading }}</div>
+         <div class="heading__text--color-{{ section.id }} h5"> {{ section.settings.heading }}</div>
     {% endif %} 
     {% if section.settings.sub_text != blank %}
-         <div class="body_text--color-{{ section.id }} sub-text-txt deal-of-the-day-sub___text">{{ section.settings.sub_text }}</div>
+         <div class="body_text--color-{{ section.id }} sub-text-txt deal-of-the-day-sub___text small-element-4">{{ section.settings.sub_text }}</div>
     {% endif %}
     <div class="deal-of-the-day-svg">
     {% if section.settings.html != blank %}
@@ -35,8 +34,8 @@
     {% endif %}  
            
     <div id="countdown-timer" class="text-white" data-time="{{section.settings.date}}"> 
-    <strong id="hours" class="bold-number h3"></strong> <span class="slim-countdown-text">H<span class="hide-words">RS</span><span class="timer"></span></span>    
-         <strong id="mins" class="bold-number h3"> 36 </strong> <span class="slim-countdown-text">M<span class="hide-words">INS</span><span class="timer"></span></span>
+    <strong id="hours" class="bold-number h6"></strong> <span class="slim-countdown-text">H<span class="hide-words">RS</span><span class="timer"></span></span>    
+         <strong id="mins" class="bold-number h6"> 36 </strong> <span class="slim-countdown-text">M<span class="hide-words">INS</span><span class="timer"></span></span>
          </div> 
        </div>
      </div>
@@ -49,10 +48,10 @@
                 {% render 'image', class: '', mobileSrc: product.featured_image, desktopSrc: product.featured_image %} 
             </div> 
             <div class="deal_of_the_day_product-content">
-              <span class="deal-product-title">  {{ product.title }}</span>
+              <span class="deal-product-title small-element-1">  {{ product.title }}</span>
             </div>
-            <div class="deal-of-the-day-product-price"> 
-             <span>   {{ product.price | money_without_trailing_zeros }}  </span>
+            <div class="deal-of-the-day-product-price small-element-3"> 
+             <span>{{ product.price | money_without_trailing_zeros }}  </span>
                 <del>{{ product.compare_at_price | money_without_trailing_zeros }}</del>
             </div>
             <div class="deal-of-the-day-button">
@@ -71,7 +70,6 @@
         </div>
     </div> 
 </div> 
-
 {% schema %}
 {
   "name": "deal-of-the-day",
@@ -169,4 +167,3 @@
     ]
 }
 {% endschema %}
-

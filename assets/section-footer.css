@@ -1,20 +1,12 @@
-/* .footer {
-  border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
-} */
 .footer:not(.color-background-1) {
   border-top: none;
 }
 .footer__content-top {
   display: block;
 }
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 990px) {
   .footer .grid {
-    display: block;
-  }
-  .footer-block.grid__item {
-    padding: 0;
-    margin: 4rem 0;
-    width: 100%;
+    display: flex;
   }
   .footer-block.grid__item:first-child {
     margin-top: 0;
@@ -27,14 +19,12 @@
 }
 @media screen and (min-width: 750px) {
   .footer__content-top .grid {
-    row-gap: 6rem;
-    margin-bottom: 0;
+    row-gap: 4.8rem;
+    margin-bottom: 3rem;
   }
 }
 .footer__content-bottom {
-  /* border-top: solid 0.1rem rgba(var(--color-foreground), 0.08); */
   border-top: solid 0.1rem rgba(255, 255, 255, 0.7);
-  padding-top: 3rem;
 }
 .footer__content-bottom:only-child {
   border-top: 0;
@@ -45,7 +35,7 @@
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 990px) {
   .footer__content-bottom {
     flex-wrap: wrap;
     padding-top: 0;
@@ -103,7 +93,6 @@
 .footer-block--newsletter {
   display: flex;
   align-items: flex-end;
-  margin-top: 3rem;
   gap: 1rem;
 }
 .footer-block--newsletter:only-child {
@@ -117,11 +106,11 @@
 @media screen and (min-width: 750px) {
   .footer-block--newsletter {
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: flex-start;
   }
 }
 .footer-block__heading {
-  margin-bottom: 2rem;
+  margin-bottom: 0;
   margin-top: 0;
   font-size: calc(var(--font-heading-scale) * 1.6rem);
 }
@@ -140,6 +129,7 @@
 }
 .footer__list-social.list-social:only-child {
   justify-content: center;
+  flex-wrap: nowrap;
 }
 .footer-block__newsletter {
   text-align: center;
@@ -179,7 +169,7 @@
     text-align: right;
   }
 }
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 990px) {
   /*
     On a small screen we want all the items to be centered
     because they will be stacked.
@@ -262,17 +252,10 @@
     margin-top: 0;
   }
 }
-.footer-block__details-content {
-  margin-bottom: 4rem;
-}
 @media screen and (min-width: 750px) {
   .footer-block__details-content {
     margin-bottom: 0;
-  }
-  .footer-block__details-content > p,
-  .footer-block__details-content > li {
-    padding: 0;
-  }
+  } 
   .footer-block:only-child li {
     display: inline;
   }
@@ -291,7 +274,6 @@
 @media screen and (min-width: 750px) {
   .footer-block__details-content .list-menu__item--link:hover,
   .copyright__content a:hover {
-    color: rgb(var(--color-foreground));
     text-decoration: underline;
     text-underline-offset: 0.3rem;
   }
@@ -326,7 +308,7 @@
 .footer-block-image.right {
   justify-content: flex-end;
 }
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 990px) {
   .footer-block-image,
   .footer-block-image.left,
   .footer-block-image.center,
@@ -369,7 +351,7 @@
   max-width: 20rem;
 }
 .copyright__content {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 .copyright__content a {
   color: currentColor;
@@ -408,7 +390,7 @@
 }
 /* check for flexbox gap in older Safari versions */
 @supports not (inset: 10px) {
-  @media screen and (max-width: 749px) {
+  @media screen and (max-width: 990px) {
     .footer .grid {
       margin-left: 0;
     }
