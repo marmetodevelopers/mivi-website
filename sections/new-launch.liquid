@@ -1,5 +1,4 @@
 <script src="{{ 'carousel.js' | asset_url }}" defer="defer"></script>
-<script src="{{ 'splide.min.js' | asset_url }}"></script>
 {{ 'splide.min.css' | asset_url | stylesheet_tag }} 
 {% style %}
 #carousel--{{ section.id }}{
@@ -81,8 +80,7 @@
                         </div> 
                          <div align="center" class="product__variant-swatches">
                           {% for options in product.options_with_values %}
-                            <div class="product_option-content">
-                              {% comment %} <h2 class="heading_color">{{ options.name }}</h2> {% endcomment %}
+                            <div class="product_option-content"> 
                               {% for value in options.values %}
                                 <a href="{{product.url}}" class=""> 
                                 <label for="" class="variant-checkbox" name="variant">
