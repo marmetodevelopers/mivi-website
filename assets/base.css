@@ -2970,8 +2970,7 @@
    text-decoration-thickness: 0.1rem;
    transition: text-decoration-thickness var(--duration-short) ease;
  }
- .rte a:hover {
-   /* color: rgb(var(--color-link)); */
+ .rte a:hover { 
    text-decoration-thickness: 0.2rem;
  }
  .rte blockquote {
