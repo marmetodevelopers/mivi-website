@@ -14,6 +14,7 @@
     block: block
   %}
 {% endcomment %}
+<legend class="form__label"><span>SELECT</span>&nbsp &nbsp{{ option.name }}</legend>
 {%- liquid
   assign variants_available_arr = product.variants | map: 'available'
   assign variants_option1_arr = product.variants | map: 'option1'
@@ -59,9 +60,8 @@
         class="disabled"
       {% endif %}
     >
-    <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-      {{ value -}}
-      <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
+    <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" style="background: {{ value}}">
+       <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
     </label>
   {%- elsif block.settings.picker_type == 'dropdown' -%}
     <option

@@ -13,7 +13,7 @@
   display: flex;
   height: 100%;
   margin: 0 !important;
-  padding: 0 !important
+  padding: 0 !important;
 }
 .splide__pagination {
   -ms-flex-align: center;
@@ -25,16 +25,16 @@
   -ms-flex-pack: center;
   justify-content: center;
   margin: 0;
-  pointer-events: none
+  pointer-events: none;
 }
 .splide__pagination li {
   display: inline-block;
   line-height: 1;
   list-style-type: none;
   margin: 0;
-  pointer-events: auto
+  pointer-events: auto;
+  padding: 15px;
 }
-.splide:not(.is-overflow) .splide__pagination,
 .splide__toggle.is-active .splide__toggle__play,
 .splide__toggle__pause {
   display: none
@@ -167,27 +167,27 @@
   outline-offset: 3px
 }
 .splide__pagination {
-  bottom: .5em;
-  left: 0;
+  bottom: 21.5em;
+  left: 3%;
   padding: 0 1em;
   right: 0;
-  z-index: 1
+  z-index: 1;
+  position: absolute;
 }
 .splide__pagination__page {
   background: #ccc;
   border: 0;
-  border-radius: 50%;
   display: inline-block;
-  height: 8px;
+  height: 3px;
   margin: 6px;
   opacity: .7;
   padding: 0;
   position: relative;
   transition: transform .2s linear;
-  width: 8px
+  width: 32px
 }
 .splide__pagination__page.is-active {
-  background: #54555a;
+  background: #0f0;
   transform: scale(1.4);
   z-index: 1
 }
@@ -299,4 +299,32 @@
   background: #fff;
   height: 3rem;
   width: 3rem
+}
+.splide__track {
+  position: absolute;
+  top: -5%;
+  left: 0;
+  width: 100%;
+}
+@media screen and (max-width:749px) {
+  .splide__list {
+    gap: 0;
+  }
+  .splide.slider_component_container {
+    padding: 0;
+  }
+  .splide__pagination {
+    bottom: 21.5em;
+  }
+}
+@media screen and (max-width:990px) {
+  .splide__list {
+    gap: 0;
+  }
+  .splide.slider_component_container {
+    padding: 0;
+  }
+  .splide__pagination {
+    bottom: 21.5em;
+  }
 }
