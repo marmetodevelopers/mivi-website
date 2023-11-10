@@ -82,29 +82,49 @@
               {% render block %}
             {%- when 'text' -%}
               <p
-                class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
+                class="product__text inline-richtext small-element-10 {% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
                 {{ block.shopify_attributes }}
               >
                 {{- block.settings.text -}}
               </p>
             {%- when 'title' -%}
               <div class="product__title" {{ block.shopify_attributes }}>
-                <h1>{{ product.title | escape }}</h1>
+                <h1 class="h3">{{ product.title | escape }}</h1>
                 <a href="{{ product.url }}" class="product__title">
                   <h2 class="h1">
                     {{ product.title | escape }}
                   </h2>
                 </a>
-              </div>
+              </div> 
             {%- when 'price' -%}
-              <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
+              <div class="no-js-hidden main-product-price-content" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                 {%- render 'price',
                   product: product,
                   use_variant: true,
                   show_badges: true,
                   price_class: 'price--large'
                 -%}
-              </div>
+                {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
+               </div>
+               {%- when 'feature_with_icon' -%}
+                <ul class="product-usp flexbox {{ block.settings.class }}"> 
+                 {% for i in (1..15) %}
+                   {% assign tag_key = "product_tag_" | append: i %}
+                   {% assign text_key = "product_certification_text_" | append: i %}
+                   {% assign icon_key = "product_certification_icon_" | append: i %}
+                   {% assign icon_tag = block.settings[tag_key] %}
+                   {% if product.tags contains icon_tag %}
+                     {% assign iconTagImage = block.settings[icon_key] | img_url: 'master' %} 
+                     {% assign iconTagName = block.settings[text_key] %}
+                     <li class="product-usp--item">
+                       <div class="usp-icon">
+                         <img src="{{ iconTagImage }}">
+                       </div>
+                       <span class="para-text-fs usp__icon__text font-medium">{{ iconTagName }}</span>
+                     </li>
+                   {% endif %}
+                 {% endfor %}
+             </ul>  
               {%- if product.quantity_price_breaks_configured? -%}
                 <div class="volume-pricing-note">
                   <span>{{ 'products.product.volume_pricing.note' | t }}</span>
@@ -124,7 +144,9 @@
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
                   {{ form | payment_terms }}
                 {%- endform -%}
+                
               </div>
+
             {%- when 'inventory' -%}
               <p
                 class="product__inventory no-js-hidden{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}"
@@ -172,12 +194,20 @@
                   {%- endif -%}
                 {%- endif -%}
               </p>
+
             {%- when 'description' -%}
-              {%- if product.description != blank -%}
+              <div class="nikhita">
+              {% if block.settings.metafield_content != blank %}
+                {{ block.settings.metafield_content }}
+              {% else %}
                 <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
                   {{ product.description }}
+                  <div>
+                    {{ product.metafields.custom.product_description_tabs | metafield_tag }}
+                  </div>
                 </div>
-              {%- endif -%}
+              {% endif %}
+            </div>  
             {%- when 'sku' -%}
               <p
                 class="product__sku no-js-hidden{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.sku.size == 0 %} visibility-hidden{% endif %}"
@@ -423,7 +453,7 @@
             {%- when 'variant_picker' -%}
               {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
             {%- when 'buy_buttons' -%}
-              {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
+              {% comment %} {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%} {% endcomment %}
             {%- when 'rating' -%}
               {%- if product.metafields.reviews.rating.value != blank -%}
                 {% liquid
@@ -690,7 +720,7 @@
   "blocks": [
     {
       "type": "@app"
-    },
+    }, 
     {
       "type": "text",
       "name": "t:sections.main-product.blocks.text.name",
@@ -855,7 +885,14 @@
     {
       "type": "description",
       "name": "t:sections.main-product.blocks.description.name",
-      "limit": 1
+      "limit": 1,
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "metafield_content",
+          "label": "Metafield content"
+        }
+      ]
     },
     {
       "type": "share",
@@ -1394,6 +1431,273 @@
           "id": "enable_quick_add",
           "label": "t:sections.main-product.blocks.complementary_products.settings.enable_quick_add.label",
           "default": false
+        }
+      ]
+    },
+    {
+      "type": "feature_with_icon",
+      "name": "feature tags",
+      "settings": [
+        {
+          "type": "text",
+          "id": "class",
+          "label": "Add a class",
+          "info": "Don't change this class"
+        },
+        {
+          "type": "text",
+          "id": "product_tag_1",
+          "label": "Product tag 1",
+          "info": "Add the product tag to show icons"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_certification_icon_1",
+          "label": "Certification icon 1",
+          "info": "Recommended Size: 68 X 68px"
+        },
+        {
+          "type": "text",
+          "id": "product_certification_text_1",
+          "label": "Icon Text 1"
+        },
+        {
+          "type": "text",
+          "id": "product_tag_2",
+          "label": "Product tag 2",
+          "info": "Add the product tag to show icons"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_certification_icon_2",
+          "label": "Certification icon 2",
+          "info": "Recommended Size: 68 X 68px"
+        },
+        {
+          "type": "text",
+          "id": "product_certification_text_2",
+          "label": "Icon Text 2"
+        },
+        {
+          "type": "text",
+          "id": "product_tag_3",
+          "label": "Product tag 3",
+          "info": "Add the product tag to show icons"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_certification_icon_3",
+          "label": "Certification icon 3",
+          "info": "Recommended Size: 68 X 68px"
+        },
+        {
+          "type": "text",
+          "id": "product_certification_text_3",
+          "label": "Icon Text 3"
+        },
+        {
+          "type": "text",
+          "id": "product_tag_4",
+          "label": "Product tag 4",
+          "info": "Add the product tag to show icons"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_certification_icon_4",
+          "label": "Certification icon 4",
+          "info": "Recommended Size: 68 X 68px"
+        },
+        {
+          "type": "text",
+          "id": "product_certification_text_4",
+          "label": "Icon Text 4"
+        },
+        {
+          "type": "text",
+          "id": "product_tag_5",
+          "label": "Product tag 5",
+          "info": "Add the product tag to show icons"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_certification_icon_5",
+          "label": "Certification icon 5",
+          "info": "Recommended Size: 68 X 68px"
+        },
+        {
+          "type": "text",
+          "id": "product_certification_text_5",
+          "label": "Icon Text 5"
+        },
+        {
+          "type": "text",
+          "id": "product_tag_6",
+          "label": "Product tag 6",
+          "info": "Add the product tag to show icons"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_certification_icon_6",
+          "label": "Certification icon 6",
+          "info": "Recommended Size: 68 X 68px"
+        },
+        {
+          "type": "text",
+          "id": "product_certification_text_6",
+          "label": "Icon Text 6"
+        },
+        {
+          "type": "text",
+          "id": "product_tag_7",
+          "label": "Product tag 7",
+          "info": "Add the product tag to show icons"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_certification_icon_7",
+          "label": "Certification icon 7",
+          "info": "Recommended Size: 68 X 68px"
+        },
+        {
+          "type": "text",
+          "id": "product_certification_text_7",
+          "label": "Icon Text 7"
+        },
+        {
+          "type": "text",
+          "id": "product_tag_8",
+          "label": "Product tag 8",
+          "info": "Add the product tag to show icons"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_certification_icon_8",
+          "label": "Certification icon 8",
+          "info": "Recommended Size: 68 X 68px"
+        },
+        {
+          "type": "text",
+          "id": "product_certification_text_8",
+          "label": "Icon Text 8"
+        },
+        {
+          "type": "text",
+          "id": "product_tag_9",
+          "label": "Product tag 9",
+          "info": "Add the product tag to show icons"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_certification_icon_9",
+          "label": "Certification icon 9",
+          "info": "Recommended Size: 68 X 68px"
+        },
+        {
+          "type": "text",
+          "id": "product_certification_text_9",
+          "label": "Icon Text 9"
+        },
+        {
+          "type": "text",
+          "id": "product_tag_10",
+          "label": "Product tag 10",
+          "info": "Add the product tag to show icons"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_certification_icon_10",
+          "label": "Certification icon 10",
+          "info": "Recommended Size: 68 X 68px"
+        },
+        {
+          "type": "text",
+          "id": "product_certification_text_10",
+          "label": "Icon Text 10"
+        },
+        {
+          "type": "text",
+          "id": "product_tag_11",
+          "label": "Product tag 11",
+          "info": "Add the product tag to show icons"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_certification_icon_11",
+          "label": "Certification icon 11",
+          "info": "Recommended Size: 68 X 68px"
+        },
+        {
+          "type": "text",
+          "id": "product_certification_text_11",
+          "label": "Icon Text 11"
+        },
+        {
+          "type": "text",
+          "id": "product_tag_12",
+          "label": "Product tag 12",
+          "info": "Add the product tag to show icons"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_certification_icon_12",
+          "label": "Certification icon 12",
+          "info": "Recommended Size: 68 X 68px"
+        },
+        {
+          "type": "text",
+          "id": "product_certification_text_12",
+          "label": "Icon Text 12"
+        },
+        {
+          "type": "text",
+          "id": "product_tag_13",
+          "label": "Product tag 13",
+          "info": "Add the product tag to show icons"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_certification_icon_13",
+          "label": "Certification icon 13",
+          "info": "Recommended Size: 68 X 68px"
+        },
+        {
+          "type": "text",
+          "id": "product_certification_text_13",
+          "label": "Icon Text 13"
+        },
+        {
+          "type": "text",
+          "id": "product_tag_14",
+          "label": "Product tag 14",
+          "info": "Add the product tag to show icons"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_certification_icon_14",
+          "label": "Certification icon 14",
+          "info": "Recommended Size: 68 X 68px"
+        },
+        {
+          "type": "text",
+          "id": "product_certification_text_14",
+          "label": "Icon Text 14"
+        },
+        {
+          "type": "text",
+          "id": "product_tag_15",
+          "label": "Product tag 15",
+          "info": "Add the product tag to show icons"
+        },
+        {
+          "type": "image_picker",
+          "id": "product_certification_icon_15",
+          "label": "Certification icon 15",
+          "info": "Recommended Size: 68 X 68px"
+        },
+        {
+          "type": "text",
+          "id": "product_certification_text_15",
+          "label": "Icon Text 15"
         }
       ]
     },

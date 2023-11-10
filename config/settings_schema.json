@@ -149,6 +149,33 @@
     ]
   },
   {
+    "name": "Marmeto - product card ✨",
+    "settings": [
+      {
+        "type": "select",
+        "id": "mm_variant_select_style",
+        "label":"Variant select style",
+        "options":[
+          {
+            "value":"button",
+            "label":"Button"
+          },
+          {
+            "value":"dropdown",
+            "label":"Dropdown"
+          }
+        ],
+        "default":"button"
+      },
+      {
+        "type": "checkbox",
+        "id":"mm_show_vendor",
+        "label": "Show vendor",
+        "default" : false
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.layout.name",
     "settings": [
       {

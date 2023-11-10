@@ -1,0 +1,136 @@
+{% style %}
+.padding-{{ section.id }} {
+  padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
+  padding-bottom: {{ section.settings.padding_bottom | divided_by: 2 }}px;
+}
+@media (min-width: 750px) {
+  .padding-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+} 
+  .heading--color-{{ section.id }} {
+      color: {{section.settings.heading_color}};
+    }  
+  {% endstyle %} 
+<div class="page-width padding-{{ section.id }}">
+    <div class="homepage-more-products-container">
+        {%- if section.settings.heading != blank -%}
+          <h2 align="center" class="more__products_title heading--color-{{ section.id }} h4 {{ section.settings.heading_size }}">
+            {{ section.settings.heading }}
+          </h2>
+        {%- endif -%}
+        <div class="more-product-skeleton"> 
+        {% for block in section.blocks %}
+            <div class="more_products-image">
+            {% if block.settings.image != blank %}
+              <a href="" > {% render 'image',
+                  class: 'media',
+                  mobileSrc: block.settings.image,
+                  desktopSrc: block.settings.image
+                %}</a>
+                <div class="more-products-button sub-text-txt">
+                    {% if block.settings.button_text != blank and block.settings.button_link != blank %}
+                       <a href="{{ block.settings.button_link }} button-view-all"> {{ block.settings.button_text }}</a>
+                    {% endif %}  
+                     {% render 'greater-icon' %}  
+                </div>
+            {% endif %}
+            </div>  
+        {% endfor %}
+        </div>
+    </div>     
+</div>
+{% schema %}
+  {
+    "name": "More products",
+    "settings": [
+          { 
+            "type":"text",
+            "id":"heading",
+            "label":"Heading",
+            "default":"More Products"
+          },
+          {
+            "type": "color",
+            "id": "heading_color",
+            "label": "Headig Color",
+            "default": "#4B4955"
+          },
+          {
+            "type": "select",
+            "id": "heading_size",
+            "options": [
+              {
+                "value": "h2",
+                "label": "t:sections.all.heading_size.options__1.label"
+              },
+              {
+                "value": "h1",
+                "label": "t:sections.all.heading_size.options__2.label"
+              },
+              {
+                "value": "h0",
+                "label": "t:sections.all.heading_size.options__3.label"
+              }
+            ],
+            "default": "h1",
+            "label": "t:sections.all.heading_size.label"
+          },
+          {
+            "type": "header",
+            "content": "Section padding"
+          },
+          {
+            "type": "range",
+            "id": "padding_top",
+            "min": 10,
+            "max": 100,
+            "step": 5,
+            "unit": "px",
+            "label": "Padding top",
+            "default": 40
+          },
+          {
+            "type": "range",
+            "id": "padding_bottom",
+            "min": 10,
+            "max": 100,
+            "step": 5,
+            "unit": "px",
+            "label": "Padding bottom",
+            "default": 40
+          }
+        ],
+    "blocks": [
+         {
+          "type": "image-item",
+          "name": "Image item", 
+          "settings": [ 
+            {
+              "type": "image_picker",
+              "id": "image",
+              "label": "Image"
+            },
+            {
+              "type": "text",
+              "id": "button_text",
+              "label": "Button text"
+            }, 
+            {
+              "type": "url",
+              "id": "button_link",
+              "label": "Button link"
+            }
+          ]
+        }
+      ],
+      "presets": [
+        {
+          "name": "More products"
+        }
+      ]
+  }
+{% endschema %}
+
+ 

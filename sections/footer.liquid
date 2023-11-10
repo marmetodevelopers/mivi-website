@@ -56,38 +56,66 @@
             elsif section.blocks.size > 6
               assign footer_grid_class = 'grid--4-col-desktop'
             elsif section.blocks.size > 4
-              assign footer_grid_class = 'grid--3-col-tablet'
+              assign footer_grid_class = 'grid--3-col-tablet' 
             endif
           -%}
+           
           <div
-            class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet {{ footer_grid_class }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet{{ footer_grid_class }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
             {% endif %}
-          >
+          >  
             {%- for block in section.blocks -%}
               <div
-                class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                class="footer-block grid__item {% if block.type == 'link_list' %} footer-block--menu {% endif %}{% if block.type == 'button' %} footer-block---button {% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
-              >
+              >  
                 {%- if block.settings.heading != blank -%}
+                  <div class="footer_title footer__trigger-accordion">
                   <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
-                {%- endif -%}
-
+                    <span class="large-up-hide">{% render 'icon-caret_up' %}</span> 
+                   </div>   
+                {%- endif -%}  
                 {%- case block.type -%}
                   {%- when '@app' -%}
                     {% render block %}
-                  {%- when 'text' -%}
+                  {%- when 'text' -%} 
                     <div class="footer-block__details-content rte">
                       {{ block.settings.subtext }}
-                    </div>
+                    </div>  
+                    {%- when 'emailtext' -%}   
+                    <div class="footer__email-heading footer__trigger-accordion"> 
+                      <span class="accordion__title text__txt-body">{{ block.settings.email-heading | escape }}</span>
+                      <span class="large-up-hide">{% render 'icon-caret_up' %} </span>
+                    </div>  
+                      <div class="footer-block__details-mobile rte show__footer_menus_js">
+                        <div class="footer_contact--details">
+                          <span>
+                            {% render 'contact-icon' %}
+                          </span>
+                          <span><a href="tel:{{ block.settings.footer-mobile }}">{{ block.settings.footer-mobile }}</a></span>
+                        </div>
+                        <div class="footer-block__details-content rte ">
+                          {{ block.settings.email__subtext }}
+                        </div>
+                        <div class="footer-block__details-email rte show__footer_menus_js">
+                          {% render 'email-icon' %}
+                         <span><a href="mailto:{{ block.settings.footer-email }}">{{ block.settings.footer-email }}</a></span>
+                       </div>                        
+                      </div> 
+                        {% when 'button' %}  
+                         <div align="center" class="footer-button button-tertiary">
+                            <a href="{{block.settings.button_link}}"> {{ block.settings.button }}</a> 
+                        </div>    
                   {%- when 'link_list' -%}
                     {%- if block.settings.menu != blank -%}
-                      <ul class="footer-block__details-content list-unstyled">
+                      <ul class="footer-block__details-content list-unstyled footer__block-link-list show__footer_menus_js small-element-2">
                         {%- for link in block.settings.menu.links -%}
                           <li>
                             <a
@@ -154,10 +182,8 @@
                     </div>
                 {%- endcase -%}
               </div>
-            {%- endfor -%}
-          </div>
-        {%- endif -%}
-
+            {%- endfor -%} 
+        
         <div
           class="footer-block--newsletter{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
           {% if settings.animations_reveal_on_scroll %}
@@ -167,7 +193,7 @@
           {%- if section.settings.newsletter_enable -%}
             <div class="footer-block__newsletter">
               {%- if section.settings.newsletter_heading != blank -%}
-                <h2 class="footer-block__heading inline-richtext">{{ section.settings.newsletter_heading }}</h2>
+                <h2 class="footer-block__heading inline-richtext text__txt-body">{{ section.settings.newsletter_heading }}</h2>
               {%- endif -%}
               {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
                 <input type="hidden" name="contact[tags]" value="newsletter">
@@ -236,12 +262,14 @@
               {{ shop | login_button: action: 'follow' }}
               {% # theme-check-enable %}
             </div>
-          {%- endif -%}
-
+          {%- endif -%} 
+          
           {%- if section.settings.show_social and has_social_icons -%}
             {%- render 'social-icons', class: 'footer__list-social' -%}
-          {%- endif -%}
+          {%- endif -%} 
         </div>
+      </div>
+    {%- endif -%} 
       </div>
     {%- endunless -%}
   {%- endif -%}
@@ -350,6 +378,7 @@
     </div>
     <div class="footer__content-bottom-wrapper page-width{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
       <div class="footer__copyright caption">
+        <small class=" copyright__content">Copyright</small>
         <small class="copyright__content"
           >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
         </small>
@@ -434,6 +463,51 @@
           "id": "subtext",
           "default": "<p>Share contact information, store details, and brand content with your customers.</p>",
           "label": "t:sections.footer.blocks.text.settings.subtext.label"
+        }
+      ]
+    },
+    {
+      "type": "emailtext",
+      "name": "Email-text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "email-heading",
+          "default": "Customer Service",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "email__subtext",
+          "default": "<p>(Mon-Sat, 10:00am-5:00pm)</p>",
+          "label": "Email-sutext"
+        },
+        {
+          "type": "text",
+          "id": "footer-mobile",
+          "label": "Mobile Number"
+        },
+        {
+          "type": "text",
+          "id": "footer-email",
+          "label": "Email"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "Footer-Button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "button",
+          "default": "Shop Speakers",
+          "label": "Button"
+        },
+        {
+          "type": "url",
+          "id": "button_link", 
+          "label": "Button link"
         }
       ]
     },
