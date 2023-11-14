@@ -142,8 +142,48 @@
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "slider_visual": "dots",
-        "padding_top": 36,
+        "padding_top": 100,
         "padding_bottom": 36
+      }
+    },
+    "0d5e0dae-2cad-442a-bed4-1d07c2ce59ae": {
+      "type": "new-launch",
+      "blocks": {
+        "9285b29c-bc74-4794-97c2-72da4db23984": {
+          "type": "carousel_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_119_1.png",
+            "mobile_image": "shopify:\/\/shop_images\/Group_36.png",
+            "product": "roam"
+          }
+        },
+        "a5f31862-58bb-4e3c-b8f4-aa70bf2df06b": {
+          "type": "carousel_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_119.png",
+            "mobile_image": "shopify:\/\/shop_images\/Group_36.png",
+            "product": "4a-wall-charger"
+          }
+        }
+      },
+      "block_order": [
+        "9285b29c-bc74-4794-97c2-72da4db23984",
+        "a5f31862-58bb-4e3c-b8f4-aa70bf2df06b"
+      ],
+      "settings": {
+        "section_heading": "New Launch",
+        "heading_align": "tw-text-center",
+        "sub_text": "The upgrade with you have been waiting",
+        "desktop_background_image": "shopify:\/\/shop_images\/Union_9.png",
+        "mobile_background_image": "shopify:\/\/shop_images\/Union_8.png",
+        "enable_pagination": true,
+        "enable_autoplay": false,
+        "autoplay_speed": 3,
+        "slides_perpage": 3,
+        "section-padding-top": 36,
+        "section-padding-bottom": 36,
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     },
     "af3bf248-59fd-40c6-b0ed-28193696e6ec": {
@@ -188,7 +228,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/DSC_6298_1_1.png",
             "button_text": "SHOP SPEAKERS",
-            "button_link": "shopify:\/\/collections\/smart-phone-chargers"
+            "button_link": "shopify:\/\/collections\/all"
           }
         },
         "ffd7709e-fd8f-4656-80d8-db4f19d035cd": {
@@ -354,62 +394,6 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
-    },
-    "0d5e0dae-2cad-442a-bed4-1d07c2ce59ae": {
-      "type": "new-launch",
-      "blocks": {
-        "9285b29c-bc74-4794-97c2-72da4db23984": {
-          "type": "carousel_block",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Group_119_1.png",
-            "mobile_image": "shopify:\/\/shop_images\/Group_36.png",
-            "product": "roam"
-          }
-        },
-        "a5f31862-58bb-4e3c-b8f4-aa70bf2df06b": {
-          "type": "carousel_block",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Group_119.png",
-            "mobile_image": "shopify:\/\/shop_images\/Group_36.png",
-            "product": "4a-wall-charger"
-          }
-        },
-        "b93a37d7-8612-478a-b503-9e298ea9c748": {
-          "type": "carousel_block",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Group_217.png",
-            "product": ""
-          }
-        },
-        "3d8a2438-cf70-4cf1-a9c3-466fd6871a80": {
-          "type": "carousel_block",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Group_217.png",
-            "product": ""
-          }
-        }
-      },
-      "block_order": [
-        "9285b29c-bc74-4794-97c2-72da4db23984",
-        "a5f31862-58bb-4e3c-b8f4-aa70bf2df06b",
-        "b93a37d7-8612-478a-b503-9e298ea9c748",
-        "3d8a2438-cf70-4cf1-a9c3-466fd6871a80"
-      ],
-      "settings": {
-        "section_heading": "New Launch",
-        "heading_align": "tw-text-center",
-        "sub_text": "The upgrade with you have been waiting",
-        "desktop_background_image": "shopify:\/\/shop_images\/Union_9.png",
-        "mobile_background_image": "shopify:\/\/shop_images\/Union_8.png",
-        "enable_pagination": true,
-        "enable_autoplay": false,
-        "autoplay_speed": 3,
-        "slides_perpage": 3,
-        "section-padding-top": 36,
-        "section-padding-bottom": 36,
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
     }
   },
   "order": [
@@ -417,10 +401,10 @@
     "featured_collection",
     "fee80e2b-57dd-40b2-8e88-b46478691cee",
     "94a0a182-a3aa-4bc1-964f-23cfd135c254",
+    "0d5e0dae-2cad-442a-bed4-1d07c2ce59ae",
     "af3bf248-59fd-40c6-b0ed-28193696e6ec",
     "d9c0f073-8abf-43ad-94fc-a5e6d6061436",
     "e7889233-c385-40c8-8f2a-3389dcbfa086",
-    "9cd384c7-7fd7-419d-a1cd-cee7ded2c32d",
-    "0d5e0dae-2cad-442a-bed4-1d07c2ce59ae"
+    "9cd384c7-7fd7-419d-a1cd-cee7ded2c32d"
   ]
 }
