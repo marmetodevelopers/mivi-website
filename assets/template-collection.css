@@ -73,9 +73,6 @@
 #product-grid .card-information {
   padding: 0 20px;
 }
-.card__heading {
-  padding-left: 20px;
-}
 #product-grid .image-shadow {
   box-shadow: none;
 }
