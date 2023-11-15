@@ -24,9 +24,9 @@ div#Slider-sections--21063847280917__announcement-bar {
   }
 }
 /* header */
-header.header {
+sticky-header.header-wrapper {
   background: radial-gradient(127.94% 79% at 73.5% 4.92%, #5B6378 0%, #303642 39.67%, #111216 99.2%);
-}
+} 
 @media screen and (min-width: 750px) {
   .header__icon,
   .header__icon--cart .icon {
@@ -143,6 +143,9 @@ a.menu-drawer__account.link.focus-inset.h5.medium-hide.large-up-hide {
 }
 .banner__text {
   margin-top: 6px;
+}
+picture.image_banner_home img{
+  filter: brightness(0.9);
 }
 @media screen and (max-width:749px) {
   .button__greater-icon svg {
@@ -378,18 +381,18 @@ picture.image_banner_home img {
     padding: 1% 2.5% 1% 1.5%;
     display: flex;
     flex-direction: column;
-    margin-top: -3%;
-    margin-bottom: -3%;
+    margin: -3% 15% -3% auto;
+    width: 29%;
   }
-  section#shopify-section-template--21280538493205__fee80e2b-57dd-40b2-8e88-b46478691cee {
+  .deal-of__the-day-section{
     display: flex;
-    background: radial-gradient(364.66% 98% at 48.42% 21.8%, #5b6378 0, #303642 39.67%, #111216 99.2%);
+    background: radial-gradient(364.66% 98% at 48.42% 21.8%,#5b6378 0,#303642 39.67%,#111216 99.2%);
     margin-top: 60px;
     margin-bottom: 60px;
   }
-  .deal-of__the-day-main {
-    width: 60%;
-  }
+  .deal-of-the-day-content {  
+    transform: translate(130%, 0);
+  }  
 }
 .deal-of-the-product__img {
   display: flex;
@@ -407,10 +410,7 @@ picture.image_banner_home img {
 .deal-of-the-day-button-content a {
   color: #4B4955;
   opacity: 0.4;
-}
-.deal-of-the-day-content {
-  margin-left: 50%;
-}
+} 
 a.product-card__link {
   text-decoration: none;
   color: #4B4955;
@@ -446,12 +446,12 @@ span.slim-countdown-text {
 }
 @media screen and (max-width:749px) {
   .deal-of-the-day-product__info {
-    padding: 15px 20px;
+    padding: 0 15px 3px;
     margin-left: 11%;
     margin-right: 11%;
     position: absolute;
-    bottom: -321%;
-    padding-bottom: 55px;
+    transform: translate(0, -340px);
+      
   }
   .deal-of-the-day-section {
     position: relative;
@@ -491,6 +491,7 @@ span.slim-countdown-text {
   }
   .deal-of-the-day-sub___text {
     margin-left: 18%;
+    font-size: 10px;
   }
   .deal-of-the-product__img img {
     width: 100%;
@@ -509,126 +510,7 @@ span.slim-countdown-text {
 }
 .deal-of-the-day-product-price {
   margin: 5px 0 12px 0;
-}
-/* @media screen and (min-width:750px) {
-  .deal-of-the-day-product__info {
-    padding: 1% 2.5% 1% 1.5%;
-    display: flex;
-    flex-direction: column;
-    margin-top: -3%;
-    margin-bottom: -3%;
-  }
-  section#shopify-section-template--21280538493205__fee80e2b-57dd-40b2-8e88-b46478691cee {
-    display: flex;
-    background: radial-gradient(364.66% 98% at 48.42% 21.8%, #5b6378 0, #303642 39.67%, #111216 99.2%);
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
-  .deal-of__the-day-main {
-    width: 60%;
-  }
-}
-.deal-of-the-product__img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.deal-of-the-day-button {
-  display: flex;
-  align-items: center;
-}
-.deal-of-the-day-sub___text {
-  opacity: 0.5;
-  margin: 22px 0 15px 0;
-}
-.deal-of-the-day-button-content a {
-  color: #4B4955;
-  opacity: 0.4;
-}
-.deal-of-the-day-content {
-  margin-left: 50%;
-}
-a.product-card__link {
-  text-decoration: none;
-  color: #4B4955;
-}
-.deal-of-the-day-product-price del {
-  opacity: 0.4;
-  margin-left: 8px;
-}
-.deal-of-the-day-svg > svg {
-  opacity: 0.4;
-  margin-left: 10px;
-}
-.deal-of-the-day-svg {
-  display: flex;
-}
-div#countdown-timer {
-  margin-left: 13px;
-}
-strong#hours {
-  color: #fff;
-}
-strong#mins {
-  color: #fff;
-}
-span.slim-countdown-text {
-  color: #fff;
-  opacity: 0.4;
-  margin-right: 23px;
-  font-family: 'Gilroy Medium';
-}
-.deal-of-the-day-html {
-  transform: translate(0px, 10px);
-}
-@media screen and (max-width:749px) {
-  .deal-of-the-day-product__info {
-    transform: translate(0%, -90%);
-    padding: 15px 20px;
-    margin-left: 11%;
-    margin-right: 11%;
-  }
-  .product___card-button {
-    opacity: 0.4;
-  }
-  .deal-of-the-day-content {
-    margin-left: 25%;
-    margin-top: 5%;
-  }
-  .deal-of-the-day-container {
-    background: radial-gradient(364.66% 98% at 48.42% 21.8%, #5b6378 0, #303642 39.67%, #111216 99.2%);
-  }
-  .deal-of-the-day-container {
-    clip-path: polygon(0 11%, 51% 0, 100% 11%, 100% 89%, 50% 100%, 0 87%);
-    padding-bottom: 80%;
-    padding-top: 10%;
-  }
-  span.slim-countdown-text {
-    margin-right: 5px;
-  }
-  .deal-of-the-day-html {
-    transform: translate(0px);
-  }
-  .deal-of-the-day-sub___text {
-    margin-left: 18%;
-  }
-  .deal-of-the-product__img img {
-    width: 100%;
-    height: auto;
-  }
-  .deal-of-the-day-product__info::after {
-    content: "";
-    border-bottom: 3px solid #0f0;
-    width: 10%;
-    rotate: 90deg;
-    position: absolute;
-    left: 45%;
-    bottom: -4%;
-  }
-}
-.deal-of-the-day-product-price {
-  margin: 5px 0 12px 0;
-} */
+} 
 /* More products */
 picture.media {
   padding-bottom: 160px;
@@ -755,23 +637,27 @@ h2.more__products_title {
   .news-letter-picture img {
     width: 100%;
     height: auto;
+  } 
+  .newsletter-form__field-wrapper .field__input {
+    padding-right: 7rem;
   }
   .news-letter__content {
     flex-direction: column;
-  }
+  } 
   .inline-richtext {
-    margin: 0;
-    padding-right: 10px;
-    margin-bottom: 3.2rem;
+    margin: 0; 
+    margin-bottom: 1rem;
   }
   .news-letter__content {
     position: absolute;
-    top: 13%;
+    height: 100%;
+    padding: 10px;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    left: 4%;
-    gap: 0;
+    left: 0;
+     
   }
 }
 @media screen and (min-width:990px) {
@@ -1118,6 +1004,7 @@ facet-filters__label.caption-large {
   }
   .quick-add path {
     fill: #7C7A83;
+    stroke: #7c7a83;
   }
   .card-product__view-details-button span {
     color: #7C7A83;
@@ -1125,6 +1012,17 @@ facet-filters__label.caption-large {
   .quick-add__submit {
     color: #7C7A83;
   }
+  h2.facet-filters__label {
+    white-space: nowrap;
+  }
+  .active-facets.active-facets-mobile{
+    order: 4;
+  }
+  .facets-container.facets-container-drawer.scroll-trigger.animate--fade-in {
+    display: flex;
+    gap: 0;
+    flex-wrap: wrap;
+  } 
 }
 /* banner-image for collection-page */
 .image__overlay__main_skeleton > .banner__content {
@@ -1194,11 +1092,18 @@ span.para-text-fs.usp__icon__text {
 .product-form__input input[type=radio] + label {
   border: 1px solid #EDEDED;
 }
+.collection-product-title {
+  padding-left: 20px;
+}
 @media screen and (max-width:749px) {
   .flex_item_variants {
     display: flex;
     align-items: center;
     gap: 10px;
+  }
+  ul.mobile-facets__list{
+    margin: 0;
+    padding-top: 0;
   }
   li.product-usp--item {
     display: block;
@@ -1209,4 +1114,15 @@ span.para-text-fs.usp__icon__text {
   .product__info-wrapper.grid__item.scroll-trigger.animate--slide-in .price.price--on-sale {
     display: none;
   }
+  .facets-container{
+    display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .mobile-facets__wrapper{
+    width:30%;
+    }
+    .facets{
+    width:70%;
+    }  
 }

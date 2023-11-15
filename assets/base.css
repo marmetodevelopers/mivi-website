@@ -1339,6 +1339,8 @@
    left: 0;
    z-index: -1;
    border-radius: var(--buttons-radius-outset);
+   background: #7c7a83;
+   opacity: 0.05;
    box-shadow: var(--shadow-horizontal-offset) var(--shadow-vertical-offset) var(--shadow-blur-radius) rgba(var(--color-shadow), var(--shadow-opacity));
  }
  .button:after,
@@ -1365,9 +1367,9 @@
    box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(var(--color-button-text), var(--border-opacity)),
      0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-button), var(--alpha-button-background));
  }
- .button--secondary:after {
+ /* .button--secondary:after {
    --border-opacity: var(--buttons-border-opacity);
- }
+ } */
  .button:focus-visible,
  .button:focus,
  .button.focused,
@@ -1831,7 +1833,7 @@
    display: flex;
    font-size: 1.4rem;
    line-height: 1;
-   margin-top: 1rem;
+   margin-top: 0.5rem;
  }
  .form__message--large {
    font-size: 1.6rem;
