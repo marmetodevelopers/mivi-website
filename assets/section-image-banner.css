@@ -66,9 +66,7 @@
   .banner {
     flex-direction: row;
   }
-  /* .banner_media.media.banner_media-half{
-    padding-bottom:44%;
-    } */
+  
   .banner--small:not(.banner--adapt) {
     min-height: 42rem;
   }

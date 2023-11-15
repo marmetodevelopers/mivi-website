@@ -232,8 +232,7 @@
     transition: transform var(--duration-long) ease;
     transform: scale(1.03);
   }
-  .underline-links-hover:hover a {
-    /* text-decoration: underline; */
+  .underline-links-hover:hover a { 
     text-underline-offset: 0.3rem;
   }
 }

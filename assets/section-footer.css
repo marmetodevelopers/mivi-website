@@ -256,10 +256,7 @@
   .footer-block__details-content {
     margin-bottom: 0;
   }
-  /* .footer-block__details-content > p,
-  .footer-block__details-content > li {
-    padding: 0;
-  } */
+  
   .footer-block:only-child li {
     display: inline;
   }

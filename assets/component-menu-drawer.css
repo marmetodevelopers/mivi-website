@@ -118,8 +118,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 .menu-drawer__close-button:focus,
 .menu-drawer__menu-item:hover,
 .menu-drawer__close-button:hover {
-  color: rgb(var(--color-foreground));
-  /* background-color: rgba(var(--color-foreground), 0.04); */
+  color: rgb(var(--color-foreground)); 
 }
 .menu-drawer__menu-item--active:hover {
   background-color: rgba(var(--color-foreground), 0.08);
@@ -134,8 +133,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   top: 50%;
   transform: translateY(-50%);
 }
-.js .menu-drawer__submenu {
-  /* position: absolute; */
+.js .menu-drawer__submenu { 
   top: 0;
   width: 100%;
   bottom: 0;
@@ -169,8 +167,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   margin-right: 1rem;
 }
 .menu-drawer__utility-links {
-  padding: 0;
-  /* background-color: rgba(var(--color-foreground), 0.03); */
+  padding: 0; 
   position: relative;
 }
 .header--has-social .menu-drawer__utility-links {
