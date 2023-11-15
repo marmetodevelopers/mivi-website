@@ -271,8 +271,7 @@
     background: transparent;
   }
 }
-.banner__box {
-  /* padding: 4rem 6rem; */
+.banner__box {  
   padding: 4%;
   position: absolute;
   height: fit-content;
@@ -315,9 +314,7 @@
   height: 100%;
 }  
 @media screen and (min-width: 750px) { 
-/* .banner__box > * + * {
-  margin-top: 1rem;
-} */
+ 
 .banner__box > *:first-child {
   margin-top: 0;
 }
