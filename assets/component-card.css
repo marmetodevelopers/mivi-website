@@ -1,4 +1,4 @@
-.card-wrapper {
+.card-wrapper { 
   color: inherit;
   position: relative;
   text-decoration: none;
@@ -17,7 +17,7 @@
   --image-padding: 0rem;
   flex-direction: row;
   align-items: flex-start;
-  gap: 1.5rem;
+  gap: 1.5rem; 
 }
 .card--horizontal.ratio:before {
   padding-bottom: 0;
@@ -297,6 +297,9 @@
 .card-information > .rating {
   margin-top: 0.4rem;
 }
+.card-information .product_variants {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
 .card-information .product_variants {
   margin-top: 1.5rem;
   margin-bottom: 2rem;
