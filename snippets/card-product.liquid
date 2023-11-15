@@ -315,7 +315,7 @@
                     <button
                       id="ModalClose-{{ card_product.id }}"
                       type="button"
-                      class="quick-add-modal__toggle"
+                      class="quick-add-modal__toggle pop-up-icon-close"
                       aria-label="{{ 'accessibility.close' | t }}"
                     >
                       {% render 'icon-close' %}
@@ -352,7 +352,7 @@
                         disabled
                       {% endif %}
                     >
-                      <span class="font-body-text">
+                      <span class="font-body-text button-btn-content">
                         {%- if card_product.selected_or_first_available_variant.available -%}
                           {{ 'products.product.add_to_cart' | t }}
                         {%- else -%}

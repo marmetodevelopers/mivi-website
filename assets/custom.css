@@ -993,9 +993,16 @@ facet-filters__label.caption-large {
   justify-content: center;
   align-items: center;
 }
+.pop-up-icon-close path{
+fill: black;
+stroke: black;
+}
 @media screen and (min-width: 750px) {
   .card-product__view-details-button {
     padding: 12px;
+  }
+  .button-btn-content{
+    padding: 9px;
   }
 }
 @media screen and (max-width:749px) {
