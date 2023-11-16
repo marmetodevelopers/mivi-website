@@ -264,30 +264,5 @@
             }
         ]
     }
-{% endschema %}
-
-{% comment %} <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var splide = new Splide('#carousel--{{ section.id }}', {
-      // Your existing options
-    }).mount();
-
-    // Add a moved event listener
-    splide.on('moved', function(newIndex) {
-      // Get the previous and current content items
-      var prevIndex = newIndex === 0 ? splide.length - 1 : newIndex - 1;
-      var prevContent = document.querySelector('#content-item-' + prevIndex);
-      var currentContent = document.querySelector('#content-item-' + newIndex);
-
-      // Hide the content of the previous slide
-      if (prevContent) {
-        prevContent.classList.remove('active-content');
-      }
-
-      // Show the content for the current slide
-      if (currentContent) {
-        currentContent.classList.add('active-content');
-      }
-    });
-  });
-</script> {% endcomment %}
+{% endschema %} 
+ 
