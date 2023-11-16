@@ -137,10 +137,7 @@ a.menu-drawer__account.link.focus-inset.h5.medium-hide.large-up-hide {
     border: none;
   }
 }
-/* banner image */
-.banner__content.banner__content--middle-left {
-  position: absolute;
-}
+/* banner image */ 
 .banner__text {
   margin-top: 6px;
 }
@@ -198,9 +195,7 @@ picture.image_banner_home img {
   height: auto;
 }
 @media screen and (min-width:750px) {
-  .banner__box {
-    top: 66%;
-  }
+ 
   .button__greater-icon svg {
     margin-left: 16px;
   }
@@ -214,13 +209,21 @@ picture.image_banner_home img {
   .banner__text .banner-txt-text {
     margin: 6% 0 0 0;
   }
+
+  slideshow-component, .scroll-trigger:not(.scroll-trigger--offscreen).animate--fade-in .banner__content.banner__content--middle-left.page-width.scroll-trigger.animate--slide-in  {
+   animation: unset;
+   animation-delay: unset; 
+   opacity: unset;
+  }
+  .banner__content.banner__content--middle-left.page-width.scroll-trigger.animate--slide-in{
+    top: 50%;
+    transform: translateY(-60%);
+  }
   p.sub-text-txt {
     opacity: 0.3;
     letter-spacing: 4px;
   }
-  .banner__box.content-container.content-container--full-width-mobile.color-inverse.gradient {
-    margin-left: 2%;
-  }
+  
   .banner__content {
     position: absolute;
   }
@@ -250,7 +253,7 @@ picture.image_banner_home img {
 }
 .image-shadow {
   box-shadow: 0 0 #0000, 0 0 #0000, 0 29px 21px -12px rgba(0, 0, 0, .1);
-}
+} 
 @media screen and (max-width:749px) {
   .collection__title.title-wrapper.title-wrapper--no-top-margin {
     text-align: center;
@@ -325,6 +328,9 @@ picture.image_banner_home img {
   slideshow-component .slideshow.banner {
     gap: 20px;
   }
+  .feacture_collection_container:first-child{
+    padding: 0 0 0 13rem;  
+  }
   slideshow-component,
   .scroll-trigger:not(.scroll-trigger--offscreen).animate--fade-in {
     width: 100%;
@@ -342,6 +348,7 @@ picture.image_banner_home img {
   }
   .slideshow__controls {
     width: 90%;
+    padding: 0 0 0 13rem;
   }
   .price.price--on-sale {
     border-bottom: 1px solid rgba(75, 73, 85, 0.1);
@@ -390,8 +397,10 @@ picture.image_banner_home img {
     margin-top: 60px;
     margin-bottom: 60px;
   }
-  .deal-of-the-day-content {  
-    transform: translate(130%, 0);
+  .deal-of__the-day-main{
+    width: 50%;
+    display: flex;
+    justify-content: end;
   }  
 }
 .deal-of-the-product__img {
@@ -891,6 +900,7 @@ facet-filters__label.caption-large {
 }
 .splide__slide.is-active.is-visible .new-launch__product-details {
   display: block;
+  opacity: 1;
 }
 .new-launch_product-title h6 {
   color: #0f0;
@@ -1017,11 +1027,6 @@ facet-filters__label.caption-large {
   }
   .active-facets.active-facets-mobile{
     order: 4;
-  }
-  .facets-container.facets-container-drawer.scroll-trigger.animate--fade-in {
-    display: flex;
-    gap: 0;
-    flex-wrap: wrap;
   } 
 }
 /* banner-image for collection-page */
