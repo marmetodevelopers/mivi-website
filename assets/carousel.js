@@ -24,6 +24,7 @@ class Carousel extends HTMLElement {
     this.sync = this.carouselElement.dataset['carouselsyncselector'] || false;
     this.initCarousel();
   }
+
   initCarousel() {
     // More option available here https://splidejs.com/documents/
     // This slider can be customized as require check the above doc before adding any new
@@ -39,31 +40,36 @@ class Carousel extends HTMLElement {
       pagination: this.showdots,
       isNavigation: this.isNavigation,
       omitEnd: true,
-      drag: !this.disableDrag,
+      updateOnMove: true,
+      drag: !this.disableDrag, 
       breakpoints: {
         990: {
           perPage: parseInt(this.desktopPerPage) - parseInt(1),
+          updateOnMove: true,
+          drag: !this.disableDrag,
         },
         767: {
           perPage: this.mobilePerPage,
           arrows: this.showarrowsonmobile,
           pagination: this.showdotsonmobile,
-          gap: this.gap
+          gap: this.gap,
+          drag: !this.disableDrag,
+          updateOnMove: true,
         },
       },
     });
+
     if (this.sync) {
       this.initCarouselSync()
     } else {
       this.carousel.mount();
     }
   }
+
   initCarouselSync() {
     this.syncElement = document.querySelector(this.sync);
     this.carouselSync = new Splide(this.sync, {
       updateOnMove: true,
-      direction: 'ttb',
-      heightRatio: 5,
       perPage: this.syncElement.dataset['desktopperpage'] || 5,
       type: this.syncElement.dataset['type'] || 'loop',
       focus: this.syncElement.dataset['focus'] || 'left',
@@ -91,15 +97,3 @@ class Carousel extends HTMLElement {
   }
 }
 customElements.define('carousel-component', Carousel);
-this.carousel.on('mounted', function () {
-  // Splide instance is mounted, now initialize the additional code
-  var splide = new Splide('#carousel--{{ section.id }}', {
-    // ... other Splide settings
-  }).mount();
-
-  splide.on('moved', function (newIndex) {
-    // Handle the moved event, newIndex is the index of the new slide.
-    // You can use this index to display the corresponding content.
-    displayContent(newIndex);
-  });
-});

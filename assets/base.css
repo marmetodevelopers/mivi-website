@@ -3256,7 +3256,4 @@
      display: block;
    }
  }
- .splide__slide[aria-hidden="true"] .new-launch__product-details {
-   opacity: 0;
-   transition: all 2s ease-out;
- }
+ 

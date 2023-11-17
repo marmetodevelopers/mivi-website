@@ -135,10 +135,187 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "b8950051-01d5-4142-8ee2-f5e3e3aeaebb": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--21382360531221__b8950051-01d5-4142-8ee2-f5e3e3aeaebb-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Union_7.png",
+            "background_html": "",
+            "title": "",
+            "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"34\" height=\"28\" viewbox=\"0 0 34 28\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M27.9429 0.362976C21.8105 5.0981 17.774 13.0935 17.774 18.6048C17.774 23.8057 21.4224 27.3765 25.7694 27.3765C30.0388 27.3765 34.541 22.9518 32.9109 17.5181C24.9932 14.3355 22.3539 6.6506 28.4087 0.751101L27.9429 0.362976ZM10.1668 0.362976C4.03442 5.0981 -0.0020752 13.0935 -0.0020752 18.6048C-0.0020752 23.8057 3.6463 27.3765 7.9933 27.3765C12.2627 27.3765 16.7649 22.9518 15.1348 17.5181C7.21705 14.3355 4.5778 6.6506 10.6326 0.751101L10.1668 0.362976Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
+            "text": "<p>A pair of sport headphones must ensure a perfect fit alongside an energetic and punchy sound to even approach worthiness. And the DuoPods M40 have absolutely achieved this.<\/p>",
+            "link_label": "",
+            "link": "",
+            "digit_image": "shopify:\/\/shop_images\/digit_logo_1.png"
+          }
+        },
+        "template--21382360531221__b8950051-01d5-4142-8ee2-f5e3e3aeaebb-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Union_7.png",
+            "background_html": "",
+            "title": "",
+            "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"34\" height=\"28\" viewbox=\"0 0 34 28\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M27.9429 0.362976C21.8105 5.0981 17.774 13.0935 17.774 18.6048C17.774 23.8057 21.4224 27.3765 25.7694 27.3765C30.0388 27.3765 34.541 22.9518 32.9109 17.5181C24.9932 14.3355 22.3539 6.6506 28.4087 0.751101L27.9429 0.362976ZM10.1668 0.362976C4.03442 5.0981 -0.0020752 13.0935 -0.0020752 18.6048C-0.0020752 23.8057 3.6463 27.3765 7.9933 27.3765C12.2627 27.3765 16.7649 22.9518 15.1348 17.5181C7.21705 14.3355 4.5778 6.6506 10.6326 0.751101L10.1668 0.362976Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
+            "text": "<p>A pair of sport headphones must ensure a perfect fit alongside an energetic and punchy sound to even approach worthiness. And the DuoPods M40 have absolutely achieved this.<\/p>",
+            "link_label": "",
+            "link": "",
+            "digit_image": "shopify:\/\/shop_images\/digit_logo_1.png"
+          }
+        },
+        "template--21382360531221__b8950051-01d5-4142-8ee2-f5e3e3aeaebb-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Union_7.png",
+            "background_html": "",
+            "title": "",
+            "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"34\" height=\"28\" viewbox=\"0 0 34 28\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M27.9429 0.362976C21.8105 5.0981 17.774 13.0935 17.774 18.6048C17.774 23.8057 21.4224 27.3765 25.7694 27.3765C30.0388 27.3765 34.541 22.9518 32.9109 17.5181C24.9932 14.3355 22.3539 6.6506 28.4087 0.751101L27.9429 0.362976ZM10.1668 0.362976C4.03442 5.0981 -0.0020752 13.0935 -0.0020752 18.6048C-0.0020752 23.8057 3.6463 27.3765 7.9933 27.3765C12.2627 27.3765 16.7649 22.9518 15.1348 17.5181C7.21705 14.3355 4.5778 6.6506 10.6326 0.751101L10.1668 0.362976Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
+            "text": "<p>A pair of sport headphones must ensure a perfect fit alongside an energetic and punchy sound to even approach worthiness. And the DuoPods M40 have absolutely achieved this.<\/p>",
+            "link_label": "",
+            "link": "shopify:\/\/collections",
+            "digit_image": "shopify:\/\/shop_images\/digit_logo_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--21382360531221__b8950051-01d5-4142-8ee2-f5e3e3aeaebb-column-1",
+        "template--21382360531221__b8950051-01d5-4142-8ee2-f5e3e3aeaebb-column-2",
+        "template--21382360531221__b8950051-01d5-4142-8ee2-f5e3e3aeaebb-column-3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "fcd3e799-03ea-4a52-8de0-272f7f580361": {
+      "type": "USP-section",
+      "blocks": {
+        "d7b49d05-d33f-4950-b50b-b052f25b66ed": {
+          "type": "column",
+          "settings": {
+            "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"39\" height=\"70\" viewbox=\"0 0 39 70\" fill=\"none\">\n  <path d=\"M16.8008 70V40.8403L3.41755 53.1969L0 49.5048L15.7134 35.0008L0.000777351 20.4952L3.41833 16.8031L16.8016 29.1597V0L38.0419 21.2372L23.1296 35.0008L38.0411 48.7628L16.8008 70ZM21.8322 40.6459V57.8566L30.779 48.9074L21.8322 40.6459ZM21.8322 12.1427V29.3533L30.779 21.0918L21.8322 12.1427Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
+            "usp_text": "Bluetooth 5.0 Connectivity"
+          }
+        },
+        "78426b44-bdcf-4b2e-85bf-a367025cc367": {
+          "type": "column",
+          "settings": {
+            "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"52\" height=\"59\" viewbox=\"0 0 52 59\" fill=\"none\">\n  <path d=\"M38.8664 37.709V42.1584C42.2237 42.1584 45.4435 40.8248 47.8175 38.4508C50.1915 36.0768 51.5251 32.857 51.5251 29.4997C51.5251 26.1424 50.1915 22.9226 47.8175 20.5486C45.4435 18.1746 42.2237 16.8409 38.8664 16.8409V21.2904C41.0436 21.2904 43.1317 22.1553 44.6712 23.6949C46.2108 25.2344 47.0757 27.3225 47.0757 29.4997C47.0757 31.6769 46.2108 33.765 44.6712 35.3045C43.1317 36.8441 41.0436 37.709 38.8664 37.709Z\" fill=\"#00FF00\"><\/path>\n  <path d=\"M34.9506 59V0L12.0803 16.0774H0V42.9226H12.0803L34.9506 59ZM4.44947 20.5269H12.9035C13.217 20.5273 13.527 20.4615 13.8133 20.3337C14.0996 20.2059 14.3556 20.019 14.5646 19.7853L30.5085 8.58007V50.4348L14.5572 39.2295C14.3482 38.9958 14.0922 38.809 13.8059 38.6812C13.5196 38.5534 13.2096 38.4875 12.8961 38.4879H4.44947V20.5269Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
+            "usp_text": "High-Definition Sound Quality"
+          }
+        },
+        "a98ba149-cd92-4f48-b27a-b88b684b3b6e": {
+          "type": "column",
+          "settings": {
+            "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"35\" height=\"60\" viewbox=\"0 0 35 60\" fill=\"none\">\n  <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M27.6867 0V6.60955H34.2228V60H0V6.68299H5.80171V0H27.6867ZM3.30477 56.7687H30.7711V9.76744H3.30477V56.7687ZM20.4904 12.4113L18.8748 28.2007L27.6141 25.6303L13.4402 54.1983L15.6434 35.9853L6.4635 39.6573L20.4904 12.4113Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
+            "usp_text": "Battery lifeupto 20 hours"
+          }
+        },
+        "b1432785-3fc2-4dde-9374-b64cad80a29f": {
+          "type": "column",
+          "settings": {
+            "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"39\" height=\"60\" viewbox=\"0 0 39 60\" fill=\"none\">\n  <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M21.0019 50.8956C22.1606 52.6825 24.1225 53.75 26.25 53.75C29.6963 53.75 32.5 50.9463 32.5 47.5H38.75C38.75 54.3925 33.1425 60 26.25 60C21.9956 60 18.0731 57.8669 15.7569 54.2938L3.71063 35.6925C1.28313 31.95 0 27.6038 0 23.125C0 10.3744 10.3737 0 23.125 0C28.2712 0 33.0294 1.73187 36.875 4.61812V13.33C33.8138 9.03625 28.7925 6.25 23.125 6.25C13.82 6.25 6.25 13.82 6.25 23.125C6.25 26.3944 7.18562 29.565 8.955 32.2937L21.0019 50.8956ZM23.7495 30.625C23.7495 35.7944 27.9551 40 33.1245 40V36.25C30.0226 36.25 27.4995 33.7262 27.4995 30.625C27.4995 27.5231 30.0226 25 33.1245 25H34.9995V23.125C34.9995 16.5769 29.6726 11.25 23.1245 11.25C16.5764 11.25 11.2495 16.5769 11.2495 23.125H14.9995C14.9995 18.645 18.6445 15 23.1245 15C27.0395 15 30.3164 17.7831 31.0807 21.4744C26.8907 22.4094 23.7495 26.1575 23.7495 30.625Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
+            "usp_text": "Soft and Comfortable fit"
+          }
+        }
+      },
+      "block_order": [
+        "d7b49d05-d33f-4950-b50b-b052f25b66ed",
+        "78426b44-bdcf-4b2e-85bf-a367025cc367",
+        "a98ba149-cd92-4f48-b27a-b88b684b3b6e",
+        "b1432785-3fc2-4dde-9374-b64cad80a29f"
+      ],
+      "settings": {
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "cb31f764-ce41-4545-bea2-8ae94e4fa626": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "cover_image": "shopify:\/\/shop_images\/Group_32.png",
+        "mobile_cover_image": "shopify:\/\/shop_images\/Group_32_1.png",
+        "sub_heading": "Sound Quality",
+        "text": "Immerse In Studio Quality Sound",
+        "sub_text": "The M40 Duopods push boundaries and expectations to deliver studio quality sound, always. Finally, you can enjoy every small detail of your music",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "f692c6f2-4606-4316-8e87-9a0fe759b7e5": {
+      "type": "image-with-text",
+      "blocks": {
+        "be75e97d-4e18-4a63-9064-8bc56109c3bd": {
+          "type": "caption",
+          "settings": {
+            "caption": "Battery Life",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "template--21382360531221__f692c6f2-4606-4316-8e87-9a0fe759b7e5-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Doesn’t Drain Easy. Up to 20 Hours Battery Life",
+            "heading_size": "h2"
+          }
+        },
+        "template--21382360531221__f692c6f2-4606-4316-8e87-9a0fe759b7e5-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Get 5 hours of playtime on the duopods and 15 more hours from the case.Enjoy this wireless treat-All day. Every day.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "be75e97d-4e18-4a63-9064-8bc56109c3bd",
+        "template--21382360531221__f692c6f2-4606-4316-8e87-9a0fe759b7e5-heading-1",
+        "template--21382360531221__f692c6f2-4606-4316-8e87-9a0fe759b7e5-text-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/6_2.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "related-products"
+    "related-products",
+    "b8950051-01d5-4142-8ee2-f5e3e3aeaebb",
+    "fcd3e799-03ea-4a52-8de0-272f7f580361",
+    "cb31f764-ce41-4545-bea2-8ae94e4fa626",
+    "f692c6f2-4606-4316-8e87-9a0fe759b7e5"
   ]
 }

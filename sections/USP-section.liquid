@@ -1,0 +1,89 @@
+{% style %}
+  .padding-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | divided_by: 2 }}px;
+  }
+  @media (min-width: 750px) {
+    .padding-{{ section.id }} {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+  {% endstyle %}
+<div class="usp-container padding-{{ section.id }} page-width">
+    <div class="Usp-content">
+        {% for block in section.blocks %}
+            <div class="USP-sub-content">
+            {% if block.settings.html != blank %}
+            <span>{{ block.settings.html }}</span>
+            {% endif %}
+            {% if block.settings.usp_text != blank %}
+            <span class="usp-text">{{ block.settings.usp_text }}</span>
+            {% endif %}
+            </div>
+
+        {% endfor %}
+    </div>
+     
+
+</div>
+
+{% schema %}
+  {
+    "name": "USP",
+    "class": "USP section",
+    "tag": "section",
+    "settings": [ 
+            {
+                "type": "header",
+                "content": "Section padding"
+              },
+            {
+                "type": "range",
+                "id": "padding_top",
+                "min": 10,
+                "max": 100,
+                "step": 5,
+                "unit": "px",
+                "label": "Padding top",
+                "default": 40
+            },
+            {
+                "type": "range",
+                "id": "padding_bottom",
+                "min": 10,
+                "max": 100,
+                "step": 5,
+    
+                "unit": "px",
+                "label": "Padding bottom",
+                "default": 40
+            } 
+    ],
+    "blocks": [
+        {
+          "type": "column",
+          "name": "usp section",
+          "settings": [
+            {
+              "type": "html",
+              "id": "html",
+              "label": "html"
+            },
+            {
+                "type": "text",
+                "id": "usp_text",
+                "label": "Usp text",
+                "default":"Bluetooth 5.0 Connectivity"
+              } 
+          ]
+        }
+    ],
+    "presets":[
+        {
+            "name":"USP"
+        }
+    ]
+    
+  }
+{% endschema %}

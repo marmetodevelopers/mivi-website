@@ -382,14 +382,15 @@ picture.image_banner_home img {
     margin-right: 20px;
   }
 }
-/* deal of the day section */
+/* deal of the day section */ 
 @media screen and (min-width:750px) {
   .deal-of-the-day-product__info {
     padding: 1% 2.5% 1% 1.5%;
     display: flex;
     flex-direction: column;
     margin: -3% 15% -3% auto;
-    width: 29%;
+    width: 380px;
+    height: auto; 
   }
   .deal-of__the-day-section{
     display: flex;
@@ -401,7 +402,10 @@ picture.image_banner_home img {
     width: 50%;
     display: flex;
     justify-content: end;
-  }  
+  } 
+  .deal-of-the-day-product-price del{
+    font-size: 16px;
+  }
 }
 .deal-of-the-product__img {
   display: flex;
@@ -455,27 +459,13 @@ span.slim-countdown-text {
 }
 @media screen and (max-width:749px) {
   .deal-of-the-day-product__info {
-    padding: 0 15px 3px;
+    transform: translate(0%, -82%);
+    padding: 15px 20px;
     margin-left: 11%;
     margin-right: 11%;
-    position: absolute;
-    transform: translate(0, -340px);
-      
   }
-  .deal-of-the-day-section {
-    position: relative;
-  }
-  .deal-of-the-day-html {
-    margin-bottom: 10px;
-  }
-  a.product-card__link .deal-of-the-day-product-price {
-    margin-bottom: 0;
-  }
-  .deal-of-the-day-product-price span {
-    font-size: 18px;
-  }
-  .deal-of-the-day-product-price del {
-    font-size: 14px;
+  .deal-of-the-day-sub___text{
+    font-size: 10px;
   }
   .product___card-button {
     opacity: 0.4;
@@ -483,6 +473,12 @@ span.slim-countdown-text {
   .deal-of-the-day-content {
     margin-left: 25%;
     margin-top: 5%;
+  }
+  .deal-of-the-day-product-price span{
+    font-size: 18px;
+  }
+  .deal-of-the-day-product-price del{
+    font-size: 14px;
   }
   .deal-of-the-day-container {
     background: radial-gradient(364.66% 98% at 48.42% 21.8%, #5b6378 0, #303642 39.67%, #111216 99.2%);
@@ -500,7 +496,6 @@ span.slim-countdown-text {
   }
   .deal-of-the-day-sub___text {
     margin-left: 18%;
-    font-size: 10px;
   }
   .deal-of-the-product__img img {
     width: 100%;
@@ -513,13 +508,12 @@ span.slim-countdown-text {
     rotate: 90deg;
     position: absolute;
     left: 45%;
-    bottom: 8%;
-    z-index: 999;
+    bottom: -4%;
   }
 }
 .deal-of-the-day-product-price {
   margin: 5px 0 12px 0;
-} 
+}
 /* More products */
 picture.media {
   padding-bottom: 160px;
@@ -901,6 +895,8 @@ facet-filters__label.caption-large {
 .splide__slide.is-active.is-visible .new-launch__product-details {
   display: block;
   opacity: 1;
+  animation: fade .3s ease-in-out forwards;
+    
 }
 .new-launch_product-title h6 {
   color: #0f0;
@@ -973,6 +969,29 @@ facet-filters__label.caption-large {
 }
 .product_option-content a {
   text-decoration: none;
+}
+@media screen and (min-width:990px) and (max-width:1024px){
+  .new-launch-container .splide__pagination {
+    bottom: 29em;
+    left: 3%;
+    padding: 0 1em;
+    right: 0;
+    z-index: 1;
+    position: absolute;
+}
+}
+.splide__slide[aria-hidden="true"] .new-launch__product-details {
+  opacity: 0;
+ animation: fade 2s ease-in-out forwards;
+ animation-delay: 2s;
+} 
+@keyframes fade {
+ from {
+   opacity: 0; 
+ }
+ to {
+   opacity: 1;
+ }
 }
 /* collection page */
 .card__product-buttons {
@@ -1073,6 +1092,7 @@ li.product-usp--item {
   display: flex;
   align-items: center;
   gap: 20px;
+  width: 27%;
 }
 .website__link {
   color: #962C25;
@@ -1084,6 +1104,8 @@ ul.product-usp.flexbox.product_featured_tags {
   display: flex;
   gap: 40px;
   padding: 0;
+  width: 100%;
+  flex-wrap: wrap;
 }
 span.para-text-fs.usp__icon__text {
   font-family: 'Gilroy semibold';
@@ -1106,6 +1128,9 @@ span.para-text-fs.usp__icon__text {
     align-items: center;
     gap: 10px;
   }
+  ul.product-usp.flexbox.product_featured_tags {
+    flex-wrap: nowrap;
+  }
   ul.mobile-facets__list{
     margin: 0;
     padding-top: 0;
@@ -1121,8 +1146,8 @@ span.para-text-fs.usp__icon__text {
   }
   .facets-container{
     display: flex;
-        flex-direction: row;
-        align-items: center;
+    flex-direction: row;
+    align-items: center;
     }
     .mobile-facets__wrapper{
     width:30%;
@@ -1130,4 +1155,100 @@ span.para-text-fs.usp__icon__text {
     .facets{
     width:70%;
     }  
+}
+/* multicolumn for PDP page */
+.multicolumn-digit-picture{
+  margin-top: 4rem;
+}
+/* USP section for PDP page */
+.Usp-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 39px;
+}
+.USP-sub-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.usp-text{
+  color: #4B4955; 
+  font-family: 'Gilroy Medium';
+  font-size: 20px; 
+  font-weight: 600;
+  line-height: 130%;
+  text-transform: capitalize;
+  letter-spacing: normal;
+}
+@media screen and (max-width:990px) {
+  .USP-sub-content {
+    width: calc(50% - 20px)
+} 
+.Usp-content {
+  flex-wrap: wrap;
+  width: 100%;
+}
+.USP-sub-content { 
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.usp-text{
+  text-align: center;
+}
+.USP-sub-content svg{
+  width: 25px;
+  height: 40px;
+}   
+}
+/* video section */
+.video-sub__heading {
+  color: #0F0;   
+  font-family: 'Gilroy Medium';
+  font-size: 16px; 
+  line-height: 100%;  
+  letter-spacing: 6.4px;
+  text-transform: uppercase;
+}
+.video___content{
+  position: absolute;
+  bottom: 12%;
+  width: 70%;
+  margin: auto;
+  left: 15%;
+}
+.video__text{
+  padding: 3% 0 2% 0;
+}
+.video__text{
+  color: #fff;
+}
+.video-sub___text{
+  color: #fff;
+}
+.video-section span.deferred-media__poster-button.motion-reduce{
+  background: no-repeat;
+  border: 5px solid #0f0;
+  color: white;
+}
+@media screen and (max-width:749px) {
+  deferred-media.video-section__media.deferred-media.image-aspect-ratio.no-js-hidden.gradient.global-media-settings.scroll-trigger.animate--slide-in{
+    aspect-ratio: 80 / 99;
+  }
+  .video-section.isolate.page-width.section-template--21382360531221__cb31f764-ce41-4545-bea2-8ae94e4fa626-padding.video-mobile-page-width {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .video-sub__heading{
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+  .video___content {
+     bottom: 10%;
+  }    
+}
+/* image with text */
+.image-with-text__heading{
+  padding-top: 24px;
 }

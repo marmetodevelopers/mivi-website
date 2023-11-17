@@ -155,6 +155,15 @@
   .image-with-text.collapse-borders:not(.image-with-text--overlap) .image-with-text__content {
     border-top: 0;
   }
+  .image-with-text--overlap .image-with-text__content {
+    width: 90%;
+    padding-left: 0;
+    padding-right: 0;
+    margin: auto;
+  }
+  .image-with-text__heading {
+    padding-top: 12px;
+}
 }
 
 .image-with-text__content--mobile-right > * {
@@ -169,7 +178,7 @@
 
 .image-with-text--overlap .image-with-text__content {
   width: 90%;
-  margin: -3rem auto 0;
+  /* margin: -3rem auto 0; */
 }
 
 @media screen and (min-width: 750px) {
@@ -212,7 +221,7 @@
     width: calc(100% + 4rem);
     min-width: calc(100% + 4rem);
     margin-top: 0;
-    margin-left: -4rem;
+    /* margin-left: -4rem; */
   }
 
   .image-with-text--overlap .image-with-text__grid--reverse .image-with-text__content {

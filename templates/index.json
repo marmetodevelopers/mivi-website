@@ -429,6 +429,47 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
+    },
+    "97412730-93a3-40b5-902b-13795f2843dd": {
+      "type": "new-launch-section-sec",
+      "blocks": {
+        "cce4902a-c15b-4fb2-a3f5-248baa9c14a9": {
+          "type": "carousel_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_119_1.png",
+            "mobile_image": "shopify:\/\/shop_images\/Group_36.png",
+            "product": "3-1a-dual-port-charger"
+          }
+        },
+        "05882a89-0215-40b1-9a55-e2f424be7ca4": {
+          "type": "carousel_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_119_1.png",
+            "mobile_image": "shopify:\/\/shop_images\/Group_36.png",
+            "product": "4a-wall-charger"
+          }
+        }
+      },
+      "block_order": [
+        "cce4902a-c15b-4fb2-a3f5-248baa9c14a9",
+        "05882a89-0215-40b1-9a55-e2f424be7ca4"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_heading": "new launch",
+        "heading_align": "tw-text-center",
+        "sub_text": "The upgrade with you have been waiting",
+        "desktop_background_image": "shopify:\/\/shop_images\/Union_9.png",
+        "mobile_background_image": "shopify:\/\/shop_images\/Union_8.png",
+        "enable_pagination": true,
+        "enable_autoplay": false,
+        "autoplay_speed": 3,
+        "slides_perpage": 3,
+        "section-padding-top": 0,
+        "section-padding-bottom": 0,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
     }
   },
   "order": [
@@ -441,6 +482,7 @@
     "af3bf248-59fd-40c6-b0ed-28193696e6ec",
     "d9c0f073-8abf-43ad-94fc-a5e6d6061436",
     "e7889233-c385-40c8-8f2a-3389dcbfa086",
-    "9cd384c7-7fd7-419d-a1cd-cee7ded2c32d"
+    "9cd384c7-7fd7-419d-a1cd-cee7ded2c32d",
+    "97412730-93a3-40b5-902b-13795f2843dd"
   ]
 }
