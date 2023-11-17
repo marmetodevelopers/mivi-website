@@ -1,4 +1,3 @@
-
 class Carousel extends HTMLElement {
   constructor() {
     super();
@@ -22,15 +21,12 @@ class Carousel extends HTMLElement {
     this.showdotsonmobile = this.carouselElement.dataset['showdotsonmobile']?.toLocaleLowerCase() === 'true' || false;
     this.isNavigation = this.carouselElement.dataset['isnavigation'] === 'true' || false;
     this.disableDrag = this.carouselElement.dataset['disabledrag'] === 'true' || false;
-
     this.sync = this.carouselElement.dataset['carouselsyncselector'] || false;
-
     this.initCarousel();
   }
-
   initCarousel() {
     // More option available here https://splidejs.com/documents/
-    // This slider can be customized as require check the above doc before adding any new 
+    // This slider can be customized as require check the above doc before adding any new
     // Slider library.
     this.carousel = new Splide(this.carouselElement, {
       perPage: this.desktopPerPage,
@@ -62,10 +58,8 @@ class Carousel extends HTMLElement {
       this.carousel.mount();
     }
   }
-
   initCarouselSync() {
     this.syncElement = document.querySelector(this.sync);
-
     this.carouselSync = new Splide(this.sync, {
       updateOnMove: true,
       direction: 'ttb',
@@ -85,12 +79,10 @@ class Carousel extends HTMLElement {
         },
       },
     });
-
     this.carousel.sync(this.carouselSync);
     this.carousel.mount();
     this.carouselSync.mount();
   };
-
   refreshSlider() {
     this.carousel.refresh();
     if (this.carouselSync) {
@@ -98,5 +90,16 @@ class Carousel extends HTMLElement {
     }
   }
 }
-
 customElements.define('carousel-component', Carousel);
+this.carousel.on('mounted', function () {
+  // Splide instance is mounted, now initialize the additional code
+  var splide = new Splide('#carousel--{{ section.id }}', {
+    // ... other Splide settings
+  }).mount();
+
+  splide.on('moved', function (newIndex) {
+    // Handle the moved event, newIndex is the index of the new slide.
+    // You can use this index to display the corresponding content.
+    displayContent(newIndex);
+  });
+});

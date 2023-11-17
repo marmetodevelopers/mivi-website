@@ -3,21 +3,22 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
           }
         },
-        "price": {
-          "type": "price",
+        "a2617c1a-8bdf-4d65-b8ae-416e56c9ef9d": {
+          "type": "text",
           "settings": {
+            "text": "{{ product.metafields.custom.product_page_subtext.value }}",
+            "text_style": "body"
+          }
+        },
+        "dae52432-eef3-44eb-bfc8-c93e64e29374": {
+          "type": "description",
+          "settings": {
+            "metafield_content": "{{ product.metafields.custom.product_page_desription | metafield_tag }}"
           }
         },
         "variant_picker": {
@@ -26,39 +27,80 @@
             "picker_type": "button"
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
+        "price": {
+          "type": "price",
           "settings": {
           }
         },
-        "buy_buttons": {
+        "e2f9595e-4862-4906-ab10-02911bf80b6c": {
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
           }
         },
-        "description": {
-          "type": "description",
+        "c0bb79f6-fb2c-415a-8185-dcf069e68a36": {
+          "type": "complementary",
           "settings": {
+            "block_heading": "Pairs well with",
+            "make_collapsible_row": false,
+            "icon": "price_tag",
+            "product_list_limit": 10,
+            "products_per_page": 3,
+            "pagination_style": "counter",
+            "image_ratio": "square",
+            "enable_quick_add": false
           }
         },
-        "share": {
-          "type": "share",
+        "70be4f5a-04b5-48b7-a273-bc4fe885f72e": {
+          "type": "feature_with_icon",
           "settings": {
-            "share_label": "Share"
+            "class": "product_featured_tags",
+            "product_tag_1": "new arrive",
+            "product_certification_icon_1": "shopify:\/\/shop_images\/Group_76.png",
+            "product_certification_text_1": "Free Shipping",
+            "product_tag_2": "Best seller",
+            "product_certification_icon_2": "shopify:\/\/shop_images\/Group_77.png",
+            "product_certification_text_2": "1 year Warranty",
+            "product_tag_3": "free shipping",
+            "product_certification_icon_3": "shopify:\/\/shop_images\/Group_78.png",
+            "product_certification_text_3": "Ships Today",
+            "product_tag_4": "",
+            "product_certification_text_4": "",
+            "product_tag_5": "",
+            "product_certification_text_5": "",
+            "product_tag_6": "",
+            "product_certification_text_6": "",
+            "product_tag_7": "",
+            "product_certification_text_7": "",
+            "product_tag_8": "",
+            "product_certification_text_8": "",
+            "product_tag_9": "",
+            "product_certification_text_9": "",
+            "product_tag_10": "",
+            "product_certification_text_10": "",
+            "product_tag_11": "",
+            "product_certification_text_11": "",
+            "product_tag_12": "",
+            "product_certification_text_12": "",
+            "product_tag_13": "",
+            "product_certification_text_13": "",
+            "product_tag_14": "",
+            "product_certification_text_14": "",
+            "product_tag_15": "",
+            "product_certification_text_15": ""
           }
         }
       },
       "block_order": [
-        "vendor",
         "title",
-        "price",
+        "a2617c1a-8bdf-4d65-b8ae-416e56c9ef9d",
+        "dae52432-eef3-44eb-bfc8-c93e64e29374",
         "variant_picker",
-        "quantity_selector",
-        "buy_buttons",
-        "description",
-        "share"
+        "price",
+        "e2f9595e-4862-4906-ab10-02911bf80b6c",
+        "c0bb79f6-fb2c-415a-8185-dcf069e68a36",
+        "70be4f5a-04b5-48b7-a273-bc4fe885f72e"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -71,12 +113,13 @@
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
-        "padding_top": 36,
+        "padding_top": 60,
         "padding_bottom": 12
       }
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",

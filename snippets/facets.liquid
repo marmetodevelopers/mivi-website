@@ -499,7 +499,7 @@
             </div>
           {%- endif -%}
           <div class="product-count light" role="status">
-            {% comment %} <h2 class="product-count__text text-body">
+            <h2 class="product-count__text text-body hidden">
               <span id="ProductCountDesktop">
                 {%- if results.results_count -%}
                   {{ 'templates.search.results_with_count' | t: terms: results.terms, count: results.results_count }}
@@ -512,7 +512,7 @@
                   }}
                 {%- endif -%}
               </span>
-            </h2> {% endcomment %}
+            </h2>  
             <div class="loading-overlay__spinner">
               <svg
                 aria-hidden="true"
@@ -588,7 +588,7 @@
       <summary class="mobile-facets__open-wrapper focus-offset">
         <span class="mobile-facets__open{% if filter_type == 'drawer' and enable_filtering == false %} medium-hide large-up-hide{% endif %}">
           {% render 'icon-filter' %}
-          <span class="mobile-facets__open-label button-label hidden">
+          <span class="mobile-facets__open-label button-label medium-hide large-up-hide mobile-facets__open-label button-label medium-hide large-up-hide small-element-8">
             {%- if enable_filtering and enable_sorting -%}
               {{ 'products.facets.filter_and_sort' | t }}
             {%- elsif enable_filtering -%}
@@ -597,7 +597,7 @@
               {{ 'products.facets.sort_button' | t }}
             {%- endif -%}
           </span>
-          <span class="mobile-facets__open-label button-label small-element-8">
+          <span class="mobile-facets__open-label button-label small-element-8 small-hide">
             {%- if enable_filtering -%}
               {{ 'products.facets.filter_button' | t }}
             {%- endif -%}
@@ -972,10 +972,10 @@
   </div>
   {% comment %} Sort, product count and filter pills at the end when filter is type of Drawer for the correct tabbing order {% endcomment %}
   {%- if enable_sorting and filter_type == 'drawer' -%}
-    <facet-filters-form class="facets small-hide">
+    <facet-filters-form class="facets">
       <form id="FacetSortDrawerForm" class="facets__form">
-        <div class="facet-filters sorting caption small-hide">
-          <div class="facet-filters__field">
+        <div class="facet-filters sorting caption">
+          <div class="facet-filters__field small-hide nikk">
             <h2 class="facet-filters__label caption-large text-body small-element-8">
               <label for="SortBy">{{ 'products.facets.sort_by_label' | t }}</label>
             </h2>
@@ -1024,7 +1024,7 @@
     class="product-count light{% if filter_type == 'vertical' or filter_type == 'horizontal' %} medium-hide large-up-hide{% endif %}"
     role="status"
   >
-    {% comment %} <h2 class="product-count__text text-body">
+    <h2 class="product-count__text text-body hidden">
       <span id="ProductCount">
         {%- if results.results_count -%}
           {{ 'templates.search.results_with_count' | t: terms: results.terms, count: results.results_count }}
@@ -1037,7 +1037,7 @@
           }}
         {%- endif -%}
       </span>
-    </h2> {% endcomment %}
+    </h2>  
     <div class="loading-overlay__spinner">
       <svg
         aria-hidden="true"

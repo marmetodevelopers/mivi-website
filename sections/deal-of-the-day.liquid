@@ -1,3 +1,4 @@
+<script src="{{ 'deal-of-the-day.js' | asset_url }}" defer="defer"></script>
 {% style %}
   .padding-{{ section.id }} {
     padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
@@ -46,7 +47,7 @@
           <a href="{{ product.url }}" class="product-card__link">
             <div class="deal-of-the-product__img">
                 {% render 'image', class: '', mobileSrc: product.featured_image, desktopSrc: product.featured_image %} 
-            </div> 
+            </div>   
             <div class="deal_of_the_day_product-content">
               <span class="deal-product-title small-element-1">  {{ product.title }}</span>
             </div>
@@ -63,7 +64,7 @@
                     {% render 'greater-icon-black' %}
                 </div>
                 {% endif %}
-            </div>
+            </div> 
         </a>   
     </div>
       
@@ -74,7 +75,7 @@
 {
   "name": "deal-of-the-day",
   "tag": "section",
-  "class": "section",
+  "class": "section deal-of__the-day-section",
   "settings": [ 
       {
           "type":"product",
@@ -155,6 +156,7 @@
             "min": 10,
             "max": 100,
             "step": 5,
+
             "unit": "px",
             "label": "Padding bottom",
             "default": 40

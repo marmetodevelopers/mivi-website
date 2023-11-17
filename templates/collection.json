@@ -43,12 +43,7 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "custom_css": [
-        ".product___card-button {display: none;}",
-        ".card__content {padding: 0;}",
-        ".card-information {padding: 0 20px;}",
-        ".card__heading {padding-left: 20px;}",
-        ".image-shadow {box-shadow: none;}",
-        "@media screen and (min-width: 750px) {.card-product__view-details-button {margin-bottom: 10px; background: #000; color: #fff; margin-left: 10px; padding: 17px; } .quick-add__submit {padding: 12px; margin-bottom: 10px; background: #0f0; } .quick-add {margin-right: 10px; }}"
+
       ],
       "settings": {
         "products_per_page": 16,

@@ -1,5 +1,4 @@
-<script src="{{ 'carousel.js' | asset_url }}" ></script>
-<script src="{{ 'splide.min.js' | asset_url }}" ></script>
+<script src="{{ 'carousel.js' | asset_url }}" defer="defer"></script>
 {{ 'splide.min.css' | asset_url | stylesheet_tag }} 
 {% style %}
 #carousel--{{ section.id }}{
@@ -13,48 +12,103 @@
         padding-bottom: {{ section.settings.section-padding-bottom | append: 'px'  }};
     }
 }
+.padding-{{ section.id }} {
+  padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
+  padding-bottom: {{ section.settings.padding_bottom | divided_by: 2 }}px;
+}
+@media screen and (min-width: 750px) {
+  .padding-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+}
 {% endstyle %}
-
-<carousel-component id="carousel--{{ section.id }}" class="page-width splide slider_component_container"
-    data-autoplay="{{ section.settings.enable_autoplay | default: flase }}"
-    data-autoplay-speed="{{ section.settings.autoplay_speed | times: 1000 | default: 3000  }}"
-    data-desktopperpage="{{ section.settings.slides_perpage | default: 3 }}" 
-    data-pagination="{{ section.settings.enable_pagination }}"
-> 
+<div class="new-launch-container padding-{{ section.id }}">
+    <div align="center">
+        {% if section.settings.section_heading != blank %}
+       <div class="h4 {{ section.settings.heading_align }} tw-mb-8">{{ section.settings.section_heading }}</div>
+        {% endif %}
+        {% if section.settings.sub_text != blank %}
+           <h2 class="small-element new-launch-sub_text"> {{ section.settings.sub_text }}</h2>
+          {% endif %} 
+       </div> 
+    <carousel-component id="carousel--{{ section.id }}" class="page-width splide slider_component_container"
+        data-autoplay="{{ section.settings.enable_autoplay | default: false }}"
+        data-autoplay-speed="{{ section.settings.autoplay_speed | times: 1000 | default: 3000  }}"
+        data-desktopperpage="2" 
+        data-mobilePerPage="1.2"
+        data-pagination="{{ section.settings.enable_pagination | default: true }}"
+        data-type="splide"
+        data-showdotsonmobile="true"
+        data-showdots="true"
+        data-focus="center"
+>  
+    <div class="empty-div-back"></div> 
+    <div align="center">  
+      <div class="new-launch-image"> 
+        {% render 'image', class: "slide--show_image", mobileSrc:section.settings.mobile_background_image, desktopSrc:section.settings.desktop_background_image  %}  
+      </div>
+    </div>
     <div class="splide__track">
         <ul class="splide__list">
             {%- for block in section.blocks -%}
                 <li class="splide__slide">
-                    <div class=" tw-bg-teal-300">  
-                        {{ 'product-4' | placeholder_svg_tag }}
-                    </div>
-                </li>
-            {%- endfor -%}
-        </ul>
-    </div>
-</carousel-component>
-<script>
-    var splide; 
-    function initializeSplide() {
-      var perPage = window.innerWidth > 749 ? 3 : 2; // Show 3 slides on desktop, 2 on mobile
-      splide = new Splide('.splide', {
-        perPage: perPage,
-        rewind: true,
-      });
-  
-      splide.mount();
-    }
-  
-    // Initialize the Splide slider on page load
-    initializeSplide();
-  
-    // Update the Splide slider when the window is resized
-    window.addEventListener('resize', function () {
-      splide.destroy(); // Destroy the existing Splide instance
-      initializeSplide(); // Initialize a new instance with the updated perPage value
-    });
-  </script>
-
+                        <div class="new-launch-slider-image">
+                        {% render 'image', class: "slide-component___image", mobileSrc: block.settings.mobile_image, desktopSrc: block.settings.image  %} 
+                        </div> 
+                    <div class="new-launch__product-details">
+                        {% assign product = all_products[block.settings.product] %}
+                      <div align="center" class="new-launch_product-title"> 
+                      <h6>{{ product.title}}</h6>
+                      </div>
+                      <div align="center" class="product-tag__name small-element-7">
+                      {{ product.metafields.custom.product_tag }}
+                      </div> 
+                        <div class="additional-deatils">
+                          {% if product.metafields.custom.product_description != blank %}
+                            {% for  product_description in product.metafields.custom.product_description.value %}
+                            <div class="descriptive-content">
+                              <div class="descriptive-svg">
+                                {% render 'image' class="" desktopSrc:product_description.descriptive_svg %}
+                              </div>
+                                <div class="descriptive-text small-element-6">
+                              <p>{{ product_description.descriptive_title }}</p>
+                              </div>  
+                            </div>
+                            {% endfor %}
+                            {% endif %}
+                        </div> 
+                         <div align="center" class="product__variant-swatches">
+                          {% for options in product.options_with_values %}
+                            <div class="product_option-content">
+                               {% for value in options.values %}
+                                <a href="{{ product.url }}" class=""> 
+                                <label for="" class="variant-checkbox" name="variant">
+                                  {% if options.name == 'Color' %}
+                                    <input
+                                      type="radio"
+                                      name="variant"
+                                      class="circle_radio"
+                                      value="{{ forloop.index }}"
+                                      style="background:{{ value }}"
+                                    >
+                                  {% endif %}
+                                  {% if options.name != 'Color' %}
+                                    <span class="variant_name">{{ value }}</span>
+                                  {% endif %}
+                                </label>
+                              </a>
+                              {% endfor %}
+                            </div>
+                          {% endfor %}
+                        </div>
+                      </div> 
+                    </li>
+                {%- endfor -%}
+            </ul>
+        </div>
+    </carousel-component>
+</div> 
 {% schema %}
     {
         "name":"Carousel",
@@ -89,6 +143,22 @@
                 ],
                 "default": "tw-text-center"
             },
+            {
+                "type": "text",
+                "id": "sub_text",
+                "default": "The upgrade with you have been waiting",
+                "label": "Sub text"
+              },
+              {
+                "type": "image_picker",
+                "id": "desktop_background_image", 
+                "label": "Desktop Background image"
+              },
+              {
+                "type": "image_picker",
+                "id": "mobile_background_image", 
+                "label": "Mobile Background image"
+              },
             {
                 "type":"header",
                 "content":"SLIDER SETTINGS"
@@ -136,6 +206,29 @@
                 "default": 0,
                 "min": 0,
                 "max": 100
+            },{
+                "type": "header",
+                "content": "Section padding"
+              },
+            {
+                "type": "range",
+                "id": "padding_top",
+                "min": 10,
+                "max": 100,
+                "step": 5,
+                "unit": "px",
+                "label": "Padding top",
+                "default": 40
+            },
+            {
+                "type": "range",
+                "id": "padding_bottom",
+                "min": 10,
+                "max": 100,
+                "step": 5,
+                "unit": "px",
+                "label": "Padding bottom",
+                "default": 40
             }
         ],
         "blocks": [
@@ -146,7 +239,22 @@
                     {
                         "type":"header",
                         "content": "REPLACE THE THE SETTINGS WITH CUSTOM SETTINGS"
-                    }
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:sections.slideshow.blocks.slide.settings.image.label"
+                      },
+                      {
+                        "type": "image_picker",
+                        "id": "mobile_image",
+                        "label": "Mobile Image"
+                      },
+                    {
+                        "type":"product",
+                        "id":"product",
+                        "label":"Product"
+                      }
                 ]
             }
         ],
@@ -156,4 +264,5 @@
             }
         ]
     }
-{% endschema %}
+{% endschema %} 
+ 

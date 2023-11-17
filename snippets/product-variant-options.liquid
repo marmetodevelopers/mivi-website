@@ -14,7 +14,7 @@
     block: block
   %}
 {% endcomment %}
-{%- liquid
+ {%- liquid
   assign variants_available_arr = product.variants | map: 'available'
   assign variants_option1_arr = product.variants | map: 'option1'
   assign variants_option2_arr = product.variants | map: 'option2'
@@ -59,10 +59,16 @@
         class="disabled"
       {% endif %}
     >
-    <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-      {{ value -}}
+       
+    <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"{% if option.name == 'Color' %} style="background: {{ value}}" {% endif%} class="{% if option.name == 'length' %} product--varient_options{% endif %}">
+      {% if option.name == 'length' %}
+            <span>{{ option.name }}</span><br>
+            <span>{{value}} </span>
+            {{ product.price | money_without_trailing_zeros }}
+        {%endif%}
       <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
     </label>
+   
   {%- elsif block.settings.picker_type == 'dropdown' -%}
     <option
       value="{{ value | escape }}"

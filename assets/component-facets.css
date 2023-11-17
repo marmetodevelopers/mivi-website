@@ -143,10 +143,7 @@
   grid-column-start: span 2;
 }
 .facets__form {
-  display: grid;
-  gap: 0 3.5rem;
-  grid-template-columns: 1fr max-content max-content;
-  margin-bottom: 0.5rem;
+  display: grid; 
 }
 .facets__wrapper {
   align-items: center;
@@ -323,8 +320,7 @@ button.facets__button {
   grid-row: 2;
   margin: 1rem 0;
   background-color: #f6f6f7;
-  height: 3px;
-}
+ }
 .active-facets__button {
   display: block;
   margin-right: 1.5rem;
@@ -692,7 +688,7 @@ input.mobile-facets__checkbox {
   padding: 1.5rem 2rem 1.5rem 2.5rem;
   width: 100%;
   transition: background-color 0.2s ease;
-  word-break: break-word;
+  word-break: normal;
   display: flex;
 }
 .mobile-facets__label > svg {
