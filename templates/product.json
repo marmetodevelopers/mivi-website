@@ -308,6 +308,270 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "979399b6-0b8e-46b2-95cf-1f1a196b14ad": {
+      "type": "image-with-text",
+      "blocks": {
+        "5201ad8b-2a92-46d4-ac39-55839ae38b44": {
+          "type": "caption",
+          "settings": {
+            "caption": "Battery Life",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "template--21392479977749__979399b6-0b8e-46b2-95cf-1f1a196b14ad-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Durable Outside. Reliable Inside.",
+            "heading_size": "h2"
+          }
+        },
+        "template--21392479977749__979399b6-0b8e-46b2-95cf-1f1a196b14ad-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Only the best tech products, components and parts make it inside the duopods and that’s what makes it the most reliable wireless earbuds out there.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "5201ad8b-2a92-46d4-ac39-55839ae38b44",
+        "template--21392479977749__979399b6-0b8e-46b2-95cf-1f1a196b14ad-heading-1",
+        "template--21392479977749__979399b6-0b8e-46b2-95cf-1f1a196b14ad-text-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Bitmap.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "6bba2504-4a58-47ff-896f-b80449fe031d": {
+      "type": "rich-text",
+      "blocks": {
+        "e8c4d938-f487-4a88-bcad-f06b03d347ae": {
+          "type": "caption",
+          "settings": {
+            "caption": "COMPARISON",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "template--21392479977749__6bba2504-4a58-47ff-896f-b80449fe031d-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "So what makes M40 stand out?",
+            "heading_size": "h2"
+          }
+        },
+        "template--21392479977749__6bba2504-4a58-47ff-896f-b80449fe031d-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The M40 duopods come in with in-built access to your digital assistants- Siri or Google. Access them easily, like never before<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "e8c4d938-f487-4a88-bcad-f06b03d347ae",
+        "template--21392479977749__6bba2504-4a58-47ff-896f-b80449fe031d-heading-1",
+        "template--21392479977749__6bba2504-4a58-47ff-896f-b80449fe031d-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "0f3f8b8f-e717-4560-9523-34b9b831c203": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--21392479977749__0f3f8b8f-e717-4560-9523-34b9b831c203-collapsible_row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Audio Specifications",
+            "icon": "caret",
+            "row_content": "<p><strong>Frequency Response<\/strong><br\/>20 Hz-20kHz<\/p><p><strong>Driver Type<\/strong><br\/>Dynamic<\/p>",
+            "page": ""
+          }
+        },
+        "template--21392479977749__0f3f8b8f-e717-4560-9523-34b9b831c203-collapsible_row-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "CONTROLS AND CONNECTIVITY",
+            "icon": "caret",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "template--21392479977749__0f3f8b8f-e717-4560-9523-34b9b831c203-collapsible_row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "INCLUDED IN THE BOX",
+            "icon": "caret",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "template--21392479977749__0f3f8b8f-e717-4560-9523-34b9b831c203-collapsible_row-4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "BATTERY",
+            "icon": "caret",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "81fbe204-ba0d-40a1-ac87-1f394abf7ee0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "PHYSICAL UNIT",
+            "icon": "caret",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21392479977749__0f3f8b8f-e717-4560-9523-34b9b831c203-collapsible_row-1",
+        "template--21392479977749__0f3f8b8f-e717-4560-9523-34b9b831c203-collapsible_row-2",
+        "template--21392479977749__0f3f8b8f-e717-4560-9523-34b9b831c203-collapsible_row-3",
+        "template--21392479977749__0f3f8b8f-e717-4560-9523-34b9b831c203-collapsible_row-4",
+        "81fbe204-ba0d-40a1-ac87-1f394abf7ee0"
+      ],
+      "settings": {
+        "caption": "DuoPods M40",
+        "heading": "Technical Specifications",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "c67b9f6e-6a1d-452e-a8fb-1c64a684bff7": {
+      "type": "product-page-banner-image",
+      "blocks": {
+        "template--21392479977749__c67b9f6e-6a1d-452e-a8fb-1c64a684bff7-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Easy Touch Control For Convenience",
+            "heading_size": "h2"
+          }
+        },
+        "template--21392479977749__c67b9f6e-6a1d-452e-a8fb-1c64a684bff7-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "Your music, calls and much more is only a few taps away. Full Control without any cords.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--21392479977749__c67b9f6e-6a1d-452e-a8fb-1c64a684bff7-heading-1",
+        "template--21392479977749__c67b9f6e-6a1d-452e-a8fb-1c64a684bff7-text-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Group_32_abd05f17-a94b-46f4-a826-8c5463b40071.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-right",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "f812aafa-39a1-44fb-a012-8239c3709a09": {
+      "type": "product-page-banner-image",
+      "blocks": {
+        "template--21392479977749__f812aafa-39a1-44fb-a012-8239c3709a09-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "template--21392479977749__f812aafa-39a1-44fb-a012-8239c3709a09-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--21392479977749__f812aafa-39a1-44fb-a012-8239c3709a09-heading-1",
+        "template--21392479977749__f812aafa-39a1-44fb-a012-8239c3709a09-text-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Group_117.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "9aad4bca-91a2-4d6d-ac96-1e68290e4168": {
+      "type": "product-page-banner-image",
+      "blocks": {
+        "template--21392479977749__9aad4bca-91a2-4d6d-ac96-1e68290e4168-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "template--21392479977749__9aad4bca-91a2-4d6d-ac96-1e68290e4168-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--21392479977749__9aad4bca-91a2-4d6d-ac96-1e68290e4168-heading-1",
+        "template--21392479977749__9aad4bca-91a2-4d6d-ac96-1e68290e4168-text-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Group_115.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
@@ -316,6 +580,12 @@
     "b8950051-01d5-4142-8ee2-f5e3e3aeaebb",
     "fcd3e799-03ea-4a52-8de0-272f7f580361",
     "cb31f764-ce41-4545-bea2-8ae94e4fa626",
-    "f692c6f2-4606-4316-8e87-9a0fe759b7e5"
+    "f692c6f2-4606-4316-8e87-9a0fe759b7e5",
+    "979399b6-0b8e-46b2-95cf-1f1a196b14ad",
+    "6bba2504-4a58-47ff-896f-b80449fe031d",
+    "0f3f8b8f-e717-4560-9523-34b9b831c203",
+    "c67b9f6e-6a1d-452e-a8fb-1c64a684bff7",
+    "f812aafa-39a1-44fb-a012-8239c3709a09",
+    "9aad4bca-91a2-4d6d-ac96-1e68290e4168"
   ]
 }

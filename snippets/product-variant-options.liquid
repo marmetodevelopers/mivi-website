@@ -62,9 +62,9 @@
        
     <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"{% if option.name == 'Color' %} style="background: {{ value}}" {% endif%} class="{% if option.name == 'length' %} product--varient_options{% endif %}">
       {% if option.name == 'length' %}
-            <span>{{ option.name }}</span><br>
-            <span>{{value}} </span>
-            {{ product.price | money_without_trailing_zeros }}
+            <span class="product_varient_option___name">{{ option.name }}</span><br>
+            <span class="product___varient_option_value small-element-2 font-bold">{{value}} </span>
+           <span class="product--variant__price"> {{ product.price | money_without_trailing_zeros }}</span>
         {%endif%}
       <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
     </label>

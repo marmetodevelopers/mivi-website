@@ -29,7 +29,7 @@
             </p>
           {% endif %}
           {%- if section.settings.heading != blank -%}
-            <h2 class="collapsible-content__heading inline-richtext {{ section.settings.heading_size }}">
+            <h2 class="collapsible-content__heading inline-richtext h4 {{ section.settings.heading_size }}">
               {{ section.settings.heading }}
             </h2>
           {%- else -%}
@@ -468,6 +468,10 @@
             {
               "value": "washing",
               "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.icon.options__44.label"
+            },
+            {
+              "value": "caret",
+              "label": "Caret"
             }
           ],
           "default": "check_mark",
