@@ -309,6 +309,149 @@
         "padding_bottom": 36
       }
     },
+    "a7062727-dfd4-40a9-a52a-5808b7833db4": {
+      "type": "PDP-banner-image",
+      "blocks": {
+        "2546f2d5-f668-428b-af24-a466c4e2d2d4": {
+          "type": "caption",
+          "settings": {
+            "caption": "bass",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "template--21392479977749__a7062727-dfd4-40a9-a52a-5808b7833db4-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Boosted Bass For Better Sound",
+            "heading_size": "h2"
+          }
+        },
+        "template--21392479977749__a7062727-dfd4-40a9-a52a-5808b7833db4-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "Fine tuned to deliver deeply boosted and most powerful bass for a better listening experience",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "2546f2d5-f668-428b-af24-a466c4e2d2d4",
+        "template--21392479977749__a7062727-dfd4-40a9-a52a-5808b7833db4-heading-1",
+        "template--21392479977749__a7062727-dfd4-40a9-a52a-5808b7833db4-text-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Group_117.png",
+        "mobile_image": "shopify:\/\/shop_images\/Group_116.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "7a7ea6f3-b660-4e7c-a5d7-e0ae9b3e9961": {
+      "type": "PDP-second-image-banner-section",
+      "blocks": {
+        "56a1b082-0990-4b13-a8f8-f4ebcc6593c4": {
+          "type": "caption",
+          "settings": {
+            "caption": "CALL CONTROL",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "template--21392479977749__7a7ea6f3-b660-4e7c-a5d7-e0ae9b3e9961-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Easy Touch Control For Convenience",
+            "heading_size": "h2"
+          }
+        },
+        "template--21392479977749__7a7ea6f3-b660-4e7c-a5d7-e0ae9b3e9961-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "Your music, calls and much more is only a few taps away. Full Control without any cords.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "56a1b082-0990-4b13-a8f8-f4ebcc6593c4",
+        "template--21392479977749__7a7ea6f3-b660-4e7c-a5d7-e0ae9b3e9961-heading-1",
+        "template--21392479977749__7a7ea6f3-b660-4e7c-a5d7-e0ae9b3e9961-text-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Group_32_abd05f17-a94b-46f4-a826-8c5463b40071.png",
+        "mobile_image": "shopify:\/\/shop_images\/Group_41.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-right",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "0e119df3-4b63-45ca-ab03-8b39936d63ad": {
+      "type": "pdp-page-third-banner-image",
+      "blocks": {
+        "46cae992-a634-40ec-99ea-2705a4ffb129": {
+          "type": "caption",
+          "settings": {
+            "caption": "Google Assistant Enabled",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "template--21392479977749__0e119df3-4b63-45ca-ab03-8b39936d63ad-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Help at your fingertips",
+            "heading_size": "h2"
+          }
+        },
+        "template--21392479977749__0e119df3-4b63-45ca-ab03-8b39936d63ad-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "The M40 duopods come in with in-built access to your digital assistants- Siri or Google. Access them easily, like never before",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "46cae992-a634-40ec-99ea-2705a4ffb129",
+        "template--21392479977749__0e119df3-4b63-45ca-ab03-8b39936d63ad-heading-1",
+        "template--21392479977749__0e119df3-4b63-45ca-ab03-8b39936d63ad-text-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Group_115.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "979399b6-0b8e-46b2-95cf-1f1a196b14ad": {
       "type": "image-with-text",
       "blocks": {
@@ -394,6 +537,14 @@
         "padding_bottom": 52
       }
     },
+    "92d322a9-c1fa-465d-8e15-af33fed41c6c": {
+      "type": "pdp-only-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Group_118.png",
+        "padding_top": 40,
+        "padding_bottom": 75
+      }
+    },
     "0f3f8b8f-e717-4560-9523-34b9b831c203": {
       "type": "collapsible-content",
       "blocks": {
@@ -464,114 +615,6 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "c67b9f6e-6a1d-452e-a8fb-1c64a684bff7": {
-      "type": "product-page-banner-image",
-      "blocks": {
-        "template--21392479977749__c67b9f6e-6a1d-452e-a8fb-1c64a684bff7-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Easy Touch Control For Convenience",
-            "heading_size": "h2"
-          }
-        },
-        "template--21392479977749__c67b9f6e-6a1d-452e-a8fb-1c64a684bff7-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "Your music, calls and much more is only a few taps away. Full Control without any cords.",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "template--21392479977749__c67b9f6e-6a1d-452e-a8fb-1c64a684bff7-heading-1",
-        "template--21392479977749__c67b9f6e-6a1d-452e-a8fb-1c64a684bff7-text-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Group_32_abd05f17-a94b-46f4-a826-8c5463b40071.png",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-right",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "f812aafa-39a1-44fb-a012-8239c3709a09": {
-      "type": "product-page-banner-image",
-      "blocks": {
-        "template--21392479977749__f812aafa-39a1-44fb-a012-8239c3709a09-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
-        },
-        "template--21392479977749__f812aafa-39a1-44fb-a012-8239c3709a09-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "template--21392479977749__f812aafa-39a1-44fb-a012-8239c3709a09-heading-1",
-        "template--21392479977749__f812aafa-39a1-44fb-a012-8239c3709a09-text-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Group_117.png",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "9aad4bca-91a2-4d6d-ac96-1e68290e4168": {
-      "type": "product-page-banner-image",
-      "blocks": {
-        "template--21392479977749__9aad4bca-91a2-4d6d-ac96-1e68290e4168-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
-        },
-        "template--21392479977749__9aad4bca-91a2-4d6d-ac96-1e68290e4168-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "template--21392479977749__9aad4bca-91a2-4d6d-ac96-1e68290e4168-heading-1",
-        "template--21392479977749__9aad4bca-91a2-4d6d-ac96-1e68290e4168-text-1"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Group_115.png",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
     }
   },
   "order": [
@@ -581,11 +624,12 @@
     "fcd3e799-03ea-4a52-8de0-272f7f580361",
     "cb31f764-ce41-4545-bea2-8ae94e4fa626",
     "f692c6f2-4606-4316-8e87-9a0fe759b7e5",
+    "a7062727-dfd4-40a9-a52a-5808b7833db4",
+    "7a7ea6f3-b660-4e7c-a5d7-e0ae9b3e9961",
+    "0e119df3-4b63-45ca-ab03-8b39936d63ad",
     "979399b6-0b8e-46b2-95cf-1f1a196b14ad",
     "6bba2504-4a58-47ff-896f-b80449fe031d",
-    "0f3f8b8f-e717-4560-9523-34b9b831c203",
-    "c67b9f6e-6a1d-452e-a8fb-1c64a684bff7",
-    "f812aafa-39a1-44fb-a012-8239c3709a09",
-    "9aad4bca-91a2-4d6d-ac96-1e68290e4168"
+    "92d322a9-c1fa-465d-8e15-af33fed41c6c",
+    "0f3f8b8f-e717-4560-9523-34b9b831c203"
   ]
 }

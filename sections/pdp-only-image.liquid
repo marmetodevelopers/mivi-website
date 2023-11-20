@@ -1,0 +1,61 @@
+{% style %}
+  .padding-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | divided_by: 2 }}px;
+  }
+  @media (min-width: 750px) {
+    .padding-{{ section.id }} {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+  {% endstyle %}
+  <div class="page-width padding-{{ section.id }}">
+    <div align="center" class="pdp-one__image">
+        {% render 'image', desktopSrc: section.settings.image %}
+    </div>
+  </div>
+{% schema %}
+{
+  "name": "only one image",
+  "tag": "section",
+  "class": "section",
+  "settings": [ 
+      {
+          "type":"image_picker",
+          "id":"image",
+          "label":"Image"
+      },
+      {
+        "type": "header",
+        "content": "Section padding"
+      },
+    {
+        "type": "range",
+        "id": "padding_top",
+        "min": 10,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "Padding top",
+        "default": 40
+    },
+    {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 10,
+        "max": 100,
+        "step": 5,
+
+        "unit": "px",
+        "label": "Padding bottom",
+        "default": 40
+    } 
+    ],
+   "presets": [
+    {
+        "name":"only one image"
+    }
+   ]
+}
+   {% endschema %} 
