@@ -83,7 +83,7 @@ class CartItems extends HTMLElement {
       {
         id: 'main-cart-items',
         section: document.getElementById('main-cart-items').dataset.id,
-        selector: '.js-contents',
+        selector: '#main-cart-items',
       },
       {
         id: 'cart-icon-bubble',
@@ -96,10 +96,10 @@ class CartItems extends HTMLElement {
         selector: '.shopify-section',
       },
       {
-        id: 'main-cart-footer',
-        section: document.getElementById('main-cart-footer').dataset.id,
-        selector: '.js-contents',
-      },
+        id: 'cart__policy_with--footer',
+        section: document.getElementById('main-cart-items').dataset.id,
+        selector: '.cart__policy_with--footer',
+      }
     ];
   }
 
