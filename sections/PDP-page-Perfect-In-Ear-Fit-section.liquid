@@ -1,5 +1,4 @@
-<script src="{{ 'carousel.js' | asset_url }}" defer="defer"></script>
-{{ 'splide.min.css' | asset_url | stylesheet_tag }} 
+ 
 {% style %}
 #carousel--{{ section.id }}{
     display: block;
@@ -48,14 +47,15 @@
                             <div class="product__ingredients-contents">
                                 <div class="product_meta_image">
                                     <div class="small-hide pdp-perfect-in-ear-desktop-image">
-                                        {% if image_url != blank %}
-                                            <img src="{{ image_url | image_url }}" alt="img" />
+                                        {% if image_url != blank %}  
+                                            {% render 'image', class: '', mobileSrc: image_url, desktopSrc: image_url %} 
                                         {% endif %}
                                     </div> 
                                     {% for metaImage in product.metafields.custom.pdp_perfect_in_ear_fit_section_product_mobile_image.value %}
                                         <div class="large-up-hide medium-hide pdp-perfect-in-ear-mobile-image">
-                                            {% if forLoopIndex == forloop.index %}
-                                                <img src="{{ metaImage | image_url }}" alt="img" />
+                                            {% if forLoopIndex == forloop.index %} 
+                                                {% render 'image', class: '', mobileSrc: metaImage, desktopSrc: metaImage %} 
+
                                             {% endif %}
                                         </div>
                                     {% endfor %} 

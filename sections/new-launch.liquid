@@ -1,5 +1,4 @@
-<script src="{{ 'carousel.js' | asset_url }}" defer="defer"></script>
-{{ 'splide.min.css' | asset_url | stylesheet_tag }} 
+ 
 {% style %}
 #carousel--{{ section.id }}{
     display: block;
@@ -56,8 +55,8 @@
             <div class="new-launch-slider-image">
               {% render 'image', class: "slide-component___image", mobileSrc: block.settings.mobile_image, desktopSrc: block.settings.image  %} 
             </div> 
-            <div class="new-launch__product-details">
-              {% assign product = all_products[block.settings.product] %}
+            <div class="new-launch__product-details"> 
+              {% assign product = block.settings.product %}
               <div align="center" class="new-launch_product-title"> 
                 <h6>{{ product.title}}</h6>
               </div>

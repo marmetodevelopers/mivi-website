@@ -1924,7 +1924,6 @@
    font-style: normal;
    font-weight: 700;
    line-height: 100%;
-   /* 18px */
    text-transform: uppercase;
  }
  .quantity__button {
@@ -2462,7 +2461,6 @@
  }
  .header__icon,
  .header__icon--cart .icon {
-   /* height: 4.4rem; */
    width: 4.4rem;
    padding: 0;
  }
@@ -2976,7 +2974,6 @@
    transition: text-decoration-thickness var(--duration-short) ease;
  }
  .rte a:hover {
-   /* color: rgb(var(--color-link)); */
    text-decoration-thickness: 0.2rem;
  }
  .rte blockquote {

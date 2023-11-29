@@ -15,8 +15,8 @@
     {% assign icons-1 = product.metafields.custom.pdp_usp_image.value %} 
       {% for image_url in icons-1 %} 
         <div class="USP-sub-content">
-          {% if image_url != blank %}
-            <img src="{{ image_url | image_url }}" alt="img" />
+          {% if image_url != blank %} 
+            {% render 'image', class: '', mobileSrc: image_url, desktopSrc: image_url %}  
           {% endif %}
           {% if product.metafields.custom.pdp_usp_text != blank and product.metafields.custom.pdp_usp_text.value != blank %}
             {% assign texts-1 = product.metafields.custom.pdp_usp_text.value | split: ',' %}
