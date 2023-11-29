@@ -1,5 +1,4 @@
-<script src="{{ 'deal-of-the-day.js' | asset_url }}" defer="defer"></script>
-{% style %}
+ {% style %}
   .padding-{{ section.id }} {
     padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
     padding-bottom: {{ section.settings.padding_bottom | divided_by: 2 }}px;
@@ -34,10 +33,17 @@
         {% if section.settings.html != blank %}
             <div class="body_text--color-{{ section.id }} deal-of-the-day-html">  {{ section.settings.html }}</div>
         {% endif %}    
-        <div id="countdown-timer" class="text-white" data-time="{{section.settings.date}}"> 
-          <strong id="hours" class="bold-number h6"></strong> <span class="slim-countdown-text">H<span class="hide-words">RS</span><span class="timer"></span></span>    
-          <strong id="mins" class="bold-number h6"> 36 </strong> <span class="slim-countdown-text">M<span class="hide-words">INS</span><span class="timer"></span></span>
-        </div> 
+        <div id="clockdiv"> 
+          <div class="clockdiv-item">
+          <span class="hours h6" id="hour"></span>
+          <div class="smalltext small-element-6"><strong>  HRS </strong></div>
+          </div> 
+          <div class="clockdiv-item">
+            <span class="minutes h6" id="minute"></span>
+            <div class="smalltext small-element-6"><strong>  MIN </strong></div>
+          </div>  
+        </div>
+        <p id="output_element"></p>
       </div>
      </div>
     </div> 
@@ -98,7 +104,7 @@
             "label": " Image Background color",
             "default":"#F6F6F7"
   
-          },  
+        },  
         {
             "type":"text",
             "id":"heading",
@@ -112,28 +118,33 @@
             "default": "#0f0"
         },
         {
-            "type":"text",
-            "id":"sub_text",
-            "label":"Sub Text",
-            "default":"ENDS IN"
+          "type":"text",
+          "id":"sub_text",
+          "label":"Sub Text",
+          "default":"ENDS IN"
+        },
+        {
+          "type": "text",
+          "id": "end_time",
+          "label": "Sale end time",
+          "info": "Please add Time in this format(Jan 28, 2022 20:37:25)"
+        },
+        {
+          "type": "text",
+          "id": "end_msg",
+          "label": "Sale end message"
         },
         {
             "type": "color",
             "id": "text_color",
             "label": "Text Color",
             "default": "#fff"
-            },
+        },
         {
             "type":"html",
             "id":"html",
             "label":"html"
-        },
-        {
-            "type": "text",
-            "id": "date",
-            "label": "Date",
-            "info": "Format: mm/dd/yyyy"
-        },  
+        }, 
         {
             "type": "header",
             "content": "Section padding"
@@ -166,3 +177,29 @@
     ]
 }
 {% endschema %}
+   
+<script>
+  const deadline = new Date("{{ section.settings.end_time }}").getTime();
+  var x = setInterval(function () {
+    var now = new Date().getTime();
+    var t = deadline - now;
+    
+    var days = Math.floor(t / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+    
+    // Add days to hours if there are more than 24 hours
+    hours += days * 24;
+  
+    // Display hours and minutes
+    document.getElementById("hour").innerHTML = hours;
+    document.getElementById("minute").innerHTML = minutes;
+  
+    if (t < 0) {
+      clearInterval(x);
+      document.getElementById("output_element").innerHTML = "{{ section.settings.end_msg }}";
+      document.getElementById("hour").innerHTML = "0";
+      document.getElementById("minute").innerHTML = "0";
+    }
+  }, 1000);
+  </script>

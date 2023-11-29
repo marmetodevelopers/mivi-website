@@ -2215,7 +2215,7 @@
    text-transform: capitalize;
    color: #fff;
    font-size: 12px;
-   font-family: Gilroy semibold;
+   font-family: Gilroy Medium;
    line-height: 100%;
  }
  .announcement-bar-slider--fade-in-next .announcement-bar__message,
@@ -2659,7 +2659,7 @@
  .header__menu-item span {
    transition: text-decoration var(--duration-short) ease;
    color: #fff;
-   font-family: 'Gilroy semibold';
+   font-family: 'Gilroy Medium';
    letter-spacing: 0;
  }
  .header__menu-item:hover span {

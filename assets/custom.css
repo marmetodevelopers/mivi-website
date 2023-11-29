@@ -252,6 +252,9 @@ picture.image_banner_home img {
 .image-shadow {
   box-shadow: 0 0 #0000, 0 0 #0000, 0 29px 21px -12px rgba(0, 0, 0, .1);
 }
+.title.inline-richtext {
+  color: #4B4955;
+}
 @media screen and (max-width:749px) {
   .collection__title.title-wrapper.title-wrapper--no-top-margin {
     text-align: center;
@@ -326,6 +329,12 @@ picture.image_banner_home img {
   slideshow-component .slideshow.banner {
     gap: 20px;
   }
+  .collection__title.title-wrapper.title-wrapper--no-top-margin {
+    max-width: 75%;
+  }
+  .collection__description .body {
+    width: 100%;
+  }
   .feacture_collection_container:first-child {
     padding: 0 0 0 13rem;
   }
@@ -340,7 +349,6 @@ picture.image_banner_home img {
     text-align: center;
   }
   .collection__descriptionbody {
-    width: 50%;
     margin: auto;
     color: #4B4955;
   }
@@ -439,21 +447,7 @@ a.product-card__link {
 }
 .deal-of-the-day-svg {
   display: flex;
-}
-div#countdown-timer {
-  margin-left: 13px;
-}
-strong#hours {
-  color: #fff;
-}
-strong#mins {
-  color: #fff;
-}
-span.slim-countdown-text {
-  color: #fff;
-  opacity: 0.4;
-  margin-right: 23px;
-  font-family: 'Gilroy Medium';
+  gap: 14px;
 }
 .deal-of-the-day-html {
   transform: translate(0px, 10px);
@@ -468,6 +462,13 @@ span.slim-countdown-text {
     z-index: 1;
   }
   .deal-of-the-day-sub___text {
+    margin: 20px 0 5px 0;
+  }
+  #clockdiv {
+    margin-bottom: 8px;
+    margin-top: 0;
+  }
+  .deal-of-the-day-sub___text {
     font-size: 10px;
   }
   .product___card-button {
@@ -475,7 +476,7 @@ span.slim-countdown-text {
   }
   .deal-of-the-day-content {
     margin-left: 25%;
-    margin-top: 5%;
+    margin-top: 4%;
   }
   .deal-of-the-day-product-price span {
     font-size: 18px;
@@ -519,6 +520,23 @@ span.slim-countdown-text {
 }
 .deal-of-the-day-product__info {
   box-shadow: 0 0 #0000, 0 0 #0000, 0 29px 21px -12px #0000001a;
+}
+#clockdiv {
+  display: flex;
+  gap: 23px;
+  margin-top: 5px;
+}
+.clockdiv-item {
+  display: flex;
+  align-items: end;
+}
+.minutes,
+.hours,
+.smalltext {
+  color: #fff;
+}
+.smalltext {
+  opacity: 0.5;
 }
 /* More products */
 picture.media {
