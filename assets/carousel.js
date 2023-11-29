@@ -36,12 +36,12 @@ class Carousel extends HTMLElement {
       autoplay: this.autoplay,
       interval: this.autoplaySpeed,
       gap: this.mobilegap,
-      arrows: this.showarrows,
+      arrows: true,
       pagination: this.showdots,
       isNavigation: this.isNavigation,
       omitEnd: true,
       updateOnMove: true,
-      drag: !this.disableDrag, 
+      drag: !this.disableDrag,
       breakpoints: {
         990: {
           perPage: parseInt(this.desktopPerPage) - parseInt(1),
