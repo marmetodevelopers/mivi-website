@@ -147,8 +147,7 @@
             "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"34\" height=\"28\" viewbox=\"0 0 34 28\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M27.9429 0.362976C21.8105 5.0981 17.774 13.0935 17.774 18.6048C17.774 23.8057 21.4224 27.3765 25.7694 27.3765C30.0388 27.3765 34.541 22.9518 32.9109 17.5181C24.9932 14.3355 22.3539 6.6506 28.4087 0.751101L27.9429 0.362976ZM10.1668 0.362976C4.03442 5.0981 -0.0020752 13.0935 -0.0020752 18.6048C-0.0020752 23.8057 3.6463 27.3765 7.9933 27.3765C12.2627 27.3765 16.7649 22.9518 15.1348 17.5181C7.21705 14.3355 4.5778 6.6506 10.6326 0.751101L10.1668 0.362976Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
             "text": "<p> {{ product.metafields.custom.pdp_multicolumn_section_description_.value }}<\/p>",
             "link_label": "",
-            "link": "",
-            "digit_image": "{{ product.metafields.custom.pdp_multicolumn_section_digit_image.value }}"
+            "link": ""
           }
         },
         "template--21382360531221__b8950051-01d5-4142-8ee2-f5e3e3aeaebb-column-2": {
@@ -159,8 +158,7 @@
             "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"34\" height=\"28\" viewbox=\"0 0 34 28\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M27.9429 0.362976C21.8105 5.0981 17.774 13.0935 17.774 18.6048C17.774 23.8057 21.4224 27.3765 25.7694 27.3765C30.0388 27.3765 34.541 22.9518 32.9109 17.5181C24.9932 14.3355 22.3539 6.6506 28.4087 0.751101L27.9429 0.362976ZM10.1668 0.362976C4.03442 5.0981 -0.0020752 13.0935 -0.0020752 18.6048C-0.0020752 23.8057 3.6463 27.3765 7.9933 27.3765C12.2627 27.3765 16.7649 22.9518 15.1348 17.5181C7.21705 14.3355 4.5778 6.6506 10.6326 0.751101L10.1668 0.362976Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
             "text": "<p> {{ product.metafields.custom.pdp_multicolumn_section_description_.value }}<\/p>",
             "link_label": "",
-            "link": "",
-            "digit_image": "{{ product.metafields.custom.pdp_multicolumn_section_digit_image.value }}"
+            "link": ""
           }
         },
         "template--21382360531221__b8950051-01d5-4142-8ee2-f5e3e3aeaebb-column-3": {
@@ -171,8 +169,7 @@
             "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"34\" height=\"28\" viewbox=\"0 0 34 28\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M27.9429 0.362976C21.8105 5.0981 17.774 13.0935 17.774 18.6048C17.774 23.8057 21.4224 27.3765 25.7694 27.3765C30.0388 27.3765 34.541 22.9518 32.9109 17.5181C24.9932 14.3355 22.3539 6.6506 28.4087 0.751101L27.9429 0.362976ZM10.1668 0.362976C4.03442 5.0981 -0.0020752 13.0935 -0.0020752 18.6048C-0.0020752 23.8057 3.6463 27.3765 7.9933 27.3765C12.2627 27.3765 16.7649 22.9518 15.1348 17.5181C7.21705 14.3355 4.5778 6.6506 10.6326 0.751101L10.1668 0.362976Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
             "text": "<p> {{ product.metafields.custom.pdp_multicolumn_section_description_.value }}<\/p>",
             "link_label": "",
-            "link": "shopify:\/\/collections",
-            "digit_image": "{{ product.metafields.custom.pdp_multicolumn_section_digit_image.value }}"
+            "link": "shopify:\/\/collections"
           }
         }
       },
