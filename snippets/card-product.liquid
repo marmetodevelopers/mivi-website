@@ -118,24 +118,7 @@
                  {{ card_product.title | escape }} 
               </a>
             </h3>
-          </div>
-          {% comment %} <div class="card__badge {{ settings.badge_position }}">
-            {%- if card_product.available == false -%}
-              <span
-                id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
-                class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}"
-              >
-                {{- 'products.product.sold_out' | t -}}
-              </span>
-            {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
-              <span
-                id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
-                class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}"
-              >
-                {{- 'products.product.on_sale' | t -}}
-              </span>
-            {%- endif -%} 
-          </div> {% endcomment %}
+          </div> 
         </div>
       </div>
       <div class="card__content">
@@ -224,7 +207,7 @@
               {% for options in card_product.options_with_values %}
                 <div class="product_option">
                   <div class="product--variant__label">
-                    <h4 class="heading_color small-element-2">{{ options.name | pluralize: 'Color', 'Colors' }}</h4> 
+                    <h4 class="heading_color small-element-2">{{ options.name }}</h4> 
                   </div>
                   {% for value in options.values %}
                     <a href="{{ card_product.url}}" class=""> 
@@ -315,7 +298,7 @@
                     <button
                       id="ModalClose-{{ card_product.id }}"
                       type="button"
-                      class="quick-add-modal__toggle"
+                      class="quick-add-modal__toggle card___product_close-button"
                       aria-label="{{ 'accessibility.close' | t }}"
                     >
                       {% render 'icon-close' %}

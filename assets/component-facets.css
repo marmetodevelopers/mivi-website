@@ -143,7 +143,7 @@
   grid-column-start: span 2;
 }
 .facets__form {
-  display: grid; 
+  display: grid;
 }
 .facets__wrapper {
   align-items: center;
@@ -320,7 +320,7 @@ button.facets__button {
   grid-row: 2;
   margin: 1rem 0;
   background-color: #f6f6f7;
- }
+}
 .active-facets__button {
   display: block;
   margin-right: 1.5rem;
@@ -690,6 +690,8 @@ input.mobile-facets__checkbox {
   transition: background-color 0.2s ease;
   word-break: normal;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .mobile-facets__label > svg {
   background-color: rgb(var(--color-background));
@@ -700,7 +702,7 @@ input.mobile-facets__checkbox {
 }
 .mobile-facets__label .icon-checkmark {
   position: absolute;
-  top: 1.9rem;
+  top: 2rem;
   left: 2.8rem;
   visibility: hidden;
 }

@@ -63,7 +63,7 @@
           {%- render 'gift-card-recipient-form', product: product, form: form, section: section -%}
         {%- endif -%}
 
-        <div class="product-form__buttons small-hide">
+        <div class= "product-form__buttons">
           {%- liquid
             assign check_against_inventory = true
             if product.selected_or_first_available_variant.inventory_management != 'shopify' or product.selected_or_first_available_variant.inventory_policy == 'continue'
@@ -82,13 +82,14 @@
               disabled
             {% endif %}
           >
-            <span class="main-product-add-to-cart-button font-bold1">
+            <span class="main-product-add-to-cart-button font-bold1 small-hide">
               {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
                 {{ 'products.product.sold_out' | t }}
               {%- else -%}
                 {{ 'products.product.add_to_cart' | t }}
               {%- endif -%}
             </span>
+            <span class="main-product-add-to-cart-button font-bold1 large-up-hide medium-hide">Done</span>
             <div class="loading-overlay__spinner hidden">
               <svg
                 aria-hidden="true"

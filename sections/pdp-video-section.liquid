@@ -15,8 +15,10 @@
   }
 {%- endstyle -%}
 
+{% assign video-url = product.metafields.custom.pdp_video_url.value %}
+
 {%- liquid
-  assign video_id = section.settings.video.id | default: section.settings.video_url.id
+  assign video_id = section.settings.video.id | default: video-url.id
   assign video_alt = section.settings.video.alt | default: section.settings.description
   assign alt = 'sections.video.load_video' | t: description: video_alt | escape
   assign poster = section.settings.video.preview_image | default: section.settings.cover_image
@@ -58,9 +60,9 @@
           style="--ratio-percent: {{ 1 | divided_by: poster.aspect_ratio | times: 100 }}%;"
         {% endif %}
       >
-        {%- if section.settings.video == null and section.settings.video_url != null -%}
+        {%- if section.settings.video == null and product.metafields.custom.pdp_video_url != null -%}
           <a
-            href="{{ section.settings.video_url }}"
+            href="{{ video-url.url }}"
             class="video-section__poster media media--transparent{% if poster == null %} video-section__placeholder{% endif %}"
           >
             {%- if poster != null -%}
@@ -125,14 +127,14 @@
         </div>
       </div>
       <template>
-         {%- if section.settings.video == null and section.settings.video_url != null -%}
+        {%- if section.settings.video == null and product.metafields.custom.pdp_video_url != null -%}
           {%- liquid
             assign loop = ''
             if section.settings.enable_video_looping
               assign loop = '&loop=1&playlist=' | append: video_id
             endif
           -%}
-          {%- if section.settings.video_url.type == 'youtube' -%}
+          {%- if video-url.type == 'youtube' -%}
             <iframe
               src="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&autoplay=1{{ loop }}"
               class="js-youtube"
@@ -167,7 +169,7 @@
 
 {% schema %}
 {
-  "name": "t:sections.video.name",
+  "name": "metafield video",
   "tag": "section",
   "class": "section",
   "disabled_on": {
@@ -221,16 +223,8 @@
     },
     {
       "type": "paragraph",
-      "content": "t:sections.video.settings.paragraph.content"
+      "content": "embed video in metafield using JSON format"
     },
-    {
-      "type": "video_url",
-      "id": "video_url",
-      "accept": ["youtube", "vimeo"],
-      "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-      "label": "t:sections.video.settings.video_url.label",
-      "info": "t:sections.video.settings.video_url.info"
-    }, 
     {
       "type": "image_picker",
       "id": "cover_image",
@@ -307,7 +301,7 @@
   ],
   "presets": [
     {
-      "name": "t:sections.video.presets.name"
+      "name": "metafield video"
     }
   ]
 }

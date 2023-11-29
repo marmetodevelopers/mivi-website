@@ -1,4 +1,5 @@
- 
+<script src="{{ 'carousel.js' | asset_url }}" defer="defer"></script>
+{{ 'splide.min.css' | asset_url | stylesheet_tag }} 
 {% style %}
 #carousel--{{ section.id }}{
     display: block;
@@ -22,95 +23,61 @@
   }
 }
 {% endstyle %}
-<div class="new-launch-container homepage-new-launch-container padding-{{ section.id }}">
-  <div align="center">
-    {% if section.settings.section_heading != blank %}
-      <div class="h4 {{ section.settings.heading_align }} tw-mb-8">{{ section.settings.section_heading }}</div>
-    {% endif %}
-    {% if section.settings.sub_text != blank %}
-        <h2 class="small-element new-launch-sub_text"> {{ section.settings.sub_text }}</h2>
-    {% endif %} 
-  </div> 
-  <carousel-component id="carousel--{{ section.id }}" class="page-width splide slider_component_container"
-      data-autoplay="{{ section.settings.enable_autoplay | default: false }}"
-      data-autoplay-speed="{{ section.settings.autoplay_speed | times: 1000 | default: 3000  }}"
-      data-desktopperpage="2" 
-      data-mobilePerPage="1.2"
-      data-pagination="{{ section.settings.enable_pagination | default: true }}"
-      data-type="splide"
-      data-showdotsonmobile="true"
-      data-showdots="true"
-      data-focus="center"
->  
-    <div class="empty-div-back"></div> 
-      <div align="center">  
-        <div class="new-launch-image"> 
-          {% render 'image', class: "slide--show_image", mobileSrc:section.settings.mobile_background_image, desktopSrc:section.settings.desktop_background_image  %}  
-      </div>
-    </div>
-    <div class="splide__track">
-      <ul class="splide__list">
-        {%- for block in section.blocks -%}
-          <li class="splide__slide">
-            <div class="new-launch-slider-image">
-              {% render 'image', class: "slide-component___image", mobileSrc: block.settings.mobile_image, desktopSrc: block.settings.image  %} 
-            </div> 
-            <div class="new-launch__product-details"> 
-              {% assign product = block.settings.product %}
-              <div align="center" class="new-launch_product-title"> 
-                <h6>{{ product.title}}</h6>
-              </div>
-              <div align="center" class="product-tag__name small-element-7">
-                {{ product.metafields.custom.product_tag }}
-              </div> 
-              <div class="additional-deatils">
-                {% if product.metafields.custom.product_description != blank %}
-                  {% for  product_description in product.metafields.custom.product_description.value %}
-                    <div class="descriptive-content">
-                      <div class="descriptive-svg">
-                        {% render 'image' class="" desktopSrc:product_description.descriptive_svg %}
-                      </div>
-                      <div class="descriptive-text small-element-6">
-                        <p>{{ product_description.descriptive_title }}</p>
-                      </div>  
+<div class="new-launch-container pdp--superior-premium-container padding-{{ section.id }}">
+    <div align="center">
+        {% if section.settings.section_heading != blank %}
+            <div class="h4 {{ section.settings.heading_align }} tw-mb-8">{{ section.settings.section_heading }}</div>
+        {% endif %}
+        {% if section.settings.sub_text != blank %}
+           <h2 class="small-element new-launch-sub_text"> {{ section.settings.sub_text }}</h2>
+        {% endif %} 
+    </div> 
+    <carousel-component id="carousel--{{ section.id }}" class="page-width splide slider_component_container pdp-superior-primium-container"
+        data-autoplay="{{ section.settings.enable_autoplay | default: false }}"
+        data-autoplay-speed="{{ section.settings.autoplay_speed | times: 1000 | default: 3000  }}"
+        data-desktopperpage="1.4" 
+        data-mobilePerPage="1.3"
+        data-pagination="{{ section.settings.enable_pagination | default: true }}"
+        data-type="splide"
+        data-showdotsonmobile="true"
+        data-showdots="true"
+        data-focus="center"
+    >   
+        <div class="meta-container">
+            <div class="faqs-container">
+                {% for heading in product.metafields.custom.pdp_superior_premium_section_heading.value %}
+                    <div class="questions_wrapper " slide-index='meta-{{ forloop.index }}'>
+                        <div class="question_wrapper">
+                            <div class="question video-sub__heading font-bold1">{{ heading | split: '||' | first }}</div>
+                            <span class="question h4">{{ heading | split: '||' | last }}</span>
+                        </div>
+                        <div class="answer small-element">{{ product.metafields.custom.pdp_superior_premium_section_paragraph.value[forloop.index0] }}</div>
                     </div>
-                  {% endfor %}
-                {% endif %}
-              </div> 
-              <div align="center" class="product__variant-swatches">
-                {% for options in product.options_with_values %}
-                  <div class="product_option-content">
-                    {% for value in options.values %}
-                      <a href="{{ product.url }}" class=""> 
-                        <label for="" class="variant-checkbox" name="variant">
-                          {% if options.name == 'Color' %}
-                            <input
-                              type="radio"
-                              name="variant"
-                              class="circle_radio"
-                              value="{{ forloop.index }}"
-                              style="background:{{ value }}"
-                            >
-                          {% endif %}
-                          {% if options.name != 'Color' %}
-                            <span class="variant_name">{{ value }}</span>
-                          {% endif %}
-                        </label>
-                      </a>
-                    {% endfor %}
-                  </div>
-                {% endfor %}
-              </div>
+                {% endfor %} 
             </div> 
-          </li>
-        {%- endfor -%}
-      </ul>
-    </div>
-  </carousel-component>
+            <div class="splide__track">
+                <ul class="splide__list">  
+                    {% for imagee in  product.metafields.custom.pdp_superior_perfect_image.value %}
+                        {% assign max_loop = forloop.last %}
+                        <li class="grid__items product__ingredients-main splide__slide "  slide-index='meta-{{ forloop.index }}'>
+                            <div class="product__ingredients-contents flex">
+                                <div class="product_meta_image pdp___superior-image"> 
+                                    {% if imagee != blank %}
+                                        <img src="{{ imagee | img_url: 'master' }}" alt="img" />
+                                    {% endif %} 
+                                </div>
+                            </div>
+                        </li> 
+                    {% endfor %}         
+                </ul>
+            </div>
+        </div>
+    </carousel-component>
 </div> 
+
 {% schema %}
     {
-        "name":"Carousel",
+        "name":"PDP superior premiun",
         "settings": [
             {
                 "type":"header",
@@ -259,7 +226,7 @@
         ],
         "presets": [
             {
-                "name":"Carousel"
+                "name":"PDP superior premiun"
             }
         ]
     }

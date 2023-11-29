@@ -2,7 +2,7 @@
   .collection .grid__item:only-child {
     flex: 0 0 100%;
     max-width: 100%;
-  } 
+  }
 }
 @media screen and (max-width: 989px) {
   .collection .slider.slider--tablet {
@@ -44,7 +44,7 @@
   margin-bottom: 5.9rem;
 }
 .collection__title .title:not(:only-child) {
-  margin-bottom: 1rem;
+  margin-bottom: 1.4rem;
 }
 @media screen and (min-width: 990px) {
   .collection__title--desktop-slider .title {

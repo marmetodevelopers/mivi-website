@@ -150,6 +150,9 @@
                       <span class="icon-wrap large-up-hide small-hide medium-hide">&nbsp;{% render 'icon-arrow' %}</span> 
                     </a>   
                 {%- endif -%}
+                <div class="multicolumn-digit-picture">
+                {% render 'image', desktopSrc: block.settings.digit_image %}
+                </div>
               </div>
             </div>
           </li>
@@ -428,7 +431,13 @@
           "type": "url",
           "id": "link",
           "label": "t:sections.multicolumn.blocks.column.settings.link.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "digit_image",
+          "label": "Digit Image"
         }
+
       ]
     }
   ],
