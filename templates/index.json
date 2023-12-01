@@ -124,7 +124,7 @@
         "description": "<p>Unmatched sound signature with powerfull bass, designed to be carried with you.<\/p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "wireless-speakers",
+        "collection": "speakers",
         "products_to_show": 5,
         "columns_desktop": 5,
         "full_width": false,
@@ -243,7 +243,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/android_1.png",
             "button_text": "SHOP CABLES",
-            "button_link": "shopify:\/\/collections\/wireless-speakers"
+            "button_link": "shopify:\/\/collections\/speakers"
           }
         },
         "5034830b-9005-479d-9c97-e74d61044186": {
