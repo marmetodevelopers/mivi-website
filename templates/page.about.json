@@ -8,10 +8,10 @@
         "padding_bottom": 28
       }
     },
-    "d2860bae-a3de-46f9-b53b-287b28cca16f": {
+    "72432b02-5923-4208-b94c-8806de857e0a": {
       "type": "gradient",
       "blocks": {
-        "456f432d-da80-411d-a21a-5d56a020ca75": {
+        "aad4bada-0f00-4d6a-b074-2e46bb2cdd65": {
           "type": "gradient",
           "settings": {
             "gradient_caption": "Desh Apna Hai, Economy Apni Hai aur Product Bhi Apna Hai",
@@ -21,17 +21,17 @@
         }
       },
       "block_order": [
-        "456f432d-da80-411d-a21a-5d56a020ca75"
+        "aad4bada-0f00-4d6a-b074-2e46bb2cdd65"
       ],
       "settings": {
         "gradient_background_color": "linear-gradient(181deg,#ffd4ad,hsla(0,0%,100%,0))",
         "gradient_margin_top": 0
       }
     },
-    "e7e4f7cb-3551-44d8-8741-6693b7e6729d": {
+    "b5084fe3-ed9f-4ffb-8070-2c1cd6d7c5e1": {
       "type": "usp",
       "blocks": {
-        "template--21349816271125__e7e4f7cb-3551-44d8-8741-6693b7e6729d-column-1": {
+        "template--21424964501781__b5084fe3-ed9f-4ffb-8070-2c1cd6d7c5e1-column-1": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/scale.png",
@@ -41,7 +41,7 @@
             "link": ""
           }
         },
-        "template--21349816271125__e7e4f7cb-3551-44d8-8741-6693b7e6729d-column-2": {
+        "template--21424964501781__b5084fe3-ed9f-4ffb-8070-2c1cd6d7c5e1-column-2": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/india.png",
@@ -51,7 +51,7 @@
             "link": ""
           }
         },
-        "template--21349816271125__e7e4f7cb-3551-44d8-8741-6693b7e6729d-column-3": {
+        "template--21424964501781__b5084fe3-ed9f-4ffb-8070-2c1cd6d7c5e1-column-3": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/products.jpg",
@@ -61,7 +61,7 @@
             "link": ""
           }
         },
-        "8abfb42f-8ef3-4e40-861f-0386fd0f6c7b": {
+        "4266c5aa-98d0-4d64-9504-32632f9ce66a": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/mivi-design.jpg",
@@ -73,29 +73,29 @@
         }
       },
       "block_order": [
-        "template--21349816271125__e7e4f7cb-3551-44d8-8741-6693b7e6729d-column-1",
-        "template--21349816271125__e7e4f7cb-3551-44d8-8741-6693b7e6729d-column-2",
-        "template--21349816271125__e7e4f7cb-3551-44d8-8741-6693b7e6729d-column-3",
-        "8abfb42f-8ef3-4e40-861f-0386fd0f6c7b"
+        "template--21424964501781__b5084fe3-ed9f-4ffb-8070-2c1cd6d7c5e1-column-1",
+        "template--21424964501781__b5084fe3-ed9f-4ffb-8070-2c1cd6d7c5e1-column-2",
+        "template--21424964501781__b5084fe3-ed9f-4ffb-8070-2c1cd6d7c5e1-column-3",
+        "4266c5aa-98d0-4d64-9504-32632f9ce66a"
       ],
       "settings": {
         "title": "",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 4,
+        "columns_desktop": 3,
         "column_alignment": "left",
-        "background_style": "none",
+        "background_style": "primary",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "background-1",
+        "color_scheme": "",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 72,
-        "padding_bottom": 0
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
-    "f0bbf843-7721-43c9-af48-093c074fd8e7": {
+    "2c1a2a62-4094-42e5-b0cd-98135dc9fb5f": {
       "type": "video",
       "settings": {
         "heading": "",
@@ -106,11 +106,11 @@
         "description": "",
         "full_width": false,
         "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
-    "a4877674-1926-4155-a349-33f91ddcffc7": {
+    "abb2fc60-245d-4b32-a425-74bbf2a1abaf": {
       "type": "gradient",
       "settings": {
         "gradient_background_color": "linear-gradient(1turn,#c8ffb4,hsla(0,0%,100%,0))",
@@ -120,9 +120,9 @@
   },
   "order": [
     "main",
-    "d2860bae-a3de-46f9-b53b-287b28cca16f",
-    "e7e4f7cb-3551-44d8-8741-6693b7e6729d",
-    "f0bbf843-7721-43c9-af48-093c074fd8e7",
-    "a4877674-1926-4155-a349-33f91ddcffc7"
+    "72432b02-5923-4208-b94c-8806de857e0a",
+    "b5084fe3-ed9f-4ffb-8070-2c1cd6d7c5e1",
+    "2c1a2a62-4094-42e5-b0cd-98135dc9fb5f",
+    "abb2fc60-245d-4b32-a425-74bbf2a1abaf"
   ]
 }
