@@ -170,6 +170,9 @@
   font-size: 18px;
   margin-top: 4.5rem;
   font-weight: 800;
+  color: #4B4955;
+  opacity: 0.8;
+  font-family: 'Gilroy black';
 }
 .multicolumn-card__info .icon-wrap {
   margin-left: 0.8rem;

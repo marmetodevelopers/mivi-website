@@ -1,7 +1,7 @@
 {% style %}
 .padding-{{ section.id }} {
-  padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
-  padding-bottom: {{ section.settings.padding_bottom | divided_by: 2 }}px;
+  padding-top: {{ section.settings.padding_top_mb }}px;
+  padding-bottom: {{ section.settings.padding_bottom_mb }}px;
 }
 @media (min-width: 750px) {
   .padding-{{ section.id }} {
@@ -15,30 +15,32 @@
   {% endstyle %} 
 <div class="page-width padding-{{ section.id }}">
     <div class="homepage-more-products-container">
-        {%- if section.settings.heading != blank -%}
-          <h2 align="center" class="more__products_title heading--color-{{ section.id }} h4 {{ section.settings.heading_size }}">
-            {{ section.settings.heading }}
-          </h2>
-        {%- endif -%}
-        <div class="more-product-skeleton"> 
+      {%- if section.settings.heading != blank -%}
+        <h2 align="center" class="more__products_title heading--color-{{ section.id }} h4 {{ section.settings.heading_size }}">
+          {{ section.settings.heading }}
+        </h2>
+      {%- endif -%}
+      <div class="more-product-skeleton"> 
         {% for block in section.blocks %}
-            <div class="more_products-image">
+          <div class="more_products-image">
             {% if block.settings.image != blank %}
-              <a href="" > {% render 'image',
+              <a href="" >
+                {% render 'image',
                   class: 'media',
                   mobileSrc: block.settings.image,
                   desktopSrc: block.settings.image
-                %}</a>
-                <div class="more-products-button sub-text-txt">
-                    {% if block.settings.button_text != blank and block.settings.button_link != blank %}
-                       <a href="{{ block.settings.button_link }}"  class="button-view-all"> {{ block.settings.button_text }}</a>
-                    {% endif %}  
-                     {% render 'greater-icon' %}  
-                </div>
+                %}
+              </a>
+              <div class="more-products-button sub-text-txt">
+                {% if block.settings.button_text != blank and block.settings.button_link != blank %}
+                    <a href="{{ block.settings.button_link }}"  class="button-view-all"> {{ block.settings.button_text }}</a>
+                {% endif %}  
+                  {% render 'greater-icon' %}  
+              </div>
             {% endif %}
-            </div>  
+          </div>  
         {% endfor %}
-        </div>
+      </div>
     </div>     
 </div>
 {% schema %}
@@ -100,6 +102,26 @@
             "unit": "px",
             "label": "Padding bottom",
             "default": 40
+          },
+          {
+            "type": "range",
+            "id": "padding_top_mb",
+            "min": 0,
+            "max": 150,
+            "step": 2,
+            "unit": "px",
+            "label": "Padding Top(Mobile)",
+            "default": 36
+          },
+          {
+            "type": "range",
+            "id": "padding_bottom_mb",
+            "min": 0,
+            "max": 150,
+            "step": 2,
+            "unit": "px",
+            "label": "Padding Bottom(Mobile)",
+            "default": 36
           }
         ],
     "blocks": [

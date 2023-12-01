@@ -53,23 +53,25 @@
     <a href="{{ product.url }}" class="product-card__link">
       <div class="deal-of-the-product__img">
         {% render 'image', class: '', mobileSrc: product.featured_image, desktopSrc: product.featured_image %} 
-      </div>   
-      <div class="deal_of_the_day_product-content">
-        <span class="deal-product-title small-element-1">  {{ product.title }}</span>
       </div>
-      <div class="deal-of-the-day-product-price small-element-3"> 
-        <span>{{ product.price | money_without_trailing_zeros }}  </span>
-        <del>{{ product.compare_at_price | money_without_trailing_zeros }}</del>
-      </div>
-      <div class="deal-of-the-day-button">
-        {% if section.settings.button_text != blank and section.settings.button_link != blank %}
-          <div class="deal-of-the-day-button-content">
-            <a href="{{ section.settings.button_link }}" class="button-view-all font-body-text"> {{ section.settings.button_text }} </a>
-          </div>
-          <div class="deal-of-the-day-svg">
-            {% render 'greater-icon-black' %}
-          </div>
-        {% endif %}
+      <div class="product__info">   
+        <div class="deal_of_the_day_product-content">
+          <span class="deal-product-title small-element-1">  {{ product.title }}</span>
+        </div>
+        <div class="deal-of-the-day-product-price small-element-3"> 
+          <span>{{ product.price | money_without_trailing_zeros }}  </span>
+          <del>{{ product.compare_at_price | money_without_trailing_zeros }}</del>
+        </div>
+        <div class="deal-of-the-day-button">
+          {% if section.settings.button_text != blank and section.settings.button_link != blank %}
+            <div class="deal-of-the-day-button-content">
+              <a href="{{ section.settings.button_link }}" class="button-view-all font-body-text"> {{ section.settings.button_text }} </a>
+            </div>
+            <div class="deal-of-the-day-svg">
+              {% render 'greater-icon-black' %}
+            </div>
+          {% endif %}
+        </div>
       </div> 
     </a>   
   </div>
@@ -148,7 +150,7 @@
         {
             "type": "header",
             "content": "Section padding"
-          },
+        },
         {
             "type": "range",
             "id": "padding_top",
