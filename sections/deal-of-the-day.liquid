@@ -53,7 +53,8 @@
     <a href="{{ product.url }}" class="product-card__link">
       <div class="deal-of-the-product__img">
         {% render 'image', class: '', mobileSrc: product.featured_image, desktopSrc: product.featured_image %} 
-      </div>   
+      </div>
+      <div class="product__info">   
       <div class="deal_of_the_day_product-content">
         <span class="deal-product-title small-element-1">  {{ product.title }}</span>
       </div>
@@ -70,7 +71,8 @@
             {% render 'greater-icon-black' %}
           </div>
         {% endif %}
-      </div> 
+      </div>
+    </div> 
     </a>   
   </div>
 </div>
@@ -148,7 +150,7 @@
         {
             "type": "header",
             "content": "Section padding"
-          },
+        },
         {
             "type": "range",
             "id": "padding_top",

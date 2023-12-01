@@ -702,8 +702,8 @@ input.mobile-facets__checkbox {
 }
 .mobile-facets__label .icon-checkmark {
   position: absolute;
-  top: 2rem;
-  left: 2.8rem;
+  top: 2.1rem;
+  left: 2.7rem;
   visibility: hidden;
 }
 .mobile-facets__label > input[type='checkbox']:checked ~ .icon-checkmark {

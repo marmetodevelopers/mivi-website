@@ -96,23 +96,24 @@
                     </div>  
                       <div class="footer-block__details-mobile rte show__footer_menus_js">
                         <div class="footer_contact--details">
-                          <span>
+                          <span class="footer_contact__svg">
                             {% render 'contact-icon' %}
                           </span>
-                          <span><a href="tel:{{ block.settings.footer-mobile }}">{{ block.settings.footer-mobile }}</a></span>
-                        </div>
-                        <div class="footer-block__details-content rte ">
+                          <span><a href="tel:{{ block.settings.footer-mobile }}">{{ block.settings.footer-mobile }}</a>
+                          <div class="footer-block__details-content rte ">
                           {{ block.settings.email__subtext }}
-                        </div>
+                          </div>
+                        </span> 
+                        </div> 
                         <div class="footer-block__details-email rte show__footer_menus_js">
                           {% render 'email-icon' %}
                          <span><a href="mailto:{{ block.settings.footer-email }}">{{ block.settings.footer-email }}</a></span>
                        </div>                        
                       </div> 
-                        {% when 'button' %}  
-                         <div align="center" class="footer-button button-tertiary">
-                            <a href="{{block.settings.button_link}}"> {{ block.settings.button }}</a> 
-                        </div>    
+                  {% when 'button' %}  
+                    <div align="center" class="footer-button button-tertiary">
+                      <a href="{{block.settings.button_link}}"> {{ block.settings.button }}</a> 
+                    </div>    
                   {%- when 'link_list' -%}
                     {%- if block.settings.menu != blank -%}
                       <ul class="footer-block__details-content list-unstyled footer__block-link-list show__footer_menus_js small-element-2">
