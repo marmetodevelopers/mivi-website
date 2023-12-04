@@ -88,8 +88,8 @@
         "slider_visual": "dots",
         "padding_top": 120,
         "padding_bottom": 146,
-        "padding_top_mb": 36,
-        "padding_bottom_mb": 36
+        "padding_top_mb": 60,
+        "padding_bottom_mb": 78
       }
     },
     "fee80e2b-57dd-40b2-8e88-b46478691cee": {
