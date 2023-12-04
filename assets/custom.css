@@ -45,7 +45,7 @@ sticky-header.header-wrapper {
   margin-bottom: 39px;
 }
 ul.mega-menu__list {
-  width: 60%;
+  width: 72%;
 }
 .grandchildlink_content img {
   width: 100%;
@@ -75,7 +75,9 @@ a.grandchild_image {
   font-family: 'Gilroy bold';
   line-height: 100%;
   text-transform: uppercase;
+  white-space: nowrap;
 }
+
 button.menu-drawer__close-button.link.link--text.focus-inset {
   display: none;
 }
@@ -147,6 +149,9 @@ picture.image_banner_home img {
   font-family: 'Gilroy Extra Bold';
 }
 @media screen and (max-width:749px) {
+  .button-view-all .button__greater-icon {
+    letter-spacing: 2.8px;
+  }
   .button__greater-icon svg {
     margin-left: 10px;
     padding-top: 5px;
@@ -258,10 +263,14 @@ picture.image_banner_home img {
 .title.inline-richtext {
   color: #4B4955;
 }
+.small-element-2.card-metafeild-description {
+  line-height: 17px;
+}
 @media screen and (max-width:749px) {
   .collection__title.title-wrapper.title-wrapper--no-top-margin {
     text-align: center;
     margin-bottom: 3.6rem;
+    padding: unset;
   }
   .card__heading a:after {
     border-right: 3px solid #0f0;
@@ -393,6 +402,10 @@ picture.image_banner_home img {
 }
 /* deal of the day section */
 @media screen and (min-width:750px) {
+  .deal-of-the-day-container {
+    display: flex;
+    align-items: center;
+  }
   .deal-of-the-day-product__info {
     padding: 1% 0 1% 0;
     display: flex;
@@ -412,9 +425,27 @@ picture.image_banner_home img {
     display: flex;
     justify-content: end;
   }
-  .deal-of-the-day-product-price del {
-    font-size: 16px;
+  .sub-text-txt.deal-of-the-day-sub___text {
+    opacity: 0.5;
+    margin: 22px 0 15px 0;
+    font-weight: 700;
   }
+}
+.deal_of_the_day_product-content {
+  line-height: 100%;
+}
+.deal-of-the-day-product-price del {
+  font-size: calc(14px + (16 - 14) * (100vw - 375px) / (1440 - 375));
+  line-height: 100%;
+  font-weight: 700;
+}
+.deal-of-the-day-product-price {
+  font-size: calc(18px + (20 - 18) * (100vw - 375px) / (1440 - 375));
+  font-weight: 700;
+  line-height: 100%;
+}
+.time__font__size {
+  font-size: calc(12px + (18 - 12) * (100vw - 375px) / (1440 - 375));
 }
 .deal-of-the-product__img {
   display: flex;
@@ -427,10 +458,6 @@ picture.image_banner_home img {
 .deal-of-the-day-button {
   display: flex;
   align-items: center;
-}
-.deal-of-the-day-sub___text {
-  opacity: 0.5;
-  margin: 22px 0 15px 0;
 }
 .deal-of-the-day-button-content a {
   color: #4B4955;
@@ -457,29 +484,42 @@ a.product-card__link {
 }
 @media screen and (max-width:749px) {
   .deal-of-the-day-product__info {
-    transform: translate(0%, -93%);
-    padding: 15px 20px;
-    margin-left: 11%;
-    margin-right: 11%;
+    transform: translate(10%,-90%);
     position: absolute;
     z-index: 1;
+    margin-top: 10px;
+    max-width: 340px;
+    max-height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .deal-of-the-day-sub___text {
+  .sub-text-txt.deal-of-the-day-sub___text {
     margin: 20px 0 5px 0;
+    opacity: 0.5;
+    font-weight: 700;
   }
   #clockdiv {
     margin-bottom: 8px;
     margin-top: 0;
   }
+
   .deal-of-the-day-sub___text {
     font-size: 10px;
   }
-  .product___card-button {
-    opacity: 0.4;
-  }
+
   .deal-of-the-day-content {
-    margin-left: 25%;
-    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .deal-of-the-day-content h5 {
+    text-transform: capitalize;
   }
   .deal-of-the-day-product-price span {
     font-size: 18px;
@@ -501,9 +541,6 @@ a.product-card__link {
   .deal-of-the-day-html {
     transform: translate(0px);
   }
-  .deal-of-the-day-sub___text {
-    margin-left: 18%;
-  }
   .deal-of-the-product__img img {
     width: 100%;
     height: auto;
@@ -519,7 +556,7 @@ a.product-card__link {
   }
 }
 .deal-of-the-day-product-price {
-  margin: 5px 0 12px 0;
+  margin: 5px 0;
 }
 .deal-of-the-day-product__info {
   box-shadow: 0 0 #0000, 0 0 #0000, 0 29px 21px -12px #0000001a;
@@ -537,6 +574,7 @@ a.product-card__link {
 .hours,
 .smalltext {
   color: #fff;
+  font-weight: 700;
 }
 .smalltext {
   opacity: 0.5;
@@ -553,10 +591,11 @@ picture.media {
   transform: translate(19px, -40px);
   letter-spacing: 2px;
 }
-.more-products-button a {
+.more-products-button a.button-view-all {
   color: #fff;
   text-decoration: none;
   font-size: 20px;
+  letter-spacing: 2px;
 }
 .more-products-button a {
   letter-spacing: 2px;
@@ -574,11 +613,17 @@ picture.media {
   transform: translate(13px, 3px);
 }
 h2.more__products_title {
-  margin-bottom: 5.9rem;
+  margin-bottom: 3.2rem;
+  margin-top: unset;
 }
 @media screen and (max-width:749px) {
   .more_products-image {
     width: 100%;
+  }
+}
+@media screen and (min-width: 750px) {
+  h2.more__products_title {
+    margin-bottom: 5.9rem;
   }
 }
 /* our customer */
@@ -588,6 +633,7 @@ h2.more__products_title {
 }
 .multicolumn-text {
   position: relative;
+  text-transform: capitalize;
 }
 .multicolumn-text p {
   padding-left: 5px;
@@ -653,6 +699,7 @@ h2.more__products_title {
 }
 .field__label {
   opacity: 0.4;
+  padding-top: 4px;
 }
 .news-letter__content {
   position: absolute;
@@ -670,12 +717,17 @@ h2.more__products_title {
   .news-letter-picture img {
     width: 100%;
     height: auto;
+    vertical-align: middle;
   }
   .newsletter-form__field-wrapper .field__input {
     padding-right: 7rem;
   }
   .news-letter__content {
     flex-direction: column;
+  }
+  .news-letter__content .newsletter-email {
+    max-width: 310px;
+    width: 100%;
   }
   .inline-richtext {
     margin: 0;
@@ -709,6 +761,7 @@ h2.more__products_title {
 }
 .newsletter__wrapper h2 {
   color: #4B4955;
+  text-transform: capitalize;
 }
 /* footer */
 ul.footer-block__details-content {
@@ -752,7 +805,7 @@ span.accordion__title {
 }
 .footer__blocks-wrapper {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 2.3fr 1fr 1fr 1.2fr 1fr;
 }
 .footer-block.grid__item.scroll-trigger.animate--slide-in {
   width: 100%;
@@ -816,6 +869,8 @@ span.accordion__title {
 }
 .footer_contact--details a {
   font-family: 'Gilroy Medium';
+  font-weight: 600;
+  line-height: 100%;
 }
 .footer_contact--details svg {
   transform: translate(0px, 15px);
@@ -831,7 +886,8 @@ span.accordion__title {
 }
 @media screen and (max-width: 990px) {
   .footer-block.grid__item.scroll-trigger.animate--slide-in.footer-block---button {
-    width: 48%;
+    width: 100%;
+    max-width: 48%;
   }
   .footer_title {
     padding-bottom: 20px;
@@ -844,6 +900,9 @@ span.accordion__title {
   .footer-block__details-mobile {
     margin-top: 5%;
   }
+  .list-unstyled.footer__social--icons {
+    gap: 7rem;
+  }
 }
 /* predictive search */
 facet-filters__label.caption-large {
@@ -854,6 +913,7 @@ facet-filters__label.caption-large {
 }
 .footer-button a {
   color: #fff;
+  font-size: calc(16px + (14 - 16) * (100vw - 375px) / (1440 - 375))
 }
 .list-unstyled.predictive__search_menus {
   padding-top: unset;
@@ -877,6 +937,7 @@ facet-filters__label.caption-large {
 @media screen and (min-width: 750px) {
   .product-tag__name {
     opacity: 0.3;
+    text-transform: uppercase;
   }
   .product-tag__name {
     margin: 14px 0 21px 0;
@@ -909,6 +970,9 @@ facet-filters__label.caption-large {
     height: auto;
   }
 }
+.news-letter-picture img {
+  vertical-align: middle;
+}
 .new-launch-container {
   position: relative;
 }
@@ -936,7 +1000,7 @@ facet-filters__label.caption-large {
 .new-launch_product-title h6 {
   color: #0f0;
   margin: 0;
-  font-size: 32px;
+  font-size: calc(32px + (36 - 32) * (100vw - 375px) / (1440 - 375));
 }
 .descriptive-content {
   display: flex;
@@ -978,6 +1042,10 @@ facet-filters__label.caption-large {
 .slide-component___image img {
   width: 100%;
   height: auto;
+  vertical-align: middle;
+}
+.small-element-6.descriptive-text {
+  text-transform: capitalize;
 }
 @media screen and (max-width: 749px) {
   .new-launch__product-details {
@@ -989,6 +1057,8 @@ facet-filters__label.caption-large {
   }
   .product-tag__name {
     margin: 9px 0 21px 0;
+    text-transform: uppercase;
+    letter-spacing: normal;
   }
   .new-launch-container .slider-counter {
     position: absolute;
@@ -1952,31 +2022,33 @@ h1.collection-hero__title.h4 {
 fieldset.js.product-form__input.Color input[type=radio] + label {
   padding: unset;
 }
-.card__inner::after {
-  background-size: cover !important;
-  content: "";
-  width: 32px;
-  height: 132px;
-  position: absolute;
-  left: 0;
-  top: 20px;
-  background: url(https://cdn.shopify.com/s/files/1/0828/1391/1317/files/Group_230.png?v=1701348005);
+@media screen and (max-width: 749px) {
+  .card__inner::after {
+    background-size: cover !important;
+    content: "";
+    width: 32px;
+    height: 132px;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    background: url(https://cdn.shopify.com/s/files/1/0828/1391/1317/files/Group_230.png?v=1701348005);
+  }
+  .card__information::after {
+    background-size: cover !important;
+    content: "";
+    width: 32px;
+    height: 132px;
+    position: absolute;
+    right: 0;
+    bottom: 240px;
+    background: url(https://cdn.shopify.com/s/files/1/0828/1391/1317/files/Group_229.png?v=1701350510);
+  }
 }
-.card__information::after {
-  background-size: cover !important;
-  content: "";
-  width: 32px;
-  height: 132px;
-  position: absolute;
-  right: 0;
-  bottom: 240px;
-  background: url(https://cdn.shopify.com/s/files/1/0828/1391/1317/files/Group_229.png?v=1701350510);
-}
+
 .deal-of-the-product__img {
   position: relative;
 }
 .deal-of-the-product__img::after {
-  background-size: cover !important;
   content: "";
   width: 32px;
   height: 132px;

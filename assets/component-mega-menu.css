@@ -44,7 +44,8 @@
 .mega-menu__link--level-2 {
   font-weight: bold;
   letter-spacing: 2.8px;
-  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  line-height: 100%;
 }
 .header--top-center .mega-menu__list {
   display: flex;
