@@ -241,7 +241,9 @@ slider-component.slider-component-full-width {
   display: block;
 }
 .slider-counter__link--active.slider-counter__link--dots .dot {
-  background-color: #0f0;
+  background-color: #00ff00;
+  width: 32px;
+  height: 4px;
 }
 @media screen and (forced-colors: active) {
   .slider-counter__link--active.slider-counter__link--dots .dot {

@@ -205,9 +205,9 @@
             </div>
             <div class="product_variants"> 
               {% for options in card_product.options_with_values %}
-                <div class="product_option">
+                <div class="product_option {% if template.name == "collection" %} collection__product_option{% endif %}" >
                   <div class="product--variant__label">
-                    <h4 class="heading_color small-element-2">{{ options.name }}</h4> 
+                    <h4 class="heading_color small-element-2">{{ options.name | pluralize: 'Color', 'Colors' }}</h4> 
                   </div>
                   {% for value in options.values %}
                     <a href="{{ card_product.url}}" class=""> 
@@ -221,7 +221,11 @@
                           type="radio" 
                           class="circle_radio"
                           value="{{ forloop.index }}"
-                          style="background:{{ value }}"
+                          style="background:{{ value }}; 
+                          {% unless value != 'white' %}
+                            outline : 1px solid;
+                          {%endunless %}
+                          "
                         >
                       {% endif %} 
                       {% if options.name != 'Color' %} 

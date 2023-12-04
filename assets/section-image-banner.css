@@ -393,4 +393,8 @@
     /* Add your mobile image styling here */
   }
 }
+
+.banner-block__heading {
+  text-transform: capitalize;
+}
  

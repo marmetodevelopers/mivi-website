@@ -3,8 +3,8 @@
 
 {%- style -%}
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    padding-top: {{ section.settings.padding_top_mb }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mb }}px;
   }  
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
@@ -30,7 +30,7 @@
     {% endif %}
   >  
     {%- unless section.settings.title == blank -%}
-      <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin">
+      <div class="title-wrapper-with-link multicolumn__section-headings title-wrapper--self-padded-mobile title-wrapper--no-top-margin">
         <h2 class="title inline-richtext {{ section.settings.heading_size }}">
           {% assign multicolumnLoop = section.settings.title | split: ' ' %}
           {% for loop in multicolumnLoop  %}
@@ -387,6 +387,26 @@
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mb",
+      "min": 0,
+      "max": 150,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top(Mobile)",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mb",
+      "min": 0,
+      "max": 150,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom(Mobile)",
       "default": 36
     }
   ],

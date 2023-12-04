@@ -20,7 +20,7 @@
  }
  /* Font style */
  .font-primary {
-   font-family: "Playfair Display";
+   font-family: 'Gilroy black';
  }
  .font-secondary {
    font-family: "Albert Sans";
@@ -332,11 +332,6 @@
    position: relative;
    z-index: 0;
  }
- @media screen and (min-width: 750px) {
-   .section + .section {
-     margin-top: var(--spacing-sections-desktop);
-   }
- }
  .element-margin-top {
    margin-top: 5rem;
  }
@@ -473,7 +468,7 @@
  }
  h5,
  .h5 {
-   font-family: Gilroy black;
+   font-family: Gilroy bold;
    font-size: calc(32px + (40 - 32) * (100vw - 375px) / (1440 - 375));
    font-weight: 800;
    line-height: 100%;
@@ -507,12 +502,14 @@
    .small-element-1 {
      letter-spacing: 2px;
    }
+   .product___card-button .font-body-text {
+    opacity: 0.5;
+   }
  }
  .font-body-text {
    font-size: 12px;
    font-family: Gilroy black;
    font-weight: 800;
-   letter-spacing: 100%;
    letter-spacing: 2.4px;
  }
  .small-element-2 {
@@ -546,7 +543,7 @@
    font-family: Gilroy Medium;
  }
  .sub-text-txt {
-   font-family: Gilroy bold;
+   font-family: 'Gilroy semibold';
    font-size: calc(14px + (20 - 14) * (100vw - 375px) / (1440 - 375));
    font-weight: 800;
    line-height: 100%;
@@ -556,7 +553,7 @@
    color: #fff;
    font-weight: 600;
    line-height: 120%;
-   font-family: 'Gilroy Medium';
+   font-family: 'Gilroy semibold';
  }
  .small-element-7 {
    font-size: calc(16px + (20 - 16) * (100vw - 375px) / (1440 - 375));
@@ -1363,7 +1360,6 @@
  .shopify-challenge__button:hover::after,
  .customer button:hover::after,
  .shopify-payment-button__button--unbranded:hover::after {
-   --border-offset: 1.3px;
    box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(var(--color-button-text), var(--border-opacity)),
      0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-button), var(--alpha-button-background));
  }
@@ -2214,6 +2210,7 @@
    text-transform: capitalize;
    color: #fff;
    font-size: 12px;
+   font-weight: 600;
    font-family: Gilroy Medium;
    line-height: 100%;
  }

@@ -1259,17 +1259,16 @@ class ProductRecommendations extends HTMLElement {
 customElements.define('product-recommendations', ProductRecommendations);
 
 
-// footer for mobile
-document.querySelectorAll('.footer__blocks-wrapper .footer__trigger-accordion').forEach((each) => {
-  each.addEventListener("click", () => {
-    const footerBlock = each.closest('.footer-block'); // Use the correct selector 
-    if (footerBlock) {
-      footerBlock.classList.toggle('active');
-    }
-  });
-});
-
 document.addEventListener('DOMContentLoaded', function () {
+  // footer for mobile
+  document.querySelectorAll('.footer__blocks-wrapper .footer__trigger-accordion').forEach((each) => {
+    each.addEventListener("click", () => {
+      const footerBlock = each.closest('.footer-block'); // Use the correct selector 
+      if (footerBlock) {
+        footerBlock.classList.toggle('active');
+      }
+    });
+  });
   // add to cart sticky
   document.getElementById('myButton').addEventListener('click', function () {
     // Get the element by its class name
@@ -1290,8 +1289,6 @@ document.addEventListener('DOMContentLoaded', function () {
   // Other code...
 
 });
-
-
 
 // Target node to observe
 const targetNode = document.querySelector('.meta-container .splide__track');
