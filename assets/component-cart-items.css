@@ -431,6 +431,11 @@ thead th.caption-with-letter-spacing {
     bottom: auto;
   }
 
+  .sub-text-txt.cart__items--heading {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
   .cart-item__image-container {
     aspect-ratio: 140/140;
   }
