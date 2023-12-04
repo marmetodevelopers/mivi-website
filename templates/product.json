@@ -140,7 +140,9 @@
     },
     "5b48a5c2-ff34-4cf6-bb6a-ea85e1faf4d0": {
       "type": "pdp-only-image",
-      "disabled": true,
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.pdp-one__image img {max-width: 4px; height: auto; }}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Rectangle_31_1.png",
         "padding_top": 10,

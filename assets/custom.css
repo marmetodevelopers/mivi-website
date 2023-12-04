@@ -143,6 +143,9 @@ a.menu-drawer__account.link.focus-inset.h5.medium-hide.large-up-hide {
 picture.image_banner_home img {
   filter: brightness(0.9);
 }
+.banner-block__heading {
+  font-family: 'Gilroy Extra Bold';
+}
 @media screen and (max-width:749px) {
   .button__greater-icon svg {
     margin-left: 10px;
@@ -314,6 +317,9 @@ picture.image_banner_home img {
   align-items: center;
   gap: 15px;
 }
+.price-item {
+  font-family: 'Gilroy Extra Bold';
+}
 .product--variant__label .heading_color {
   margin-bottom: unset;
   white-space: nowrap;
@@ -414,6 +420,9 @@ picture.image_banner_home img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.deal-of-the-day-product-price {
+  font-family: 'Gilroy Extra Bold';
 }
 .deal-of-the-day-button {
   display: flex;
@@ -548,6 +557,9 @@ picture.media {
   color: #fff;
   text-decoration: none;
   font-size: 20px;
+}
+.more-products-button a {
+  letter-spacing: 2px;
 }
 .more_products-image {
   position: relative;
@@ -1109,7 +1121,6 @@ facet-filters__label.caption-large {
   font-size: 18px;
   font-weight: 500;
   line-height: 24px;
-  opacity: 0.6;
 }
 .main-product-form__label {
   color: #4B4955;

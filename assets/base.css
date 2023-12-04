@@ -18,6 +18,11 @@
    src: url("https://cdn.shopify.com/s/files/1/0828/1391/1317/files/Gilroy-SemiBold.ttf?v=1698601278") format("truetype");
    font-weight: 600;
  }
+ @font-face {
+   font-family: "Gilroy Extra Bold";
+   src: url("https://cdn.shopify.com/s/files/1/0828/1391/1317/files/Gilroy-ExtraBold.ttf?v=1698601278") format("truetype");
+   font-weight: 800;
+ }
  /* Font style */
  .font-primary {
    font-family: 'Gilroy black';
