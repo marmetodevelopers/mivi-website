@@ -448,10 +448,6 @@ thead th.caption-with-letter-spacing {
     display: table;
   }
   
-  /* .cart-item__media {
-    width: 14rem;
-  } */
-
   .cart-item__price-wrapper>*:only-child:not(.cart-item__discounted-prices) {
     margin-top: 1rem;
   }
