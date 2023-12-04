@@ -28,9 +28,7 @@
         "mobile_image": "shopify:\/\/shop_images\/Group_224.png",
         "full_width": false,
         "padding_top": 0,
-        "padding_bottom": 88,
-        "padding_top_mb": 0,
-        "padding_bottom_mb": 24
+        "padding_bottom": 88
       }
     },
     "footer": {
