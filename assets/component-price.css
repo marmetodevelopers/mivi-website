@@ -68,7 +68,7 @@
   display: initial;
   justify-content: center;
 }
-span.price-item.price-item--sale.price-item--last.font-bold.small-element-3 {
+.price-item.price-item--sale.small-element-3 {
   font-size: calc(18px + (20 - 18) * (100vw - 375px) / (1440 - 375));
 }
 

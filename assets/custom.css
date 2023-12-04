@@ -1992,7 +1992,6 @@ fieldset.js.product-form__input.Color input[type=radio] + label {
   position: relative;
 }
 .deal-of-the-product__img::after {
-  background-size: cover !important;
   content: "";
   width: 32px;
   height: 132px;
