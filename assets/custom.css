@@ -1033,6 +1033,7 @@ facet-filters__label.caption-large {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 3px;
 }
 .facets-container.facets-container-drawer.scroll-trigger.animate--fade-in {
   border-bottom: 1px solid #f6f6f7;
@@ -1072,6 +1073,9 @@ facet-filters__label.caption-large {
 @media screen and (max-width:749px) {
   .card-product__view-details-button path {
     fill: #7C7A83;
+  }
+  .card-product__view-details-button {
+    width: 100%;
   }
   .mobile__facets__filter {
     font-weight: 600;
@@ -1844,6 +1848,10 @@ details.pdp-details-content {
   width: 100%;
   height: auto;
 }
+.pdp--superior-premium-container .splide__arrow svg {
+  height: unset;
+  width: unset;
+}
 .meta-container {
   display: flex;
 }
@@ -1927,10 +1935,19 @@ section.shopify-section.section.only__one_image_section {
   width: 100%;
 }
 h1.collection-hero__title.h4 {
-  position: absolute;
-  bottom: 225px;
-  left: 44px;
   color: white;
+}
+.collection-hero {
+  position: relative;
+}
+.collection-hero__text-wrapper {
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  text-align: center;
+  padding: 0 10rem;
 }
 fieldset.js.product-form__input.Color input[type=radio] + label {
   padding: unset;
