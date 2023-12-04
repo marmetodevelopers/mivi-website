@@ -507,12 +507,14 @@
    .small-element-1 {
      letter-spacing: 2px;
    }
+   .product___card-button .font-body-text {
+    opacity: 0.5;
+   }
  }
  .font-body-text {
    font-size: 12px;
    font-family: Gilroy black;
    font-weight: 800;
-   letter-spacing: 100%;
    letter-spacing: 2.4px;
  }
  .small-element-2 {
@@ -2213,6 +2215,7 @@
    text-transform: capitalize;
    color: #fff;
    font-size: 12px;
+   font-weight: 600;
    font-family: Gilroy Medium;
    line-height: 100%;
  }

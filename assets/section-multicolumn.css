@@ -167,7 +167,7 @@
 }
 .multicolumn-card__info .link {
   text-decoration: none;
-  font-size: 18px;
+  font-size: calc(14px + (18 - 14) * (100vw - 375px) / (1440 - 375));
   margin-top: 4.5rem;
   font-weight: 800;
   color: #4B4955;
@@ -197,8 +197,17 @@ ul {
   height: 360px;
   width: 380px !important;
 }
+.title-wrapper-with-link.multicolumn__section-headings {
+  margin-bottom: 3.8rem;
+}
+.multicolumn__section-headings h4 {
+  margin: unset;
+}
 @media screen and (min-width: 990px) {
   .multicolumn-list__item--empty {
     display: list-item;
+  }
+  .title-wrapper-with-link.multicolumn__section-headings {
+    margin-bottom: 7rem;
   }
 }

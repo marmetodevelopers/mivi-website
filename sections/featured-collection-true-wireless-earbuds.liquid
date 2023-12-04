@@ -165,7 +165,7 @@
           {%- assign placeholder_image = 'product-apparel-' | append: forloop.rindex -%}
           {% render 'card-product',
             card_product: product,
-            media_aspect_ratio: section.settings.image_ratio,
+            media_aspect_ratio: 1,
             image_shape: section.settings.image_shape,
             show_secondary_image: section.settings.show_secondary_image,
             show_vendor: section.settings.show_vendor,
@@ -411,26 +411,6 @@
     },
     {
       "type": "select",
-      "id": "image_ratio",
-      "options": [
-        {
-          "value": "adapt",
-          "label": "t:sections.featured-collection.settings.image_ratio.options__1.label"
-        },
-        {
-          "value": "portrait",
-          "label": "t:sections.featured-collection.settings.image_ratio.options__2.label"
-        },
-        {
-          "value": "square",
-          "label": "t:sections.featured-collection.settings.image_ratio.options__3.label"
-        }
-      ],
-      "default": "adapt",
-      "label": "t:sections.featured-collection.settings.image_ratio.label"
-    },
-    {
-      "type": "select",
       "id": "image_shape",
       "options": [
         {
@@ -549,7 +529,7 @@
       "type": "range",
       "id": "padding_top",
       "min": 0,
-      "max": 150,
+      "max": 200,
       "step": 2,
       "unit": "px",
       "label": "t:sections.all.padding.padding_top",
@@ -559,7 +539,7 @@
       "type": "range",
       "id": "padding_bottom",
       "min": 0,
-      "max": 150,
+      "max": 200,
       "step": 2,
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",

@@ -20,12 +20,16 @@
 } 
 .newsletter-form__field-wrapper .field {
   z-index: 0;
+  max-height: 5rem;
 }
 
 .newsletter-form__message {
   justify-content: center;
   margin-bottom: 0;
 } 
+.newsletter-form__field-wrapper .field__input {
+  height: 100%;
+}
 @media screen and (min-width: 750px) {
   .newsletter-form__message {
     justify-content: flex-start;

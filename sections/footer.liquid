@@ -89,7 +89,7 @@
                       </div>  
                       {%- when 'emailtext' -%}   
                       <div class="footer__email-heading footer__trigger-accordion"> 
-                        <span class="accordion__title text__txt-body">{{ block.settings.email-heading | escape }}</span>
+                        <span class="accordion__title footer_menu--title text__txt-body">{{ block.settings.email-heading | escape }}</span>
                         <span class="large-up-hide">{% render 'icon-caret_up' %} </span>
                       </div>  
                         <div class="footer-block__details-mobile rte show__footer_menus_js">
@@ -376,14 +376,14 @@
             <small class="copyright__content"
               >&copy; {{ 'now' | date: '%Y' }}, {{ shop.name | link_to: routes.root_url -}}
             </small>
-            <small class="copyright__content">{{ powered_by_link }}</small>
+            <small class="copyright__content"> - All rights reserved</small>
             {%- if section.settings.show_policy -%}
               <ul class="policies list-unstyled">
                 {%- for policy in shop.policies -%}
                   {%- if policy != blank -%}
                     <li>
                       <small class="copyright__content"
-                        ><a href="{{ policy.url }}">{{ policy.title }}</a></small
+                        ><a href="{{ policy.url }}">{{powered_by_shopify_html }}</a></small
                       >
                     </li>
                   {%- endif -%}

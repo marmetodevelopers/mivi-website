@@ -78,7 +78,6 @@
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "color_scheme": "",
-        "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
@@ -88,9 +87,9 @@
         "swipe_on_mobile": false,
         "slider_visual": "dots",
         "padding_top": 120,
-        "padding_bottom": 150,
+        "padding_bottom": 176,
         "padding_top_mb": 60,
-        "padding_bottom_mb": 76
+        "padding_bottom_mb": 42
       }
     },
     "fee80e2b-57dd-40b2-8e88-b46478691cee": {
@@ -103,12 +102,12 @@
         "heading": "Deal of the Day",
         "heading_color": "#00ff00",
         "sub_text": "ENDS IN",
-        "end_time": "Dec 5, 2023 12:00:00",
+        "end_time": "Dec 31, 2023 11:59:59",
         "end_msg": "",
         "text_color": "#ffffff",
         "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"23\" height=\"26\" viewbox=\"0 0 23 26\" fill=\"none\">\n  <path d=\"M19.6446 7.73618L21.2792 6.18012L19.6708 4.64842L17.9222 6.31304C16.3247 5.23537 14.4606 4.57119 12.5125 4.38556V2.16571H14.7875V0H7.9625V2.16571H10.2375V4.38556C8.28935 4.57119 6.42526 5.23537 4.82784 6.31304L3.07922 4.64842L1.47079 6.18012L3.10538 7.73618C1.57959 9.27405 0.560385 11.2037 0.173625 13.2868C-0.213134 15.3698 0.0494919 17.5151 0.929071 19.4577C1.80865 21.4003 3.26666 23.0551 5.12304 24.2178C6.97943 25.3804 9.15288 26 11.375 26C13.5971 26 15.7706 25.3804 17.627 24.2178C19.4833 23.0551 20.9413 21.4003 21.8209 19.4577C22.7005 17.5151 22.9631 15.3698 22.5764 13.2868C22.1896 11.2037 21.1704 9.27405 19.6446 7.73618ZM11.375 23.8228C9.57519 23.8228 7.8158 23.3147 6.31931 22.3628C4.82283 21.411 3.65646 20.058 2.9677 18.4751C2.27894 16.8922 2.09873 15.1503 2.44986 13.4699C2.80098 11.7895 3.66767 10.2459 4.94033 9.03441C6.21299 7.82289 7.83445 6.99784 9.59968 6.66358C11.3649 6.32932 13.1946 6.50087 14.8574 7.15654C16.5202 7.81221 17.9414 8.92255 18.9414 10.3471C19.9413 11.7717 20.475 13.4466 20.475 15.16C20.4723 17.4567 19.5127 19.6586 17.8067 21.2827C16.1007 22.9067 13.7876 23.8202 11.375 23.8228Z\" fill=\"#00FF00\"><\/path>\n  <path d=\"M11.3748 8.66309V15.1602H4.5498C4.5498 16.4452 4.95008 17.7014 5.70002 18.7698C6.44996 19.8383 7.51588 20.671 8.76299 21.1628C10.0101 21.6545 11.3824 21.7832 12.7063 21.5325C14.0302 21.2818 15.2463 20.663 16.2008 19.7544C17.1553 18.8457 17.8053 17.6881 18.0687 16.4277C18.332 15.1674 18.1968 13.8611 17.6803 12.6739C17.1637 11.4867 16.2889 10.472 15.1666 9.75805C14.0442 9.04414 12.7247 8.66309 11.3748 8.66309Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
-        "padding_top": 100,
-        "padding_bottom": 100
+        "padding_top": 70,
+        "padding_bottom": 70
       }
     },
     "94a0a182-a3aa-4bc1-964f-23cfd135c254": {
@@ -144,8 +143,8 @@
         "swipe_on_mobile": false,
         "slider_visual": "dots",
         "padding_top": 150,
-        "padding_bottom": 150,
-        "padding_top_mb": 120,
+        "padding_bottom": 20,
+        "padding_top_mb": 136,
         "padding_bottom_mb": 50
       }
     },
@@ -167,38 +166,11 @@
             "mobile_image": "shopify:\/\/shop_images\/Group_36.png",
             "product": "4a-wall-charger"
           }
-        },
-        "635de532-7168-4a62-9862-05382d3000ff": {
-          "type": "carousel_block",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Group_119.png",
-            "mobile_image": "shopify:\/\/shop_images\/Group_36.png",
-            "product": "roam"
-          }
-        },
-        "c63a8c36-9ba2-415a-a4b4-464c70b6c86d": {
-          "type": "carousel_block",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Group_119.png",
-            "mobile_image": "shopify:\/\/shop_images\/Group_36.png",
-            "product": "4a-wall-charger"
-          }
-        },
-        "056141e0-7e38-41ee-b3b4-1ac4253f383c": {
-          "type": "carousel_block",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Group_119.png",
-            "mobile_image": "shopify:\/\/shop_images\/Group_36.png",
-            "product": ""
-          }
         }
       },
       "block_order": [
         "9285b29c-bc74-4794-97c2-72da4db23984",
-        "a5f31862-58bb-4e3c-b8f4-aa70bf2df06b",
-        "635de532-7168-4a62-9862-05382d3000ff",
-        "c63a8c36-9ba2-415a-a4b4-464c70b6c86d",
-        "056141e0-7e38-41ee-b3b4-1ac4253f383c"
+        "a5f31862-58bb-4e3c-b8f4-aa70bf2df06b"
       ],
       "settings": {
         "section_heading": "New Launch",
@@ -212,10 +184,10 @@
         "slides_perpage": 3,
         "section-padding-top": 36,
         "section-padding-bottom": 36,
-        "padding_top": 10,
-        "padding_bottom": 150,
+        "padding_top": 150,
+        "padding_bottom": 40,
         "padding_top_mb": 0,
-        "padding_bottom_mb": 24
+        "padding_bottom_mb": 0
       }
     },
     "af3bf248-59fd-40c6-b0ed-28193696e6ec": {
@@ -248,10 +220,10 @@
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "slider_visual": "dots",
-        "padding_top": 0,
-        "padding_bottom": 150,
-        "padding_top_mb": 0,
-        "padding_bottom_mb": 24
+        "padding_top": 74,
+        "padding_bottom": 50,
+        "padding_top_mb": 26,
+        "padding_bottom_mb": 50
       }
     },
     "d9c0f073-8abf-43ad-94fc-a5e6d6061436": {
@@ -278,7 +250,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/android_1.png",
             "button_text": "SHOP CABLES",
-            "button_link": "shopify:\/\/collections\/speakers"
+            "button_link": "shopify:\/\/collections\/wireless-speakers"
           }
         },
         "5034830b-9005-479d-9c97-e74d61044186": {
@@ -300,10 +272,10 @@
         "heading": "More Products",
         "heading_color": "#4b4955",
         "heading_size": "h2",
-        "padding_top": 10,
-        "padding_bottom": 100,
+        "padding_top": 100,
+        "padding_bottom": 30,
         "padding_top_mb": 0,
-        "padding_bottom_mb": 0
+        "padding_bottom_mb": 50
       }
     },
     "e7889233-c385-40c8-8f2a-3389dcbfa086": {
@@ -361,10 +333,76 @@
         "color_scheme": "",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "padding_top_mb": 10,
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "padding_top_mb": 0,
         "padding_bottom_mb": 50
+      }
+    },
+    "9cd384c7-7fd7-419d-a1cd-cee7ded2c32d": {
+      "type": "slideshow",
+      "blocks": {
+        "template--21280538493205__9cd384c7-7fd7-419d-a1cd-cee7ded2c32d-slide-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_119_1.png",
+            "mobile_image": "shopify:\/\/shop_images\/Group_36.png",
+            "heading": "",
+            "product": "roam",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "template--21280538493205__9cd384c7-7fd7-419d-a1cd-cee7ded2c32d-slide-2": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_119_1.png",
+            "mobile_image": "shopify:\/\/shop_images\/Group_36.png",
+            "heading": "",
+            "product": "4a-wall-charger",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--21280538493205__9cd384c7-7fd7-419d-a1cd-cee7ded2c32d-slide-1",
+        "template--21280538493205__9cd384c7-7fd7-419d-a1cd-cee7ded2c32d-slide-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "small",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand",
+        "heading": "New Launch",
+        "sub_text": "The upgrade with you have been waiting",
+        "desktop_background_image": "shopify:\/\/shop_images\/Union_9.png",
+        "mobile_background_image": "shopify:\/\/shop_images\/Union_8.png",
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     }
   },
@@ -376,6 +414,7 @@
     "0d5e0dae-2cad-442a-bed4-1d07c2ce59ae",
     "af3bf248-59fd-40c6-b0ed-28193696e6ec",
     "d9c0f073-8abf-43ad-94fc-a5e6d6061436",
-    "e7889233-c385-40c8-8f2a-3389dcbfa086"
+    "e7889233-c385-40c8-8f2a-3389dcbfa086",
+    "9cd384c7-7fd7-419d-a1cd-cee7ded2c32d"
   ]
 }
