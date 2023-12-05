@@ -183,12 +183,14 @@ picture.image_banner_home img {
   .banner-block__heading:after {
     position: absolute;
     content: "";
-    border-bottom: 3px solid white;
-    width: 50%;
-    display: block;
-    opacity: .1;
-    margin-top: 15px;
-    margin-left: 25%;
+    border-bottom: 2px solid white;
+    width: 100%;
+    max-width: 120px;
+    opacity: 0.1;
+    left: 5%;
+    display: flex;
+    align-items: center;
+    transform: translate(100%, 15px);
   }
   picture.image_banner_home {
     width: 100%;
@@ -263,6 +265,9 @@ picture.image_banner_home img {
 .small-element-2.card-metafeild-description {
   line-height: 17px;
 }
+.small-element-2.product--variant__label {
+  opacity: 0.8;
+}
 @media screen and (max-width:749px) {
   .collection__title.title-wrapper.title-wrapper--no-top-margin {
     text-align: center;
@@ -314,7 +319,7 @@ picture.image_banner_home img {
     border-radius: 50%;
   }
 }
-.product_option input[type="radio"]:checked {
+.product_option .checked {
   border: 2px solid #0f0;
 }
 .product_option {
@@ -326,6 +331,7 @@ picture.image_banner_home img {
 .product--variant__label .heading_color {
   margin-bottom: unset;
   white-space: nowrap;
+  opacity: 0.8;
 }
 .product___card-button a {
   text-decoration: none;
@@ -404,7 +410,7 @@ picture.image_banner_home img {
     padding: 1% 0 1% 0;
     display: flex;
     flex-direction: column;
-    margin: -3% 20% -3% auto;
+    margin: -4% 20% -4% auto;
     width: 380px;
     height: auto;
   }
@@ -413,6 +419,7 @@ picture.image_banner_home img {
     background: radial-gradient(364.66% 98% at 48.42% 21.8%, #5b6378 0, #303642 39.67%, #111216 99.2%);
     margin-top: 60px;
     margin-bottom: 60px;
+    max-height: 280px;
   }
   .deal-of__the-day-main {
     width: 45%;
@@ -473,6 +480,11 @@ a.product-card__link {
 .deal-of-the-day-html {
   transform: translate(0px, 10px);
 }
+#clockdiv {
+  display: flex;
+  gap: 23px;
+  margin-top: 5px;
+}
 @media screen and (max-width:749px) {
   .deal-of-the-day-product__info {
     transform: translate(10%,-90%);
@@ -496,6 +508,7 @@ a.product-card__link {
   #clockdiv {
     margin-bottom: 8px;
     margin-top: 0;
+    gap: 5px;
   }
 
   .deal-of-the-day-sub___text {
@@ -552,11 +565,7 @@ a.product-card__link {
 .deal-of-the-day-product__info {
   box-shadow: 0 0 #0000, 0 0 #0000, 0 29px 21px -12px #0000001a;
 }
-#clockdiv {
-  display: flex;
-  gap: 23px;
-  margin-top: 5px;
-}
+
 .clockdiv-item {
   display: flex;
   align-items: end;
@@ -835,7 +844,7 @@ span.accordion__title {
 .footer-block__details-content p {
   color: #fff;
   opacity: 0.5;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
   padding-bottom: 1.8rem;
 }
 .footer-block__details-email {
@@ -875,7 +884,7 @@ span.accordion__title {
 @media screen and (max-width: 990px) {
   .footer-block.grid__item.scroll-trigger.animate--slide-in.footer-block---button {
     width: 100%;
-    max-width: 48%;
+    max-width: 175px;
   }
   .footer_title {
     padding-bottom: 20px;
@@ -947,8 +956,10 @@ facet-filters__label.caption-large {
     margin-bottom: 28px;
   }
   .descriptive-svg img {
-    width: 20%;
+    width: 100%;
     height: auto;
+    max-width: 20px;
+    max-height: 28px;
   }
   .content-for-layout {
     height: fit-content;
@@ -998,7 +1009,7 @@ facet-filters__label.caption-large {
 }
 .additional-deatils {
   display: flex;
-  gap: 80px;
+  justify-content: space-between;
 }
 .new-launch-container .slider-counter {
   position: absolute;

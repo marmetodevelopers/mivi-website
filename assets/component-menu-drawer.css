@@ -71,9 +71,6 @@ details[open].menu-opening > .menu-drawer__submenu {
 .menu-drawer__navigation-container {
   display: grid;
   grid-template-rows: 1fr auto;
-  align-content: space-between;
-  overflow-y: auto;
-  height: 100%;
 }
 .menu-drawer__inner-submenu {
   height: 100%;
