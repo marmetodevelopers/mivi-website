@@ -25,10 +25,10 @@
       "settings": {
         "color_scheme": "",
         "image": "shopify:\/\/shop_images\/Group_186.png",
-        "mobile_image": "shopify:\/\/shop_images\/Group_224.png",
-        "full_width": false,
-        "padding_top": 0,
-        "padding_bottom": 88,
+        "mobile_image": "shopify:\/\/shop_images\/Group_224.png", 
+        "full_width": false, 
+        "padding_top": 88,
+        "padding_bottom": 20,
         "padding_top_mb": 0,
         "padding_bottom_mb": 24
       }

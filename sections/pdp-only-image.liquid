@@ -1,7 +1,7 @@
 {% style %}
   .padding-{{ section.id }} {
     padding-top: {{ section.settings.padding_top_mb }}px;
-    padding-bottom: {{ section.settings.padding_bottom_padding_top_mb }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mb }}px;
   }
   @media (min-width: 750px) {
     .padding-{{ section.id }} {
@@ -11,7 +11,7 @@
   }
   {% endstyle %}
   <div class="page-width padding-{{ section.id }}">
-    <div align="center" class="pdp-one__image">
+    <div align="center" class="pdp-one__image {% if template.name == 'product' %} product_single__image{% endif %}">
         {% render 'image', desktopSrc: section.settings.image %}
     </div>
   </div>
