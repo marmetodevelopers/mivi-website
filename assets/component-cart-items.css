@@ -247,7 +247,7 @@ cart-remove-button .icon-remove {
 .item--option__value {
   color: #4B4955;
   font-family: Gilroy medium;
-  font-size: 10px;
+  font-size: calc(10px + (12 - 10) * (100vw - 375px) / (1440 - 375));
   font-style: normal;
   font-weight: 700;
   line-height: 100%;
@@ -264,7 +264,8 @@ cart-remove-button .icon-remove {
   font-family: Gilroy medium;
   font-size: 12px;
   font-weight: 600;
-  line-height: 100%; 
+  line-height: 100%;
+  white-space: nowrap;
 }
 
 .cart-items thead tr {
