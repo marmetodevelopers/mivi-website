@@ -87,7 +87,7 @@
         "swipe_on_mobile": false,
         "slider_visual": "dots",
         "padding_top": 120,
-        "padding_bottom": 146,
+        "padding_bottom": 176,
         "padding_top_mb": 60,
         "padding_bottom_mb": 28
       }
@@ -177,7 +177,7 @@
         "heading_align": "tw-text-center",
         "sub_text": "The upgrade with you have been waiting",
         "desktop_background_image": "shopify:\/\/shop_images\/Union_9.png",
-        "mobile_background_image": "shopify:\/\/shop_images\/Union_8.png",
+        "mobile_background_image": "shopify:\/\/shop_images\/Group_10000018_1.png",
         "enable_pagination": true,
         "enable_autoplay": false,
         "autoplay_speed": 3,
@@ -220,8 +220,8 @@
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "slider_visual": "dots",
-        "padding_top": 150,
-        "padding_bottom": 0,
+        "padding_top": 76,
+        "padding_bottom": 50,
         "padding_top_mb": 0,
         "padding_bottom_mb": 50
       }
@@ -333,10 +333,11 @@
         "color_scheme": "",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 100,
+        "padding_top": 100, 
         "padding_bottom": 0,
         "padding_top_mb": 60,
         "padding_bottom_mb": 60
+ 
       }
     }
   },
