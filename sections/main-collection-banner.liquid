@@ -12,16 +12,18 @@
     <div class="collection_banner_image">
       {% render 'image', class: '', mobileSrc: collection.metafields.custom.collection_banner, desktopSrc: collection.metafields.custom.collection_banner %}
     </div> 
-  </div> 
-  <div class="collection-hero__text-wrapper">
-      <h1 class="collection-hero__title h4"> 
-        <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
-        {{- collection.title | escape -}} 
-      </h1>  
-    {%- if section.settings.show_collection_description -%}
-      <div class="collection-hero__description rte">{{ collection.description }}</div>
-    {%- endif -%}
-  </div> 
+  </div>
+  {% if  collection.metafields.custom.collection_banner %} 
+    <div class="collection-hero__text-wrapper">
+        <h1 class="collection-hero__title h3"> 
+          <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
+          {{- collection.title | escape -}} 
+        </h1>  
+      {%- if section.settings.show_collection_description -%}
+        <div class="collection-hero__description rte">{{ collection.description }}</div>
+      {%- endif -%}
+    </div>
+  {% endif %} 
 </div> 
 {% schema %}
 {
