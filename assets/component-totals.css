@@ -49,7 +49,7 @@
 .order__summary__title {
   color: #4B4955;
   font-family: Gilroy Medium;
-  font-size: 12px;
+  font-size: calc(12px + (14 - 12) * (100vw - 375px) / (1440 - 375));
   font-weight: 700;
   line-height: 100%;
   text-transform: uppercase;
