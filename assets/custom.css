@@ -979,7 +979,7 @@ facet-filters__label.caption-large {
     padding: 15px 4px;
   }
   .homepage-new-launch-container .splide__pagination {
-    bottom: 22.5em;
+    bottom: 23.5rem;
   }
   .descriptive-text p {
     margin-top: 11px;
@@ -1106,9 +1106,9 @@ facet-filters__label.caption-large {
 }
 @media screen and (min-width:990px) and (max-width:1024px) {
   .new-launch-container .splide__pagination {
-    bottom: 29em;
+    bottom: 47rem;
     left: 3%;
-    padding: 0 1em;
+    padding: 0 1rem;
     right: 0;
     z-index: 1;
     position: absolute;
@@ -1758,7 +1758,7 @@ details.pdp-details-content {
 }
 @media screen and (min-width:750px) {
   .PDP-Perfect-In-Ear-Fit-main-container .splide__pagination {
-    bottom: 19em;
+    bottom: 28rem;
   }
   .PDP-Perfect-In-Ear-Fit-main-container .splide__track {
     top: -45%;
@@ -1769,7 +1769,7 @@ details.pdp-details-content {
 }
 @media screen and (min-width:990px) and (max-width:1024px) {
   .PDP-Perfect-In-Ear-Fit-main-container .splide__pagination {
-    bottom: 31em;
+    bottom: 48rem;
   }
 }
 .pdp-perfect-in-ear-desktop-image img {
