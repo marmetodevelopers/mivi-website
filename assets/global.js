@@ -1277,7 +1277,7 @@ document.addEventListener('DOMContentLoaded', function () {
     element.classList.add('add-to-cart-sticky-active');
   });
 
-  document.querySelector('.product-form__buttons').addEventListener('click', function () {
+  document.querySelector('.product-form__buttons')?.addEventListener('click', function () {
     // Get the element by its class name
     let element = document.querySelector('.add-to-cart-sticky-active');
     // Remove the class from the element if it exists
