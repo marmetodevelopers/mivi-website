@@ -1270,7 +1270,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
   // add to cart sticky
-  document.getElementById('myButton').addEventListener('click', function () {
+  document.getElementById('myButton')?.addEventListener('click', function () {
     // Get the element by its class name
     let element = document.querySelector('body');
     // Add another class to the element
