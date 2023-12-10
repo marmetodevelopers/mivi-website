@@ -1311,8 +1311,8 @@ const observer = new MutationObserver(callback);
 // Configure the observer
 const config = { attributes: true, childList: true, subtree: true };
 // Start observing the target node
-observer.observe(targetNode, config);
-// To disconnect the observer later (e.g., when you no longer need it)
+observer?.observe(targetNode, config);
+
 // observer.disconnect();
 
 
