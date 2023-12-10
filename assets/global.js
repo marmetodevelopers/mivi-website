@@ -1292,6 +1292,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Target node to observe
 const targetNode = document.querySelector('.meta-container .splide__track');
+if(targetNode) {
 const textElements = document.querySelectorAll('.faqs-container .questions_wrapper')
 // Callback function to handle mutations
 const callback = function (mutationsList, observer) {
@@ -1313,7 +1314,7 @@ const config = { attributes: true, childList: true, subtree: true };
 // Start observing the target node
 observer?.observe(targetNode, config);
 
-// observer.disconnect();
+}
 
 
 
