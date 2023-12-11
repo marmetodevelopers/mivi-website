@@ -973,9 +973,9 @@
   {% comment %} Sort, product count and filter pills at the end when filter is type of Drawer for the correct tabbing order {% endcomment %}
   {%- if enable_sorting and filter_type == 'drawer' -%}
     <facet-filters-form class="facets">
-      <form id="FacetSortDrawerForm" class="facets__form">
+      <form id="FacetFiltersFormMobile" class="facets__form">
         <div class="facet-filters sorting caption">
-          <div class="facet-filters__field nikhita">
+          <div class="facet-filters__field">
             <h2 class="facet-filters__label caption-large font-secondary">
               <label for="SortBy">{{ 'products.facets.sort_by_label' | t }}</label>
             </h2>
