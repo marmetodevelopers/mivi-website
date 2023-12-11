@@ -1270,14 +1270,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
   // add to cart sticky
-  document.getElementById('myButton').addEventListener('click', function () {
+  document.getElementById('myButton')?.addEventListener('click', function () {
     // Get the element by its class name
     let element = document.querySelector('body');
     // Add another class to the element
     element.classList.add('add-to-cart-sticky-active');
   });
 
-  document.querySelector('.product-form__buttons').addEventListener('click', function () {
+  document.querySelector('.product-form__buttons')?.addEventListener('click', function () {
     // Get the element by its class name
     let element = document.querySelector('.add-to-cart-sticky-active');
     // Remove the class from the element if it exists
@@ -1292,6 +1292,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Target node to observe
 const targetNode = document.querySelector('.meta-container .splide__track');
+if(targetNode) {
 const textElements = document.querySelectorAll('.faqs-container .questions_wrapper')
 // Callback function to handle mutations
 const callback = function (mutationsList, observer) {
@@ -1311,9 +1312,9 @@ const observer = new MutationObserver(callback);
 // Configure the observer
 const config = { attributes: true, childList: true, subtree: true };
 // Start observing the target node
-observer.observe(targetNode, config);
-// To disconnect the observer later (e.g., when you no longer need it)
-// observer.disconnect();
+observer?.observe(targetNode, config);
+
+}
 
 
 
