@@ -95,7 +95,7 @@
     "fee80e2b-57dd-40b2-8e88-b46478691cee": {
       "type": "deal-of-the-day",
       "settings": {
-        "product": "collar",
+        "product": "collar-classic-earphone",
         "button_text": "Shop Now",
         "button_link": "shopify:\/\/collections\/all",
         "image_background_color": "#f6f6f7",
@@ -334,10 +334,10 @@
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 100,
-         "padding_bottom": 0,
+        "padding_bottom": 0,
         "padding_top_mb": 60,
         "padding_bottom_mb": 60
-       }
+      }
     }
   },
   "order": [
