@@ -2268,7 +2268,7 @@ marmeto-product-card .media > img {
 }
 .product-details,
 .product-price,
-.card-metafeild-description {
+.price-cart_conatainer .card-metafeild-description {
   margin-left: 20px;
 }
 #product-grid .price > * {
