@@ -1291,8 +1291,7 @@
    --shadow-opacity: var(--buttons-shadow-opacity);
    --shadow-visible: var(--buttons-shadow-visible);
    --border-offset: var(--buttons-border-offset);
-   /* reduce radius edge artifacts */
-   /* --border-opacity: calc(1 - var(--buttons-border-opacity)); */
+   /* reduce radius edge artifacts */ 
    border-radius: var(--buttons-radius-outset);
    position: relative;
  }
@@ -1366,10 +1365,7 @@
  .shopify-payment-button__button--unbranded:hover::after {
    box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(var(--color-button-text), var(--border-opacity)),
      0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-button), var(--alpha-button-background));
- }
- /* .button--secondary:after {
-   --border-opacity: var(--buttons-border-opacity);
- } */
+ } 
  .button:focus-visible,
  .button:focus,
  .button.focused,
