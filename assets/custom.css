@@ -320,9 +320,9 @@ picture.image_banner_home img {
     appearance: none;
     border-radius: 50%;
   }
-} 
+}
 .product_option input[type="radio"]:checked {
-  outline: 2px solid #0f0; 
+  outline: 2px solid #0f0;
 }
 .product_option {
   display: flex;
@@ -495,6 +495,14 @@ a.product-card__link {
   gap: 23px;
   margin-top: 5px;
 }
+.deal-of-the-product__img img {
+  width: 100%;
+  height: auto;
+}
+.deal-of-the-product__img {
+  max-width: 70%;
+  margin: auto;
+}
 @media screen and (max-width:749px) {
   .deal-of-the-day-product__info {
     transform: translate(10%, -90%);
@@ -509,6 +517,9 @@ a.product-card__link {
     padding: 15px 20px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .deal-of-the-day-product__info .product__info {
+    padding-left: 0;
   }
   .sub-text-txt.deal-of-the-day-sub___text {
     margin: 20px 0 5px 0;
@@ -544,7 +555,7 @@ a.product-card__link {
   }
   .deal-of-the-day-container {
     clip-path: polygon(0 11%, 51% 0, 100% 11%, 100% 89%, 50% 100%, 0 87%);
-    padding-bottom: 80%;
+    padding-bottom: 64%;
     padding-top: 10%;
   }
   span.slim-countdown-text {
@@ -552,10 +563,6 @@ a.product-card__link {
   }
   .deal-of-the-day-html {
     transform: translate(0px);
-  }
-  .deal-of-the-product__img img {
-    width: 100%;
-    height: auto;
   }
   .deal-of-the-day-product__info::after {
     content: "";
@@ -573,7 +580,6 @@ a.product-card__link {
 .deal-of-the-day-product__info {
   box-shadow: 0 0 #0000, 0 0 #0000, 0 29px 21px -12px #0000001a;
 }
-
 .clockdiv-item {
   display: flex;
   align-items: end;
@@ -883,7 +889,7 @@ span.accordion__title {
 .footer-block__details-content p {
   color: #fff;
   opacity: 0.5;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding-bottom: 1.8rem;
 }
 .footer-block__details-email {
@@ -987,8 +993,8 @@ facet-filters__label.caption-large {
   .homepage-new-launch-container .splide__pagination li {
     padding: 15px 4px;
   }
-  .homepage-new-launch-container .splide__pagination
-    bottom: 33.5rem; 
+  .homepage-new-launch-container .splide__pagination {
+    bottom: 33.5rem;
   }
   .descriptive-text p {
     margin-top: 11px;
@@ -2140,7 +2146,6 @@ fieldset.js.product-form__input.Color input[type=radio] + label {
   padding: unset;
 }
 @media screen and (max-width: 749px) {
-  .card__inner,
   .mm-product_card__isolate::after {
     background-size: cover !important;
     content: "";
@@ -2170,7 +2175,7 @@ fieldset.js.product-form__input.Color input[type=radio] + label {
   width: 32px;
   height: 132px;
   position: absolute;
-  left: 0px;
+  left: -57px;
   top: 15px;
   background: url(https://cdn.shopify.com/s/files/1/0828/1391/1317/files/Group_230_1.png?v=1701370169);
 }
@@ -2193,7 +2198,7 @@ fieldset.js.product-form__input.Color input[type=radio] + label {
     right: -20px;
   }
   .deal-of-the-product__img::after {
-    left: -20px;
+    left: -65px;
   }
 }
 /* cart drawer */
@@ -2263,7 +2268,7 @@ marmeto-product-card .media > img {
 }
 .product-details,
 .product-price,
-.card-metafeild-description {
+.price-cart_conatainer .card-metafeild-description {
   margin-left: 20px;
 }
 #product-grid .price > * {
@@ -2301,5 +2306,4 @@ mm-product-form {
   .collection #product-grid .card-product__view-details-button {
     padding: 22px 15px;
   }
- 
 }
