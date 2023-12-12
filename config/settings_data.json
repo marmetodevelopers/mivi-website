@@ -146,6 +146,18 @@
         "disabled": true,
         "settings": {
         }
+      },
+      "8698826295320421822": {
+        "type": "shopify:\/\/apps\/social-bar-social-media-icon\/blocks\/app-embed\/0d821215-43b9-4a39-925d-44613cd0dd23",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "14060646107696862457": {
+        "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {
+        }
       }
     },
     "color_schemes": {
