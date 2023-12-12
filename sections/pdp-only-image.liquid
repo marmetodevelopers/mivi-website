@@ -1,0 +1,81 @@
+{% style %}
+  .padding-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top_mb }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mb }}px;
+  }
+  @media (min-width: 750px) {
+    .padding-{{ section.id }} {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+  {% endstyle %}
+  <div class="page-width padding-{{ section.id }}">
+    <div align="center" class="pdp-one__image {% if template.name == 'product' %} product_single__image{% endif %}">
+        {% render 'image', desktopSrc: section.settings.image %}
+    </div>
+  </div>
+{% schema %}
+{
+  "name": "only one image",
+  "tag": "section",
+  "class": "section only__one_image_section",
+  "settings": [ 
+      {
+          "type":"image_picker",
+          "id":"image",
+          "label":"Image"
+      },
+      {
+        "type": "header",
+        "content": "Section padding"
+      },
+    {
+        "type": "range",
+        "id": "padding_top",
+        "min": 10,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "label": "Padding top",
+        "default": 40
+    },
+    {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 10,
+        "max": 100,
+        "step": 5,
+
+        "unit": "px",
+        "label": "Padding bottom",
+        "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mb",
+      "min": 0,
+      "max": 150,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top(Mobile)",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mb",
+      "min": 0,
+      "max": 150,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom(Mobile)",
+      "default": 36
+    } 
+    ],
+   "presets": [
+    {
+        "name":"only one image"
+    }
+   ]
+}
+   {% endschema %} 

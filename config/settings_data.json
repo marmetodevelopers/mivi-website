@@ -8,8 +8,8 @@
     "body_scale": 100,
     "page_width": 1440,
     "spacing_sections": 120,
-    "spacing_grid_horizontal": 8,
-    "spacing_grid_vertical": 8,
+    "spacing_grid_horizontal": 20,
+    "spacing_grid_vertical": 40,
     "animations_reveal_on_scroll": true,
     "animations_hover_elements": "default",
     "buttons_border_thickness": 1,
@@ -38,34 +38,34 @@
     "card_text_alignment": "left",
     "card_color_scheme": "background-2",
     "card_border_thickness": 0,
-    "card_border_opacity": 20,
+    "card_border_opacity": 0,
     "card_corner_radius": 0,
     "card_shadow_opacity": 0,
     "card_shadow_horizontal_offset": 0,
-    "card_shadow_vertical_offset": 0,
-    "card_shadow_blur": 5,
+    "card_shadow_vertical_offset": -40,
+    "card_shadow_blur": 0,
     "collection_card_style": "standard",
-    "collection_card_image_padding": 20,
+    "collection_card_image_padding": 0,
     "collection_card_text_alignment": "left",
     "collection_card_color_scheme": "background-2",
     "collection_card_border_thickness": 0,
-    "collection_card_border_opacity": 10,
+    "collection_card_border_opacity": 0,
     "collection_card_corner_radius": 0,
     "collection_card_shadow_opacity": 0,
     "collection_card_shadow_horizontal_offset": 0,
-    "collection_card_shadow_vertical_offset": 4,
-    "collection_card_shadow_blur": 5,
+    "collection_card_shadow_vertical_offset": 0,
+    "collection_card_shadow_blur": 0,
     "blog_card_style": "standard",
     "blog_card_image_padding": 0,
     "blog_card_text_alignment": "left",
     "blog_card_color_scheme": "background-2",
     "blog_card_border_thickness": 0,
-    "blog_card_border_opacity": 10,
+    "blog_card_border_opacity": 0,
     "blog_card_corner_radius": 0,
     "blog_card_shadow_opacity": 0,
     "blog_card_shadow_horizontal_offset": 0,
-    "blog_card_shadow_vertical_offset": 4,
-    "blog_card_shadow_blur": 5,
+    "blog_card_shadow_vertical_offset": 0,
+    "blog_card_shadow_blur": 0,
     "text_boxes_border_thickness": 0,
     "text_boxes_border_opacity": 10,
     "text_boxes_radius": 0,
@@ -100,11 +100,11 @@
     "brand_headline": "",
     "brand_description": "<p><\/p>",
     "brand_image_width": 100,
-    "social_facebook_link": "",
-    "social_instagram_link": "",
-    "social_youtube_link": "",
+    "social_facebook_link": "https:\/\/facebook.com\/shopify",
+    "social_instagram_link": "http:\/\/instagram.com\/shopify",
+    "social_youtube_link": "https:\/\/www.youtube.com\/shopify",
     "social_tiktok_link": "",
-    "social_twitter_link": "",
+    "social_twitter_link": "https:\/\/twitter.com\/shopify",
     "social_snapchat_link": "",
     "social_pinterest_link": "",
     "social_tumblr_link": "",
@@ -113,7 +113,7 @@
     "predictive_search_show_vendor": true,
     "predictive_search_show_price": true,
     "currency_code_enabled": true,
-    "cart_type": "notification",
+    "cart_type": "page",
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
@@ -134,6 +134,32 @@
     "content_for_index": [
 
     ],
+    "blocks": {
+      "17676569757753803255": {
+        "type": "shopify:\/\/apps\/cartix\/blocks\/app-embed\/e1e19d44-60f2-4f05-8156-49ac0f614adf",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "14060646107696862457": {
+        "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "8698826295320421822": {
+        "type": "shopify:\/\/apps\/social-bar-social-media-icon\/blocks\/app-embed\/0d821215-43b9-4a39-925d-44613cd0dd23",
+        "disabled": true,
+        "settings": {
+        }
+      },
+      "17699460525988123968": {
+        "type": "shopify:\/\/apps\/gameball\/blocks\/gb-widget\/4b916a35-b345-4d7d-9eb4-f51fec3f8c05",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    },
     "color_schemes": {
       "background-1": {
         "settings": {
@@ -199,17 +225,6 @@
           "button_label": "#ffffff",
           "secondary_button_label": "#121212",
           "shadow": "#121212"
-        }
-      },
-      "scheme-8f08e0a1-e720-4f3a-915c-8464d5196cc0": {
-        "settings": {
-          "background": "#ffffff",
-          "background_gradient": "",
-          "text": "#121212",
-          "button": "#121212",
-          "button_label": "#ffffff",
-          "secondary_button_label": "#121212",
-          "shadow": "#ffffff"
         }
       }
     }

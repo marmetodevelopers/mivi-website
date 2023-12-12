@@ -58,7 +58,7 @@
     }
   },
   "newsletter": {
-    "label": "Email",
+    "label": "Your Email",
     "success": "Thanks for subscribing",
     "button_label": "Subscribe"
   },
@@ -107,7 +107,7 @@
   "products": {
     "product": {
       "add_to_cart": "Add to cart",
-      "choose_options": "shop now",
+      "choose_options": "ADD TO CART",
       "choose_product_options": "Choose options for {{ product_name }}",
       "description": "Description",
       "inventory_in_stock": "In stock",
@@ -157,7 +157,7 @@
         "refresh": "Refresh"
       },
       "price": {
-        "from_price_html": "From {{ price }}",
+        "from_price_html": "{{ price }}",
         "regular_price": "Regular price",
         "sale_price": "Sale price",
         "unit_price": "Unit price"
@@ -183,7 +183,7 @@
       "clear": "Clear",
       "clear_all": "Remove all",
       "from": "From",
-      "filter_and_sort": "Filter and sort",
+      "filter_and_sort": "Filter",
       "filter_by_label": "Filter:",
       "filter_button": "Filter",
       "filters_selected": {
@@ -236,7 +236,7 @@
       },
       "title": "Search results",
       "search_for": "Search for “{{ terms }}”",
-      "suggestions": "Suggestions",
+      "suggestions": "Quick Links",
       "pages": "Pages"
     },
     "cart": {
@@ -282,7 +282,7 @@
       "estimated_total": "Estimated total",
       "new_estimated_total": "New estimated total",
       "note": "Order special instructions",
-      "checkout": "Check out",
+      "checkout": "Place Order",
       "empty": "Your cart is empty",
       "cart_error": "There was an error while updating your cart. Please try again.",
       "cart_quantity_error_html": "You can only add {{ quantity }} of this item to your cart.",
