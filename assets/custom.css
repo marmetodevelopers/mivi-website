@@ -1246,10 +1246,15 @@ facet-filters__label.caption-large {
   letter-spacing: 3.6px;
   text-transform: uppercase;
 }
+.main-product-add-to-cart-button {
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  line-height: 14px;
+}
 .product-form__buttons .product-form__submit {
   background: #0f0;
   text-transform: uppercase;
-  padding: 23px 51px;
+  padding: 23px 40px;
   border: none;
   --border-offset: unset;
   color: #4B4955;
@@ -1354,6 +1359,14 @@ ul.mobile-facets__list {
 @media screen and (min-width:750px) {
   .product__info-container {
     margin-top: 30px;
+  }
+  .main-product__main-container span.price-item.price-item--sale {
+    font-size: 28px;
+    font-weight: 800;
+  }
+  .main-product__main-container s.price-item.price-item--regular {
+    font-size: 20px;
+    font-weight: 600;
   }
   .pdp___varient-radio {
     margin: 25px 0 40px 0;
@@ -1718,7 +1731,7 @@ details.pdp-details-content {
 /* pdp Perfect In-Ear Fit section */
 @media screen and (max-width:749px) {
   .PDP-Perfect-In-Ear-Fit-main-container .splide__pagination {
-    bottom: 25rem;
+    bottom: 29rem;
   }
   .perfect_background___image img {
     padding: 0 10px;
@@ -1726,6 +1739,9 @@ details.pdp-details-content {
   .pdp-perfect-in-ear-mobile-image img {
     width: 100%;
     height: auto;
+  }
+  .PDP-Perfect-In-Ear-Fit-main-container .splide__track {
+    top: -10%;
   }
 }
 .PDP-Perfect-In-Ear-Fit-main-container .splide__arrow {
@@ -2005,13 +2021,14 @@ details.pdp-details-content {
   display: flex;
 }
 .faqs-container {
-  width: 42%;
+  width: 46%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .pdp--superior-premium-container .splide__track {
   position: unset;
+  padding-left: 10px;
 }
 .pdp--superior-premium-container .splide__pagination {
   bottom: -8%;
@@ -2043,6 +2060,11 @@ details.pdp-details-content {
 .question {
   padding-bottom: 24px;
 }
+@media screen and (min-width:750px) {
+  .faqs-container {
+    margin-right: 50px;
+  }
+}
 @media screen and (max-width:990px) {
   .meta-container {
     flex-direction: column;
@@ -2059,7 +2081,7 @@ details.pdp-details-content {
   .product__ingredients-contents::after {
     margin-top: 3rem;
     margin-bottom: 3rem;
-    margin-left: .5rem;
+    margin-left: 1rem;
   }
   .answer {
     padding-bottom: 20px;
