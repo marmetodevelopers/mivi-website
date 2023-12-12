@@ -31,8 +31,9 @@
         },
         "button": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
-            "button_label_1": "",
+            "button_label_1": "Shop Now",
             "button_link_1": "shopify:\/\/products\/duopods-a750-earbud",
             "button_style_secondary_1": false,
             "button_label_2": "",
