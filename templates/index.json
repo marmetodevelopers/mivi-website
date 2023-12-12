@@ -71,7 +71,7 @@
         "show_description": false,
         "description_style": "body",
         "collection": "earbuds",
-        "products_to_show": 8,
+        "products_to_show": 3,
         "columns_desktop": 3,
         "full_width": false,
         "show_view_all": true,
@@ -87,7 +87,7 @@
         "swipe_on_mobile": false,
         "slider_visual": "dots",
         "padding_top": 120,
-        "padding_bottom": 176,
+        "padding_bottom": 146,
         "padding_top_mb": 60,
         "padding_bottom_mb": 28
       }
@@ -95,7 +95,7 @@
     "fee80e2b-57dd-40b2-8e88-b46478691cee": {
       "type": "deal-of-the-day",
       "settings": {
-        "product": "collar",
+        "product": "collar-classic-earphone",
         "button_text": "Shop Now",
         "button_link": "shopify:\/\/collections\/all",
         "image_background_color": "#f6f6f7",
@@ -177,7 +177,7 @@
         "heading_align": "tw-text-center",
         "sub_text": "The upgrade with you have been waiting",
         "desktop_background_image": "shopify:\/\/shop_images\/Union_9.png",
-        "mobile_background_image": "shopify:\/\/shop_images\/Group_10000018_1.png",
+        "mobile_background_image": "shopify:\/\/shop_images\/Union_8.png",
         "enable_pagination": true,
         "enable_autoplay": false,
         "autoplay_speed": 3,
@@ -220,8 +220,8 @@
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "slider_visual": "dots",
-        "padding_top": 76,
-        "padding_bottom": 50,
+        "padding_top": 150,
+        "padding_bottom": 0,
         "padding_top_mb": 0,
         "padding_bottom_mb": 50
       }
@@ -278,10 +278,10 @@
         "padding_bottom_mb": 60
       }
     },
-    "e586a2b5-d0dc-4b7e-b1a4-3ae364e30194": {
+    "8584fd8b-e9b4-4529-8807-8aceeb5e9999": {
       "type": "duplicate-of-multicolumn",
       "blocks": {
-        "template--21392479715605__e586a2b5-d0dc-4b7e-b1a4-3ae364e30194-column-1": {
+        "template--21392479715605__8584fd8b-e9b4-4529-8807-8aceeb5e9999-column-1": {
           "type": "column",
           "settings": {
             "background_html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"380\" height=\"360\" viewbox=\"0 0 380 360\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M190 358.843L1.125 313.788V46.2124L190 1.15657L378.875 46.2124V313.788L190 358.843Z\" stroke=\"#00FF00\" stroke-width=\"2.25\"><\/path>\n<\/svg>",
@@ -292,33 +292,33 @@
             "link": ""
           }
         },
-        "template--21392479715605__e586a2b5-d0dc-4b7e-b1a4-3ae364e30194-column-2": {
+        "template--21392479715605__8584fd8b-e9b4-4529-8807-8aceeb5e9999-column-2": {
           "type": "column",
           "settings": {
             "background_html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"380\" height=\"360\" viewbox=\"0 0 380 360\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M190 358.843L1.125 313.788V46.2124L190 1.15657L378.875 46.2124V313.788L190 358.843Z\" stroke=\"#00FF00\" stroke-width=\"2.25\"><\/path>\n<\/svg>",
             "title": "",
-            "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"34\" height=\"28\" viewbox=\"0 0 34 28\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M27.9428 0.362793C21.8104 5.09792 17.7739 13.0933 17.7739 18.6047C17.7739 23.8055 21.4223 27.3763 25.7693 27.3763C30.0387 27.3763 34.5409 22.9517 32.9108 17.5179C24.9931 14.3353 22.3538 6.65042 28.4086 0.750918L27.9428 0.362793ZM10.1667 0.362793C4.0343 5.09792 -0.00219727 13.0933 -0.00219727 18.6047C-0.00219727 23.8055 3.64618 27.3763 7.99318 27.3763C12.2626 27.3763 16.7648 22.9517 15.1347 17.5179C7.21693 14.3353 4.57768 6.65042 10.6324 0.750918L10.1667 0.362793Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
+            "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"34\" height=\"28\" viewbox=\"0 0 34 28\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M27.943 0.362793C21.8107 5.09792 17.7742 13.0933 17.7742 18.6047C17.7742 23.8055 21.4225 27.3763 25.7695 27.3763C30.0389 27.3763 34.5412 22.9517 32.911 17.5179C24.9933 14.3353 22.354 6.65042 28.4088 0.750918L27.943 0.362793ZM10.1669 0.362793C4.03455 5.09792 -0.00195312 13.0933 -0.00195312 18.6047C-0.00195312 23.8055 3.64642 27.3763 7.99342 27.3763C12.2628 27.3763 16.765 22.9517 15.1349 17.5179C7.21717 14.3353 4.57792 6.65042 10.6327 0.750918L10.1669 0.362793Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
             "text": "<p>A pair of sport headphones must ensure a perfect fit alongside an energetic and punchy sound to even approach worthiness. And the DuoPods M40 have absolutely achieved this.<\/p>",
             "link_label": "Anant Kishore",
             "link": ""
           }
         },
-        "template--21392479715605__e586a2b5-d0dc-4b7e-b1a4-3ae364e30194-column-3": {
+        "template--21392479715605__8584fd8b-e9b4-4529-8807-8aceeb5e9999-column-3": {
           "type": "column",
           "settings": {
             "background_html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"380\" height=\"360\" viewbox=\"0 0 380 360\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M190 358.843L1.125 313.788V46.2124L190 1.15657L378.875 46.2124V313.788L190 358.843Z\" stroke=\"#00FF00\" stroke-width=\"2.25\"><\/path>\n<\/svg>",
             "title": "",
-            "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"34\" height=\"28\" viewbox=\"0 0 34 28\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M27.9428 0.362793C21.8104 5.09792 17.7739 13.0933 17.7739 18.6047C17.7739 23.8055 21.4223 27.3763 25.7693 27.3763C30.0387 27.3763 34.5409 22.9517 32.9108 17.5179C24.9931 14.3353 22.3538 6.65042 28.4086 0.750918L27.9428 0.362793ZM10.1667 0.362793C4.0343 5.09792 -0.00219727 13.0933 -0.00219727 18.6047C-0.00219727 23.8055 3.64618 27.3763 7.99318 27.3763C12.2626 27.3763 16.7648 22.9517 15.1347 17.5179C7.21693 14.3353 4.57768 6.65042 10.6324 0.750918L10.1667 0.362793Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
-            "text": "<p>A pair of sport headphones must ensure a perfect fit alongside an energetic and punchy sound to even approach worthiness. And the DuoPods M40 have absolutely achieved this. <\/p>",
+            "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"34\" height=\"28\" viewbox=\"0 0 34 28\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M27.943 0.362793C21.8107 5.09792 17.7742 13.0933 17.7742 18.6047C17.7742 23.8055 21.4225 27.3763 25.7695 27.3763C30.0389 27.3763 34.5412 22.9517 32.911 17.5179C24.9933 14.3353 22.354 6.65042 28.4088 0.750918L27.943 0.362793ZM10.1669 0.362793C4.03455 5.09792 -0.00195312 13.0933 -0.00195312 18.6047C-0.00195312 23.8055 3.64642 27.3763 7.99342 27.3763C12.2628 27.3763 16.765 22.9517 15.1349 17.5179C7.21717 14.3353 4.57792 6.65042 10.6327 0.750918L10.1669 0.362793Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
+            "text": "<p>A pair of sport headphones must ensure a perfect fit alongside an energetic and punchy sound to even approach worthiness. And the DuoPods M40 have absolutely achieved this.<\/p>",
             "link_label": "Anant Kishore",
             "link": ""
           }
         }
       },
       "block_order": [
-        "template--21392479715605__e586a2b5-d0dc-4b7e-b1a4-3ae364e30194-column-1",
-        "template--21392479715605__e586a2b5-d0dc-4b7e-b1a4-3ae364e30194-column-2",
-        "template--21392479715605__e586a2b5-d0dc-4b7e-b1a4-3ae364e30194-column-3"
+        "template--21392479715605__8584fd8b-e9b4-4529-8807-8aceeb5e9999-column-1",
+        "template--21392479715605__8584fd8b-e9b4-4529-8807-8aceeb5e9999-column-2",
+        "template--21392479715605__8584fd8b-e9b4-4529-8807-8aceeb5e9999-column-3"
       ],
       "settings": {
         "title": "Our Customers Us",
@@ -332,12 +332,12 @@
         "button_link": "",
         "color_scheme": "",
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 100,
-         "padding_bottom": 0,
-        "padding_top_mb": 60,
+        "swipe_on_mobile": true,
+        "padding_top": 98,
+        "padding_bottom": 12,
+        "padding_top_mb": 0,
         "padding_bottom_mb": 60
-       }
+      }
     }
   },
   "order": [
@@ -348,6 +348,6 @@
     "0d5e0dae-2cad-442a-bed4-1d07c2ce59ae",
     "af3bf248-59fd-40c6-b0ed-28193696e6ec",
     "d9c0f073-8abf-43ad-94fc-a5e6d6061436",
-    "e586a2b5-d0dc-4b7e-b1a4-3ae364e30194"
+    "8584fd8b-e9b4-4529-8807-8aceeb5e9999"
   ]
 }
