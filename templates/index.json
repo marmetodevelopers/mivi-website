@@ -5,6 +5,7 @@
       "blocks": {
         "heading": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Immerse In Studio Quality Sound",
             "heading_size": "h0"
@@ -12,6 +13,7 @@
         },
         "e1570ec2-4351-4cb9-8cc5-5f23fb495123": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "DUOPODS M40",
             "text_style": "body",
@@ -20,6 +22,7 @@
         },
         "79f29ad4-60f1-49ca-b8b0-3e8ac2272670": {
           "type": "banner-body-text",
+          "disabled": true,
           "settings": {
             "body_text": "True Wireless Earbuds",
             "text_style": "caption-with-letter-spacing",
@@ -29,8 +32,8 @@
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop now",
-            "button_link_1": "shopify:\/\/collections\/all",
+            "button_label_1": "",
+            "button_link_1": "shopify:\/\/products\/duopods-a750-earbud",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -45,7 +48,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Group_676.png",
+        "image": "shopify:\/\/shop_images\/Screenshot_2023-12-12_at_5.21.29_PM.png",
         "mobile_image": "shopify:\/\/shop_images\/Group_677.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
