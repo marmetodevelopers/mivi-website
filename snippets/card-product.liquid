@@ -1,6 +1,5 @@
 {% comment %}
-  Renders a product card
-
+  Renders a product card 
   Accepts:
   - card_product: {Object} Product Liquid object (optional)
   - media_aspect_ratio: {String} Size of the product image card. Values are "square" and "portrait". Default is "square" (optional)
@@ -15,14 +14,11 @@
   - horizontal_class: {Boolean} Add a card--horizontal class if set to true. Default: false (optional)
   - horizontal_quick_add: {Boolean} Changes the quick add button styles when set to true. Default: false (optional)
   - placeholder_image: {String} The placeholder image to use when no product exists. Default: 'product-apparel-2' (optional)
-
-  Usage:
+   Usage:
   {% render 'card-product', show_vendor: section.settings.show_vendor %}
-{% endcomment %}
-
+{% endcomment %} 
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
-
 {%- if card_product and card_product != empty -%}
   {%- liquid
     assign ratio = 1
@@ -77,8 +73,7 @@
                 height="{{ card_product.featured_media.height }}"
               >
               {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
-
-              {%- if card_product.media[1] != null and show_secondary_image -%}
+               {%- if card_product.media[1] != null and show_secondary_image -%}
                 <img
                   srcset="
                     {%- if card_product.media[1].width >= 165 -%}{{ card_product.media[1] | image_url: width: 165 }} 165w,{%- endif -%}
@@ -108,7 +103,7 @@
               {% if card_product.featured_media == null and settings.card_style == 'standard' %}
                 id="title-{{ section_id }}-{{ card_product.id }}"
               {% endif %}
-            >
+            > 
               <a
                 href="{{ card_product.url }}"
                 id="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }}"
@@ -143,10 +138,8 @@
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
               <div class="caption-with-letter-spacing light">{{ card_product.vendor }}</div>
             {%- endif -%}
-
-            <span class="caption-large light">{{ block.settings.description | escape }}</span>
-
-            {%- if show_rating and card_product.metafields.reviews.rating.value != blank -%}
+             <span class="caption-large light">{{ block.settings.description | escape }}</span>
+             {%- if show_rating and card_product.metafields.reviews.rating.value != blank -%}
               {% liquid
                 assign rating_decimal = 0
                 assign decimal = card_product.metafields.reviews.rating.value.rating | modulo: 1
@@ -180,11 +173,9 @@
                   {{ 'accessibility.total_reviews' | t -}}
                 </span>
               </p>
-            {%- endif -%}
-
+            {%- endif -%} 
             {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %} 
- 
-          {%- if card_product.quantity_price_breaks_configured? -%}
+           {%- if card_product.quantity_price_breaks_configured? -%}
               <div class="card__information-volume-pricing-note">
                 <span class="caption">{{ 'products.product.volume_pricing.note' | t }}</span>
               </div>
@@ -218,7 +209,6 @@
                           name="{{ options.name }}-{{ sectionId }}-{{ card_product.id }}"
                           value="{{ value | escape }}"
                           form="{{ product_form_id }}"
-                          
                           type="radio" 
                           class="circle_radio {% if options.selected_value == value %}checked{% endif %} {% if option_disabled %}disabled{% endif %}"
                           value="{{ forloop.index }}"
@@ -377,6 +367,5 @@
       </div>
     </div>
   </div>
-  
 {%- endif -%}
 

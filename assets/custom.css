@@ -987,8 +987,8 @@ facet-filters__label.caption-large {
   .homepage-new-launch-container .splide__pagination li {
     padding: 15px 4px;
   }
-  .homepage-new-launch-container .splide__pagination {
-    bottom: 33.5rem;
+  .homepage-new-launch-container .splide__pagination
+    bottom: 33.5rem; 
   }
   .descriptive-text p {
     margin-top: 11px;
@@ -2301,4 +2301,5 @@ mm-product-form {
   .collection #product-grid .card-product__view-details-button {
     padding: 22px 15px;
   }
+ 
 }
