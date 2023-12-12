@@ -2146,6 +2146,7 @@ fieldset.js.product-form__input.Color input[type=radio] + label {
   padding: unset;
 }
 @media screen and (max-width: 749px) {
+  .card__inner::after,
   .mm-product_card__isolate::after {
     background-size: cover !important;
     content: "";
