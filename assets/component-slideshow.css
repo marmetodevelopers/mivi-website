@@ -14,7 +14,7 @@ slideshow-component .slideshow.banner {
   flex-direction: row;
   flex-wrap: nowrap;
   margin: 0;
-  gap: 0;
+  gap: 20px;
 }
 
 .slideshow__slide {
@@ -103,12 +103,7 @@ slideshow-component .slideshow.banner {
     height: 100%;
     padding: 5rem;
   }
-}
-
-.slideshow__controls {
-  border: 0.1rem solid rgba(var(--color-foreground), 0.08);
-}
-
+} 
 .slideshow__controls--top {
   order: 2;
   z-index: 1;

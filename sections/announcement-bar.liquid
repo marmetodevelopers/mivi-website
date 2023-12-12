@@ -35,7 +35,7 @@
   <div class="page-width utility-bar__grid{% if announcement_bar and language_country_selector or section.settings.show_social and social_icons %} utility-bar__grid--3-col{% elsif language_country_selector or section.settings.show_social and social_icons %} utility-bar__grid--2-col{% endif %}">
     {%- if section.settings.show_social and social_icons -%}
       {%- render 'social-icons' -%}
-    {%- endif -%}
+    {%- endif -%} 
     {%- if section.blocks.size == 1 -%}
       <div
         class="announcement-bar{% if section.settings.show_social %} announcement-bar--one-announcement{% endif %}"
@@ -54,7 +54,7 @@
           <p class="announcement-bar__message h5">
             <span>{{ section.blocks.first.settings.text | escape }}</span>
             {%- if section.blocks.first.settings.link != blank -%}
-              {% comment %} {% render 'icon-arrow' %}  {% endcomment %}
+              <span class="hidden"> {% render 'icon-arrow' %}   </span>
             {%- endif -%}
           </p>
           {%- if section.blocks.first.settings.link != blank -%}
@@ -116,12 +116,10 @@
                  
                     {{ block.settings.html }} 
                      
-                    <p class="announcement-bar__message font-semibold">
-                      <span>{{ block.settings.text | escape }}</span>
-                     
-                      {%- if block.settings.link != blank -%}
-                          
-                   {% comment %}     {% render 'icon-arrow' %}{% endcomment %}
+                    <p class="announcement-bar__message">
+                      <span>{{ block.settings.text | escape }}</span> 
+                      {%- if block.settings.link != blank -%}   
+                        <span class="hidden"> {% render 'icon-arrow' %} </span>
                       {%- endif -%}
                     </p>
                     {%- if block.settings.link != blank -%}

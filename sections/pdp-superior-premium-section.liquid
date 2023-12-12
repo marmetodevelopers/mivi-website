@@ -1,0 +1,254 @@
+<script src="{{ 'carousel.js' | asset_url }}" defer="defer"></script>
+{{ 'splide.min.css' | asset_url | stylesheet_tag }} 
+{% style %}
+#carousel--{{ section.id }}{
+    display: block;
+    padding-top: {{ section.settings.section-padding-top | times: 0.75 | round: 0 | append: 'px'  }};
+    padding-bottom: {{ section.settings.section-padding-bottom | times: 0.75 | round: 0 | append: 'px'  }};
+}
+@media screen and (min-width: 750px) {
+    #carousel--{{ section.id }}{
+        padding-top: {{ section.settings.section-padding-top | append: 'px'  }};
+        padding-bottom: {{ section.settings.section-padding-bottom | append: 'px'  }};
+    }
+}
+.padding-{{ section.id }} {
+  padding-top: {{ section.settings.padding_top_mb }}px;
+  padding-bottom: {{ section.settings.padding_bottom_mb }}px;
+}
+@media screen and (min-width: 750px) {
+  .padding-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+}
+{% endstyle %}
+<div class="new-launch-container pdp--superior-premium-container padding-{{ section.id }}">
+    <div align="center">
+        {% if section.settings.section_heading != blank %}
+            <div class="h4 {{ section.settings.heading_align }} tw-mb-8">{{ section.settings.section_heading }}</div>
+        {% endif %}
+        {% if section.settings.sub_text != blank %}
+           <h2 class="small-element new-launch-sub_text"> {{ section.settings.sub_text }}</h2>
+        {% endif %} 
+    </div> 
+    <carousel-component id="carousel--{{ section.id }}" class="page-width splide slider_component_container pdp-superior-primium-container"
+        data-autoplay="{{ section.settings.enable_autoplay | default: false }}"
+        data-autoplay-speed="{{ section.settings.autoplay_speed | times: 1000 | default: 3000  }}"
+        data-desktopperpage="1.2" 
+        data-mobilePerPage="1.3"
+        data-pagination="{{ section.settings.enable_pagination | default: true }}"
+        data-type="splide"
+        data-showdotsonmobile="true"
+        data-showdots="true"
+        data-focus="left"
+    >   
+        <div class="meta-container">
+            <div class="faqs-container">
+                {% for heading in product.metafields.custom.pdp_superior_premium_section_heading.value %}
+                    <div class="questions_wrapper " slide-index='meta-{{ forloop.index }}'>
+                        <div class="question_wrapper">
+                            <div class="question video-sub__heading font-bold1">{{ heading | split: '||' | first }}</div>
+                            <span class="question h4">{{ heading | split: '||' | last }}</span>
+                        </div>
+                        <div class="answer small-element">{{ product.metafields.custom.pdp_superior_premium_section_paragraph.value[forloop.index0] }}</div>
+                    </div>
+                {% endfor %} 
+            </div> 
+            <div class="splide__track">
+                <ul class="splide__list">  
+                    {% for imagee in  product.metafields.custom.pdp_superior_perfect_image.value %}
+                        {% assign max_loop = forloop.last %}
+                        <li class="grid__items product__ingredients-main splide__slide "  slide-index='meta-{{ forloop.index }}'>
+                            <div class="product__ingredients-contents flex">
+                                <div class="product_meta_image pdp___superior-image"> 
+                                    {% if imagee != blank %}
+                                        <img src="{{ imagee | img_url: 'master' }}" alt="img" />
+                                    {% endif %} 
+                                </div>
+                            </div>
+                        </li> 
+                    {% endfor %}         
+                </ul>
+            </div>
+        </div>
+    </carousel-component>
+</div> 
+
+{% schema %}
+    {
+        "name":"PDP superior premiun",
+        "settings": [
+            {
+                "type":"header",
+                "content": "SECTION SETTINGS"
+            },
+            {
+                "type": "text",
+                "id": "section_heading",
+                "label": "Heading",
+                "default": "Heading"
+            },
+            {
+                "type": "select",
+                "id":"heading_align",
+                "label": "Heading align",
+                "options": [
+                    {
+                        "label": "Left",
+                        "value": "tw-text-left"
+                    },
+                    {
+                        "label": "Center",
+                        "value": "tw-text-center"
+                    },
+                    {
+                        "label": "Right",
+                        "value": "tw-text-right"
+                    }
+                ],
+                "default": "tw-text-center"
+            },
+            {
+                "type": "text",
+                "id": "sub_text",
+                "default": "The upgrade with you have been waiting",
+                "label": "Sub text"
+              },
+              {
+                "type": "image_picker",
+                "id": "desktop_background_image", 
+                "label": "Desktop Background image"
+              },
+              {
+                "type": "image_picker",
+                "id": "mobile_background_image", 
+                "label": "Mobile Background image"
+              },
+            {
+                "type":"header",
+                "content":"SLIDER SETTINGS"
+            },
+            {
+                "type": "checkbox",
+                "id":"enable_pagination",
+                "label": "Pagedots",
+                "default": false
+            },
+            {
+                "type": "checkbox",
+                "id":"enable_autoplay",
+                "label": "Autoplay",
+                "default": false
+            },
+            {
+                "type":"range",
+                "id": "autoplay_speed",
+                "label": "Autoplay interval",
+                "min": 2,
+                "max": 6,
+                "default": 3,
+                "info": "Default 3s"
+            },
+            {
+                "type": "number",
+                "id": "slides_perpage",
+                "label": "Slides perpage",
+                "default": 3,
+                "info": "Default 3 slides"
+            },
+            {
+                "type": "range",
+                "id": "section-padding-top",
+                "label": "Padding top",
+                "default": 0,
+                "min": 0,
+                "max": 100
+            },
+            {
+                "type": "range",
+                "id": "section-padding-bottom",
+                "label": "Padding bottom",
+                "default": 0,
+                "min": 0,
+                "max": 100
+            },{
+                "type": "header",
+                "content": "Section padding"
+              },
+            {
+                "type": "range",
+                "id": "padding_top",
+                "min": 10,
+                "max": 100,
+                "step": 5,
+                "unit": "px",
+                "label": "Padding top",
+                "default": 40
+            },
+            {
+                "type": "range",
+                "id": "padding_bottom",
+                "min": 10,
+                "max": 100,
+                "step": 5,
+                "unit": "px",
+                "label": "Padding bottom",
+                "default": 40
+            },
+            {
+                "type": "range",
+                "id": "padding_top_mb",
+                "min": 0,
+                "max": 150,
+                "step": 2,
+                "unit": "px",
+                "label": "Padding Top(Mobile)",
+                "default": 36
+              },
+              {
+                "type": "range",
+                "id": "padding_bottom_mb",
+                "min": 0,
+                "max": 150,
+                "step": 2,
+                "unit": "px",
+                "label": "Padding Bottom(Mobile)",
+                "default": 36
+              }
+        ],
+        "blocks": [
+            {
+                "name": "Carousel Block",
+                "type": "carousel_block",
+                "settings": [
+                    {
+                        "type":"header",
+                        "content": "REPLACE THE THE SETTINGS WITH CUSTOM SETTINGS"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "t:sections.slideshow.blocks.slide.settings.image.label"
+                      },
+                      {
+                        "type": "image_picker",
+                        "id": "mobile_image",
+                        "label": "Mobile Image"
+                      },
+                    {
+                        "type":"product",
+                        "id":"product",
+                        "label":"Product"
+                      }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name":"PDP superior premiun"
+            }
+        ]
+    }
+{% endschema %} 
+ 
