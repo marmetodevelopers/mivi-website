@@ -44,7 +44,7 @@
     "card_shadow_horizontal_offset": 0,
     "card_shadow_vertical_offset": -40,
     "card_shadow_blur": 0,
-    "collection_card_style": "card",
+    "collection_card_style": "standard",
     "collection_card_image_padding": 0,
     "collection_card_text_alignment": "left",
     "collection_card_color_scheme": "background-2",
@@ -137,13 +137,7 @@
     "blocks": {
       "17676569757753803255": {
         "type": "shopify:\/\/apps\/cartix\/blocks\/app-embed\/e1e19d44-60f2-4f05-8156-49ac0f614adf",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "14060646107696862457": {
-        "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-        "disabled": false,
+        "disabled": true,
         "settings": {
         }
       }
