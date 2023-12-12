@@ -205,21 +205,22 @@
             </div>
             <div class="product_variants"> 
               {% for options in card_product.options_with_values %}
-                <div class="product_option" >
+                 <div class="product_option" >
                   <div class="product--variant__label">
-                    <h4 class="heading_color small-element-2">{{ options.name | pluralize: 'Color', 'Colors' }}</h4> 
+                     <h4 class="heading_color small-element-2">{{ options.name | pluralize: 'Color', 'Colors' }}</h4> 
                   </div>
                   {% for value in options.values %}
                     <a href="{{ card_product.url}}" class=""> 
                     <label for="{{ options.position }}-{{ forloop.index0 }}-{{ card_product.id }}" class="variant-checkbox" name="variant">
-                       {% if options.name == 'Color' %} <input
+                       {% if options.name == 'Color' %} 
+                       <input
                           id="{{ options.position }}-{{ forloop.index0 }}-{{ card_product.id }}"
                           name="{{ options.name }}-{{ sectionId }}-{{ card_product.id }}"
                           value="{{ value | escape }}"
                           form="{{ product_form_id }}"
-                          {% if options.selected_value == value %}checked{% endif %}{% if option_disabled %}class="disabled"{% endif %}
+                          
                           type="radio" 
-                          class="circle_radio"
+                          class="circle_radio {% if options.selected_value == value %}checked{% endif %} {% if option_disabled %}disabled{% endif %}"
                           value="{{ forloop.index }}"
                           style="background:{{ value }}; 
                           {% unless value != 'white' %}
@@ -252,8 +253,8 @@
                 </button>
                 </a>
             </div>  
-            {%- if show_quick_add -%} 
-              <div class="quick-add no-js-hidden">
+            {%- if show_quick_add -%}
+               <div class="quick-add no-js-hidden">
                 {%- assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id -%}
                 {%- if card_product.variants.size > 0 -%}
                   <product-form>
