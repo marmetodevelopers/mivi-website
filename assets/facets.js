@@ -100,7 +100,8 @@ class FacetFiltersForm extends HTMLElement {
       containerDesktop.innerHTML = count;
       containerDesktop.classList.remove('loading');
     }
-    loadingSpinners.forEach((spinner) => spinner.classList.add('hidden'));
+    const loadingSpinners = document.querySelectorAll('.facets-container .loading__spinner, facet-filters-form .loading__spinner');
+     loadingSpinners.forEach((spinner) => spinner.classList.add('hidden'));
   }
 
   static renderFilters(html, event) {
