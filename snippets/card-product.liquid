@@ -198,7 +198,7 @@
               {% for options in card_product.options_with_values %}
                  <div class="product_option" >
                   <div class="product--variant__label">
-                    <h4 class="heading_color small-element-2">{{ options.name | pluralize: 'Color', 'Colors' }}</h4> 
+                     <h4 class="heading_color small-element-2">{{ options.name | pluralize: 'Color', 'Colors' }}</h4> 
                   </div>
                   {% for value in options.values %}
                     <a href="{{ card_product.url}}" class=""> 
@@ -215,7 +215,7 @@
                           style="background:{{ value }}; 
                           {% unless value != 'white' %}
                             border : 2px solid rgb(196, 196, 196); 
-                          {%endunless %}"
+                           {%endunless %}"
                         >
                       {% endif %}  
                       {% if options.name != 'Color' %} 
@@ -243,8 +243,8 @@
                 </button>
                 </a>
             </div>  
-            {%- if show_quick_add -%} 
-              <div class="quick-add no-js-hidden">
+            {%- if show_quick_add -%}
+               <div class="quick-add no-js-hidden">
                 {%- assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id -%}
                 {%- if card_product.variants.size > 0 -%}
                   <product-form>
@@ -366,6 +366,6 @@
         </div>
       </div>
     </div>
-  </div> 
+  </div>
 {%- endif -%}
 

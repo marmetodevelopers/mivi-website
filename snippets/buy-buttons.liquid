@@ -82,7 +82,7 @@
               disabled
             {% endif %}
           >
-            <span class="main-product-add-to-cart-button font-bold1 small-hide">
+            <span class="main-product-add-to-cart-button font-bold1 small-hide font-primary">
               {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
                 {{ 'products.product.sold_out' | t }}
               {%- else -%}
