@@ -156,13 +156,6 @@
         "padding_bottom_mb": 28
       }
     },
-    "4ec88018-2e84-4021-bd2a-b2e4eeab047f": {
-      "type": "featured-collection-true-wireless-earbuds",
-      "settings": {
-        "padding_top": 100,
-        "padding_bottom": 100
-      }
-    },
     "94a0a182-a3aa-4bc1-964f-23cfd135c254": {
       "type": "featured-collection",
       "custom_css": [
@@ -356,7 +349,6 @@
     "0d5e0dae-2cad-442a-bed4-1d07c2ce59ae",
     "fee80e2b-57dd-40b2-8e88-b46478691cee",
     "9654d635-fb54-43b7-81a4-e3321c709998",
-    "4ec88018-2e84-4021-bd2a-b2e4eeab047f",
     "94a0a182-a3aa-4bc1-964f-23cfd135c254",
     "af3bf248-59fd-40c6-b0ed-28193696e6ec",
     "d9c0f073-8abf-43ad-94fc-a5e6d6061436",
