@@ -508,7 +508,7 @@
      letter-spacing: 2px;
    }
    .product___card-button .font-body-text {
-    opacity: 0.5;
+     opacity: 0.5;
    }
  }
  .font-body-text {
@@ -1325,7 +1325,6 @@
    transition: box-shadow var(--duration-short) ease;
    -webkit-appearance: none;
    appearance: none;
-   background-color: rgba(var(--color-button), var(--alpha-button-background));
  }
  .button:before,
  .shopify-challenge__button:before,

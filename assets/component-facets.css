@@ -41,7 +41,7 @@
   display: block;
   color: rgba(var(--color-foreground), 0.85);
   font-size: 1.6rem;
-  margin: 0 2rem 0 0;
+  margin: 0 .8rem 0 0;
   opacity: 0.5;
 }
 .facet-filters__summary {
@@ -686,7 +686,7 @@ input.mobile-facets__checkbox {
   -webkit-appearance: none;
 }
 .mobile-facets__label {
-  padding: 1.5rem 2rem 1.5rem 2.5rem;
+  padding: 0rem 2rem 0rem 2.5rem;
   width: 100%;
   transition: background-color 0.2s ease;
   word-break: normal;
@@ -703,7 +703,7 @@ input.mobile-facets__checkbox {
 }
 .mobile-facets__label .icon-checkmark {
   position: absolute;
-  top: 2.1rem;
+  top: .6rem;
   left: 2.7rem;
   visibility: hidden;
 }
@@ -734,6 +734,7 @@ input.mobile-facets__checkbox {
 }
 .mobile-facets__footer > * {
   width: 50%;
+  color: #000;
 }
 .mobile-facets__footer noscript .button {
   width: 100%;

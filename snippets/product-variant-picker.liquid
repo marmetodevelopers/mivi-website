@@ -24,7 +24,7 @@
       {%- for option in product.options_with_values -%}
         <fieldset class="js product-form__input {{ option.name }}">
           {% if option.name == 'Color' %}
-          <legend class="form__label main-product-form__label">SELECT {{ option.name }}</legend>
+        <span>  <legend class="form__label main-product-form__label">SELECT {{ option.name }}</legend></span>
           {% endif %}
           {% render 'product-variant-options', product: product, option: option, block: block %}
         </fieldset>
