@@ -134,6 +134,14 @@
     "content_for_index": [
 
     ],
+    "blocks": {
+      "17676569757753803255": {
+        "type": "shopify:\/\/apps\/cartix\/blocks\/app-embed\/e1e19d44-60f2-4f05-8156-49ac0f614adf",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    },
     "color_schemes": {
       "background-1": {
         "settings": {
