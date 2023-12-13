@@ -1,0 +1,110 @@
+{% style %}
+  .padding-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top_mb }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mb }}px;
+  }
+  @media (min-width: 750px) {
+    .padding-{{ section.id }} {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+  {% endstyle %}
+<div class="usp-container padding-{{ section.id }} page-width">
+  <div class="Usp-content"> 
+    {% assign icons-1 = product.metafields.custom.pdp_usp_image.value %} 
+      {% for image_url in icons-1 %} 
+        <div class="USP-sub-content">
+          {% if image_url != blank %} 
+            {% render 'image', class: '', mobileSrc: image_url, desktopSrc: image_url %}  
+          {% endif %}
+          {% if product.metafields.custom.pdp_usp_text != blank and product.metafields.custom.pdp_usp_text.value != blank %}
+            {% assign texts-1 = product.metafields.custom.pdp_usp_text.value | split: ',' %}
+            {% if texts-1[forloop.index0] != blank %}
+              <div class="product_meta_text usp-text">
+                {{ texts-1[forloop.index0] | replace: '[', '' | replace: ']', '' | replace: '"', '' }}
+              </div>
+            {% endif %}
+          {% endif %}
+        </div> 
+      {% endfor %}                   
+  </div> 
+</div> 
+{% schema %}
+  {
+    "name": "USP",
+    "class": "USP section",
+    "tag": "section",
+    "settings": [ 
+            {
+                "type": "header",
+                "content": "Section padding"
+              },
+            {
+                "type": "range",
+                "id": "padding_top",
+                "min": 10,
+                "max": 100,
+                "step": 5,
+                "unit": "px",
+                "label": "Padding top",
+                "default": 40
+            },
+            {
+                "type": "range",
+                "id": "padding_bottom",
+                "min": 10,
+                "max": 100,
+                "step": 5,
+                "unit": "px",
+                "label": "Padding bottom",
+                "default": 40
+            },
+            {
+              "type": "range",
+              "id": "padding_top_mb",
+              "min": 0,
+              "max": 150,
+              "step": 2,
+              "unit": "px",
+              "label": "Padding Top(Mobile)",
+              "default": 36
+            },
+            {
+              "type": "range",
+              "id": "padding_bottom_mb",
+              "min": 0,
+              "max": 150,
+              "step": 2,
+              "unit": "px",
+              "label": "Padding Bottom(Mobile)",
+              "default": 36
+            }
+    ],
+    "blocks": [
+        {
+          "type": "column",
+          "name": "usp section",
+          "settings": [
+            {
+              "type": "image_picker",
+              "id": "image",
+              "label": "Image"
+            },
+            {
+                "type": "text",
+                "id": "usp_text",
+                "label": "Usp text",
+                "default":"Bluetooth 5.0 Connectivity"
+              } 
+          ]
+        }
+    ],
+    "presets":[
+        {
+            "name":"USP"
+        }
+    ]
+    
+  }
+{% endschema %}

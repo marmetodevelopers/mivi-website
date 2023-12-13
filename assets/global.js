@@ -798,7 +798,7 @@ class SlideshowComponent extends SliderComponent {
 
   setSlidePosition(position) {
     if (this.setPositionTimeout) clearTimeout(this.setPositionTimeout);
-    this.setPositionTimeout = setTimeout (() => {
+    this.setPositionTimeout = setTimeout(() => {
       this.slider.scrollTo({
         left: position,
       });
@@ -1257,3 +1257,70 @@ class ProductRecommendations extends HTMLElement {
 }
 
 customElements.define('product-recommendations', ProductRecommendations);
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  // footer for mobile
+  document.querySelectorAll('.footer__blocks-wrapper .footer__trigger-accordion').forEach((each) => {
+    each.addEventListener("click", () => {
+      const footerBlock = each.closest('.footer-block'); // Use the correct selector 
+      if (footerBlock) {
+        footerBlock.classList.toggle('active');
+      }
+    });
+  });
+  // add to cart sticky
+  document.getElementById('myButton')?.addEventListener('click', function () {
+    // Get the element by its class name
+    let element = document.querySelector('body');
+    // Add another class to the element
+    element.classList.add('add-to-cart-sticky-active');
+  });
+
+  document.querySelector('.product-form__buttons')?.addEventListener('click', function () {
+    // Get the element by its class name
+    let element = document.querySelector('.add-to-cart-sticky-active');
+    // Remove the class from the element if it exists
+    if (element) {
+      element.classList.remove('add-to-cart-sticky-active');
+    }
+  });
+
+  // Other code...
+
+});
+
+// Target node to observe
+const targetNode = document.querySelector('.meta-container .splide__track');
+if(targetNode) {
+const textElements = document.querySelectorAll('.faqs-container .questions_wrapper')
+// Callback function to handle mutations
+const callback = function (mutationsList, observer) {
+  for (const mutation of mutationsList) {
+    if (mutation.type === 'attributes') {
+      const activeSplide = targetNode.querySelector('.is-active');
+      let activeSplideIndex = activeSplide.getAttribute('slide-index')
+      textElements.forEach((each) => {
+        each.classList.add('hidden');
+      })
+      document.querySelector(`.faqs-container .questions_wrapper[slide-index="${activeSplideIndex}"]`).classList.remove('hidden')
+    }
+  }
+};
+// Create a Mutation Observer instance with the callback
+const observer = new MutationObserver(callback);
+// Configure the observer
+const config = { attributes: true, childList: true, subtree: true };
+// Start observing the target node
+observer?.observe(targetNode, config);
+
+}
+
+
+
+
+
+
+
+
+
