@@ -27,11 +27,11 @@
         "image": "shopify:\/\/shop_images\/Group_186.png",
         "mobile_image": "shopify:\/\/shop_images\/Group_224.png",
         "full_width": false,
-         "padding_top": 88,
+        "padding_top": 88,
         "padding_bottom": 80,
         "padding_top_mb": 0,
         "padding_bottom_mb": 30
-       }
+      }
     },
     "footer": {
       "type": "footer",
@@ -70,7 +70,7 @@
           "type": "link_list",
           "settings": {
             "heading": "About Us",
-            "menu": "about-us"
+            "menu": "https-www-mivi-in-mivi-apna-hai"
           }
         },
         "cb3873db-a99f-4d4a-b406-dacd164862a9": {
