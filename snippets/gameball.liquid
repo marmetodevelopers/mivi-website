@@ -11,15 +11,7 @@
 <input type="hidden" name="" id="gameball-TK" value="1" />
 <input type="hidden" name="" id="gameball-shopLocale" value="{{ request.locale.iso_code }}" />
 <script>
-    // if (window.location.pathname.includes('cart')) {
-    //     var checkoutButton = document.getElementsByName("checkout");
-    //     // 
-    //     var gbButton = document.createElement('a')
-    //     gbButton.classList.add("btn", "btn--small-wide", "cart__submit", "cart__submit-control")
-    //     gbButton.id = "gameballModalOpener"
-    //     gbButton.innerHTML = "Use gameball points"
-    //     checkoutButton[0].parentElement.insertBefore(gbButton, checkoutButton[0])
-    // }
+   
                 
     let searchParams = new URLSearchParams(window.location.search);
     
@@ -37,10 +29,8 @@
       if (c.indexOf('gb-refcode') == 0) {
         refCodeItem= c.substring(gb_r_name.length, c.length);
       }
-    }
- 
-
-    if (searchParams.has('ReferralCode')||refCodeItem) {
+  }
+if (searchParams.has('ReferralCode')||refCodeItem) {
         let param = searchParams.has('ReferralCode')?searchParams.get('ReferralCode'):refCodeItem;
         var registrationFirstNameElement = document.getElementsByName("customer[first_name]");
         if(registrationFirstNameElement[0]){
@@ -61,6 +51,5 @@
             registrationFirstNameElement[1].parentElement.insertBefore(gbReferralCodeInput, registrationFirstNameElement[1])
         }
     }
-
 </script>
 
