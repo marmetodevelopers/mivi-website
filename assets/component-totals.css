@@ -1,7 +1,7 @@
 .totals {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  flex-direction: column;
 }
 
 .totals > * {
@@ -15,10 +15,6 @@
 
 .totals * {
   line-height: 1;
-}
-
-.totals > * + * {
-  margin-left: 2rem;
 }
 
 .totals__total {
@@ -37,4 +33,86 @@
   .totals {
     justify-content: flex-end;
   }
+
+  .order__summary__title {
+    padding: 15px 16px;
+  }
+}
+
+.cart__subtotal,
+.cart__discount,
+.cart__total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order__summary__title {
+  color: #4B4955;
+  font-family: Gilroy Medium;
+  font-size: calc(12px + (14 - 12) * (100vw - 375px) / (1440 - 375));
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+  opacity: 0.5;
+  padding-bottom: 20px;
+}
+
+.order__summary__info {
+  border: 1px solid #ededed;
+  padding: 16px;
+}
+
+.cart__subtotal {
+  margin-bottom: 16px;
+}
+
+.cart__subtotal, .cart__discount {
+  color: #4B4955;
+    font-family: Gilroy medium;
+    font-size: calc(14px + (16 - 14) * (100vw - 375px) / (1440 - 375));
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    text-transform: capitalize;
+}
+
+.cart__subtotal--label,.cart__discount--label {
+  opacity: 0.7;
+}
+
+.cart__discount--value {
+  color: #3CB77C;
+}
+
+.cart__discount {
+  margin-bottom: 18px;
+}
+
+.cart__total {
+  border-top: 1px solid #ededed;
+  padding-top: 21px;
+  color: #4B4955;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  text-transform: capitalize;
+}
+
+.cart__total--label {
+  font-family: 'Gilroy Medium';
+}
+
+.cart__total--value {
+  font-family: 'Gilroy bold';
+  font-weight: 700;
+}
+
+.cart__total--price {
+  color: #4B4955;
+  font-size: 20px;
+  font-family: Gilroy bold;
+  font-weight: 800;
+  line-height: 100%;
+  text-transform: uppercase;
 }

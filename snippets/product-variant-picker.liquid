@@ -13,7 +13,7 @@
   {%- if block.settings.picker_type == 'button' -%}
     <variant-radios
       id="variant-radios-{{ section.id }}"
-      class="no-js-hidden"
+      class="no-js-hidden pdp___varient-radio"
       data-section="{{ section.id }}"
       data-url="{{ product.url }}"
       {% if update_url == false %}
@@ -22,9 +22,9 @@
       {{ block.shopify_attributes }}
     >
       {%- for option in product.options_with_values -%}
-        <fieldset class="js product-form__input">
+        <fieldset class="js product-form__input {{ option.name }}">
           {% if option.name == 'Color' %}
-          <legend class="form__label">SELECT {{ option.name }}</legend>
+        <span>  <legend class="form__label main-product-form__label">SELECT {{ option.name }}</legend></span>
           {% endif %}
           {% render 'product-variant-options', product: product, option: option, block: block %}
         </fieldset>

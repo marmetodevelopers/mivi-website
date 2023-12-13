@@ -3,6 +3,7 @@
   letter-spacing: 0.1rem;
   line-height: calc(1 + 0.5 / var(--font-body-scale));
   color: rgb(var(--color-foreground));
+  font-weight: 700;
 }
 .price > * {
   display: inline-block;
@@ -68,10 +69,16 @@
   display: initial;
   justify-content: center;
 }
+.price-item.price-item--sale.small-element-3 {
+  font-size: calc(18px + (20 - 18) * (100vw - 375px) / (1440 - 375));
+}
+
 .price--on-sale .price-item--regular {
   text-decoration: line-through;
   color: rgba(var(--color-foreground), 0.75);
-  font-size: 1.6rem;
+  font-size: calc(14px + (16 - 14) * (100vw - 375px) / (1440 - 375));
+  font-weight: 700;
+  line-height: 100%;
 }
 .unit-price {
   display: block;

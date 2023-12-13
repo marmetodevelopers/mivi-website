@@ -18,12 +18,17 @@
    src: url("https://cdn.shopify.com/s/files/1/0828/1391/1317/files/Gilroy-SemiBold.ttf?v=1698601278") format("truetype");
    font-weight: 600;
  }
+ @font-face {
+   font-family: "Gilroy Extra Bold";
+   src: url("https://cdn.shopify.com/s/files/1/0828/1391/1317/files/Gilroy-ExtraBold.ttf?v=1698601278") format("truetype");
+   font-weight: 800;
+ }
  /* Font style */
  .font-primary {
-   font-family: "Playfair Display";
+   font-family: 'Gilroy black';
  }
  .font-secondary {
-   font-family: "Albert Sans";
+   font-family: "Gilroy Medium";
  }
  .font-normal {
    font-weight: 400;
@@ -332,11 +337,6 @@
    position: relative;
    z-index: 0;
  }
- @media screen and (min-width: 750px) {
-   .section + .section {
-     margin-top: var(--spacing-sections-desktop);
-   }
- }
  .element-margin-top {
    margin-top: 5rem;
  }
@@ -473,7 +473,7 @@
  }
  h5,
  .h5 {
-   font-family: Gilroy black;
+   font-family: Gilroy bold;
    font-size: calc(32px + (40 - 32) * (100vw - 375px) / (1440 - 375));
    font-weight: 800;
    line-height: 100%;
@@ -507,12 +507,14 @@
    .small-element-1 {
      letter-spacing: 2px;
    }
+   .product___card-button .font-body-text {
+     opacity: 0.5;
+   }
  }
  .font-body-text {
    font-size: 12px;
    font-family: Gilroy black;
    font-weight: 800;
-   letter-spacing: 100%;
    letter-spacing: 2.4px;
  }
  .small-element-2 {
@@ -546,7 +548,7 @@
    font-family: Gilroy Medium;
  }
  .sub-text-txt {
-   font-family: Gilroy bold;
+   font-family: 'Gilroy semibold';
    font-size: calc(14px + (20 - 14) * (100vw - 375px) / (1440 - 375));
    font-weight: 800;
    line-height: 100%;
@@ -556,7 +558,7 @@
    color: #fff;
    font-weight: 600;
    line-height: 120%;
-   font-family: 'Gilroy Medium';
+   font-family: 'Gilroy semibold';
  }
  .small-element-7 {
    font-size: calc(16px + (20 - 16) * (100vw - 375px) / (1440 - 375));
@@ -1289,8 +1291,7 @@
    --shadow-opacity: var(--buttons-shadow-opacity);
    --shadow-visible: var(--buttons-shadow-visible);
    --border-offset: var(--buttons-border-offset);
-   /* reduce radius edge artifacts */
-   --border-opacity: calc(1 - var(--buttons-border-opacity));
+   /* reduce radius edge artifacts */ 
    border-radius: var(--buttons-radius-outset);
    position: relative;
  }
@@ -1323,7 +1324,6 @@
    transition: box-shadow var(--duration-short) ease;
    -webkit-appearance: none;
    appearance: none;
-   background-color: rgba(var(--color-button), var(--alpha-button-background));
  }
  .button:before,
  .shopify-challenge__button:before,
@@ -1363,13 +1363,9 @@
  .shopify-challenge__button:hover::after,
  .customer button:hover::after,
  .shopify-payment-button__button--unbranded:hover::after {
-   --border-offset: 1.3px;
    box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(var(--color-button-text), var(--border-opacity)),
      0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-button), var(--alpha-button-background));
- }
- /* .button--secondary:after {
-   --border-opacity: var(--buttons-border-opacity);
- } */
+ } 
  .button:focus-visible,
  .button:focus,
  .button.focused,
@@ -1924,7 +1920,6 @@
    font-style: normal;
    font-weight: 700;
    line-height: 100%;
-   /* 18px */
    text-transform: uppercase;
  }
  .quantity__button {
@@ -1939,7 +1934,7 @@
    justify-content: center;
    color: rgb(var(--color-foreground));
    padding: 0;
-   padding: 19px 16px;
+   padding: 12px 16px;
    opacity: 0.7;
    color: #4b4955;
  }
@@ -2215,7 +2210,8 @@
    text-transform: capitalize;
    color: #fff;
    font-size: 12px;
-   font-family: Gilroy semibold;
+   font-weight: 600;
+   font-family: Gilroy Medium;
    line-height: 100%;
  }
  .announcement-bar-slider--fade-in-next .announcement-bar__message,
@@ -2462,7 +2458,6 @@
  }
  .header__icon,
  .header__icon--cart .icon {
-   height: 4.4rem;
    width: 4.4rem;
    padding: 0;
  }
@@ -2659,7 +2654,7 @@
  .header__menu-item span {
    transition: text-decoration var(--duration-short) ease;
    color: #fff;
-   font-family: 'Gilroy semibold';
+   font-family: 'Gilroy Medium';
    letter-spacing: 0;
  }
  .header__menu-item:hover span {
@@ -2976,7 +2971,6 @@
    transition: text-decoration-thickness var(--duration-short) ease;
  }
  .rte a:hover {
-   /* color: rgb(var(--color-link)); */
    text-decoration-thickness: 0.2rem;
  }
  .rte blockquote {
@@ -3255,6 +3249,7 @@
    .active .footer-block__details-content {
      display: block;
    }
+
  }
  .splide__slide[aria-hidden="true"] .new-launch__product-details {
    opacity: 0;
@@ -3335,3 +3330,4 @@
 .gb_btn_container {
   font-family: 'Gilroy Medium' !important;
 }
+

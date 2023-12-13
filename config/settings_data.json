@@ -113,7 +113,7 @@
     "predictive_search_show_vendor": true,
     "predictive_search_show_price": true,
     "currency_code_enabled": true,
-    "cart_type": "notification",
+    "cart_type": "page",
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
@@ -144,6 +144,12 @@
       "14060646107696862457": {
         "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
+        "settings": {
+        }
+      },
+      "17676569757753803255": {
+        "type": "shopify:\/\/apps\/cartix\/blocks\/app-embed\/e1e19d44-60f2-4f05-8156-49ac0f614adf",
+        "disabled": true,
         "settings": {
         }
       },
