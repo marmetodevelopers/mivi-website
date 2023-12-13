@@ -1,0 +1,128 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "72432b02-5923-4208-b94c-8806de857e0a": {
+      "type": "gradient",
+      "blocks": {
+        "aad4bada-0f00-4d6a-b074-2e46bb2cdd65": {
+          "type": "gradient",
+          "settings": {
+            "gradient_caption": "Desh Apna Hai, Economy Apni Hai aur Product Bhi Apna Hai",
+            "gradient_heading": "<p>#Mivi<br\/>ApnaHai<\/p>",
+            "gradient_image": "shopify:\/\/shop_images\/flag.png"
+          }
+        }
+      },
+      "block_order": [
+        "aad4bada-0f00-4d6a-b074-2e46bb2cdd65"
+      ],
+      "settings": {
+        "gradient_background_color": "linear-gradient(181deg,#ffd4ad,hsla(0,0%,100%,0))",
+        "gradient_margin_top": 0
+      }
+    },
+    "b5084fe3-ed9f-4ffb-8070-2c1cd6d7c5e1": {
+      "type": "usp",
+      "blocks": {
+        "template--21424964501781__b5084fe3-ed9f-4ffb-8070-2c1cd6d7c5e1-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/scale.png",
+            "title": "",
+            "text": "<p>Scaling India's GDP by setting up India's 1st and only design & manufacturing unit in audio<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21424964501781__b5084fe3-ed9f-4ffb-8070-2c1cd6d7c5e1-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/india.png",
+            "title": "",
+            "text": "<p>A 100% Made in India portfolio with 0% dependency on imported products since 2020<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21424964501781__b5084fe3-ed9f-4ffb-8070-2c1cd6d7c5e1-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/products.jpg",
+            "title": "",
+            "text": "<p>Products designed and manufactured in-house by a strong team of 1500+ employees<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "4266c5aa-98d0-4d64-9504-32632f9ce66a": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mivi-design.jpg",
+            "title": "",
+            "text": "<p>World-class audio tech crafted in India by Mivi Design Studios<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21424964501781__b5084fe3-ed9f-4ffb-8070-2c1cd6d7c5e1-column-1",
+        "template--21424964501781__b5084fe3-ed9f-4ffb-8070-2c1cd6d7c5e1-column-2",
+        "template--21424964501781__b5084fe3-ed9f-4ffb-8070-2c1cd6d7c5e1-column-3",
+        "4266c5aa-98d0-4d64-9504-32632f9ce66a"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "2c1a2a62-4094-42e5-b0cd-98135dc9fb5f": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https:\/\/youtu.be\/NQVqwogdTjg?feature=shared",
+        "cover_image": "shopify:\/\/shop_images\/ytb-india-pc.jpg",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "abb2fc60-245d-4b32-a425-74bbf2a1abaf": {
+      "type": "gradient",
+      "settings": {
+        "gradient_background_color": "linear-gradient(1turn,#c8ffb4,hsla(0,0%,100%,0))",
+        "gradient_margin_top": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "72432b02-5923-4208-b94c-8806de857e0a",
+    "b5084fe3-ed9f-4ffb-8070-2c1cd6d7c5e1",
+    "2c1a2a62-4094-42e5-b0cd-98135dc9fb5f",
+    "abb2fc60-245d-4b32-a425-74bbf2a1abaf"
+  ]
+}
