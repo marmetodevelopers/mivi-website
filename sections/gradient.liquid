@@ -1,0 +1,96 @@
+{% style %}
+    .gradient_section-{{ section.id }}{
+        margin-top: -{{ section.settings.gradient_margin_top | divided_by: 2 }}px;
+        min-height: 154px;
+        background: {{ section.settings.gradient_background_color }};
+    }
+    @media screen and (min-width: 750px) {
+        .gradient_section-{{ section.id }}{
+          margin-top: -{{ section.settings.gradient_margin_top }}px;
+          min-height: 294px;
+        }  
+      }
+{% endstyle %}
+
+<div class="gradient_section-{{ section.id }}">
+    {% for block in section.blocks %}
+        <div class="gradient_container">
+            {% if block.settings.gradient_caption != blank %}
+                <div class="gradient_caption font_32_16">
+                    {{ block.settings.gradient_caption }}
+                </div>
+            {% endif %}
+            {% if block.settings.gradient_heading != blank %}
+                <div class="gradient_heading">
+                    {{ block.settings.gradient_heading }}
+                    <div class="gradient_image">
+                        {% if block.settings.gradient_image != blank %}
+                            {{
+                                block.settings.gradient_image
+                                | image_url: width: 3200
+                                | image_tag:
+                                    loading: 'lazy',
+                                    widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200',
+                                    sizes: sizes,
+                                    class: 'multicolumn-card__image'
+                            }}
+                        {% else %}
+                            {{ 'product-1' | placeholder_svg_tag }}
+                        {% endif %}
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    {% endfor %}
+</div>
+
+{% schema %}
+  {
+    "name": "Gradient",
+    "settings": [
+        {
+            "type": "color_background",
+            "id": "gradient_background_color",
+            "label": "Background Color",
+            "default": "linear-gradient(#ffffff, #000000)"
+        },
+        {
+            "type": "range",
+            "id": "gradient_margin_top",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "label": "Top Margin",
+            "default": 0
+        }
+    ],
+    "blocks":[
+        {
+            "type":"gradient",
+            "name":"gradient",
+            "limit":1,
+            "settings":[
+                {
+                    "type": "text",
+                    "id": "gradient_caption",
+                    "label": "Caption"
+                },
+                {
+                    "type": "richtext",
+                    "id": "gradient_heading",
+                    "label": "Heading"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "gradient_image",
+                    "label": "Image"
+                }
+            ]
+        }
+    ],
+    "presets": [{
+        "name": "Gradient"
+    }]
+  }
+{% endschema %}
