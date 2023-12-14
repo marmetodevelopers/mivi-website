@@ -1516,49 +1516,49 @@ ul.mobile-facets__list {
   letter-spacing: 6.4px;
   text-transform: uppercase;
 }
-.video-sub___text {
+.pdp-video___container .video-sub___text {
   opacity: 0.8;
 }
-.deferred-media__poster-button svg {
+.pdp-video___container .deferred-media__poster-button svg {
   margin-left: 5px;
 }
-.video___content {
+.pdp-video___container .video___content {
   position: absolute;
   bottom: 18%;
   width: 70%;
   margin: auto;
   left: 15%;
 }
-.video__text {
+.pdp-video___container .video__text {
   padding: 3% 0 2% 0;
 }
-.video__text {
+.pdp-video___container .video__text {
   color: #fff;
 }
-.video-sub___text {
+.pdp-video___container .video-sub___text {
   color: #fff;
 }
-.video-section span.deferred-media__poster-button.motion-reduce {
+.pdp-video___container .video-section span.deferred-media__poster-button.motion-reduce {
   background: no-repeat;
   border: 5px solid #0f0;
   color: white;
 }
 @media screen and (max-width:749px) {
-  deferred-media.video-section__media.deferred-media.image-aspect-ratio.no-js-hidden.gradient.global-media-settings.scroll-trigger.animate--slide-in {
+  .pdp-video___container deferred-media.video-section__media.deferred-media.image-aspect-ratio.no-js-hidden.gradient.global-media-settings.scroll-trigger.animate--slide-in {
     aspect-ratio: 69 / 99;
   }
-  .deferred-media__poster-button {
+  .pdp-video___container .deferred-media__poster-button {
     top: 48%;
   }
-  .video-section {
+  .pdp-video___container .video-section {
     padding-left: 0;
     padding-right: 0;
   }
-  .video-sub__heading {
+  .pdp-video___container .video-sub__heading {
     font-size: 10px;
     letter-spacing: 2px;
   }
-  .video___content {
+  .pdp-video___container .video___content {
     bottom: 15%;
   }
 }
@@ -2307,4 +2307,89 @@ mm-product-form {
   .collection #product-grid .card-product__view-details-button {
     padding: 22px 15px;
   }
+}
+/* account page */
+.account---info span {
+  line-height: 28px;
+}
+.account___icon svg {
+  width: 2.8rem;
+}
+.address___content {
+  line-height: 35px;
+}
+.address____url a {
+  text-decoration: none;
+}
+.account___url a {
+  text-decoration: none;
+}
+a.account---url {
+  text-decoration: none;
+}
+span.acccount__address p {
+  font-size: calc(14px + (24 - 14) * (100vw - 375px) / (1440 - 375));
+}
+p.small-element.account__order__none {
+  font-size: calc(14px + (24 - 14) * (100vw - 375px) / (1440 - 375));
+}
+.field__label,
+.customer .field label {
+  font-size: 20px;
+  font-family: 'Gilroy Medium';
+}
+.main-account___skeleton {
+  margin-bottom: 3rem;
+}
+.button,
+.button-label,
+.shopify-challenge__button,
+.customer button {
+  color: #000;
+  font-family: 'Gilroy bold';
+  text-transform: uppercase;
+}
+#address_form_new {
+  flex-flow: row wrap;
+}
+.main-address___container form {
+  flex-flow: row wrap;
+}
+@media screen and (min-width: 750px) {
+  .addresses .newsletter-form__field-wrapper .field__input {
+    padding-right: unset;
+  }
+}
+.order-history {
+  margin-top: 3rem;
+}
+@media screen and (min-width: 750px) {
+  .login .header__icon,
+  .header__icon--cart .icon {
+    width: 7rem;
+  }
+  body.account.gb_mob .news-letter__content {
+    top: 30%;
+  }
+}
+@media screen and (max-width:749px) {
+  p.announcement-bar__message span {
+    font-size: 1.4rem;
+  }
+}
+td#RowOrder a {
+  font-size: 18px;
+}
+tfoot tr {
+  font-size: 18px;
+  opacity: 0.65;
+}
+.main-order_info a {
+  text-decoration: none;
+}
+.main__order--info {
+  margin-top: 2.5rem;
+}
+.main__address__checkout {
+  font-size: calc(14px + (16 - 14) * (100vw - 375px) / (1440 - 375));
 }
