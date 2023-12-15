@@ -3307,7 +3307,7 @@
     font-size: 14px; 
   }
   .jdgm__homepage__ratings .jdgm-prev-badge__text {
-    margin-left: unset;
+    margin-left: unset !important;
   }
   
 }
