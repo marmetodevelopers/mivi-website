@@ -27,6 +27,11 @@
         {{ product.title }}
       </a> 
     </div>
+    <!-- Start of Judge.me code -->
+      <div class='jdgm-widget jdgm-preview-badge jdgm__homepage__ratings'>
+        {{ card_product.metafields.judgeme.badge }}
+      </div>
+    <!-- End of Judge.me code -->
     {% if settings.mm_show_vendor %}
       <div>
         {{ product.vendor }}
