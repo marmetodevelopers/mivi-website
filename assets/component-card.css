@@ -1,4 +1,4 @@
-.card-wrapper { 
+.card-wrapper {
   color: inherit;
   position: relative;
   text-decoration: none;
@@ -17,7 +17,7 @@
   --image-padding: 0rem;
   flex-direction: row;
   align-items: flex-start;
-  gap: 1.5rem; 
+  gap: 1.5rem;
 }
 .card--horizontal.ratio:before {
   padding-bottom: 0;
@@ -237,7 +237,7 @@
     transition: transform var(--duration-long) ease;
     transform: scale(1.03);
   }
-  .underline-links-hover:hover a { 
+  .underline-links-hover:hover a {
     text-underline-offset: 0.3rem;
   }
 }

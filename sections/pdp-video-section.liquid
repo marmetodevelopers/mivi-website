@@ -13,10 +13,8 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
-{%- endstyle -%}
-
+ {%- endstyle -%}
 {% assign video-url = product.metafields.custom.pdp_video_url.value %}
-
 {%- liquid
   assign video_id = section.settings.video.id | default: video-url.id
   assign video_alt = section.settings.video.alt | default: section.settings.description
@@ -40,7 +38,7 @@
   {%- endif %}
 {%- endcapture -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient">
+<div class="color-{{ section.settings.color_scheme }} gradient pdp-video___container">
   <div class="video-section isolate{% unless section.settings.full_width %} page-width{% endunless %} section-{{ section.id }}-padding video-mobile-page-width">
     <div
       {% if section.settings.full_width %}

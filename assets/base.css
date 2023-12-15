@@ -1292,7 +1292,6 @@
    --shadow-visible: var(--buttons-shadow-visible);
    --border-offset: var(--buttons-border-offset);
    /* reduce radius edge artifacts */
-   --border-opacity: calc(1 - var(--buttons-border-opacity));
    border-radius: var(--buttons-radius-outset);
    position: relative;
  }
@@ -1367,9 +1366,6 @@
    box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(var(--color-button-text), var(--border-opacity)),
      0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-button), var(--alpha-button-background));
  }
- /* .button--secondary:after {
-   --border-opacity: var(--buttons-border-opacity);
- } */
  .button:focus-visible,
  .button:focus,
  .button.focused,
@@ -2215,7 +2211,7 @@
    color: #fff;
    font-size: 12px;
    font-weight: 600;
-   font-family: Gilroy Medium;
+   font-family: Gilroy semibold;
    line-height: 100%;
  }
  .announcement-bar-slider--fade-in-next .announcement-bar__message,
@@ -3253,4 +3249,85 @@
    .active .footer-block__details-content {
      display: block;
    }
+
  }
+ .splide__slide[aria-hidden="true"] .new-launch__product-details {
+   opacity: 0;
+   transition: all 2s ease-out;
+ }
+
+ /* --- APP Integration--- */
+ .jdgm-widget:not(.jdgm-review-widget--small,
+ .jdgm-review-widget--medium) .jdgm-rev-widg__summary+.jdgm-histogram, 
+ .jdgm-widget:not(.jdgm-review-widget--small,.jdgm-review-widget--medium) .jdgm-rev-widg__summary+.jdgm-widget-actions-wrapper, 
+ .jdgm-widget:not(.jdgm-review-widget--small,.jdgm-review-widget--medium) .jdgm-histogram+.jdgm-widget-actions-wrapper{ 
+  border: none !important;
+}
+ 
+
+ .jdgm-row-stars{
+  flex-wrap: wrap;
+ }
+ .jdgm-rev-widg__summary {
+  flex: 1 0 40%;
+}
+.jdgm-widget-actions-wrapper{
+  margin-top: 64px !important;
+}
+ 
+.content-for-layout .jdgm-widget:not(.jdgm-review-widget--small,.jdgm-review-widget--medium) .jdgm-write-rev-link, .jdgm-widget:not(.jdgm-review-widget--small,.jdgm-review-widget--medium) .jdgm-ask-question-btn{
+ max-width: unset;
+}
+
+#product .jdgm-widget-actions-wrapper a {
+  border: 1px solid #00f000;
+  background: white;
+  color: black;
+  padding: 23px 99px;
+  white-space: nowrap;
+}
+
+#product .jdgm-histogram__bar-content{
+ background-color:#00f000;
+}
+
+@media screen  and (min-width: 750px){
+  .product__info-wrapper{
+    position: relative;
+  }
+  #product .jdgm-prev-badge{
+    display: flex !important;
+    flex-direction: column-reverse;
+    position: absolute;
+    right: 0;
+    top: 40%;
+  }
+  .jdgm-prev-badge__text{
+    margin-left: 40px !important;
+    font-size: 14px; 
+  }
+  
+}
+
+.jdgm-prev-badge__stars span{
+  width: 32px;
+  height: 32px;
+}
+@media screen and (max-width: 749px) {
+  #product .jdgm-prev-badge{
+    flex-direction: column;
+    display: flex !important;
+  }
+  
+}
+
+.jdgm-prev-badge__text{
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+}
+
+.gb_btn_container {
+  font-family: 'Gilroy Medium' !important;
+}
+
