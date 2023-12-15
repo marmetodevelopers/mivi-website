@@ -12,6 +12,12 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  {% if template contains 'account' %}
+    .forms_container .otp {
+      display: none;
+    }
+  {% endif %}
 {%- endstyle -%}
 
 <div class="customer account section-{{ section.id }}-padding page-width main-account_container">
@@ -44,6 +50,8 @@
                   {{ 'customer.orders.fulfillment_status' | t }}
                 </th>
                 <th id="ColumnTotal" scope="col" role="columnheader">{{ 'customer.orders.total' | t }}</th>
+                <th> Cancel Or Edit </th>
+                <th> Reorder </th>
               </tr>
             </thead>
             <tbody role="rowgroup">
@@ -82,6 +90,8 @@
                   <td headers="RowOrder ColumnTotal" role="cell" data-label="{{ 'customer.orders.total' | t }}">
                     {{ order.total_net_amount | money_with_currency }}
                   </td>
+                  <td> <a target="_blank" href="https://shopify-order-edit.herokuapp.com/order-editor/mivi-website.myshopify.com/{{order.id}}">Cancel Or Edit</a> </td>
+                  <td> <a target="_blank" href="https://shopify-order-edit.herokuapp.com/order-editor/reorder/mivi-website.myshopify.com/{{order.id}}">Reorder</a> </td>
                 </tr>
               {%- endfor -%}
             </tbody>
