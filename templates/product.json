@@ -18,7 +18,7 @@
         "dae52432-eef3-44eb-bfc8-c93e64e29374": {
           "type": "description",
           "settings": {
-            "metafield_content": "{{ product.metafields.custom.product_page_desription | metafield_tag }}"
+            "metafield_content": ""
           }
         },
         "variant_picker": {
