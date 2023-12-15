@@ -3291,6 +3291,10 @@
  background-color:#00f000;
 }
 
+.jdgm__product__ratings {
+  padding: 0 2rem;
+}
+
 @media screen  and (min-width: 750px){
   .product__info-wrapper{
     position: relative;
