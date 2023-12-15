@@ -146,6 +146,18 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "16625563505203379481": {
+        "type": "shopify:\/\/apps\/extendons-otp-login-with-phone\/blocks\/scripts_embedded_block\/c7f2efe3-e781-470b-96ef-267ca74ad469",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "8698826295320421822": {
+        "type": "shopify:\/\/apps\/social-bar-social-media-icon\/blocks\/app-embed\/0d821215-43b9-4a39-925d-44613cd0dd23",
+        "disabled": false,
+        "settings": {
+        }
       }
     },
     "color_schemes": {
