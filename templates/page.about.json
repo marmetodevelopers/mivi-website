@@ -7,6 +7,7 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+ 
     },
     "961b9c57-69a7-4262-930f-0f191a5fb032": {
       "type": "gradient",
@@ -129,3 +130,11 @@
     "71cb7f3e-ee97-43fb-b76e-c96e28ef2701"
   ]
 }
+ 
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
+ 
