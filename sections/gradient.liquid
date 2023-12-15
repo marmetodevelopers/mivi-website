@@ -16,13 +16,13 @@
     {% for block in section.blocks %}
         <div class="gradient_container">
             {% if block.settings.gradient_caption != blank %}
-                <div class="gradient_caption font_32_16">
+                <div class="gradient_caption font_32_16 font-secondary">
                     {{ block.settings.gradient_caption }}
                 </div>
             {% endif %}
             {% if block.settings.gradient_heading != blank %}
                 <div class="gradient_heading">
-                    {{ block.settings.gradient_heading }}
+                <span class="font-secondary font-semibold">{{ block.settings.gradient_heading }}</span>
                     <div class="gradient_image">
                         {% if block.settings.gradient_image != blank %}
                             {{
