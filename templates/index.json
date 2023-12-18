@@ -95,7 +95,7 @@
         "mobile_background_image": "shopify:\/\/shop_images\/Union_8.png",
         "enable_pagination": true,
         "enable_autoplay": false,
-        "autoplay_speed": 3,
+        "autoplay_speed": 2,
         "slides_perpage": 3,
         "section-padding-top": 36,
         "section-padding-bottom": 36,
