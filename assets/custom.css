@@ -408,6 +408,10 @@ picture.image_banner_home img {
   display: none;
 }
 /* deal of the day section */
+.deal-of__the-day-section {
+  margin-bottom: 6rem;
+}
+
 @media screen and (min-width:750px) {
   .deal-of-the-day-container {
     display: flex;
