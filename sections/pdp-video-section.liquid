@@ -14,7 +14,11 @@
     }
   }
  {%- endstyle -%}
-{% assign video-url = product.metafields.custom.pdp_video_url.value %}
+
+{% for video in shop.metaobjects.product_page_video.values %}
+  {% assign video-url = video.youtube_video_link.value %}
+{% endfor %}
+
 {%- liquid
   assign video_id = section.settings.video.id | default: video-url.id
   assign video_alt = section.settings.video.alt | default: section.settings.description
