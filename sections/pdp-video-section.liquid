@@ -16,8 +16,8 @@
  {%- endstyle -%}
 
 {% for video in shop.metaobjects.product_page_video.values %}
-  {% assign video-url = video.youtube_video_link.url %}
-
+  {% assign video-url = video.youtube_video_link.value %}
+{% endfor %}
 {{ video-url }}
 {%- liquid
   assign video_id = section.settings.video.id | default: video-url.id
@@ -168,7 +168,7 @@
     </deferred-media>
   </div>
 </div>
-{% endfor %}
+
 {% schema %}
 {
   "name": "metafield video",
