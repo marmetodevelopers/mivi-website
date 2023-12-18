@@ -14,7 +14,11 @@
     }
   }
  {%- endstyle -%}hello--{{ shop.metaobjects.product_page_video.values }}
-{% assign video-url = shop.metaobjects.product_page_video.youtube_video_link.value %}
+ 
+{% assign video-url = shop.metaobjects.product_page_video.values %}
+{% for check in video-url %}
+  {{ check.youtube_video_link }}
+{% endfor %}
 {%- liquid
   assign video_id = section.settings.video.id | default: video-url.id
   assign video_alt = section.settings.video.alt | default: section.settings.description
