@@ -409,7 +409,7 @@
         "46cae992-a634-40ec-99ea-2705a4ffb129": {
           "type": "caption",
           "settings": {
-            "caption": "{{ product.metafields.custom.pdp_google_assistant_enabled_section_caption.value }}",
+            "caption": "{{ product.metafields.custom.banner_3.value.caption.value }}",
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium"
           }
@@ -417,14 +417,14 @@
         "template--21392479977749__0e119df3-4b63-45ca-ab03-8b39936d63ad-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "{{ product.metafields.custom.pdp_google_assistant_enabled_section_heading.value }}",
+            "heading": "{{ product.metafields.custom.banner_3.value.heading.value }}",
             "heading_size": "h2"
           }
         },
         "template--21392479977749__0e119df3-4b63-45ca-ab03-8b39936d63ad-text-1": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.custom.pdp_google_assistant_enabled_section_paragraph.value }}",
+            "text": "{{ product.metafields.custom.banner_3.value.content.value }}",
             "text_style": "body"
           }
         }
@@ -435,7 +435,8 @@
         "template--21392479977749__0e119df3-4b63-45ca-ab03-8b39936d63ad-text-1"
       ],
       "settings": {
-        "image": "{{ product.metafields.custom.pdp_google_assistant_enabled_section_image.value }}",
+        "image": "{{ product.metafields.custom.banner_3.value.desktop_banner.value }}",
+        "mobile_image": "{{ product.metafields.custom.banner_3.value.mobile_banner.value }}",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "bottom-center",
