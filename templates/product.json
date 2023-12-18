@@ -8,8 +8,15 @@
           "settings": {
           }
         },
+        "1ee9b14f-bfcb-4b8a-b9af-c6c764557c73": {
+          "type": "product-type",
+          "settings": {
+            "text_style": "body"
+          }
+        },
         "a2617c1a-8bdf-4d65-b8ae-416e56c9ef9d": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "{{ product.metafields.custom.product_page_subtext.value }}",
             "text_style": "body"
@@ -98,6 +105,7 @@
       },
       "block_order": [
         "title",
+        "1ee9b14f-bfcb-4b8a-b9af-c6c764557c73",
         "a2617c1a-8bdf-4d65-b8ae-416e56c9ef9d",
         "dae52432-eef3-44eb-bfc8-c93e64e29374",
         "variant_picker",
