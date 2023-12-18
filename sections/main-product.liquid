@@ -89,9 +89,8 @@
               </p>
               {%- when 'product-type' -%}
                 <p
-                  class="product__text inline-richtext small-element-10 {% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
-                  {{ block.shopify_attributes }}
-                >
+                  class="product__text inline-richtext small-element-10 caption-with-letter-spacing subtitle"
+                 >
                   {{- product.type -}}
                 </p>
             {%- when 'title' -%}
