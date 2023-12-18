@@ -60,7 +60,9 @@
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
-        "show_text_below": false
+        "show_text_below": false,
+        "padding_top": 0,
+        "padding_bottom": 120
       }
     },
     "0d5e0dae-2cad-442a-bed4-1d07c2ce59ae": {
