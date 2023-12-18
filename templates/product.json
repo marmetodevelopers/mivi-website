@@ -523,7 +523,7 @@
         "e8c4d938-f487-4a88-bcad-f06b03d347ae": {
           "type": "caption",
           "settings": {
-            "caption": "{{ product.metafields.custom.pdp_richtext_comparison_section_caption.value }}",
+            "caption": "{{ product.metafields.custom.richtext.value.caption.value }}",
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium"
           }
@@ -531,14 +531,14 @@
         "template--21392479977749__6bba2504-4a58-47ff-896f-b80449fe031d-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "{{ product.metafields.custom.pdp_richtext_comparison_section_heading.value }}",
+            "heading": "{{ product.metafields.custom.richtext.value.heading.value }}",
             "heading_size": "h2"
           }
         },
         "template--21392479977749__6bba2504-4a58-47ff-896f-b80449fe031d-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p> {{ product.metafields.custom.pdp_richtext_comparison_section_paragraph.value }}<\/p>"
+            "text": "<p> {{ product.metafields.custom.richtext.value.content.value }}<\/p>"
           }
         }
       },
