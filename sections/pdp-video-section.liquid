@@ -15,8 +15,8 @@
   }
  {%- endstyle -%}
  
-{% assign video-url = shop.metaobjects.product_page_video.values %}
-{% for video in video-url %}
+{% assign video-url =  %}
+{% for video in shop.metaobjects.product_page_video.values %}
   {% assign video-url = video.youtube_video_link %}
 {% endfor %}
 {{ video-url }}
