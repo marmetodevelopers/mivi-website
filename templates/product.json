@@ -130,13 +130,6 @@
           "settings": {
             "share_label": "Share"
           }
-        },
-        "daffbc8a-5678-4772-a329-ebadf061d9b3": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
         }
       },
       "block_order": [
@@ -153,8 +146,7 @@
         "f052b491-4e52-4a06-9d38-b1af890945ce",
         "03729793-817d-4ef0-886a-e84687308bb7",
         "afdcf4a0-539c-4ef8-bbf5-b189a191f4c4",
-        "e323455e-c5d8-4520-b356-60a322bc88d4",
-        "daffbc8a-5678-4772-a329-ebadf061d9b3"
+        "e323455e-c5d8-4520-b356-60a322bc88d4"
       ],
       "settings": {
         "enable_sticky_info": true,
