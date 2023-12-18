@@ -87,6 +87,13 @@
               >
                 {{- block.settings.text -}}
               </p>
+              {%- when 'product-type' -%}
+                <p
+                  class="product__text inline-richtext small-element-10 {% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
+                  {{ block.shopify_attributes }}
+                >
+                  {{- product.type -}}
+                </p>
             {%- when 'title' -%}
               <div class="product__title" {{ block.shopify_attributes }}>
                 <h1 class="h3">{{ product.title | escape }}</h1>
@@ -95,7 +102,7 @@
                     {{ product.title | escape }}
                   </h2>
                 </a>
-              </div>  
+              </div>
             {%- when 'price' -%}
               <div class="no-js-hidden main-product-price-content" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                 {%- render 'price',
@@ -147,6 +154,7 @@
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
                   {{ form | payment_terms }}
                 {%- endform -%}
+                
                 <div class="ultimate-countdown"></div>
               </div>
 
@@ -758,6 +766,32 @@
       ]
     },
     {
+      "type": "product-type",
+      "name": "product type",
+      "settings": [ 
+        {
+          "type": "select",
+          "id": "text_style",
+          "options": [
+            {
+              "value": "body",
+              "label": "t:sections.main-product.blocks.text.settings.text_style.options__1.label"
+            },
+            {
+              "value": "subtitle",
+              "label": "t:sections.main-product.blocks.text.settings.text_style.options__2.label"
+            },
+            {
+              "value": "uppercase",
+              "label": "t:sections.main-product.blocks.text.settings.text_style.options__3.label"
+            }
+          ],
+          "default": "body",
+          "label": "t:sections.main-product.blocks.text.settings.text_style.label"
+        }
+      ]
+    },
+    {
       "type": "title",
       "name": "t:sections.main-product.blocks.title.name",
       "limit": 1
@@ -890,12 +924,7 @@
       "type": "description",
       "name": "t:sections.main-product.blocks.description.name",
       "limit": 1,
-      "settings": [
-        {
-          "type": "richtext",
-          "id": "metafield_content",
-          "label": "Metafield content"
-        }
+      "settings": [ 
       ]
     },
     {
