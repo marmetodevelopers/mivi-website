@@ -18,7 +18,6 @@
         "dae52432-eef3-44eb-bfc8-c93e64e29374": {
           "type": "description",
           "settings": {
-            "metafield_content": "<p>ddfghj<\/p>"
           }
         },
         "variant_picker": {
@@ -153,9 +152,10 @@
             "background_html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"380\" height=\"360\" viewbox=\"0 0 380 360\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M190 358.843L1.125 313.788V46.2124L190 1.15657L378.875 46.2124V313.788L190 358.843Z\" stroke=\"#00FF00\" stroke-width=\"2.25\"><\/path>\n<\/svg>",
             "title": "",
             "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"34\" height=\"28\" viewbox=\"0 0 34 28\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M27.9429 0.362976C21.8105 5.0981 17.774 13.0935 17.774 18.6048C17.774 23.8057 21.4224 27.3765 25.7694 27.3765C30.0388 27.3765 34.541 22.9518 32.9109 17.5181C24.9932 14.3355 22.3539 6.6506 28.4087 0.751101L27.9429 0.362976ZM10.1668 0.362976C4.03442 5.0981 -0.0020752 13.0935 -0.0020752 18.6048C-0.0020752 23.8057 3.6463 27.3765 7.9933 27.3765C12.2627 27.3765 16.7649 22.9518 15.1348 17.5181C7.21705 14.3355 4.5778 6.6506 10.6326 0.751101L10.1668 0.362976Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
-            "text": "<p> <\/p>",
+            "text": "<p> {{ product.metafields.custom.multicolumn.value.text_1.value }}<\/p>",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "digit_image": "{{ product.metafields.custom.multicolumn.value.image_1.value }}"
           }
         },
         "template--21392479977749__b1eace34-4611-4f4e-8ab0-4483339400af-column-2": {
@@ -164,9 +164,10 @@
             "background_html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"380\" height=\"360\" viewbox=\"0 0 380 360\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M190 358.843L1.125 313.788V46.2124L190 1.15657L378.875 46.2124V313.788L190 358.843Z\" stroke=\"#00FF00\" stroke-width=\"2.25\"><\/path>\n<\/svg>",
             "title": "",
             "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"34\" height=\"28\" viewbox=\"0 0 34 28\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M27.9429 0.362976C21.8105 5.0981 17.774 13.0935 17.774 18.6048C17.774 23.8057 21.4224 27.3765 25.7694 27.3765C30.0388 27.3765 34.541 22.9518 32.9109 17.5181C24.9932 14.3355 22.3539 6.6506 28.4087 0.751101L27.9429 0.362976ZM10.1668 0.362976C4.03442 5.0981 -0.0020752 13.0935 -0.0020752 18.6048C-0.0020752 23.8057 3.6463 27.3765 7.9933 27.3765C12.2627 27.3765 16.7649 22.9518 15.1348 17.5181C7.21705 14.3355 4.5778 6.6506 10.6326 0.751101L10.1668 0.362976Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
-            "text": "<p> <\/p>",
+            "text": "<p> {{ product.metafields.custom.multicolumn.value.text_2.value }}<\/p>",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "digit_image": "{{ product.metafields.custom.multicolumn.value.image_2.value }}"
           }
         },
         "template--21392479977749__b1eace34-4611-4f4e-8ab0-4483339400af-column-3": {
@@ -175,9 +176,10 @@
             "background_html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"380\" height=\"360\" viewbox=\"0 0 380 360\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M190 358.843L1.125 313.788V46.2124L190 1.15657L378.875 46.2124V313.788L190 358.843Z\" stroke=\"#00FF00\" stroke-width=\"2.25\"><\/path>\n<\/svg>",
             "title": "",
             "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"34\" height=\"28\" viewbox=\"0 0 34 28\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M27.9429 0.362976C21.8105 5.0981 17.774 13.0935 17.774 18.6048C17.774 23.8057 21.4224 27.3765 25.7694 27.3765C30.0388 27.3765 34.541 22.9518 32.9109 17.5181C24.9932 14.3355 22.3539 6.6506 28.4087 0.751101L27.9429 0.362976ZM10.1668 0.362976C4.03442 5.0981 -0.0020752 13.0935 -0.0020752 18.6048C-0.0020752 23.8057 3.6463 27.3765 7.9933 27.3765C12.2627 27.3765 16.7649 22.9518 15.1348 17.5181C7.21705 14.3355 4.5778 6.6506 10.6326 0.751101L10.1668 0.362976Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
-            "text": "<p> <\/p>",
+            "text": "<p> {{ product.metafields.custom.multicolumn.value.text_3.value }}<\/p>",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "digit_image": "{{ product.metafields.custom.multicolumn.value.image_3.value }}"
           }
         }
       },
@@ -220,12 +222,12 @@
         "heading": "",
         "heading_size": "h1",
         "enable_video_looping": false,
-        "video": "{{ product.metafields.custom.pdp_video_section_video.value }}",
-        "cover_image": "{{ product.metafields.custom.pdp_video_section_desktop_background_image.value }}",
-        "mobile_cover_image": "{{ product.metafields.custom.pdp_video_section_mobile_background_image.value }}",
-        "sub_heading": "{{ product.metafields.custom.pdp_video_section_caption.value }}",
-        "text": "{{ product.metafields.custom.pdp_video_section_heading.value }}",
-        "sub_text": "{{ product.metafields.custom.pdp_video_section_paragraph.value }}",
+        "video": "{{ product.metafields.custom.video_section.value.shopify_hosted_video.value }}",
+        "cover_image": "{{ product.metafields.custom.video_section.value.background_image_desktop.value }}",
+        "mobile_cover_image": "{{ product.metafields.custom.video_section.value.background_image_mobile.value }}",
+        "sub_heading": "{{ product.metafields.custom.video_section.value.caption.value }}",
+        "text": "{{ product.metafields.custom.video_section.value.heading.value }}",
+        "sub_text": "{{ product.metafields.custom.video_section.value.paragraph.value }}",
         "description": "",
         "full_width": false,
         "color_scheme": "",
@@ -241,7 +243,7 @@
         "be75e97d-4e18-4a63-9064-8bc56109c3bd": {
           "type": "caption",
           "settings": {
-            "caption": "{{ product.metafields.custom.pdp_image_with_text_battery_life_caption.value }}",
+            "caption": "{{ product.metafields.custom.image_with_text_1.value.caption.value }}",
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium"
           }
@@ -249,14 +251,14 @@
         "template--21382360531221__f692c6f2-4606-4316-8e87-9a0fe759b7e5-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "{{ product.metafields.custom.pdp_image_with_text_battery_life_heading.value }}",
+            "heading": "{{ product.metafields.custom.image_with_text_1.value.heading.value }}",
             "heading_size": "h2"
           }
         },
         "template--21382360531221__f692c6f2-4606-4316-8e87-9a0fe759b7e5-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p> {{ product.metafields.custom.pdp_image_with_text_battery_life_paragraph.value }}<\/p>",
+            "text": "<p> {{ product.metafields.custom.image_with_text_1.value.content.value }}<\/p>",
             "text_style": "body"
           }
         }
@@ -267,7 +269,7 @@
         "template--21382360531221__f692c6f2-4606-4316-8e87-9a0fe759b7e5-text-1"
       ],
       "settings": {
-        "image": "{{ product.metafields.custom.pdp_image_with_text_battery_life_image.value }}",
+        "image": "{{ product.metafields.custom.image_with_text_1.value.image.value }}",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -289,7 +291,7 @@
         "2546f2d5-f668-428b-af24-a466c4e2d2d4": {
           "type": "caption",
           "settings": {
-            "caption": "{{ product.metafields.custom.pdp_banner_image_bass_caption.value }}",
+            "caption": "{{ product.metafields.custom.banner_1.value.caption.value }}",
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium"
           }
@@ -297,14 +299,14 @@
         "template--21392479977749__a7062727-dfd4-40a9-a52a-5808b7833db4-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "{{ product.metafields.custom.pdp_banner_image_bass_heading.value }}",
+            "heading": "{{ product.metafields.custom.banner_1.value.heading.value }}",
             "heading_size": "h2"
           }
         },
         "template--21392479977749__a7062727-dfd4-40a9-a52a-5808b7833db4-text-1": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.custom.pdp_banner_image_bass_paragraph.value }}",
+            "text": "{{ product.metafields.custom.banner_1.value.content.value }}",
             "text_style": "body"
           }
         }
@@ -315,8 +317,8 @@
         "template--21392479977749__a7062727-dfd4-40a9-a52a-5808b7833db4-text-1"
       ],
       "settings": {
-        "image": "{{ product.metafields.custom.pdp_banner_image_bass_image.value }}",
-        "mobile_image": "{{ product.metafields.custom.pdp_banner_image_bass_mobile_image.value }}",
+        "image": "{{ product.metafields.custom.banner_1.value.desktop_banner.value }}",
+        "mobile_image": "{{ product.metafields.custom.banner_1.value.mobile_banner.value }}",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "bottom-center",
@@ -357,7 +359,7 @@
         "56a1b082-0990-4b13-a8f8-f4ebcc6593c4": {
           "type": "caption",
           "settings": {
-            "caption": "{{ product.metafields.custom.pdp_banner_image_call_control_caption.value }}",
+            "caption": "{{ product.metafields.custom.banner_2.value.caption.value }}",
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium"
           }
@@ -365,14 +367,14 @@
         "template--21392479977749__7a7ea6f3-b660-4e7c-a5d7-e0ae9b3e9961-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "{{ product.metafields.custom.pdp_banner_image_call_control_heading.value }}",
+            "heading": "{{ product.metafields.custom.banner_2.value.heading.value }}",
             "heading_size": "h2"
           }
         },
         "template--21392479977749__7a7ea6f3-b660-4e7c-a5d7-e0ae9b3e9961-text-1": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.custom.pdp_banner_image_call_control_paragraphh.value }}",
+            "text": "{{ product.metafields.custom.banner_2.value.content.value }}",
             "text_style": "body"
           }
         }
@@ -383,8 +385,8 @@
         "template--21392479977749__7a7ea6f3-b660-4e7c-a5d7-e0ae9b3e9961-text-1"
       ],
       "settings": {
-        "image": "{{ product.metafields.custom.pdp_banner_image_call_control_image.value }}",
-        "mobile_image": "{{ product.metafields.custom.pdp_banner_image_call_control_mobile_image.value }}",
+        "image": "{{ product.metafields.custom.banner_2.value.desktop_banner.value }}",
+        "mobile_image": "{{ product.metafields.custom.banner_2.value.mobile_banner.value }}",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-right",
@@ -407,7 +409,7 @@
         "46cae992-a634-40ec-99ea-2705a4ffb129": {
           "type": "caption",
           "settings": {
-            "caption": "{{ product.metafields.custom.pdp_google_assistant_enabled_section_caption.value }}",
+            "caption": "{{ product.metafields.custom.banner_3.value.caption.value }}",
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium"
           }
@@ -415,14 +417,14 @@
         "template--21392479977749__0e119df3-4b63-45ca-ab03-8b39936d63ad-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "{{ product.metafields.custom.pdp_google_assistant_enabled_section_heading.value }}",
+            "heading": "{{ product.metafields.custom.banner_3.value.heading.value }}",
             "heading_size": "h2"
           }
         },
         "template--21392479977749__0e119df3-4b63-45ca-ab03-8b39936d63ad-text-1": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.custom.pdp_google_assistant_enabled_section_paragraph.value }}",
+            "text": "{{ product.metafields.custom.banner_3.value.content.value }}",
             "text_style": "body"
           }
         }
@@ -433,7 +435,8 @@
         "template--21392479977749__0e119df3-4b63-45ca-ab03-8b39936d63ad-text-1"
       ],
       "settings": {
-        "image": "{{ product.metafields.custom.pdp_google_assistant_enabled_section_image.value }}",
+        "image": "{{ product.metafields.custom.banner_3.value.desktop_banner.value }}",
+        "mobile_image": "{{ product.metafields.custom.banner_3.value.mobile_banner.value }}",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "bottom-center",
@@ -472,7 +475,7 @@
         "5201ad8b-2a92-46d4-ac39-55839ae38b44": {
           "type": "caption",
           "settings": {
-            "caption": "{{ product.metafields.custom.pdp_image_with_text_durable_outside_caption.value }}",
+            "caption": "{{ product.metafields.custom.image_with_text_2.value.caption.value }}",
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium"
           }
@@ -480,14 +483,14 @@
         "template--21392479977749__979399b6-0b8e-46b2-95cf-1f1a196b14ad-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "{{ product.metafields.custom.pdp_image_with_text_durable_outside_heading.value }}",
+            "heading": "{{ product.metafields.custom.image_with_text_2.value.heading.value }}",
             "heading_size": "h2"
           }
         },
         "template--21392479977749__979399b6-0b8e-46b2-95cf-1f1a196b14ad-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p> {{ product.metafields.custom.pdp_image_with_text_durable_outside_paragraph.value }}<\/p>",
+            "text": "<p> {{ product.metafields.custom.image_with_text_2.value.content.value }}<\/p>",
             "text_style": "body"
           }
         }
@@ -498,7 +501,7 @@
         "template--21392479977749__979399b6-0b8e-46b2-95cf-1f1a196b14ad-text-1"
       ],
       "settings": {
-        "image": "{{ product.metafields.custom.pdp_image_with_text_durable_outside_image.value }}",
+        "image": "{{ product.metafields.custom.image_with_text_2.value.banner.value }}",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -520,7 +523,7 @@
         "e8c4d938-f487-4a88-bcad-f06b03d347ae": {
           "type": "caption",
           "settings": {
-            "caption": "{{ product.metafields.custom.pdp_richtext_comparison_section_caption.value }}",
+            "caption": "{{ product.metafields.custom.richtext.value.caption.value }}",
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium"
           }
@@ -528,14 +531,14 @@
         "template--21392479977749__6bba2504-4a58-47ff-896f-b80449fe031d-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "{{ product.metafields.custom.pdp_richtext_comparison_section_heading.value }}",
+            "heading": "{{ product.metafields.custom.richtext.value.heading.value }}",
             "heading_size": "h2"
           }
         },
         "template--21392479977749__6bba2504-4a58-47ff-896f-b80449fe031d-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p> {{ product.metafields.custom.pdp_richtext_comparison_section_paragraph.value }}<\/p>"
+            "text": "<p> {{ product.metafields.custom.richtext.value.content.value }}<\/p>"
           }
         }
       },
@@ -558,7 +561,7 @@
     "92d322a9-c1fa-465d-8e15-af33fed41c6c": {
       "type": "pdp-only-image",
       "settings": {
-        "image": "{{ product.metafields.custom.pdp_only_one_image_section_tws_option.value }}",
+        "image": "{{ product.metafields.custom.richtext.value.comaprison_image.value }}",
         "padding_top": 10,
         "padding_bottom": 100,
         "padding_top_mb": 50,
