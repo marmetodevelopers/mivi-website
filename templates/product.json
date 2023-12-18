@@ -291,7 +291,7 @@
         "2546f2d5-f668-428b-af24-a466c4e2d2d4": {
           "type": "caption",
           "settings": {
-            "caption": "{{ product.metafields.custom.pdp_banner_image_bass_caption.value }}",
+            "caption": "{{ product.metafields.custom.banner_1.value.caption.value }}",
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium"
           }
@@ -299,14 +299,14 @@
         "template--21392479977749__a7062727-dfd4-40a9-a52a-5808b7833db4-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "{{ product.metafields.custom.pdp_banner_image_bass_heading.value }}",
+            "heading": "{{ product.metafields.custom.banner_1.value.heading.value }}",
             "heading_size": "h2"
           }
         },
         "template--21392479977749__a7062727-dfd4-40a9-a52a-5808b7833db4-text-1": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.custom.pdp_banner_image_bass_paragraph.value }}",
+            "text": "{{ product.metafields.custom.banner_1.value.content.value }}",
             "text_style": "body"
           }
         }
