@@ -16,7 +16,10 @@
  {%- endstyle -%}
  
 {% assign video-url = shop.metaobjects.product_page_video.values %}
-{{ video-url[2] }}
+{% for video in video-url %}
+  {% assign video-url = video.youtube_video_link %}
+{% endfor %}
+{{ video-url }}
 {%- liquid
   assign video_id = section.settings.video.id | default: video-url.id
   assign video_alt = section.settings.video.alt | default: section.settings.description
