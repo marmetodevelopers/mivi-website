@@ -301,22 +301,22 @@
         "template--21424888250645__cfe6150d-9b1a-4c6e-beba-cf2ac11bcbbf-column-2": {
           "type": "column",
           "settings": {
-            "background_html": "",
-            "title": "Column",
-            "html": "",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
+            "background_html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"380\" height=\"360\" viewbox=\"0 0 380 360\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M190 358.843L1.125 313.788V46.2124L190 1.15657L378.875 46.2124V313.788L190 358.843Z\" stroke=\"#00FF00\" stroke-width=\"2.25\"><\/path>\n<\/svg>",
+            "title": "",
+            "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"34\" height=\"28\" viewbox=\"0 0 34 28\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M27.943 0.362793C21.8107 5.09792 17.7742 13.0933 17.7742 18.6047C17.7742 23.8055 21.4225 27.3763 25.7695 27.3763C30.0389 27.3763 34.5412 22.9517 32.911 17.5179C24.9933 14.3353 22.354 6.65042 28.4088 0.750918L27.943 0.362793ZM10.1669 0.362793C4.03455 5.09792 -0.00195312 13.0933 -0.00195312 18.6047C-0.00195312 23.8055 3.64642 27.3763 7.99342 27.3763C12.2628 27.3763 16.765 22.9517 15.1349 17.5179C7.21717 14.3353 4.57792 6.65042 10.6327 0.750918L10.1669 0.362793Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
+            "text": "<p>A pair of sport headphones must ensure a perfect fit alongside an energetic and punchy sound to even approach worthiness. And the DuoPods M40 have absolutely achieved this.<\/p>",
+            "link_label": "Anant Kishore",
             "link": ""
           }
         },
         "template--21424888250645__cfe6150d-9b1a-4c6e-beba-cf2ac11bcbbf-column-3": {
           "type": "column",
           "settings": {
-            "background_html": "",
-            "title": "Column",
-            "html": "",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
+            "background_html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"380\" height=\"360\" viewbox=\"0 0 380 360\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M190 358.843L1.125 313.788V46.2124L190 1.15657L378.875 46.2124V313.788L190 358.843Z\" stroke=\"#00FF00\" stroke-width=\"2.25\"><\/path>\n<\/svg>",
+            "title": "",
+            "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"34\" height=\"28\" viewbox=\"0 0 34 28\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M27.943 0.362793C21.8107 5.09792 17.7742 13.0933 17.7742 18.6047C17.7742 23.8055 21.4225 27.3763 25.7695 27.3763C30.0389 27.3763 34.5412 22.9517 32.911 17.5179C24.9933 14.3353 22.354 6.65042 28.4088 0.750918L27.943 0.362793ZM10.1669 0.362793C4.03455 5.09792 -0.00195312 13.0933 -0.00195312 18.6047C-0.00195312 23.8055 3.64642 27.3763 7.99342 27.3763C12.2628 27.3763 16.765 22.9517 15.1349 17.5179C7.21717 14.3353 4.57792 6.65042 10.6327 0.750918L10.1669 0.362793Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
+            "text": "<p>A pair of sport headphones must ensure a perfect fit alongside an energetic and punchy sound to even approach worthiness. And the DuoPods M40 have absolutely achieved this.<\/p>",
+            "link_label": "Anant Kishore",
             "link": ""
           }
         }
