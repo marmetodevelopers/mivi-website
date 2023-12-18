@@ -475,7 +475,7 @@
         "5201ad8b-2a92-46d4-ac39-55839ae38b44": {
           "type": "caption",
           "settings": {
-            "caption": "{{ product.metafields.custom.pdp_image_with_text_durable_outside_caption.value }}",
+            "caption": "{{ product.metafields.custom.image_with_text_2.value.caption.value }}",
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium"
           }
@@ -483,14 +483,14 @@
         "template--21392479977749__979399b6-0b8e-46b2-95cf-1f1a196b14ad-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "{{ product.metafields.custom.pdp_image_with_text_durable_outside_heading.value }}",
+            "heading": "{{ product.metafields.custom.image_with_text_2.value.heading.value }}",
             "heading_size": "h2"
           }
         },
         "template--21392479977749__979399b6-0b8e-46b2-95cf-1f1a196b14ad-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p> {{ product.metafields.custom.pdp_image_with_text_durable_outside_paragraph.value }}<\/p>",
+            "text": "<p> {{ product.metafields.custom.image_with_text_2.value.content.value }}<\/p>",
             "text_style": "body"
           }
         }
@@ -501,7 +501,7 @@
         "template--21392479977749__979399b6-0b8e-46b2-95cf-1f1a196b14ad-text-1"
       ],
       "settings": {
-        "image": "{{ product.metafields.custom.pdp_image_with_text_durable_outside_image.value }}",
+        "image": "{{ product.metafields.custom.image_with_text_2.value.banner.value }}",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
