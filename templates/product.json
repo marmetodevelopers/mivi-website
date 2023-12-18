@@ -561,7 +561,7 @@
     "92d322a9-c1fa-465d-8e15-af33fed41c6c": {
       "type": "pdp-only-image",
       "settings": {
-        "image": "{{ product.metafields.custom.pdp_only_one_image_section_tws_option.value }}",
+        "image": "{{ product.metafields.custom.richtext.value.comaprison_image.value }}",
         "padding_top": 10,
         "padding_bottom": 100,
         "padding_top_mb": 50,
