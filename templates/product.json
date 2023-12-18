@@ -110,10 +110,10 @@
             "background_html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"380\" height=\"360\" viewbox=\"0 0 380 360\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M190 358.843L1.125 313.788V46.2124L190 1.15657L378.875 46.2124V313.788L190 358.843Z\" stroke=\"#00FF00\" stroke-width=\"2.25\"><\/path>\n<\/svg>",
             "title": "",
             "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"34\" height=\"28\" viewbox=\"0 0 34 28\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M27.9429 0.362976C21.8105 5.0981 17.774 13.0935 17.774 18.6048C17.774 23.8057 21.4224 27.3765 25.7694 27.3765C30.0388 27.3765 34.541 22.9518 32.9109 17.5181C24.9932 14.3355 22.3539 6.6506 28.4087 0.751101L27.9429 0.362976ZM10.1668 0.362976C4.03442 5.0981 -0.0020752 13.0935 -0.0020752 18.6048C-0.0020752 23.8057 3.6463 27.3765 7.9933 27.3765C12.2627 27.3765 16.7649 22.9518 15.1348 17.5181C7.21705 14.3355 4.5778 6.6506 10.6326 0.751101L10.1668 0.362976Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
-            "text": "<p>A pair of sport headphones must ensure a perfect fit alongside an energetic and punchy sound to even approach worthiness. And the DuoPods M40 have absolutely achieved this.<\/p>",
+            "text": "<p> {{ product.metafields.custom.multicolumn.value.text_1.value }}<\/p>",
             "link_label": "",
             "link": "",
-            "digit_image": "shopify:\/\/shop_images\/digit_logo_1.png"
+            "digit_image": "{{ product.metafields.custom.multicolumn.value.image_1.value }}"
           }
         },
         "template--21424888217877__68b3bea0-a4d0-4e91-9773-93b608a9e87a-column-3": {
