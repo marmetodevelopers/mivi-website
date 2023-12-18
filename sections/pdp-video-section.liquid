@@ -15,9 +15,9 @@
   }
  {%- endstyle -%}
 
-{% for video in shop.metaobjects.product_page_video.values %}
+<!-- {% for video in shop.metaobjects.product_page_video.values %}
   {% assign video-url = video.youtube_video_link.value %}
-{% endfor %}
+{% endfor %} -->
 
 {%- liquid
   assign video_id = section.settings.video.id | default: video-url.id
