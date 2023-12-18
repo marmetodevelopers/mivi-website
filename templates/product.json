@@ -73,63 +73,6 @@
             "product_tag_15": "",
             "product_certification_text_15": ""
           }
-        },
-        "fb484eb7-be5c-4c5f-bfe7-c6633d08b7ef": {
-          "type": "text",
-          "settings": {
-            "text": "Text block",
-            "text_style": "body"
-          }
-        },
-        "7004181b-f66e-4c37-a394-4df5fb75a7a6": {
-          "type": "sku",
-          "settings": {
-            "text_style": "body"
-          }
-        },
-        "82d583cd-353d-4aa7-8baf-446da2295429": {
-          "type": "inventory",
-          "settings": {
-            "text_style": "body",
-            "inventory_threshold": 10,
-            "show_inventory_quantity": true
-          }
-        },
-        "f052b491-4e52-4a06-9d38-b1af890945ce": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "03729793-817d-4ef0-886a-e84687308bb7": {
-          "type": "complementary",
-          "settings": {
-            "block_heading": "Pairs well with",
-            "make_collapsible_row": false,
-            "icon": "price_tag",
-            "product_list_limit": 10,
-            "products_per_page": 3,
-            "pagination_style": "counter",
-            "image_ratio": "square",
-            "enable_quick_add": false
-          }
-        },
-        "afdcf4a0-539c-4ef8-bbf5-b189a191f4c4": {
-          "type": "icon-with-text",
-          "settings": {
-            "layout": "horizontal",
-            "icon_1": "heart",
-            "heading_1": "Heading",
-            "icon_2": "return",
-            "heading_2": "Heading",
-            "icon_3": "truck",
-            "heading_3": "Heading"
-          }
-        },
-        "e323455e-c5d8-4520-b356-60a322bc88d4": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
         }
       },
       "block_order": [
@@ -139,14 +82,7 @@
         "variant_picker",
         "7b87dce9-488f-4129-93aa-f637b529d032",
         "price",
-        "70be4f5a-04b5-48b7-a273-bc4fe885f72e",
-        "fb484eb7-be5c-4c5f-bfe7-c6633d08b7ef",
-        "7004181b-f66e-4c37-a394-4df5fb75a7a6",
-        "82d583cd-353d-4aa7-8baf-446da2295429",
-        "f052b491-4e52-4a06-9d38-b1af890945ce",
-        "03729793-817d-4ef0-886a-e84687308bb7",
-        "afdcf4a0-539c-4ef8-bbf5-b189a191f4c4",
-        "e323455e-c5d8-4520-b356-60a322bc88d4"
+        "70be4f5a-04b5-48b7-a273-bc4fe885f72e"
       ],
       "settings": {
         "enable_sticky_info": true,
