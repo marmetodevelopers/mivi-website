@@ -37,6 +37,7 @@
         },
         "e2f9595e-4862-4906-ab10-02911bf80b6c": {
           "type": "buy_buttons",
+          "disabled": true,
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
