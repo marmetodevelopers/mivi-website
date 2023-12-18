@@ -134,11 +134,11 @@
             </a>
           </h3>
           <!-- Start of Judge.me code -->
-  {% if show_rating  %}
-          <div class='jdgm-widget jdgm-preview-badge jdgm__homepage__ratings'>
-            {{ card_product.metafields.judgeme.badge }}
-          </div>
-    {% endif %}
+          {% if show_rating  %}
+            <div class='jdgm-widget jdgm-preview-badge jdgm__homepage__ratings'>
+              {{ card_product.metafields.judgeme.badge }}
+            </div>
+          {% endif %}
           <!-- End of Judge.me code -->
           <div class="card-information">
             {%- if show_vendor -%}
