@@ -192,7 +192,7 @@
         "slider_visual": "dots",
         "padding_top": 150,
         "padding_bottom": 130,
-        "padding_top_mb": 136,
+        "padding_top_mb": 60,
         "padding_bottom_mb": 14
       }
     },
