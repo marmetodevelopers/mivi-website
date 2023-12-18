@@ -317,8 +317,8 @@
         "template--21392479977749__a7062727-dfd4-40a9-a52a-5808b7833db4-text-1"
       ],
       "settings": {
-        "image": "{{ product.metafields.custom.pdp_banner_image_bass_image.value }}",
-        "mobile_image": "{{ product.metafields.custom.pdp_banner_image_bass_mobile_image.value }}",
+        "image": "{{ product.metafields.custom.banner_1.value.desktop_banner.value }}",
+        "mobile_image": "{{ product.metafields.custom.banner_1.value.mobile_banner.value }}",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "bottom-center",
