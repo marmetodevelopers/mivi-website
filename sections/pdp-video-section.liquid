@@ -13,10 +13,10 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
- {%- endstyle -%}hello--{{ shop.metaobjects.product_page_video.values[1] }}
+ {%- endstyle -%}
  
 {% assign video-url = shop.metaobjects.product_page_video.values %}
-
+{{ video-url[1] }}
 {%- liquid
   assign video_id = section.settings.video.id | default: video-url.id
   assign video_alt = section.settings.video.alt | default: section.settings.description
