@@ -29,7 +29,7 @@
         "full_width": false,
         "padding_top": 88,
         "padding_bottom": 80,
-        "padding_top_mb": 30,
+        "padding_top_mb": 0,
         "padding_bottom_mb": 30
       }
     },
