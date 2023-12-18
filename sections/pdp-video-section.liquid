@@ -16,7 +16,7 @@
  {%- endstyle -%}
  
 {% assign video-url = shop.metaobjects.product_page_video.values %}
-{{ video-url[1] }}
+{{ video-url[2] }}
 {%- liquid
   assign video_id = section.settings.video.id | default: video-url.id
   assign video_alt = section.settings.video.alt | default: section.settings.description
