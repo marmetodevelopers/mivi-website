@@ -20,8 +20,9 @@
   } 
 {% endstyle %}
 
-<div class="padding-{{ section.id }} deal-of__the-day-main">
-  <div class="deal-of-the-day-container">
+<div class="section-padding-{{ section.id }}">
+  <div class="padding-{{ section.id }} deal-of__the-day-main">
+    <div class="deal-of-the-day-container">
     <div class="deal-of-the-day-content"> 
       {% if section.settings.heading != blank  %}
         <div class="heading__text--color-{{ section.id }} h5"> {{ section.settings.heading }}</div>
