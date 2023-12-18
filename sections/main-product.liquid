@@ -89,8 +89,9 @@
               </p>
               {%- when 'product-type' -%}
                 <p
-                  class="product__text inline-richtext small-element-10 caption-with-letter-spacing subtitle"
-                 >
+                  class="product__text inline-richtext small-element-10   caption-with-letter-spacing  subtitle"
+                  {{ block.shopify_attributes }}
+                >
                   {{- product.type -}}
                 </p>
             {%- when 'title' -%}
