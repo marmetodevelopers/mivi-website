@@ -243,7 +243,7 @@
         "be75e97d-4e18-4a63-9064-8bc56109c3bd": {
           "type": "caption",
           "settings": {
-            "caption": "{{ product.metafields.custom.pdp_image_with_text_battery_life_caption.value }}",
+            "caption": "{{ product.metafields.custom.image_with_text_1.value.caption.value }}",
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium"
           }
@@ -251,14 +251,14 @@
         "template--21382360531221__f692c6f2-4606-4316-8e87-9a0fe759b7e5-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "{{ product.metafields.custom.pdp_image_with_text_battery_life_heading.value }}",
+            "heading": "{{ product.metafields.custom.image_with_text_1.value.heading.value }}",
             "heading_size": "h2"
           }
         },
         "template--21382360531221__f692c6f2-4606-4316-8e87-9a0fe759b7e5-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p> {{ product.metafields.custom.pdp_image_with_text_battery_life_paragraph.value }}<\/p>",
+            "text": "<p> {{ product.metafields.custom.image_with_text_1.value.content.value }}<\/p>",
             "text_style": "body"
           }
         }
@@ -269,7 +269,7 @@
         "template--21382360531221__f692c6f2-4606-4316-8e87-9a0fe759b7e5-text-1"
       ],
       "settings": {
-        "image": "{{ product.metafields.custom.pdp_image_with_text_battery_life_image.value }}",
+        "image": "{{ product.metafields.custom.image_with_text_1.value.image.value }}",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
