@@ -35,14 +35,6 @@
           "settings": {
           }
         },
-        "e2f9595e-4862-4906-ab10-02911bf80b6c": {
-          "type": "buy_buttons",
-          "disabled": true,
-          "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        },
         "c0bb79f6-fb2c-415a-8185-dcf069e68a36": {
           "type": "complementary",
           "settings": {
@@ -103,7 +95,6 @@
         "variant_picker",
         "7b87dce9-488f-4129-93aa-f637b529d032",
         "price",
-        "e2f9595e-4862-4906-ab10-02911bf80b6c",
         "c0bb79f6-fb2c-415a-8185-dcf069e68a36",
         "70be4f5a-04b5-48b7-a273-bc4fe885f72e"
       ],
