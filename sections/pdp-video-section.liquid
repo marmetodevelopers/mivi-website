@@ -16,7 +16,7 @@
  {%- endstyle -%}
 
 {% for video in shop.metaobjects.product_page_video.values %}
-  {% assign video-url = video.youtube_video_link %}
+  {% assign video-url = video.youtube_video_link.url %}
 
 {{ video-url }}
 {%- liquid
