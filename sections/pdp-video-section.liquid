@@ -129,7 +129,7 @@
         </div>
       </div>
       <template>
-        {%- if section.settings.video == null and product.metafields.custom.pdp_video_url != null -%}
+        {%- if section.settings.video == null and video-url != null -%}
           {%- liquid
             assign loop = ''
             if section.settings.enable_video_looping
