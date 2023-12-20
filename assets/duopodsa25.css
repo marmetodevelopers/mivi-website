@@ -2097,6 +2097,9 @@ input::-webkit-outer-spin-button {
 .grid{
   display: grid;
 }
+.product.grid.main-product__main-container{
+  display: flex;
+}
 .top-1\/2 {
   top: 50%;
 }
