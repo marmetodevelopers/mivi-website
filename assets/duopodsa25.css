@@ -2094,6 +2094,9 @@ input::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+.grid{
+  display: grid;
+}
 .top-1\/2 {
   top: 50%;
 }
