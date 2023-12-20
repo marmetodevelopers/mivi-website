@@ -100,9 +100,567 @@
         "padding_top_mb": 0,
         "padding_bottom_mb": 54
       }
+    },
+    "68b3bea0-a4d0-4e91-9773-93b608a9e87a": {
+      "type": "testimonial-multicolumn",
+      "blocks": {
+        "template--21424888217877__68b3bea0-a4d0-4e91-9773-93b608a9e87a-column-2": {
+          "type": "column",
+          "settings": {
+            "background_html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"380\" height=\"360\" viewbox=\"0 0 380 360\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M190 358.843L1.125 313.788V46.2124L190 1.15657L378.875 46.2124V313.788L190 358.843Z\" stroke=\"#00FF00\" stroke-width=\"2.25\"><\/path>\n<\/svg>",
+            "title": "",
+            "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"34\" height=\"28\" viewbox=\"0 0 34 28\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M27.9429 0.362976C21.8105 5.0981 17.774 13.0935 17.774 18.6048C17.774 23.8057 21.4224 27.3765 25.7694 27.3765C30.0388 27.3765 34.541 22.9518 32.9109 17.5181C24.9932 14.3355 22.3539 6.6506 28.4087 0.751101L27.9429 0.362976ZM10.1668 0.362976C4.03442 5.0981 -0.0020752 13.0935 -0.0020752 18.6048C-0.0020752 23.8057 3.6463 27.3765 7.9933 27.3765C12.2627 27.3765 16.7649 22.9518 15.1348 17.5181C7.21705 14.3355 4.5778 6.6506 10.6326 0.751101L10.1668 0.362976Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
+            "text": "<p> {{ product.metafields.custom.multicolumn.value.text_1.value }}<\/p>",
+            "link_label": "",
+            "link": "",
+            "digit_image": "{{ product.metafields.custom.multicolumn.value.image_1.value }}"
+          }
+        },
+        "template--21424888217877__68b3bea0-a4d0-4e91-9773-93b608a9e87a-column-3": {
+          "type": "column",
+          "settings": {
+            "background_html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"380\" height=\"360\" viewbox=\"0 0 380 360\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M190 358.843L1.125 313.788V46.2124L190 1.15657L378.875 46.2124V313.788L190 358.843Z\" stroke=\"#00FF00\" stroke-width=\"2.25\"><\/path>\n<\/svg>",
+            "title": "",
+            "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"34\" height=\"28\" viewbox=\"0 0 34 28\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M27.9429 0.362976C21.8105 5.0981 17.774 13.0935 17.774 18.6048C17.774 23.8057 21.4224 27.3765 25.7694 27.3765C30.0388 27.3765 34.541 22.9518 32.9109 17.5181C24.9932 14.3355 22.3539 6.6506 28.4087 0.751101L27.9429 0.362976ZM10.1668 0.362976C4.03442 5.0981 -0.0020752 13.0935 -0.0020752 18.6048C-0.0020752 23.8057 3.6463 27.3765 7.9933 27.3765C12.2627 27.3765 16.7649 22.9518 15.1348 17.5181C7.21705 14.3355 4.5778 6.6506 10.6326 0.751101L10.1668 0.362976Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
+            "text": "<p> {{ product.metafields.custom.multicolumn.value.text_2.value }}<\/p>",
+            "link_label": "",
+            "link": "",
+            "digit_image": "{{ product.metafields.custom.multicolumn.value.image_2.value }}"
+          }
+        },
+        "a2f93a4c-a1af-424d-a9a8-c0302295997e": {
+          "type": "column",
+          "settings": {
+            "background_html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"380\" height=\"360\" viewbox=\"0 0 380 360\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M190 358.843L1.125 313.788V46.2124L190 1.15657L378.875 46.2124V313.788L190 358.843Z\" stroke=\"#00FF00\" stroke-width=\"2.25\"><\/path>\n<\/svg>",
+            "title": "",
+            "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"34\" height=\"28\" viewbox=\"0 0 34 28\" fill=\"none\">\n  <path opacity=\"0.1\" d=\"M27.9429 0.362976C21.8105 5.0981 17.774 13.0935 17.774 18.6048C17.774 23.8057 21.4224 27.3765 25.7694 27.3765C30.0388 27.3765 34.541 22.9518 32.9109 17.5181C24.9932 14.3355 22.3539 6.6506 28.4087 0.751101L27.9429 0.362976ZM10.1668 0.362976C4.03442 5.0981 -0.0020752 13.0935 -0.0020752 18.6048C-0.0020752 23.8057 3.6463 27.3765 7.9933 27.3765C12.2627 27.3765 16.7649 22.9518 15.1348 17.5181C7.21705 14.3355 4.5778 6.6506 10.6326 0.751101L10.1668 0.362976Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
+            "text": "<p> {{ product.metafields.custom.multicolumn.value.text_3.value }}<\/p>",
+            "link_label": "",
+            "link": "",
+            "digit_image": "{{ product.metafields.custom.multicolumn.value.image_3.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "template--21424888217877__68b3bea0-a4d0-4e91-9773-93b608a9e87a-column-2",
+        "template--21424888217877__68b3bea0-a4d0-4e91-9773-93b608a9e87a-column-3",
+        "a2f93a4c-a1af-424d-a9a8-c0302295997e"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 150,
+        "padding_bottom": 36,
+        "padding_top_mb": 36,
+        "padding_bottom_mb": 36
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "fcd3e799-03ea-4a52-8de0-272f7f580361": {
+      "type": "USP-section",
+      "settings": {
+        "padding_top": 45,
+        "padding_bottom": 100,
+        "padding_top_mb": 150,
+        "padding_bottom_mb": 150
+      }
+    },
+    "7cd6c00f-b400-46c6-9e6a-04de79e86a7b": {
+      "type": "pdp-video-section",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video": "{{ product.metafields.custom.video_section.value.shopify_hosted_video.value }}",
+        "cover_image": "{{ product.metafields.custom.video_section.value.background_image_desktop.value }}",
+        "mobile_cover_image": "{{ product.metafields.custom.video_section.value.background_image_mobile.value }}",
+        "sub_heading": "{{ product.metafields.custom.video_section.value.caption.value }}",
+        "text": "{{ product.metafields.custom.video_section.value.heading.value }}",
+        "sub_text": "{{ product.metafields.custom.video_section.value.paragraph.value }}",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 56,
+        "padding_bottom": 100,
+        "padding_top_mb": 0,
+        "padding_bottom_mb": 96
+      }
+    },
+    "f692c6f2-4606-4316-8e87-9a0fe759b7e5": {
+      "type": "image-with-text",
+      "blocks": {
+        "be75e97d-4e18-4a63-9064-8bc56109c3bd": {
+          "type": "caption",
+          "settings": {
+            "caption": "{{ product.metafields.custom.image_with_text_1.value.caption.value }}",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "template--21382360531221__f692c6f2-4606-4316-8e87-9a0fe759b7e5-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.metafields.custom.image_with_text_1.value.heading.value }}",
+            "heading_size": "h2"
+          }
+        },
+        "template--21382360531221__f692c6f2-4606-4316-8e87-9a0fe759b7e5-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p> {{ product.metafields.custom.image_with_text_1.value.content.value }}<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "be75e97d-4e18-4a63-9064-8bc56109c3bd",
+        "template--21382360531221__f692c6f2-4606-4316-8e87-9a0fe759b7e5-heading-1",
+        "template--21382360531221__f692c6f2-4606-4316-8e87-9a0fe759b7e5-text-1"
+      ],
+      "settings": {
+        "image": "{{ product.metafields.custom.image_with_text_1.value.image.value }}",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 72,
+        "padding_bottom": 100,
+        "padding_top_mb": 0,
+        "padding_bottom_mb": 70
+      }
+    },
+    "a7062727-dfd4-40a9-a52a-5808b7833db4": {
+      "type": "PDP-banner-image",
+      "blocks": {
+        "2546f2d5-f668-428b-af24-a466c4e2d2d4": {
+          "type": "caption",
+          "settings": {
+            "caption": "{{ product.metafields.custom.banner_1.value.caption.value }}",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "template--21392479977749__a7062727-dfd4-40a9-a52a-5808b7833db4-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.metafields.custom.banner_1.value.heading.value }}",
+            "heading_size": "h2"
+          }
+        },
+        "template--21392479977749__a7062727-dfd4-40a9-a52a-5808b7833db4-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.banner_1.value.content.value }}",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "2546f2d5-f668-428b-af24-a466c4e2d2d4",
+        "template--21392479977749__a7062727-dfd4-40a9-a52a-5808b7833db4-heading-1",
+        "template--21392479977749__a7062727-dfd4-40a9-a52a-5808b7833db4-text-1"
+      ],
+      "settings": {
+        "image": "{{ product.metafields.custom.banner_1.value.desktop_banner.value }}",
+        "mobile_image": "{{ product.metafields.custom.banner_1.value.mobile_banner.value }}",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "padding_top": 10,
+        "padding_bottom": 100,
+        "padding_top_mb": 0,
+        "padding_bottom_mb": 58,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "c7e9f38a-cdfd-4310-a95f-989b0c9af85d": {
+      "type": "pdp-superior-premium-section",
+      "settings": {
+        "section_heading": "",
+        "heading_align": "tw-text-center",
+        "sub_text": "",
+        "enable_pagination": false,
+        "enable_autoplay": false,
+        "autoplay_speed": 3,
+        "slides_perpage": 3,
+        "section-padding-top": 40,
+        "section-padding-bottom": 0,
+        "padding_top": 10,
+        "padding_bottom": 100,
+        "padding_top_mb": 0,
+        "padding_bottom_mb": 0
+      }
+    },
+    "7a7ea6f3-b660-4e7c-a5d7-e0ae9b3e9961": {
+      "type": "PDP-second-image-banner-section",
+      "blocks": {
+        "56a1b082-0990-4b13-a8f8-f4ebcc6593c4": {
+          "type": "caption",
+          "settings": {
+            "caption": "{{ product.metafields.custom.banner_2.value.caption.value }}",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "template--21392479977749__7a7ea6f3-b660-4e7c-a5d7-e0ae9b3e9961-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.metafields.custom.banner_2.value.heading.value }}",
+            "heading_size": "h2"
+          }
+        },
+        "template--21392479977749__7a7ea6f3-b660-4e7c-a5d7-e0ae9b3e9961-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.banner_2.value.content.value }}",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "56a1b082-0990-4b13-a8f8-f4ebcc6593c4",
+        "template--21392479977749__7a7ea6f3-b660-4e7c-a5d7-e0ae9b3e9961-heading-1",
+        "template--21392479977749__7a7ea6f3-b660-4e7c-a5d7-e0ae9b3e9961-text-1"
+      ],
+      "settings": {
+        "image": "{{ product.metafields.custom.banner_2.value.desktop_banner.value }}",
+        "mobile_image": "{{ product.metafields.custom.banner_2.value.mobile_banner.value }}",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-right",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "",
+        "padding_top": 150,
+        "padding_bottom": 10,
+        "padding_top_mb": 130,
+        "padding_bottom_mb": 98,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "0e119df3-4b63-45ca-ab03-8b39936d63ad": {
+      "type": "pdp-page-third-banner-image",
+      "blocks": {
+        "46cae992-a634-40ec-99ea-2705a4ffb129": {
+          "type": "caption",
+          "settings": {
+            "caption": "{{ product.metafields.custom.banner_3.value.caption.value }}",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "template--21392479977749__0e119df3-4b63-45ca-ab03-8b39936d63ad-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.metafields.custom.banner_3.value.heading.value }}",
+            "heading_size": "h2"
+          }
+        },
+        "template--21392479977749__0e119df3-4b63-45ca-ab03-8b39936d63ad-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.custom.banner_3.value.content.value }}",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "46cae992-a634-40ec-99ea-2705a4ffb129",
+        "template--21392479977749__0e119df3-4b63-45ca-ab03-8b39936d63ad-heading-1",
+        "template--21392479977749__0e119df3-4b63-45ca-ab03-8b39936d63ad-text-1"
+      ],
+      "settings": {
+        "image": "{{ product.metafields.custom.banner_3.value.desktop_banner.value }}",
+        "mobile_image": "{{ product.metafields.custom.banner_3.value.mobile_banner.value }}",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "padding_top": 100,
+        "padding_bottom": 115,
+        "padding_top_mb": 0,
+        "padding_bottom_mb": 92,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "00cbf231-0c38-4000-80fa-4730a71f108d": {
+      "type": "PDP-page-Perfect-In-Ear-Fit-section",
+      "settings": {
+        "section_heading": "",
+        "heading_align": "tw-text-center",
+        "sub_text": "",
+        "desktop_background_image": "shopify:\/\/shop_images\/Union_9.png",
+        "mobile_background_image": "shopify:\/\/shop_images\/Group_10000018_1.png",
+        "enable_pagination": true,
+        "enable_autoplay": false,
+        "autoplay_speed": 3,
+        "slides_perpage": 3,
+        "padding-top": 0,
+        "padding-bottom": 50
+      }
+    },
+    "979399b6-0b8e-46b2-95cf-1f1a196b14ad": {
+      "type": "image-with-text",
+      "blocks": {
+        "5201ad8b-2a92-46d4-ac39-55839ae38b44": {
+          "type": "caption",
+          "settings": {
+            "caption": "{{ product.metafields.custom.image_with_text_2.value.caption.value }}",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "template--21392479977749__979399b6-0b8e-46b2-95cf-1f1a196b14ad-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.metafields.custom.image_with_text_2.value.heading.value }}",
+            "heading_size": "h2"
+          }
+        },
+        "template--21392479977749__979399b6-0b8e-46b2-95cf-1f1a196b14ad-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p> {{ product.metafields.custom.image_with_text_2.value.content.value }}<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "5201ad8b-2a92-46d4-ac39-55839ae38b44",
+        "template--21392479977749__979399b6-0b8e-46b2-95cf-1f1a196b14ad-heading-1",
+        "template--21392479977749__979399b6-0b8e-46b2-95cf-1f1a196b14ad-text-1"
+      ],
+      "settings": {
+        "image": "{{ product.metafields.custom.image_with_text_2.value.banner.value }}",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 128,
+        "padding_bottom": 150,
+        "padding_top_mb": 62,
+        "padding_bottom_mb": 70
+      }
+    },
+    "6bba2504-4a58-47ff-896f-b80449fe031d": {
+      "type": "rich-text",
+      "blocks": {
+        "e8c4d938-f487-4a88-bcad-f06b03d347ae": {
+          "type": "caption",
+          "settings": {
+            "caption": "{{ product.metafields.custom.richtext.value.caption.value }}",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "template--21392479977749__6bba2504-4a58-47ff-896f-b80449fe031d-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ product.metafields.custom.richtext.value.heading.value }}",
+            "heading_size": "h2"
+          }
+        },
+        "template--21392479977749__6bba2504-4a58-47ff-896f-b80449fe031d-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p> {{ product.metafields.custom.richtext.value.content.value }}<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "e8c4d938-f487-4a88-bcad-f06b03d347ae",
+        "template--21392479977749__6bba2504-4a58-47ff-896f-b80449fe031d-heading-1",
+        "template--21392479977749__6bba2504-4a58-47ff-896f-b80449fe031d-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 84,
+        "padding_bottom": 52,
+        "padding_top_mb": 0,
+        "padding_bottom_mb": 50
+      }
+    },
+    "92d322a9-c1fa-465d-8e15-af33fed41c6c": {
+      "type": "pdp-only-image",
+      "settings": {
+        "image": "{{ product.metafields.custom.richtext.value.comaprison_image.value }}",
+        "padding_top": 10,
+        "padding_bottom": 100,
+        "padding_top_mb": 50,
+        "padding_bottom_mb": 0
+      }
+    },
+    "a2d83aae-424c-4d58-aa2a-2b2d29991839": {
+      "type": "pdp-collapsible-tab",
+      "settings": {
+        "caption": "{{ product.metafields.custom.pdp_collapsible_tab_caption.value }}",
+        "heading": "{{ product.metafields.custom.pdp_collapsible_tab_heading.value }}",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 92,
+        "padding_bottom": 150,
+        "padding_top_mb": 76,
+        "padding_bottom_mb": 60
+      }
+    },
+    "ecde087b-1465-4c2d-b67e-6016aa34c37d": {
+      "type": "PDP-product-support-section",
+      "blocks": {
+        "399d982f-6a33-4865-8065-3cafa66c9c75": {
+          "type": "download__details",
+          "settings": {
+            "caption": "{{ product.metafields.custom.pdp_download_block.value.download_heading.value }}",
+            "image": "{{ product.metafields.custom.pdp_download_block.value.pdf_image.value }}",
+            "url": "{{ product.metafields.custom.pdp_download_block.value.download_url.value }}",
+            "text": "{{ product.metafields.custom.pdp_download_block.value.sub_text.value }}"
+          }
+        },
+        "05688619-f732-428b-a748-04de0c937cfc": {
+          "type": "download__details",
+          "settings": {
+            "caption": "",
+            "image": "{{ product.metafields.custom.pdp_download_block_2.value.pdf_image_2.value }}",
+            "url": "{{ product.metafields.custom.pdp_download_block_2.value.url_2.value }}",
+            "text": "{{ product.metafields.custom.pdp_download_block_2.value.sub_text_2.value }}"
+          }
+        },
+        "b030ee7b-665f-4919-a754-3ed0a7f52f51": {
+          "type": "download__details-1",
+          "settings": {
+            "caption": "More SUPPORT",
+            "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"31\" height=\"30\" viewbox=\"0 0 31 30\" fill=\"none\">\n  <path d=\"M20.8154 9.09082C20.492 9.09082 20.2295 9.35266 20.2295 9.67653C20.2295 10.0002 20.492 10.2625 20.8154 10.2625C21.1395 10.2625 21.4014 10.0002 21.4014 9.67653C21.4014 9.35266 21.1395 9.09082 20.8154 9.09082Z\" fill=\"#00FF00\"><\/path>\n  <path d=\"M10.1692 19.7373C9.84509 19.7373 9.58325 19.9998 9.58325 20.3232C9.58325 20.6473 9.84509 20.9092 10.1692 20.9092C10.4926 20.9092 10.7551 20.6473 10.7551 20.3232C10.7551 19.9998 10.4926 19.7373 10.1692 19.7373Z\" fill=\"#00FF00\"><\/path>\n  <path d=\"M29.7637 3.60472C29.566 3.55871 29.3581 3.61845 29.2153 3.76265L26.7862 6.211H25.6216L24.3397 4.8828V3.70199L26.734 1.27195C26.8757 1.12822 26.9334 0.921535 26.8864 0.724925C26.8397 0.528544 26.6951 0.370158 26.5037 0.305613C25.9022 0.102824 25.2728 5.55889e-05 24.6326 5.55889e-05C22.7242 5.55889e-05 20.9904 0.889949 19.8758 2.44154C18.8325 3.89403 18.511 5.67404 18.9717 7.37761L14.6557 11.6936L7.46511 4.4866V3.07211C7.46511 2.86635 7.35708 2.67546 7.18061 2.56971L3.03762 0.0835975C2.8069 -0.0548761 2.51187 -0.0184838 2.3219 0.171717L0.664795 1.82859C0.474823 2.0188 0.438431 2.31382 0.576676 2.54454L3.06233 6.68753C3.16808 6.864 3.35874 6.9718 3.5645 6.97203L4.97854 6.97249L12.1698 14.1795L7.87023 18.4791C6.16666 18.0186 4.38573 18.3406 2.93256 19.3845C1.38188 20.4985 0.492676 22.2318 0.492676 24.1402C0.492676 24.7802 0.595444 25.4099 0.798233 26.0111C0.863007 26.2036 1.023 26.349 1.22075 26.3947C1.41873 26.4407 1.62633 26.381 1.76938 26.2368L4.19828 23.7887H5.36924L6.70339 25.1228V26.2938L4.25527 28.7227C4.11107 28.8657 4.05133 29.0733 4.09734 29.2713C4.14312 29.4691 4.28846 29.6291 4.48095 29.6938C5.08222 29.8966 5.71187 29.9994 6.35183 29.9994C8.26025 29.9994 9.99334 29.11 11.1075 27.5593C12.1515 26.1061 12.4735 24.3254 12.013 22.6218L15.4661 19.1687L16.2572 20.0279L15.8941 20.3907C15.6653 20.6196 15.6653 20.9906 15.8941 21.2195C16.123 21.4481 16.4938 21.4481 16.7229 21.2195L17.0516 20.8908L24.4733 28.9525C24.4788 28.9584 24.4846 28.9642 24.4903 28.9699C25.8636 30.3432 28.0885 30.3436 29.4625 28.9697C30.8326 27.5989 30.8326 25.3684 29.4625 23.9977C29.4566 23.9917 29.4504 23.986 29.4442 23.9803L21.3699 16.5727L21.6949 16.2477C21.9238 16.0191 21.9238 15.648 21.6949 15.4192C21.4661 15.1903 21.0953 15.1903 20.8662 15.4192L20.5057 15.7799L19.6448 14.9898L23.1147 11.5199C23.6079 11.6518 24.117 11.7186 24.6326 11.7186C27.8635 11.7186 30.4918 9.09011 30.4918 5.85944C30.4918 5.21925 30.389 4.58983 30.1862 3.98833C30.1215 3.79584 29.9615 3.6505 29.7637 3.60472ZM5.63634 5.97273C5.52648 5.86264 5.37748 5.80656 5.22184 5.80656L3.89661 5.80611L1.81699 2.33397L2.82704 1.32391L6.29323 3.40399V4.72922C6.29323 4.8844 6.3548 5.03317 6.46444 5.14304L13.8271 12.5224L12.9983 13.351L5.63634 5.97273ZM20.5405 17.4022L28.6422 24.8347C29.5472 25.7493 29.5444 27.2302 28.6337 28.1413C27.7209 29.0541 26.2433 29.0569 25.3268 28.1493L17.8808 20.0613L20.5405 17.4022ZM19.6762 16.6091L17.0864 19.1985L16.2954 18.3392L18.8154 15.819L19.6762 16.6091ZM24.6326 10.5467C24.1202 10.5467 23.6162 10.4645 23.1351 10.3025C22.9243 10.2318 22.6913 10.2862 22.5338 10.4435C19.5963 13.381 13.2668 19.7102 10.9361 22.0412C10.7786 22.1986 10.7239 22.4316 10.7951 22.6427C11.2822 24.089 11.0492 25.6316 10.1556 26.8756C9.26458 28.1159 7.87801 28.8275 6.35183 28.8275C6.1804 28.8275 6.00988 28.8181 5.84096 28.8001L7.702 26.9534C7.81278 26.8436 7.87527 26.6939 7.87527 26.5376V24.88C7.87527 24.7246 7.81347 24.5756 7.70361 24.4657L6.02613 22.7882C5.91627 22.6784 5.76726 22.6166 5.61185 22.6166H3.95429C3.79796 22.6166 3.64827 22.6791 3.53818 22.7898L1.69179 24.6509C1.67348 24.482 1.66432 24.3115 1.66432 24.14C1.66432 22.6136 2.37569 21.2273 3.61623 20.3362C4.85997 19.4427 6.40287 19.2094 7.8494 19.6967C8.0602 19.7679 8.29321 19.7132 8.45068 19.5557C8.48295 19.5237 20.0401 7.9663 20.0484 7.95806C20.2058 7.80059 20.2603 7.56781 20.1894 7.35678C19.7021 5.91048 19.9346 4.36827 20.8275 3.12521C21.7192 1.88376 23.106 1.17193 24.6324 1.17193C24.8091 1.17193 24.9847 1.18177 25.1586 1.201L23.3363 3.0506C23.2282 3.16023 23.1678 3.30786 23.1678 3.46167V5.11923C23.1678 5.27121 23.2266 5.41701 23.3321 5.52618L24.951 7.20366C25.0613 7.3181 25.2135 7.38265 25.3726 7.38265H27.0302C27.1863 7.38265 27.336 7.32039 27.4461 7.20938L29.2924 5.34857C29.3108 5.51749 29.3199 5.688 29.3199 5.85944C29.3199 8.44397 27.2172 10.5467 24.6326 10.5467Z\" fill=\"#00FF00\"><\/path>\n  <path d=\"M18.744 10.9197L11.4117 18.2519C11.1831 18.4806 11.1831 18.8516 11.4117 19.0805C11.6406 19.3094 12.0116 19.3094 12.2405 19.0805L19.5727 11.7483C19.8016 11.5196 19.8016 11.1486 19.5727 10.9197C19.3439 10.6908 18.9728 10.6908 18.744 10.9197Z\" fill=\"#00FF00\"><\/path>\n  <path d=\"M26.1484 26.4841C26.3773 26.7123 26.7483 26.7123 26.9772 26.4827C27.2056 26.2536 27.2049 25.8826 26.9758 25.6542L21.6943 20.3896C21.4652 20.1612 21.094 20.1619 20.8658 20.391C20.6371 20.6204 20.6378 20.9911 20.8669 21.2196L26.1484 26.4841Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
+            "text": "Troubleshooting",
+            "url_redirecting": "https:\/\/www.youtube.com"
+          }
+        },
+        "d8380426-d99a-4287-a81b-7e8a9c91fb9a": {
+          "type": "download__details-1",
+          "settings": {
+            "caption": "",
+            "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"30\" height=\"30\" viewbox=\"0 0 30 30\" fill=\"none\">\n  <path d=\"M30 28.6787C29.9998 27.6198 29.3701 26.6677 28.3958 26.2532L20.9222 23.0735V21.2855C21.6123 20.2672 22.0463 19.0621 22.1324 17.7634H23.0303C24.8071 17.7634 26.2529 16.3176 26.2529 14.5407V11.9326C26.2529 10.4149 25.1978 9.13978 23.7831 8.79966C23.719 6.21167 23.1335 4.24487 21.9987 2.79833C20.5418 0.941398 18.1873 0 15.0001 0C11.8129 0 9.45839 0.941398 8.00154 2.79856C6.86651 4.24487 6.28125 6.21167 6.21716 8.79966C4.80221 9.13978 3.74728 10.4149 3.74728 11.9326V14.5407C3.74728 16.3176 5.19314 17.7634 6.96996 17.7634H7.86787C7.95393 19.0621 8.3879 20.2672 9.07798 21.2855V23.0735L1.60447 26.2532C0.630117 26.6677 0.000228884 27.6201 0.000228884 28.6789L0 29.1209C0 29.3541 0.092469 29.5777 0.257494 29.7425C0.42229 29.9073 0.645681 30 0.878913 30H29.1213C29.3545 30 29.5782 29.9073 29.743 29.7425C29.9078 29.5775 30.0002 29.3539 30.0002 29.1209L30 28.6787ZM19.1653 23.6901C19.166 23.7112 19.2152 25.8444 17.9552 27.1566C17.2633 27.8769 16.269 28.2419 15.0001 28.2419C13.7358 28.2419 12.744 27.8794 12.0526 27.1644C10.7774 25.8453 10.8344 23.7087 10.8349 23.6901C10.8353 23.6798 10.8356 23.6695 10.8356 23.6592C10.8356 23.6556 10.8358 23.6519 10.8358 23.648V23.0928C12.0091 23.9369 13.4476 24.4345 15.0001 24.4345C16.5526 24.4345 17.9912 23.9366 19.1644 23.0928V23.6483C19.1644 23.6517 19.1647 23.6553 19.1647 23.659C19.1647 23.6693 19.1649 23.6796 19.1653 23.6901ZM20.3935 11.4314C20.3924 11.449 20.3908 11.4666 20.3908 11.4847V16.416L18.7215 17.529C18.1905 17.8831 17.5723 18.0704 16.9337 18.0704H15.4471C14.9619 18.0704 14.5682 18.4638 14.5682 18.9493C14.5682 19.4347 14.9619 19.8282 15.4471 19.8282H16.9337C17.9204 19.8282 18.876 19.5389 19.6968 18.9914L20.2173 18.6444C19.6137 20.9614 17.5034 22.6769 15.0001 22.6769C12.0276 22.6769 9.60945 20.2585 9.60945 17.2862V11.4847C9.60945 11.4664 9.60785 11.4488 9.6067 11.4309V10.2286C9.60785 10.2107 9.60945 10.1931 9.60945 10.1748C9.60945 8.66279 9.97543 7.66394 10.6973 7.2064C11.8733 6.4607 13.9301 7.14643 14.622 7.47305C14.86 7.58658 15.1381 7.58635 15.3766 7.47374C16.0701 7.14666 18.1267 6.46093 19.3029 7.2064C20.0248 7.66394 20.3908 8.66279 20.3908 10.1748C20.3908 10.1929 20.3924 10.2105 20.3935 10.2281V11.4314ZM24.4951 11.9326V14.5407C24.4951 15.3485 23.838 16.0056 23.0303 16.0056H22.1514V10.4678H23.0303C23.838 10.4678 24.4951 11.1249 24.4951 11.9326ZM15.0001 1.75783C19.6545 1.75783 21.8403 3.88507 22.0191 8.63189C21.7732 7.28788 21.1775 6.31078 20.2381 5.71797C18.4196 4.57012 15.9404 5.35496 15.0001 5.72484C14.0599 5.35496 11.5806 4.57012 9.76211 5.71797C8.82278 6.31078 8.22699 7.28788 7.98117 8.63189C8.15993 3.88507 10.3458 1.75783 15.0001 1.75783ZM7.84888 16.0056H6.96996C6.16223 16.0056 5.50511 15.3485 5.50511 14.5407V11.9326C5.50511 11.1249 6.16223 10.4678 6.96996 10.4678H7.84888V16.0056ZM2.29273 27.8707L9.17869 24.941C9.33296 25.8947 9.71611 27.1925 10.6554 28.2422H1.8741C1.96725 28.0794 2.11237 27.9474 2.29273 27.8707ZM19.3448 28.2422C20.2841 27.1925 20.6673 25.8947 20.8215 24.941L27.7075 27.8707C27.8879 27.9474 28.0327 28.0794 28.1261 28.2422H19.3448Z\" fill=\"#00FF00\"><\/path>\n<\/svg>",
+            "text": "Service & Warranty",
+            "url_redirecting": "http:\/\/www.google.com"
+          }
+        }
+      },
+      "block_order": [
+        "399d982f-6a33-4865-8065-3cafa66c9c75",
+        "05688619-f732-428b-a748-04de0c937cfc",
+        "b030ee7b-665f-4919-a754-3ed0a7f52f51",
+        "d8380426-d99a-4287-a81b-7e8a9c91fb9a"
+      ],
+      "settings": {
+        "caption": "{{ product.metafields.custom.pdp_product_support_capltion.value }}",
+        "heading": "{{ product.metafields.custom.pdp_product_support_heading.value }}",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 80,
+        "padding_bottom": 100,
+        "padding_top_mb": 36,
+        "padding_bottom_mb": 60
+      }
+    },
+    "17024434664207c3bb": {
+      "type": "apps",
+      "blocks": {
+        "57f24ce9-27b9-4957-bd86-c2fd7ba988ed": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "57f24ce9-27b9-4957-bd86-c2fd7ba988ed"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "68b3bea0-a4d0-4e91-9773-93b608a9e87a",
+    "related-products",
+    "fcd3e799-03ea-4a52-8de0-272f7f580361",
+    "7cd6c00f-b400-46c6-9e6a-04de79e86a7b",
+    "f692c6f2-4606-4316-8e87-9a0fe759b7e5",
+    "a7062727-dfd4-40a9-a52a-5808b7833db4",
+    "c7e9f38a-cdfd-4310-a95f-989b0c9af85d",
+    "7a7ea6f3-b660-4e7c-a5d7-e0ae9b3e9961",
+    "0e119df3-4b63-45ca-ab03-8b39936d63ad",
+    "00cbf231-0c38-4000-80fa-4730a71f108d",
+    "979399b6-0b8e-46b2-95cf-1f1a196b14ad",
+    "6bba2504-4a58-47ff-896f-b80449fe031d",
+    "92d322a9-c1fa-465d-8e15-af33fed41c6c",
+    "a2d83aae-424c-4d58-aa2a-2b2d29991839",
+    "ecde087b-1465-4c2d-b67e-6016aa34c37d",
+    "17024434664207c3bb"
   ]
 }
