@@ -181,6 +181,18 @@
         "desktop_padding_bottom": 0
       }
     },
+    "9544fac6-1160-42e8-8a64-47edc393fdd3": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Group_1107.png",
+        "desktop_image": "shopify:\/\/shop_images\/Frame_2.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
     "0a7320ae-4afd-4e61-b49e-6c6956887ed7": {
       "type": "duopods-video",
       "settings": {
@@ -295,6 +307,7 @@
     "d5d05cf9-a783-4f0a-8101-6e5fcda8bf4e",
     "5ddf5e36-ef58-4d1c-9433-fbef175aae73",
     "c7f119ed-40cd-41d2-86c8-dcd366c30d82",
+    "9544fac6-1160-42e8-8a64-47edc393fdd3",
     "0a7320ae-4afd-4e61-b49e-6c6956887ed7",
     "e1f42c77-013d-47b6-b2d2-16c0223e57db"
   ]
