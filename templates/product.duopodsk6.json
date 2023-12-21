@@ -197,16 +197,6 @@
         "desktop_padding_bottom": 0
       }
     },
-    "f483e7b0-d2f9-4572-b2d3-c6da9a0561f6": {
-      "type": "PDP-image-banner",
-      "settings": {
-        "alt_text": "",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "desktop_padding_top": 0,
-        "desktop_padding_bottom": 0
-      }
-    },
     "9ebf6e5e-a6e2-4192-9978-c8be0e915f46": {
       "type": "PDP-image-banner",
       "settings": {
@@ -230,7 +220,6 @@
     "e1bb29a2-86b7-485f-92cc-3564160943f2",
     "92594bca-24c9-49bf-a6f0-cdd1e755243c",
     "ab16a9b9-04c2-4e5b-bedc-06e9c053d9f9",
-    "f483e7b0-d2f9-4572-b2d3-c6da9a0561f6",
     "9ebf6e5e-a6e2-4192-9978-c8be0e915f46"
   ]
 }
