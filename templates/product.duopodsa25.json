@@ -307,9 +307,9 @@
         "template--21467861582101__628f2f02-adfb-428e-8816-8e6f10a9c492-collapsible_row-3": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Bluetooth Connectivity",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Connectivity<br\/>Bluetooth 5.0<br\/><br\/>Supported Bluetooth profiles<br\/> - <br\/><br\/>Operating range<br\/>Up to 10 metres \/ 30 Feet<\/p>",
             "page": ""
           }
         },
