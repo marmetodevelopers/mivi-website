@@ -255,10 +255,11 @@
         "template--21467861582101__421c528d-7c9b-46ca-88ba-26918b4f2f0e-column-3": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Group_867.png",
             "background_html": "",
-            "title": "Column",
+            "title": "",
             "html": "",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "",
             "link_label": "",
             "link": ""
           }
