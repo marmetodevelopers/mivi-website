@@ -298,9 +298,9 @@
         "template--21467861582101__a7ad20a7-bfbe-4c8b-876a-0a395078be4d-collapsible_row-2": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Can I connect DuoPods to my Laptop ?",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Yes. DuoPods A25 can be connected to all laptops which have Bluetooth connectivity.<\/p>",
             "page": ""
           }
         },
