@@ -235,30 +235,6 @@
         "desktop_padding_bottom": 0
       }
     },
-    "bdb40e57-8536-4be7-a883-a1c1d0ca413a": {
-      "type": "PDP-image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Frame_11.png",
-        "desktop_image": "shopify:\/\/shop_images\/Frame_11.png",
-        "alt_text": "",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "desktop_padding_top": 0,
-        "desktop_padding_bottom": 0
-      }
-    },
-    "3f86a378-dae6-4c66-ab6e-1ed019b7ced2": {
-      "type": "PDP-image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Frame_30.jpg",
-        "desktop_image": "shopify:\/\/shop_images\/fin.jpg",
-        "alt_text": "",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "desktop_padding_top": 0,
-        "desktop_padding_bottom": 0
-      }
-    },
     "a3b7e49b-dbfc-4cf9-a71d-ca6825e4fb03": {
       "type": "PDP-image-banner",
       "settings": {
@@ -276,6 +252,30 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_32.jpg",
         "desktop_image": "shopify:\/\/shop_images\/Frame_8.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "bdb40e57-8536-4be7-a883-a1c1d0ca413a": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Frame_11.png",
+        "desktop_image": "shopify:\/\/shop_images\/Frame_11.png",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "3f86a378-dae6-4c66-ab6e-1ed019b7ced2": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Frame_30.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/fin.jpg",
         "alt_text": "",
         "padding_top": 0,
         "padding_bottom": 0,
@@ -396,10 +396,10 @@
     "19015ed2-e1e2-42cd-b21e-c79f75afd752",
     "0a7320ae-4afd-4e61-b49e-6c6956887ed7",
     "a9573078-363f-4807-b403-93f62a8f8e60",
-    "bdb40e57-8536-4be7-a883-a1c1d0ca413a",
-    "3f86a378-dae6-4c66-ab6e-1ed019b7ced2",
     "a3b7e49b-dbfc-4cf9-a71d-ca6825e4fb03",
     "952ab316-f455-4087-8328-4587b4c2bd31",
+    "bdb40e57-8536-4be7-a883-a1c1d0ca413a",
+    "3f86a378-dae6-4c66-ab6e-1ed019b7ced2",
     "e1f42c77-013d-47b6-b2d2-16c0223e57db"
   ]
 }
