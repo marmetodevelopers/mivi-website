@@ -322,6 +322,15 @@
             "page": ""
           }
         },
+        "6c76b920-ea45-40cc-9bb5-9584ee461fdd": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I get the best in ear fit with DuoPods?",
+            "icon": "check_mark",
+            "row_content": "<p>Insert the earbud into your ear and rotate to fit comfortably. Ensure the microphone is pointing towards your mouth. <br\/>For optimum audio experience and fit, we recommend that you try each different ear-tip sizes. The fit should feel tight and secure in your ear. <br\/>The medium is pre-mounted on the earbuds. Ensure the ear-tip is firmly attached. <\/p>",
+            "page": ""
+          }
+        },
         "920e2776-1c56-404c-902a-cf4343fb9944": {
           "type": "download__details",
           "settings": {
@@ -362,6 +371,7 @@
         "template--21467861582101__a7ad20a7-bfbe-4c8b-876a-0a395078be4d-collapsible_row-2",
         "template--21467861582101__a7ad20a7-bfbe-4c8b-876a-0a395078be4d-collapsible_row-3",
         "template--21467861582101__a7ad20a7-bfbe-4c8b-876a-0a395078be4d-collapsible_row-4",
+        "6c76b920-ea45-40cc-9bb5-9584ee461fdd",
         "920e2776-1c56-404c-902a-cf4343fb9944",
         "ccc1a524-aa10-4ff6-86cb-f923ab634de1",
         "e1174b3e-8e00-47a6-8444-9f74f1dffb22",
