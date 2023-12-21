@@ -1597,9 +1597,9 @@ p.caption-with-letter-spacing {
   letter-spacing: 3.2px;
   text-transform: uppercase;
 }
-/* details.pdp-details-content {
+details.pdp-details-content {
   border-bottom: 1px solid rgba(75, 73, 85, 0.1);
-} */
+}
 .collapsible-content-wrapper-narrow .pdp-collapsible-content-accordion {
   border-top: none;
 }
@@ -2548,13 +2548,4 @@ tfoot tr {
   font-size: calc(14px + (16 - 14) * (100vw - 375px) / (1440 - 375));
  
 }
-  /* pdp collapsible tab  */
-/* .pdp__collapsible-content-grid__item{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  max-height: 44rem;
-  width: 100%;
-  justify-content: center;
-
-} */
+ 
