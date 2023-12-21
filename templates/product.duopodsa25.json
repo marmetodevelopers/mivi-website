@@ -289,9 +289,9 @@
         "template--21467861582101__628f2f02-adfb-428e-8816-8e6f10a9c492-collapsible_row-1": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Audio Specifications",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Driver Frequency Response<br\/>20 Hz to 20 KHz<br\/><br\/>Driver Type<br\/>Dynamic<br\/><br\/>Drivers Size<br\/>13mm<br\/><br\/>Passive Noise Cancellation<br\/> - <br\/><br\/>Audio codecs supported<br\/> - <br\/><br\/>Microphone Type<br\/> - <br\/><br\/>Microphone Frequency Response<br\/> - <\/p>",
             "page": ""
           }
         },
