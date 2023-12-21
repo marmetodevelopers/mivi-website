@@ -180,6 +180,18 @@
         "desktop_padding_top": 0,
         "desktop_padding_bottom": 0
       }
+    },
+    "4290bd23-f182-4636-ad2a-c445772e5cde": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Frame_183.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Frame_170.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -189,6 +201,7 @@
     "21f9ae1d-b2ac-4c24-b512-3f6e6ca56bf7",
     "845f2ffe-fc32-4965-8758-95e4da1f7803",
     "1d1eaa8e-f793-4a0f-9c15-ccd824b81211",
-    "ca815ad6-0d25-4c09-aca3-6ebad8e377eb"
+    "ca815ad6-0d25-4c09-aca3-6ebad8e377eb",
+    "4290bd23-f182-4636-ad2a-c445772e5cde"
   ]
 }
