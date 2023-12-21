@@ -100,9 +100,66 @@
         "padding_top_mb": 0,
         "padding_bottom_mb": 54
       }
+    },
+    "4f833eda-04f2-413a-9dcf-2e1441c36dc6": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--21467862827285__4f833eda-04f2-413a-9dcf-2e1441c36dc6-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_865.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21467862827285__4f833eda-04f2-413a-9dcf-2e1441c36dc6-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_866.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21467862827285__4f833eda-04f2-413a-9dcf-2e1441c36dc6-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_867.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21467862827285__4f833eda-04f2-413a-9dcf-2e1441c36dc6-column-1",
+        "template--21467862827285__4f833eda-04f2-413a-9dcf-2e1441c36dc6-column-2",
+        "template--21467862827285__4f833eda-04f2-413a-9dcf-2e1441c36dc6-column-3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "4f833eda-04f2-413a-9dcf-2e1441c36dc6"
   ]
 }
