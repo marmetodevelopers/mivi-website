@@ -289,9 +289,9 @@
         "template--21467861582101__a7ad20a7-bfbe-4c8b-876a-0a395078be4d-collapsible_row-1": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Does DuoPods support my Phone model ?",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Yes DuoPods A25 can connect to all the smartphone(Android and iOS) and devices which have Bluetooth connectivity.<\/p>",
             "page": ""
           }
         },
