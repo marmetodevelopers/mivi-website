@@ -283,10 +283,10 @@
         "desktop_padding_bottom": 0
       }
     },
-    "e1f42c77-013d-47b6-b2d2-16c0223e57db": {
-      "type": "PDP-product-support-section",
+    "a7ad20a7-bfbe-4c8b-876a-0a395078be4d": {
+      "type": "PDP--product-support",
       "blocks": {
-        "template--21467861582101__e1f42c77-013d-47b6-b2d2-16c0223e57db-collapsible_row-1": {
+        "template--21467861582101__a7ad20a7-bfbe-4c8b-876a-0a395078be4d-collapsible_row-1": {
           "type": "collapsible_row",
           "settings": {
             "heading": "Collapsible row",
@@ -295,7 +295,7 @@
             "page": ""
           }
         },
-        "template--21467861582101__e1f42c77-013d-47b6-b2d2-16c0223e57db-collapsible_row-2": {
+        "template--21467861582101__a7ad20a7-bfbe-4c8b-876a-0a395078be4d-collapsible_row-2": {
           "type": "collapsible_row",
           "settings": {
             "heading": "Collapsible row",
@@ -304,7 +304,7 @@
             "page": ""
           }
         },
-        "template--21467861582101__e1f42c77-013d-47b6-b2d2-16c0223e57db-collapsible_row-3": {
+        "template--21467861582101__a7ad20a7-bfbe-4c8b-876a-0a395078be4d-collapsible_row-3": {
           "type": "collapsible_row",
           "settings": {
             "heading": "Collapsible row",
@@ -313,7 +313,7 @@
             "page": ""
           }
         },
-        "template--21467861582101__e1f42c77-013d-47b6-b2d2-16c0223e57db-collapsible_row-4": {
+        "template--21467861582101__a7ad20a7-bfbe-4c8b-876a-0a395078be4d-collapsible_row-4": {
           "type": "collapsible_row",
           "settings": {
             "heading": "Collapsible row",
@@ -322,16 +322,23 @@
             "page": ""
           }
         },
-        "4baa4d47-08b5-4136-9887-cf059d7f7488": {
+        "920e2776-1c56-404c-902a-cf4343fb9944": {
           "type": "download__details",
           "settings": {
             "caption": "Manuals\/guides",
-            "image": "shopify:\/\/shop_images\/Group_917.png",
-            "url": "\/",
+            "url": "",
             "text": "Owner's guide"
           }
         },
-        "1092dc30-ed49-49d2-9291-916d2b4dd56f": {
+        "ccc1a524-aa10-4ff6-86cb-f923ab634de1": {
+          "type": "download__details",
+          "settings": {
+            "caption": "Manuals\/guides",
+            "url": "",
+            "text": "Owner's guide"
+          }
+        },
+        "e1174b3e-8e00-47a6-8444-9f74f1dffb22": {
           "type": "download__details-1",
           "settings": {
             "caption": "More SUPPORT",
@@ -340,15 +347,7 @@
             "url_redirecting": ""
           }
         },
-        "466a6c6c-6a51-42a7-9049-b7eaa45f31dc": {
-          "type": "download__details",
-          "settings": {
-            "caption": "Manuals\/guides",
-            "url": "",
-            "text": "Owner's guide"
-          }
-        },
-        "bc77c182-2d8c-4c54-bcde-0d7682ebf04b": {
+        "ef5eb657-4a5d-48ed-8882-de38bdfca668": {
           "type": "download__details-1",
           "settings": {
             "caption": "More SUPPORT",
@@ -359,14 +358,14 @@
         }
       },
       "block_order": [
-        "template--21467861582101__e1f42c77-013d-47b6-b2d2-16c0223e57db-collapsible_row-1",
-        "template--21467861582101__e1f42c77-013d-47b6-b2d2-16c0223e57db-collapsible_row-2",
-        "template--21467861582101__e1f42c77-013d-47b6-b2d2-16c0223e57db-collapsible_row-3",
-        "template--21467861582101__e1f42c77-013d-47b6-b2d2-16c0223e57db-collapsible_row-4",
-        "4baa4d47-08b5-4136-9887-cf059d7f7488",
-        "1092dc30-ed49-49d2-9291-916d2b4dd56f",
-        "466a6c6c-6a51-42a7-9049-b7eaa45f31dc",
-        "bc77c182-2d8c-4c54-bcde-0d7682ebf04b"
+        "template--21467861582101__a7ad20a7-bfbe-4c8b-876a-0a395078be4d-collapsible_row-1",
+        "template--21467861582101__a7ad20a7-bfbe-4c8b-876a-0a395078be4d-collapsible_row-2",
+        "template--21467861582101__a7ad20a7-bfbe-4c8b-876a-0a395078be4d-collapsible_row-3",
+        "template--21467861582101__a7ad20a7-bfbe-4c8b-876a-0a395078be4d-collapsible_row-4",
+        "920e2776-1c56-404c-902a-cf4343fb9944",
+        "ccc1a524-aa10-4ff6-86cb-f923ab634de1",
+        "e1174b3e-8e00-47a6-8444-9f74f1dffb22",
+        "ef5eb657-4a5d-48ed-8882-de38bdfca668"
       ],
       "settings": {
         "caption": "",
@@ -400,6 +399,6 @@
     "a3b7e49b-dbfc-4cf9-a71d-ca6825e4fb03",
     "952ab316-f455-4087-8328-4587b4c2bd31",
     "bdb40e57-8536-4be7-a883-a1c1d0ca413a",
-    "e1f42c77-013d-47b6-b2d2-16c0223e57db"
+    "a7ad20a7-bfbe-4c8b-876a-0a395078be4d"
   ]
 }
