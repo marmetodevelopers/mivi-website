@@ -367,6 +367,87 @@
         "padding_bottom_mb": 36
       }
     },
+    "5fffb52e-5b03-4de6-b112-fd381c69e94b": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--21467861582101__5fffb52e-5b03-4de6-b112-fd381c69e94b-collapsible_row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Audio Specifications",
+            "icon": "check_mark",
+            "row_content": "<p>Driver Frequency Response<br\/>20 Hz to 20 KHz<br\/><br\/>Driver Type<br\/>Dynamic<br\/><br\/>Drivers Size<br\/>13mm<br\/><br\/>Passive Noise Cancellation<br\/> - <br\/><br\/>Audio codecs supported<br\/> - <br\/><br\/>Microphone Type<br\/> - <br\/><br\/>Microphone Frequency Response<br\/> - <\/p>",
+            "page": ""
+          }
+        },
+        "template--21467861582101__5fffb52e-5b03-4de6-b112-fd381c69e94b-collapsible_row-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Battery",
+            "icon": "check_mark",
+            "row_content": "<p>Music and talk-time<br\/>Up to 7.5 hours with earbuds and up to 40 hours including charging capsule.<br\/><br\/>Charging time<br\/> 1 Hour<\/p>",
+            "page": ""
+          }
+        },
+        "template--21467861582101__5fffb52e-5b03-4de6-b112-fd381c69e94b-collapsible_row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Included in the Box",
+            "icon": "check_mark",
+            "row_content": "<p> - Earbuds<br\/> - Charging Capsule <br\/> - USB cable <br\/> - 3 Pairs of silicon ear tips <br\/> - Warranty registration <br\/> - User Guide <\/p>",
+            "page": ""
+          }
+        },
+        "template--21467861582101__5fffb52e-5b03-4de6-b112-fd381c69e94b-collapsible_row-4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Bluetooth Connectivity",
+            "icon": "check_mark",
+            "row_content": "<p>Connectivity<br\/>Bluetooth 5.0<br\/><br\/>Supported Bluetooth profiles<br\/> - <br\/><br\/>Operating range<br\/>Up to 10 metres \/ 30 Feet<\/p>",
+            "page": ""
+          }
+        },
+        "52f5ab3c-07c1-4a7d-9499-f2b452eab9d6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Physical Unit",
+            "icon": "check_mark",
+            "row_content": "<p>Packaging dimensions<br\/>107 x 107 x 41 mm (LxWxH)<br\/><br\/>Charging capsule dimensions<br\/> - <br\/><br\/>Earbud dimensions<br\/> - <br\/><br\/>Weight<br\/> 35 g charging Capsule, 3.5 g right earbud, 3.5 g left earbud <br\/><br\/>Operating temperature<br\/> -5°C to 45°C (charging from 0° to 45°) <\/p>",
+            "page": ""
+          }
+        },
+        "f5b148d9-2b86-4469-b83f-5b4d62899dba": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Warranty",
+            "icon": "check_mark",
+            "row_content": "<p> - 1 Year best in the industry warranty on manufacturing defects.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21467861582101__5fffb52e-5b03-4de6-b112-fd381c69e94b-collapsible_row-1",
+        "template--21467861582101__5fffb52e-5b03-4de6-b112-fd381c69e94b-collapsible_row-2",
+        "template--21467861582101__5fffb52e-5b03-4de6-b112-fd381c69e94b-collapsible_row-3",
+        "template--21467861582101__5fffb52e-5b03-4de6-b112-fd381c69e94b-collapsible_row-4",
+        "52f5ab3c-07c1-4a7d-9499-f2b452eab9d6",
+        "f5b148d9-2b86-4469-b83f-5b4d62899dba"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Collapsible content",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "a7ad20a7-bfbe-4c8b-876a-0a395078be4d": {
       "type": "PDP--product-support",
       "blocks": {
@@ -479,87 +560,6 @@
         "padding_top_mb": 36,
         "padding_bottom_mb": 36
       }
-    },
-    "5fffb52e-5b03-4de6-b112-fd381c69e94b": {
-      "type": "collapsible-content",
-      "blocks": {
-        "template--21467861582101__5fffb52e-5b03-4de6-b112-fd381c69e94b-collapsible_row-1": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Audio Specifications",
-            "icon": "check_mark",
-            "row_content": "<p>Driver Frequency Response<br\/>20 Hz to 20 KHz<br\/><br\/>Driver Type<br\/>Dynamic<br\/><br\/>Drivers Size<br\/>13mm<br\/><br\/>Passive Noise Cancellation<br\/> - <br\/><br\/>Audio codecs supported<br\/> - <br\/><br\/>Microphone Type<br\/> - <br\/><br\/>Microphone Frequency Response<br\/> - <\/p>",
-            "page": ""
-          }
-        },
-        "template--21467861582101__5fffb52e-5b03-4de6-b112-fd381c69e94b-collapsible_row-2": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Battery",
-            "icon": "check_mark",
-            "row_content": "<p>Music and talk-time<br\/>Up to 7.5 hours with earbuds and up to 40 hours including charging capsule.<br\/><br\/>Charging time<br\/> 1 Hour<\/p>",
-            "page": ""
-          }
-        },
-        "template--21467861582101__5fffb52e-5b03-4de6-b112-fd381c69e94b-collapsible_row-3": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Included in the Box",
-            "icon": "check_mark",
-            "row_content": "<p> - Earbuds<br\/> - Charging Capsule <br\/> - USB cable <br\/> - 3 Pairs of silicon ear tips <br\/> - Warranty registration <br\/> - User Guide <\/p>",
-            "page": ""
-          }
-        },
-        "template--21467861582101__5fffb52e-5b03-4de6-b112-fd381c69e94b-collapsible_row-4": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Bluetooth Connectivity",
-            "icon": "check_mark",
-            "row_content": "<p>Connectivity<br\/>Bluetooth 5.0<br\/><br\/>Supported Bluetooth profiles<br\/> - <br\/><br\/>Operating range<br\/>Up to 10 metres \/ 30 Feet<\/p>",
-            "page": ""
-          }
-        },
-        "52f5ab3c-07c1-4a7d-9499-f2b452eab9d6": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Physical Unit",
-            "icon": "check_mark",
-            "row_content": "<p>Packaging dimensions<br\/>107 x 107 x 41 mm (LxWxH)<br\/><br\/>Charging capsule dimensions<br\/> - <br\/><br\/>Earbud dimensions<br\/> - <br\/><br\/>Weight<br\/> 35 g charging Capsule, 3.5 g right earbud, 3.5 g left earbud <br\/><br\/>Operating temperature<br\/> -5°C to 45°C (charging from 0° to 45°) <\/p>",
-            "page": ""
-          }
-        },
-        "f5b148d9-2b86-4469-b83f-5b4d62899dba": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Warranty",
-            "icon": "check_mark",
-            "row_content": "<p> - 1 Year best in the industry warranty on manufacturing defects.<\/p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--21467861582101__5fffb52e-5b03-4de6-b112-fd381c69e94b-collapsible_row-1",
-        "template--21467861582101__5fffb52e-5b03-4de6-b112-fd381c69e94b-collapsible_row-2",
-        "template--21467861582101__5fffb52e-5b03-4de6-b112-fd381c69e94b-collapsible_row-3",
-        "template--21467861582101__5fffb52e-5b03-4de6-b112-fd381c69e94b-collapsible_row-4",
-        "52f5ab3c-07c1-4a7d-9499-f2b452eab9d6",
-        "f5b148d9-2b86-4469-b83f-5b4d62899dba"
-      ],
-      "settings": {
-        "caption": "",
-        "heading": "Collapsible content",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "none",
-        "color_scheme": "",
-        "container_color_scheme": "",
-        "open_first_collapsible_row": false,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -577,7 +577,7 @@
     "952ab316-f455-4087-8328-4587b4c2bd31",
     "bdb40e57-8536-4be7-a883-a1c1d0ca413a",
     "628f2f02-adfb-428e-8816-8e6f10a9c492",
-    "a7ad20a7-bfbe-4c8b-876a-0a395078be4d",
-    "5fffb52e-5b03-4de6-b112-fd381c69e94b"
+    "5fffb52e-5b03-4de6-b112-fd381c69e94b",
+    "a7ad20a7-bfbe-4c8b-876a-0a395078be4d"
   ]
 }
