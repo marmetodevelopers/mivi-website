@@ -1597,9 +1597,9 @@ p.caption-with-letter-spacing {
   letter-spacing: 3.2px;
   text-transform: uppercase;
 }
-details.pdp-details-content {
+/* details.pdp-details-content {
   border-bottom: 1px solid rgba(75, 73, 85, 0.1);
-}
+} */
 .collapsible-content-wrapper-narrow .pdp-collapsible-content-accordion {
   border-top: none;
 }
