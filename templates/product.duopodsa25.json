@@ -223,6 +223,18 @@
         "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a7c7dbc95d2245089f937b860684ec5c.mp4"
       }
     },
+    "a9573078-363f-4807-b403-93f62a8f8e60": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Group_1131.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Frame_6.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
     "e1f42c77-013d-47b6-b2d2-16c0223e57db": {
       "type": "PDP-product-support-section",
       "blocks": {
@@ -335,6 +347,7 @@
     "daeb5d57-5d78-420d-8d18-b5831e075d16",
     "19015ed2-e1e2-42cd-b21e-c79f75afd752",
     "0a7320ae-4afd-4e61-b49e-6c6956887ed7",
+    "a9573078-363f-4807-b403-93f62a8f8e60",
     "e1f42c77-013d-47b6-b2d2-16c0223e57db"
   ]
 }
