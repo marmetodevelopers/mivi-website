@@ -242,7 +242,7 @@
         "desktop_image": "shopify:\/\/shop_images\/fin.jpg",
         "alt_text": "",
         "padding_top": 0,
-        "padding_bottom": 0,
+        "padding_bottom": 30,
         "desktop_padding_top": 0,
         "desktop_padding_bottom": 36
       }
