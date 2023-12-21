@@ -220,6 +220,8 @@
     "37417d85-33a8-4900-a0d5-37b521a1630f": {
       "type": "PDP-image-banner",
       "settings": {
+        "image": "shopify:\/\/shop_images\/Frame_130.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Frame_116.jpg",
         "alt_text": "",
         "padding_top": 0,
         "padding_bottom": 0,
