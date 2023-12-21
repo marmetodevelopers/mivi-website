@@ -117,8 +117,9 @@
         "template--21467862073621__2aca8977-276f-430b-8670-0628af59df22-column-2": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/Group_866_2.png",
+            "title": "",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -126,8 +127,9 @@
         "template--21467862073621__2aca8977-276f-430b-8670-0628af59df22-column-3": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify:\/\/shop_images\/Group_867_3.png",
+            "title": "",
+            "text": "",
             "link_label": "",
             "link": ""
           }
