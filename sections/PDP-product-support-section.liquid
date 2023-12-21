@@ -70,13 +70,12 @@
             </div>
           {% endif %}
           <div class="grid__item">
-            {%- if product.metafields.custom.pdp_product_support_qns != blank or product.metafields.custom.pdp_product_support_ans != blank -%}
+       
               <div
                 class="accordion pdp-collapsible-content-accordion {% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}"
                 {{ block.shopify_attributes }}
               >
-                {% for questions in product.metafields.custom.pdp_product_support_qns.value %}  
-                  <details
+                   <details
                     id="Details-{{ block.id }}-{{ section.id }}" class="pdp-product-support-details"
                     {% if section.settings.open_first_collapsible_row and forloop.first %}
                       open
@@ -85,8 +84,8 @@
                     <summary id="Summary-{{ block.id }}-{{ section.id }}">
                       <span class="hidden">{% render 'icon-accordion', icon: block.settings.icon %}</span>
                       <h3 class="accordion__title inline-richtext h4 pdp-product-support-title font-bold">
-                        <span class="question pdp-metafield-qns">{{ questions }}</span>
-                      </h3>
+                        {{ block.settings.heading | default: block.settings.page.title }}
+                       </h3>
                       {% render 'icon-caret' %}
                     </summary>
                     <div class="metafield_answer">{{ product.metafields.custom.pdp_product_support_ans.value[forloop.index0] }}</div>  
@@ -100,10 +99,8 @@
                       {{ block.settings.page.content }}
                     </div>
                   </details>
-                {% endfor %} 
-              </div>     
-            {% endif %}  
-          </div>  
+               </div>     
+           </div>  
         </div>
         <div class="pdp-product-support-download-container"> 
           <div class="pdp-product-support-sub-container">  

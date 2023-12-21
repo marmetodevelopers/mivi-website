@@ -344,6 +344,18 @@
         "padding_top_mb": 0,
         "padding_bottom_mb": 60
       }
+    },
+    "2dfe4808-3285-44e7-a7e6-b687899e5963": {
+      "type": "section-banner-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/ytb-india-pc.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Group_119.png",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -354,6 +366,7 @@
     "94a0a182-a3aa-4bc1-964f-23cfd135c254",
     "af3bf248-59fd-40c6-b0ed-28193696e6ec",
     "d9c0f073-8abf-43ad-94fc-a5e6d6061436",
-    "cfe6150d-9b1a-4c6e-beba-cf2ac11bcbbf"
+    "cfe6150d-9b1a-4c6e-beba-cf2ac11bcbbf",
+    "2dfe4808-3285-44e7-a7e6-b687899e5963"
   ]
 }
