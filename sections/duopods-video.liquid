@@ -73,7 +73,7 @@
     </svg>
 
     <video class="img-24" controls>
-      <source src="https://cdn.shopify.com/videos/c/o/v/a7c7dbc95d2245089f937b860684ec5c.mp4" type="video/mp4">
+      <source src="{{ section.settings.video }}" type="video/mp4">
       Your browser does not support HTML video.
     </video>
   </div>
@@ -178,7 +178,14 @@
 {% schema %}
 {
   "name": "duopods video",
-  "settings": [],
+  "settings": [
+    {
+  "type": "video",
+  "id": "video",
+  "label": "A Shopify-hosted video"
+}
+
+  ],
   "presets": [
     {
       "name": "duopods video"
