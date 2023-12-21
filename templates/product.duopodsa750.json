@@ -100,9 +100,124 @@
         "padding_top_mb": 0,
         "padding_bottom_mb": 54
       }
+    },
+    "f0f25537-5a67-4610-a8fd-29cacac630be": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Multi_Connectivity_mobile.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Multi_Connectivity_desktop.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "b4f266e1-7dc5-4d8d-a85f-1c6990ce54c4": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/A_Symphony_of_Comfort_and_Class_mobile.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/A_Symphony_of_Comfort_and_Class_desktop.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "b8c7275f-75fd-4018-9be6-3fa0bb6f38cc": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Seamless_Connectivity._Effortless_Multitasking_mobile.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Seamless_Connectivity._Effortless_Multitasking_desktop.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "150072ed-fc56-44bd-b5d7-fda4f3630303": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Stay_Connected_All-Day_Long_mobile.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Stay_Connected_All-Day_Long_dekstop_2.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "d365869c-f08a-4017-b16e-29ac0d59befe": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Hear_Every_Note._Feel_Every_Beat._mobile.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Hear_Every_Note._Feel_Every_Beat_desktop.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "9ed9c14e-af6a-4df0-a4f4-33319273fc2e": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Turning_Conversations_as_Clear_as_In-Person_mobile.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Turning_Conversations_as_Clear_as_In-Person_desktop.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "5a607480-aabf-4bdf-b2eb-944744b0bde2": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Plug_in_and_Forget_Without_Getting_Disconnected_mobile.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Plug_in_and_Forget_Without_Getting_Disconnected_desktop.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "8a561307-3387-4beb-9dcf-6342b9357d5e": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Crafted_with_Love_for_Indians_in_India_mobile.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Crafted_with_Love_for_Indians_in_India_desktop.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "c265c8bf-019d-468e-9d3f-7b0293ec90e3": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "f0f25537-5a67-4610-a8fd-29cacac630be",
+    "b4f266e1-7dc5-4d8d-a85f-1c6990ce54c4",
+    "b8c7275f-75fd-4018-9be6-3fa0bb6f38cc",
+    "150072ed-fc56-44bd-b5d7-fda4f3630303",
+    "d365869c-f08a-4017-b16e-29ac0d59befe",
+    "9ed9c14e-af6a-4df0-a4f4-33319273fc2e",
+    "5a607480-aabf-4bdf-b2eb-944744b0bde2",
+    "8a561307-3387-4beb-9dcf-6342b9357d5e",
+    "c265c8bf-019d-468e-9d3f-7b0293ec90e3"
   ]
 }
