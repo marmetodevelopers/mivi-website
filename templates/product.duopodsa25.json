@@ -271,7 +271,7 @@
         "template--21467861582101__421c528d-7c9b-46ca-88ba-26918b4f2f0e-column-3"
       ],
       "settings": {
-        "title": "Multicolumn",
+        "title": "",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -281,8 +281,8 @@
         "button_label": "",
         "button_link": "",
         "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36,
         "padding_top_mb": 36,
