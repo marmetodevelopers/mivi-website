@@ -40,14 +40,14 @@
           "settings": {
             "class": "product_featured_tags",
             "product_tag_1": "new arrive",
-            "product_certification_icon_1": "shopify:\/\/shop_images\/Group_76.png",
+            "product_certification_icon_1": "shopify:\/\/shop_images\/Group_6b734b03-12a0-4da0-bdc5-6869757e55b6.png",
             "product_certification_text_1": "Free Shipping",
             "product_tag_2": "free shipping",
-            "product_certification_icon_2": "shopify:\/\/shop_images\/Group_77.png",
+            "product_certification_icon_2": "shopify:\/\/shop_images\/30_c8f8f738-396e-4fa4-b6cd-60d303bb033b.png",
             "product_certification_text_2": "1 year Warranty",
             "product_tag_3": "Best seller",
-            "product_certification_icon_3": "shopify:\/\/shop_images\/Group_77.png",
-            "product_certification_text_3": "Ships Today",
+            "product_certification_icon_3": "shopify:\/\/shop_images\/Group_974.png",
+            "product_certification_text_3": "Made in India",
             "product_tag_4": "",
             "product_certification_text_4": "",
             "product_tag_5": "",
@@ -98,11 +98,94 @@
         "padding_top": 60,
         "padding_bottom": 68,
         "padding_top_mb": 0,
-        "padding_bottom_mb": 54
+        "padding_bottom_mb": 0
+      }
+    },
+    "78d2bec2-bc6c-49b2-b4af-f6f872212043": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--21470395269397__78d2bec2-bc6c-49b2-b4af-f6f872212043-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_865_1.png",
+            "title": "",
+            "text": "<p> <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21470395269397__78d2bec2-bc6c-49b2-b4af-f6f872212043-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_866.jpg",
+            "title": "",
+            "text": "<p> <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21470395269397__78d2bec2-bc6c-49b2-b4af-f6f872212043-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_867_2.png",
+            "title": "",
+            "text": "<p> <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21470395269397__78d2bec2-bc6c-49b2-b4af-f6f872212043-column-1",
+        "template--21470395269397__78d2bec2-bc6c-49b2-b4af-f6f872212043-column-2",
+        "template--21470395269397__78d2bec2-bc6c-49b2-b4af-f6f872212043-column-3"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 40,
+        "padding_bottom": 100
+      }
+    },
+    "ee970c81-6289-4ef7-acfe-23a4c1c16509": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Frame_20.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Frame_16_2842b0d8-1054-4655-8aa5-b0e910795679.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 100,
+        "desktop_padding_top": 11,
+        "desktop_padding_bottom": 100
+      }
+    },
+    "b574994a-ba01-4f17-8c84-9ad850b5e829": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Frame_21_1.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Frame_19_1.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 40,
+        "desktop_padding_top": 40,
+        "desktop_padding_bottom": 0
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "78d2bec2-bc6c-49b2-b4af-f6f872212043",
+    "ee970c81-6289-4ef7-acfe-23a4c1c16509",
+    "b574994a-ba01-4f17-8c84-9ad850b5e829"
   ]
 }
