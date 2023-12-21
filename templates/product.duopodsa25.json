@@ -298,9 +298,9 @@
         "template--21467861582101__628f2f02-adfb-428e-8816-8e6f10a9c492-collapsible_row-2": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Battery",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Music and talk-time<br\/>Up to 7.5 hours with earbuds and up to 40 hours including charging capsule.<br\/><br\/>Charging time<br\/> 1 Hour<\/p>",
             "page": ""
           }
         },
