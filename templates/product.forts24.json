@@ -224,6 +224,68 @@
         "desktop_padding_top": 0,
         "desktop_padding_bottom": 0
       }
+    },
+    "f67ec2cc-702c-4270-87c0-247d9790a0ca": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Frame_304.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Frame_293.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "54c74f98-8e65-4bdf-9704-fb3db9e9cd54": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "fe716928-3fc1-4fa4-9b32-60171334c067": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "ac1ef64a-e9e5-4c14-886b-c53f2fb0319a": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "b47bea81-cb03-4776-a71c-8030d5cce359": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "271d7fca-49eb-4c57-bad7-2bf56f49e4a0": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -233,6 +295,12 @@
     "3940d3e6-0c0a-453b-b3cb-b790d2ab56b2",
     "d4f9cd6b-a029-4ee8-8c53-cbf225353a1c",
     "b8495e05-c0d9-4076-bc1b-cfc0df2a958b",
-    "c26d2de2-a19d-4d78-8a5f-30c09de0e235"
+    "c26d2de2-a19d-4d78-8a5f-30c09de0e235",
+    "f67ec2cc-702c-4270-87c0-247d9790a0ca",
+    "54c74f98-8e65-4bdf-9704-fb3db9e9cd54",
+    "fe716928-3fc1-4fa4-9b32-60171334c067",
+    "ac1ef64a-e9e5-4c14-886b-c53f2fb0319a",
+    "b47bea81-cb03-4776-a71c-8030d5cce359",
+    "271d7fca-49eb-4c57-bad7-2bf56f49e4a0"
   ]
 }
