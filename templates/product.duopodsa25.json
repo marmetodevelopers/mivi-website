@@ -105,10 +105,16 @@
       "type": "duopodsa25",
       "settings": {
       }
+    },
+    "0a7320ae-4afd-4e61-b49e-6c6956887ed7": {
+      "type": "duopods-video",
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
-    "4471c2c8-9d6e-4ea9-b3de-ff2214cb63e0"
+    "4471c2c8-9d6e-4ea9-b3de-ff2214cb63e0",
+    "0a7320ae-4afd-4e61-b49e-6c6956887ed7"
   ]
 }
