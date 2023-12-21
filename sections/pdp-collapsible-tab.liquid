@@ -71,12 +71,12 @@
             </div>
           {% endif %}
           <div class="pdp__collapsible-content-grid__item">
-            {%- if product.metafields.custom.pdp_collapsible_tab_section_question != blank or product.metafields.custom.pdp_collapsible_tab_section_answer != blank -%}
-                <div
+            <!-- {%- if product.metafields.custom.pdp_collapsible_tab_section_question != blank or product.metafields.custom.pdp_collapsible_tab_section_answer != blank -%}
+                <div -->
                 class="accordion pdp-collapsible-content-accordion pdp-technical-accordion {% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}"
                 {{ block.shopify_attributes }}
               >
-                {% for questions in product.metafields.custom.pdp_collapsible_tab_section_question.value %} 
+                <!-- {% for questions in product.metafields.custom.pdp_collapsible_tab_section_question.value %}  -->
                 <details
                   id="Details-{{ block.id }}-{{ section.id }}" class="pdp-details-content"
                   {% if section.settings.open_first_collapsible_row and forloop.first %}
@@ -102,18 +102,18 @@
                     {{ block.settings.page.content }}
                   </div>
                 </details>
-            {% endfor %}
+            <!-- {% endfor %} -->
               </div>
-            {%- endif -%}    
-          </div>
+            <!-- {%- endif -%}    
+          </div> -->
           <div class="pdp__collapsible-content-grid__item">
-            {%- if product.metafields.custom.pad_collapsible_block_2_qns != blank or product.metafields.custom.pdp_collapsible_block_2_ans != blank -%}
-                <div
+            <!-- {%- if product.metafields.custom.pad_collapsible_block_2_qns != blank or product.metafields.custom.pdp_collapsible_block_2_ans != blank -%}-->
+                <div 
                 class="accordion pdp-collapsible-content-accordion pdp-technical-accordion {% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}"
                 {{ block.shopify_attributes }}
               >
-                {% for questions in product.metafields.custom.pad_collapsible_block_2_qns.value %} 
-                <details
+                <!-- {% for questions in product.metafields.custom.pad_collapsible_block_2_qns.value %} -->
+                <details 
                   id="Details-{{ block.id }}-{{ section.id }}" class="pdp-details-content"
                   {% if section.settings.open_first_collapsible_row and forloop.first %}
                     open
@@ -137,9 +137,9 @@
                     {{ block.settings.page.content }} 
                   </div>
                 </details>
-            {% endfor %}
-              </div>
-            {%- endif -%}    
+            <!-- {% endfor %}-->
+              </div> 
+            <!-- {%- endif -%}  -->   
           </div>
         </div>
       </div>
