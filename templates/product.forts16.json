@@ -100,9 +100,217 @@
         "padding_top_mb": 0,
         "padding_bottom_mb": 54
       }
+    },
+    "bd2cfde0-53dd-4182-bb61-6b8e606f42a7": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--21470378852629__bd2cfde0-53dd-4182-bb61-6b8e606f42a7-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_865_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21470378852629__bd2cfde0-53dd-4182-bb61-6b8e606f42a7-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_866_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--21470378852629__bd2cfde0-53dd-4182-bb61-6b8e606f42a7-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_867_2.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21470378852629__bd2cfde0-53dd-4182-bb61-6b8e606f42a7-column-1",
+        "template--21470378852629__bd2cfde0-53dd-4182-bb61-6b8e606f42a7-column-2",
+        "template--21470378852629__bd2cfde0-53dd-4182-bb61-6b8e606f42a7-column-3"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "c80b7b66-73cd-46aa-8936-cfdec765edb7": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Frame_234.png",
+        "desktop_image": "shopify:\/\/shop_images\/Frame_202.png",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "c136558d-1ac7-4d6b-b7a2-1461554d661a": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video": "shopify:\/\/files\/videos\/How to Connect and Troubleshoot Mivi Duopods M1.mp4",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "cover_image": "shopify:\/\/shop_images\/Frame_204.jpg",
+        "mobile_cover_image": "shopify:\/\/shop_images\/Frame_231.jpg",
+        "sub_heading": "Sound Quality",
+        "text": "Immerse In Studio Quality Sound",
+        "sub_text": "",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "3e65bf15-971e-4a0e-894b-f7c25d34a4b0": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Frame_228.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Frame_205.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "b93a059a-de62-4de1-9e25-dbcfeca13f4e": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Frame_226.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Frame_208.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "d0c6f39a-64f2-4d6e-98d3-1c62b8070a78": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Frame_225.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Frame_206.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "c721e837-277f-404e-9139-9e98a9dd89e7": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Frame_224.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Frame_209.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "d4342bd0-53f3-41ec-897c-cf7d09b4700c": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Frame_223.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Frame_211.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "4d05205b-3f9e-4561-9ca6-37141dc41232": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Frame_222.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Frame_210.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "3a133210-f612-48b2-8637-a70f71f01d63": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Frame_221.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Frame_212.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "3e5b3a4b-2d93-42a6-a35e-fe475c8a9f2b": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Frame_220.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Frame_214.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "5eddac9a-d80d-4baf-b828-bc6b0d75b58e": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Frame_218.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Frame_216.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "bd2cfde0-53dd-4182-bb61-6b8e606f42a7",
+    "c80b7b66-73cd-46aa-8936-cfdec765edb7",
+    "c136558d-1ac7-4d6b-b7a2-1461554d661a",
+    "3e65bf15-971e-4a0e-894b-f7c25d34a4b0",
+    "b93a059a-de62-4de1-9e25-dbcfeca13f4e",
+    "d0c6f39a-64f2-4d6e-98d3-1c62b8070a78",
+    "c721e837-277f-404e-9139-9e98a9dd89e7",
+    "d4342bd0-53f3-41ec-897c-cf7d09b4700c",
+    "4d05205b-3f9e-4561-9ca6-37141dc41232",
+    "3a133210-f612-48b2-8637-a70f71f01d63",
+    "3e5b3a4b-2d93-42a6-a35e-fe475c8a9f2b",
+    "5eddac9a-d80d-4baf-b828-bc6b0d75b58e"
   ]
 }
