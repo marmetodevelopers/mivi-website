@@ -316,9 +316,9 @@
         "template--21467861582101__628f2f02-adfb-428e-8816-8e6f10a9c492-collapsible_row-4": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Physical Unit",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Packaging dimensions<br\/>107 x 107 x 41 mm (LxWxH)<br\/><br\/>Charging capsule dimensions<br\/> - <br\/><br\/>Earbud dimensions<br\/> - <br\/><br\/>Weight<br\/> 35 g charging Capsule, 3.5 g right earbud, 3.5 g left earbud <br\/><br\/>Operating temperature<br\/> -5°C to 45°C (charging from 0° to 45°) <\/p>",
             "page": ""
           }
         }
