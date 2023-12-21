@@ -2549,7 +2549,7 @@ tfoot tr {
  
 }
   /* pdp collapsible tab  */
-.pdp__collapsible-content-grid__item{
+/* .pdp__collapsible-content-grid__item{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -2557,4 +2557,4 @@ tfoot tr {
   width: 100%;
   justify-content: center;
 
-}
+} */
