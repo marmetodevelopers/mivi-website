@@ -168,11 +168,32 @@
         "desktop_padding_top": 0,
         "desktop_padding_bottom": 0
       }
+    },
+    "3940d3e6-0c0a-453b-b3cb-b790d2ab56b2": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video": "shopify:\/\/files\/videos\/How to Connect and Troubleshoot Mivi Duopods M1.mp4",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "cover_image": "shopify:\/\/shop_images\/Frame_289.jpg",
+        "mobile_cover_image": "shopify:\/\/shop_images\/Frame_308.jpg",
+        "sub_heading": "",
+        "text": "",
+        "sub_text": "",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "2aca8977-276f-430b-8670-0628af59df22",
-    "b1499b9b-5894-40c8-8587-062c8bde920b"
+    "b1499b9b-5894-40c8-8587-062c8bde920b",
+    "3940d3e6-0c0a-453b-b3cb-b790d2ab56b2"
   ]
 }
