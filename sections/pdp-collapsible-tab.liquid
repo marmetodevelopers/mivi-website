@@ -71,12 +71,13 @@
             </div>
           {% endif %}
           <div class="pdp__collapsible-content-grid__item">
-            {%  for block in  section.blocks %}
-                 <div 
+             {%- if product.metafields.custom.pdp_collapsible_tab_section_question != blank or product.metafields.custom.pdp_collapsible_tab_section_answer != blank -%} 
+                <div 
                 class="accordion pdp-collapsible-content-accordion pdp-technical-accordion {% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}"
                 {{ block.shopify_attributes }}
               >
-                 <details
+                {% for questions in product.metafields.custom.pdp_collapsible_tab_section_question.value %}  
+                <details
                   id="Details-{{ block.id }}-{{ section.id }}" class="pdp-details-content"
                   {% if section.settings.open_first_collapsible_row and forloop.first %}
                     open
@@ -85,8 +86,8 @@
                   <summary id="Summary-{{ block.id }}-{{ section.id }}">
                   <span class="hidden">{% render 'icon-accordion', icon: block.settings.icon %}</span>
                     <h3 class="accordion__title inline-richtext h4 pdp-collapsible-tab-accordion-content">
-                      {{ block.settings.heading | default:block.settings.page.title }}
-                     </h3>
+                        <span class="question">{{ questions }}</span>
+                    </h3>
                     {% render 'icon-caret' %}
                   </summary>
                   <div
@@ -95,14 +96,51 @@
                     role="region"
                     aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
                   >
- 
+                    <div class="answer-1">{{ product.metafields.custom.product_faqs_ans.value[forloop.index0] }}</div> 
+
                     {{ block.settings.row_content }}
                     {{ block.settings.page.content }}
                   </div>
                 </details>
-               </div>
-              {% endfor %}
-           </div>  
+              {% endfor %} 
+              </div>
+              {%- endif -%}    
+          </div>  
+          <div class="pdp__collapsible-content-grid__item">
+              {%- if product.metafields.custom.pad_collapsible_block_2_qns != blank or product.metafields.custom.pdp_collapsible_block_2_ans != blank -%} 
+                <div 
+                class="accordion pdp-collapsible-content-accordion pdp-technical-accordion {% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}"
+                {{ block.shopify_attributes }}
+              >
+                  {% for questions in product.metafields.custom.pad_collapsible_block_2_qns.value %}  
+                <details 
+                  id="Details-{{ block.id }}-{{ section.id }}" class="pdp-details-content"
+                  {% if section.settings.open_first_collapsible_row and forloop.first %}
+                    open
+                  {% endif %}
+                >
+                  <summary id="Summary-{{ block.id }}-{{ section.id }}">
+                  <span class="hidden">{% render 'icon-accordion', icon: block.settings.icon %}</span>
+                    <h3 class="accordion__title inline-richtext h4 pdp-collapsible-tab-accordion-content">
+                        <span class="question">{{ questions }}</span>
+                    </h3>
+                    {% render 'icon-caret' %}
+                  </summary>
+                  <div
+                    class="accordion__content rte"
+                    id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
+                    role="region"
+                    aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
+                  >
+                    <div class="answer-1">{{ product.metafields.custom.pdp_collapsible_block_2_ans.value[forloop.index0] }}</div> 
+                     {{ block.settings.row_content }}
+                    {{ block.settings.page.content }} 
+                  </div>
+                </details>
+             {% endfor %} 
+              </div> 
+             {%- endif -%}     
+          </div>
         </div>
       </div>
     </div>
