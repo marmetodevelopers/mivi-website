@@ -1,6 +1,6 @@
 <div class="page-width">
   <div>
-    <img src="" alt="{{ section.settings.alt_text }}">
+    {% render 'image', class: '', mobileSrc: section.settings.image, desktopSrc: section.settings.desktop_image, alt="{{ section.settings.alt_text }}" %}
   </div>
 </div>
 
@@ -10,6 +10,16 @@
   "tag": "section",
   "class": "section-banner-image",
   "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Mobile Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "desktop_image",
+      "label": "Desktop Image"
+    },
     {
       "type": "text",
       "id": "alt_text",
@@ -25,8 +35,3 @@
 }
 {% endschema %}
 
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
