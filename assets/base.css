@@ -366,7 +366,7 @@
    list-style: none;
  }
  .hidden {
-   display: none;
+   display: none !important;;
  }
  .visually-hidden {
    position: absolute !important;
