@@ -487,7 +487,7 @@
           "settings": {
             "heading": "Collapsible row",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Driver Frequency Response<br\/>20 Hz to 20 KHz<br\/><br\/>Driver Type<br\/>Dynamic<br\/><br\/>Drivers Size<br\/>13mm<br\/><br\/>Passive Noise Cancellation<br\/> - <br\/><br\/>Audio codecs supported<br\/> - <br\/><br\/>Microphone Type<br\/> - <br\/><br\/>Microphone Frequency Response<br\/> - <\/p>",
             "page": ""
           }
         },
