@@ -232,6 +232,8 @@
     "d51fa29e-41c1-4785-a0d6-c6390954b207": {
       "type": "PDP-image-banner",
       "settings": {
+        "image": "shopify:\/\/shop_images\/Frame_273.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Frame_117.jpg",
         "alt_text": "",
         "padding_top": 0,
         "padding_bottom": 0,
