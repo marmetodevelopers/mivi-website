@@ -304,6 +304,15 @@
             "page": ""
           }
         },
+        "9b478bde-bd9d-4557-b004-b25f3b77ea46": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Included in the Box",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
         "template--21467861582101__628f2f02-adfb-428e-8816-8e6f10a9c492-collapsible_row-3": {
           "type": "collapsible_row",
           "settings": {
@@ -321,13 +330,24 @@
             "row_content": "<p>Packaging dimensions<br\/>107 x 107 x 41 mm (LxWxH)<br\/><br\/>Charging capsule dimensions<br\/> - <br\/><br\/>Earbud dimensions<br\/> - <br\/><br\/>Weight<br\/> 35 g charging Capsule, 3.5 g right earbud, 3.5 g left earbud <br\/><br\/>Operating temperature<br\/> -5°C to 45°C (charging from 0° to 45°) <\/p>",
             "page": ""
           }
+        },
+        "7f710706-e71b-49ac-95c5-e5224566dd86": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
         }
       },
       "block_order": [
         "template--21467861582101__628f2f02-adfb-428e-8816-8e6f10a9c492-collapsible_row-1",
         "template--21467861582101__628f2f02-adfb-428e-8816-8e6f10a9c492-collapsible_row-2",
+        "9b478bde-bd9d-4557-b004-b25f3b77ea46",
         "template--21467861582101__628f2f02-adfb-428e-8816-8e6f10a9c492-collapsible_row-3",
-        "template--21467861582101__628f2f02-adfb-428e-8816-8e6f10a9c492-collapsible_row-4"
+        "template--21467861582101__628f2f02-adfb-428e-8816-8e6f10a9c492-collapsible_row-4",
+        "7f710706-e71b-49ac-95c5-e5224566dd86"
       ],
       "settings": {
         "caption": "",
