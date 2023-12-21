@@ -216,6 +216,8 @@
     "c26d2de2-a19d-4d78-8a5f-30c09de0e235": {
       "type": "PDP-image-banner",
       "settings": {
+        "image": "shopify:\/\/shop_images\/Group_1633.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Group_1633.jpg",
         "alt_text": "",
         "padding_top": 0,
         "padding_bottom": 0,
