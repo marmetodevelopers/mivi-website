@@ -85,6 +85,7 @@
                   <summary id="Summary-{{ block.id }}-{{ section.id }}">
                   <span class="hidden">{% render 'icon-accordion', icon: block.settings.icon %}</span>
                     <h3 class="accordion__title inline-richtext h4 pdp-collapsible-tab-accordion-content">
+                      {{ block.settings.heading | default:block.settings.page.title }}
                      </h3>
                     {% render 'icon-caret' %}
                   </summary>
