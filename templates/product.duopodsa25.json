@@ -349,6 +349,7 @@
         "template--21467861582101__628f2f02-adfb-428e-8816-8e6f10a9c492-collapsible_row-4",
         "7f710706-e71b-49ac-95c5-e5224566dd86"
       ],
+      "disabled": true,
       "settings": {
         "caption": "",
         "heading": "Collapsible content",
@@ -485,7 +486,7 @@
         "template--21467861582101__5fffb52e-5b03-4de6-b112-fd381c69e94b-collapsible_row-1": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Audio Specifications",
             "icon": "check_mark",
             "row_content": "<p>Driver Frequency Response<br\/>20 Hz to 20 KHz<br\/><br\/>Driver Type<br\/>Dynamic<br\/><br\/>Drivers Size<br\/>13mm<br\/><br\/>Passive Noise Cancellation<br\/> - <br\/><br\/>Audio codecs supported<br\/> - <br\/><br\/>Microphone Type<br\/> - <br\/><br\/>Microphone Frequency Response<br\/> - <\/p>",
             "page": ""
@@ -494,27 +495,45 @@
         "template--21467861582101__5fffb52e-5b03-4de6-b112-fd381c69e94b-collapsible_row-2": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Battery",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Music and talk-time<br\/>Up to 7.5 hours with earbuds and up to 40 hours including charging capsule.<br\/><br\/>Charging time<br\/> 1 Hour<\/p>",
             "page": ""
           }
         },
         "template--21467861582101__5fffb52e-5b03-4de6-b112-fd381c69e94b-collapsible_row-3": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Included in the Box",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p> - Earbuds<br\/> - Charging Capsule <br\/> - USB cable <br\/> - 3 Pairs of silicon ear tips <br\/> - Warranty registration <br\/> - User Guide <\/p>",
             "page": ""
           }
         },
         "template--21467861582101__5fffb52e-5b03-4de6-b112-fd381c69e94b-collapsible_row-4": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Bluetooth Connectivity",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>Connectivity<br\/>Bluetooth 5.0<br\/><br\/>Supported Bluetooth profiles<br\/> - <br\/><br\/>Operating range<br\/>Up to 10 metres \/ 30 Feet<\/p>",
+            "page": ""
+          }
+        },
+        "52f5ab3c-07c1-4a7d-9499-f2b452eab9d6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Physical Unit",
+            "icon": "check_mark",
+            "row_content": "<p>Packaging dimensions<br\/>107 x 107 x 41 mm (LxWxH)<br\/><br\/>Charging capsule dimensions<br\/> - <br\/><br\/>Earbud dimensions<br\/> - <br\/><br\/>Weight<br\/> 35 g charging Capsule, 3.5 g right earbud, 3.5 g left earbud <br\/><br\/>Operating temperature<br\/> -5°C to 45°C (charging from 0° to 45°) <\/p>",
+            "page": ""
+          }
+        },
+        "f5b148d9-2b86-4469-b83f-5b4d62899dba": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Warranty",
+            "icon": "check_mark",
+            "row_content": "<p> - 1 Year best in the industry warranty on manufacturing defects.<\/p>",
             "page": ""
           }
         }
@@ -523,7 +542,9 @@
         "template--21467861582101__5fffb52e-5b03-4de6-b112-fd381c69e94b-collapsible_row-1",
         "template--21467861582101__5fffb52e-5b03-4de6-b112-fd381c69e94b-collapsible_row-2",
         "template--21467861582101__5fffb52e-5b03-4de6-b112-fd381c69e94b-collapsible_row-3",
-        "template--21467861582101__5fffb52e-5b03-4de6-b112-fd381c69e94b-collapsible_row-4"
+        "template--21467861582101__5fffb52e-5b03-4de6-b112-fd381c69e94b-collapsible_row-4",
+        "52f5ab3c-07c1-4a7d-9499-f2b452eab9d6",
+        "f5b148d9-2b86-4469-b83f-5b4d62899dba"
       ],
       "settings": {
         "caption": "",
