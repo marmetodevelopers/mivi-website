@@ -100,9 +100,55 @@
         "padding_top_mb": 0,
         "padding_bottom_mb": 54
       }
+    },
+    "b956b32f-1365-42ad-a0a0-0b21b85fdd87": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/180_WATTS_mobile.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Immersive_sound_experience_desktop.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "2759a6ba-8313-478b-bdb7-0ba6ae129151": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "cover_image": "shopify:\/\/shop_images\/Frame_280.png",
+        "mobile_cover_image": "shopify:\/\/shop_images\/Cinematic_Surround_Sound_mobile_e5f86d6c-63c9-41d2-a000-f88e5f100d79.jpg",
+        "sub_heading": "",
+        "text": "",
+        "sub_text": "",
+        "description": "",
+        "full_width": true,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "4e5051a8-c8e2-44c4-a318-d559e6d8682e": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/180_WATTS_mobile.png",
+        "desktop_image": "shopify:\/\/shop_images\/Group_10580.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "b956b32f-1365-42ad-a0a0-0b21b85fdd87",
+    "2759a6ba-8313-478b-bdb7-0ba6ae129151",
+    "4e5051a8-c8e2-44c4-a318-d559e6d8682e"
   ]
 }
