@@ -40,14 +40,14 @@
           "settings": {
             "class": "product_featured_tags",
             "product_tag_1": "new arrive",
-            "product_certification_icon_1": "shopify:\/\/shop_images\/Group_76.png",
+            "product_certification_icon_1": "shopify:\/\/shop_images\/free_shipping.jpg",
             "product_certification_text_1": "Free Shipping",
             "product_tag_2": "free shipping",
-            "product_certification_icon_2": "shopify:\/\/shop_images\/Group_77.png",
+            "product_certification_icon_2": "shopify:\/\/shop_images\/1_year_warranty.jpg",
             "product_certification_text_2": "1 year Warranty",
-            "product_tag_3": "Best seller",
-            "product_certification_icon_3": "shopify:\/\/shop_images\/Group_77.png",
-            "product_certification_text_3": "Ships Today",
+            "product_tag_3": "Made In India",
+            "product_certification_icon_3": "shopify:\/\/shop_images\/made_in_india_icon_e8b6ede1-d8fc-4d55-8a4c-73674263d950.jpg",
+            "product_certification_text_3": "Made in India",
             "product_tag_4": "",
             "product_certification_text_4": "",
             "product_tag_5": "",
@@ -100,9 +100,146 @@
         "padding_top_mb": 0,
         "padding_bottom_mb": 54
       }
+    },
+    "66975902-0b51-4dd0-9325-fca8e0e5aa49": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "cover_image": "shopify:\/\/shop_images\/k7_video.jpg",
+        "mobile_cover_image": "shopify:\/\/shop_images\/k7_video_mobile.jpg",
+        "sub_heading": "",
+        "text": "",
+        "sub_text": "",
+        "description": "",
+        "full_width": true,
+        "color_scheme": "accent-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "3c418922-78c9-4e38-89f7-c9de40a9218c": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/superior_grade_mettalic_finish_mobile.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/superior_grade_mettalic_finish_desktop.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "e0fd71b2-38b9-4a6f-b9eb-6fe97a5a98b4": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Communicate_With_Clarity_Via_HDCalls_Technology_mobile.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Communicate_With_Clarity_Via_HDCalls_Technology_desktop.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "bb75ad26-270c-4998-8f97-1e43084113a9": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Life_Like_Calling_Experience_mobile.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Life_Like_Calling_Experience_desktop.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "8986e270-c089-4c93-92f8-76fa528bd141": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Power_up_in_no_time_with_swift_charge_technology_mobile.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Power_up_in_no_time_with_swift_charge_technology_desktop.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "3f55b7ab-1969-41b4-a296-5c1a7e2fa820": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Bass_Hits_An_All-Time_High_mobile.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Bass_Hits_An_All-Time_High_desktop.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "4d2d470e-c3b2-4a38-a4c5-60811befccad": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Unleash_The_Gamer_In_You_With_Battle_Mode_mobile.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Unleash_The_Gamer_In_You_With_Battle_Mode._desktop.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "82222a80-8a62-4f0b-8222-faf7550e9c27": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Bringing_You_The_Galaxy_With_Starry_Night_Finish_mobile.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Bringing_You_The_Galaxy_With_Starry_Night_Finish_desktop.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "0dc41665-7b57-4a7c-bd58-a3dd7cdd3b6f": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Stress_Free_Workouts_mobile.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Stress_Free_Workouts_desktop.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "ebc285bb-d35a-46ef-a627-9f25f8595f6e": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/The_Latest_and_The_Best_From_The_Mivi_Design_Studios_mobile.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/The_Latest_and_The_Best_From_The_Mivi_Design_Studios_desktop.jpg",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "66975902-0b51-4dd0-9325-fca8e0e5aa49",
+    "3c418922-78c9-4e38-89f7-c9de40a9218c",
+    "e0fd71b2-38b9-4a6f-b9eb-6fe97a5a98b4",
+    "bb75ad26-270c-4998-8f97-1e43084113a9",
+    "8986e270-c089-4c93-92f8-76fa528bd141",
+    "3f55b7ab-1969-41b4-a296-5c1a7e2fa820",
+    "4d2d470e-c3b2-4a38-a4c5-60811befccad",
+    "82222a80-8a62-4f0b-8222-faf7550e9c27",
+    "0dc41665-7b57-4a7c-bd58-a3dd7cdd3b6f",
+    "ebc285bb-d35a-46ef-a627-9f25f8595f6e"
   ]
 }
