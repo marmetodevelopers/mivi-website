@@ -103,6 +103,7 @@
     },
     "4471c2c8-9d6e-4ea9-b3de-ff2214cb63e0": {
       "type": "duopodsa25",
+      "disabled": true,
       "settings": {
       }
     },
