@@ -165,7 +165,7 @@
         "alt_text": "",
         "padding_top": 0,
         "padding_bottom": 0,
-        "desktop_padding_top": 0,
+        "desktop_padding_top": 50,
         "desktop_padding_bottom": 0
       }
     },
