@@ -2548,3 +2548,13 @@ tfoot tr {
   font-size: calc(14px + (16 - 14) * (100vw - 375px) / (1440 - 375));
  
 }
+  /* pdp collapsible tab  */
+.pdp__collapsible-content-grid__item{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 44rem;
+  width: 100%;
+  justify-content: center;
+
+}
