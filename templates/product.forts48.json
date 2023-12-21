@@ -112,10 +112,31 @@
         "desktop_padding_top": 0,
         "desktop_padding_bottom": 0
       }
+    },
+    "f9c2f565-816a-4413-9874-e63e761c4f5e": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video": "shopify:\/\/files\/videos\/Mivi DuoPods A650 ENC Earbuds for Crystal Clear Calls __ Order Now (1).mp4",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "cover_image": "shopify:\/\/shop_images\/Frame_269.jpg",
+        "mobile_cover_image": "shopify:\/\/shop_images\/Frame_271.jpg",
+        "sub_heading": "",
+        "text": "",
+        "sub_text": "",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "99a2310d-6f3a-4632-aaad-391fd371f545"
+    "99a2310d-6f3a-4632-aaad-391fd371f545",
+    "f9c2f565-816a-4413-9874-e63e761c4f5e"
   ]
 }
