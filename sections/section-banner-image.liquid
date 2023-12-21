@@ -1,8 +1,28 @@
+<div class="page-width">
+  <div>
+    <img src="" alt="{{ section.settings.alt_text }}">
+  </div>
+</div>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "section banner image",
+  "tag": "section",
+  "class": "section-banner-image",
+  "settings": [
+    {
+      "type": "text",
+      "id": "alt_text",
+      "label": "Alternate Text",
+      "info": "Alternate text for image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "section Banner Image"
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}
