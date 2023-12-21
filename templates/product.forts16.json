@@ -243,9 +243,9 @@
         "image": "shopify:\/\/shop_images\/Frame_222.jpg",
         "desktop_image": "shopify:\/\/shop_images\/Frame_210.jpg",
         "alt_text": "",
-        "padding_top": 0,
+        "padding_top": 40,
         "padding_bottom": 0,
-        "desktop_padding_top": 0,
+        "desktop_padding_top": 78,
         "desktop_padding_bottom": 0
       }
     },
