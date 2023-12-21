@@ -551,27 +551,45 @@
         "a964a0a7-9d74-4e0c-ab16-bb076c0e3742": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Audio Specifications",
             "icon": "check_mark",
-            "row_content": "<p>nikhita<\/p>",
+            "row_content": "<p>nikhita desai duopodes<br\/>njdr <br\/>vgvgy<\/p>",
             "page": ""
           }
         },
         "d87465a6-8265-4800-8a91-7254eafc18d8": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "CONTROLS AND CONNECTIVITY",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>sdnfiuef jwenquiew oi =-3  jnfueif<\/p>",
             "page": ""
           }
         },
         "2eb36f71-91b2-4c04-a399-b9ede5b82fd6": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "INCLUDED IN THE BOX",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>njhugt dxervyvi<\/p>",
+            "page": ""
+          }
+        },
+        "8bb4d486-1231-4a45-8042-1f0e8b6f2498": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "BATTERY",
+            "icon": "check_mark",
+            "row_content": "<p>nfurhfuirhuirhf <\/p>",
+            "page": ""
+          }
+        },
+        "511175b5-9bc6-447c-ba28-dbd78f17ae8b": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "PHYSICAL UNIT",
+            "icon": "check_mark",
+            "row_content": "<p>pgdbh h8934rhde3jf uhed893he9d8<\/p>",
             "page": ""
           }
         }
@@ -579,7 +597,9 @@
       "block_order": [
         "a964a0a7-9d74-4e0c-ab16-bb076c0e3742",
         "d87465a6-8265-4800-8a91-7254eafc18d8",
-        "2eb36f71-91b2-4c04-a399-b9ede5b82fd6"
+        "2eb36f71-91b2-4c04-a399-b9ede5b82fd6",
+        "8bb4d486-1231-4a45-8042-1f0e8b6f2498",
+        "511175b5-9bc6-447c-ba28-dbd78f17ae8b"
       ],
       "settings": {
         "caption": "{{ product.metafields.custom.pdp_collapsible_tab_caption.value }}",
