@@ -161,6 +161,16 @@
         "desktop_padding_bottom": 0
       }
     },
+    "7f24d8ab-1688-475f-8bd0-cd0933142efb": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
     "e1bb29a2-86b7-485f-92cc-3564160943f2": {
       "type": "PDP-image-banner",
       "settings": {
@@ -217,6 +227,7 @@
     "e275d24c-bf2c-4140-9bfe-5dcdc5b4d89f",
     "4d508c3c-873e-4dd5-80dc-fd6f5ba60b34",
     "02f0cd5f-b121-406f-b0c3-9e7513ae2c22",
+    "7f24d8ab-1688-475f-8bd0-cd0933142efb",
     "e1bb29a2-86b7-485f-92cc-3564160943f2",
     "92594bca-24c9-49bf-a6f0-cdd1e755243c",
     "ab16a9b9-04c2-4e5b-bedc-06e9c053d9f9",
