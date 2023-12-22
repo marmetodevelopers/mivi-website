@@ -236,9 +236,9 @@
         "desktop_image": "shopify:\/\/shop_images\/Frame_209.jpg",
         "alt_text": "Head Turning Design Get your neighbours jealous when they set their eyes on the Mivi Fort S16 with its stylish, premium fabric design with a touch of matte finish that pairs perfectly with your TV or PC set.",
         "padding_top": 0,
-        "padding_bottom": 0,
+        "padding_bottom": 10,
         "desktop_padding_top": 0,
-        "desktop_padding_bottom": 0
+        "desktop_padding_bottom": 10
       }
     },
     "d4342bd0-53f3-41ec-897c-cf7d09b4700c": {
