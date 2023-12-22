@@ -264,9 +264,9 @@
         "desktop_image": "shopify:\/\/shop_images\/Group_1746.png",
         "alt_text": "Made In India Indian Made, Just For You! Fastest Growing Indian Brand First Brand To Start Manufacturing In India Most Preferred Brand 2022",
         "padding_top": 0,
-        "padding_bottom": 0,
+        "padding_bottom": 10,
         "desktop_padding_top": 0,
-        "desktop_padding_bottom": 0
+        "desktop_padding_bottom": 10
       }
     }
   },
