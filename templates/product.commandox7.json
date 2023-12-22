@@ -111,7 +111,8 @@
             "title": "",
             "text": "<p> <\/p>",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "alt_text": ""
           }
         },
         "template--21470395203861__2781d419-b258-4f91-a814-af0d12eaa5ac-column-2": {
@@ -121,7 +122,8 @@
             "title": "",
             "text": "<p> <\/p>",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "alt_text": ""
           }
         },
         "template--21470395203861__2781d419-b258-4f91-a814-af0d12eaa5ac-column-3": {
@@ -131,7 +133,8 @@
             "title": "",
             "text": "<p> <\/p>",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "alt_text": ""
           }
         }
       },
@@ -162,7 +165,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_239.png",
         "desktop_image": "shopify:\/\/shop_images\/crop_1.jpg",
-        "alt_text": "",
+        "alt_text": "AURORA LIGHTS, 35MS LOW LATENCY, TRIPLE TAP FOR BATTLE MODE, 50 HRS PLAYTIME",
         "padding_top": 0,
         "padding_bottom": 0,
         "desktop_padding_top": 0,
@@ -194,7 +197,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_354.jpg",
         "desktop_image": "shopify:\/\/shop_images\/Frame_343_1.png",
-        "alt_text": "",
+        "alt_text": "Illuminate with Dual RGB Brilliance - Elevate Your Gaming Experience With Hues Inspired By The Captivating Aurora Lights, 35MS Low Latency -",
         "padding_top": 0,
         "padding_bottom": 0,
         "desktop_padding_top": 0,
