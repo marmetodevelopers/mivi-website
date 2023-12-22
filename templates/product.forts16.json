@@ -200,7 +200,7 @@
         "desktop_image": "shopify:\/\/shop_images\/Frame_205.jpg",
         "alt_text": "No Buzz Just BASS The bass is balanced, powerful, and rich, making each and everynote crisp and booming. Jump scares will now be anepic story to tell around.",
         "padding_top": 0,
-        "padding_bottom": 0,
+        "padding_bottom": 10,
         "desktop_padding_top": 0,
         "desktop_padding_bottom": 0
       }
