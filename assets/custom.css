@@ -1313,7 +1313,7 @@ li.product-usp--item {
   display: flex;
   align-items: center;
   gap: 20px;
-  width: 27%;
+  max-width: min-content;
 }
 .website__link {
   color: #962C25;
@@ -2548,7 +2548,5 @@ tfoot tr {
 .main__address__checkout {
   font-size: calc(14px + (16 - 14) * (100vw - 375px) / (1440 - 375));
 }
-.deferred-media__poster-button{
-  opacity: 0;
-}
+  
  
