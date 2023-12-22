@@ -2562,7 +2562,6 @@ tfoot tr {
  .product--8966889079061 .multicolumn____container{
    margin-top:-1px;
  }
-.product--8966889079061 .predictive-search__result-group.price__sale{
-  color:#000;
-}
-.product--8966912934165
+ .product--8966912934165 h5{
+   color:#fff;
+ }
