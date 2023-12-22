@@ -2562,12 +2562,10 @@ tfoot tr {
  .product--8966889079061,.product--8966912934165 .multicolumn____container{
    margin-top:-1px;
  }
- /* .product--8966912934165 h5{
+ .product--8966912934165 h5{
    color:#fff;
- } */
+ }
 .product--8966912934165 product-info.product__info-container.product__description.h5.mt-5 {
   color:#fff;
 }
-.predictive-search.price-item{
-  color:#000;
-}
+ 
