@@ -130,7 +130,8 @@
             "title": "",
             "text": "<p> <\/p>",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "alt_text": "Bass is so good, I can’t stop dancing. - Saharsh\n\nPowerfull speaker. Amazing quality - Rohan\n\nBass is so good, I can’t stop dancing. -\nKritika"
           }
         },
         "template--21470395302165__4636262a-bd93-4e8f-9001-1f813081883c-column-2": {
@@ -140,7 +141,8 @@
             "title": "",
             "text": "<p> <\/p>",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "alt_text": ""
           }
         },
         "template--21470395302165__4636262a-bd93-4e8f-9001-1f813081883c-column-3": {
@@ -150,7 +152,8 @@
             "title": "",
             "text": "<p> <\/p>",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "alt_text": ""
           }
         }
       },
@@ -181,7 +184,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_27.jpg",
         "desktop_image": "shopify:\/\/shop_images\/Frame_24.jpg",
-        "alt_text": "",
+        "alt_text": "Environmental Noise Cancellation , 50+Hrs of battery  life, Elegant premium Design, Low Latency for Gaming, Made In India",
         "padding_top": 10,
         "padding_bottom": 75,
         "desktop_padding_top": 20,
