@@ -2548,5 +2548,7 @@ tfoot tr {
 .main__address__checkout {
   font-size: calc(14px + (16 - 14) * (100vw - 375px) / (1440 - 375));
 }
-  
+.deferred-media__poster-button{
+  opacity: 0;
+}
  
