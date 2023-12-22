@@ -331,6 +331,7 @@ picture.image_banner_home img {
   gap: 15px;
   position: relative;
   z-index: 999999;
+  flex-wrap:wrap;
 }
 .price-item {
   font-family: 'Gilroy Extra Bold';
