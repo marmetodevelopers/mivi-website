@@ -248,9 +248,9 @@
         "desktop_image": "shopify:\/\/shop_images\/Frame_211.jpg",
         "alt_text": "Brilliant Passive Radiators Move aside subwoofers. With two passive radiators,low frequencies are boosted for a balanced and powerful sound. Passive Radiators for the win.",
         "padding_top": 0,
-        "padding_bottom": 0,
+        "padding_bottom": 10,
         "desktop_padding_top": 0,
-        "desktop_padding_bottom": 0
+        "desktop_padding_bottom": 10
       }
     },
     "4d05205b-3f9e-4561-9ca6-37141dc41232": {
