@@ -111,7 +111,8 @@
             "title": "",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "alt_text": ""
           }
         },
         "template--21470344904981__dbe625c4-93a0-4ee0-b84d-01eba699a645-column-2": {
@@ -121,7 +122,8 @@
             "title": "",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "alt_text": ""
           }
         },
         "template--21470344904981__dbe625c4-93a0-4ee0-b84d-01eba699a645-column-3": {
@@ -131,7 +133,8 @@
             "title": "",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "alt_text": ""
           }
         }
       },
@@ -162,7 +165,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_235.jpg",
         "desktop_image": "shopify:\/\/shop_images\/Frame_250.jpg",
-        "alt_text": "",
+        "alt_text": "Low Latency Gaming Mode Vibrant Shades & Cool Design 50HRS PLAYTIME IPX 4.0 Water Resistant Made In India Bluetooth v5.3",
         "padding_top": 0,
         "padding_bottom": 50,
         "desktop_padding_top": 0,
