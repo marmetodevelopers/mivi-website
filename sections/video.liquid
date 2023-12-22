@@ -2,17 +2,19 @@
 {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+   .section-{{ section.id }}-padding {
+     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+   }
+  .video___container{
+   margin-top:-10px;
   }
-
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
+   @media screen and (min-width: 750px) {
+     .section-{{ section.id }}-padding {
+       padding-top: {{ section.settings.padding_top }}px;
+       padding-bottom: {{ section.settings.padding_bottom }}px;
+     }
+   }
 {%- endstyle -%}
 
 {%- liquid
@@ -38,7 +40,7 @@
   {%- endif %}
 {%- endcapture -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient">
+<div class="color-{{ section.settings.color_scheme }} gradient video___container">
   <div class="video-section isolate{% unless section.settings.full_width %} page-width{% endunless %} section-{{ section.id }}-padding video-mobile-page-width">
     <div
       {% if section.settings.full_width %}
@@ -73,9 +75,9 @@
                   widths: '375, 750, 1100, 1500, 1780, 2000, 3000, 3840',
                   alt: alt
               }}
-              {%- else -%}
+            {%- else -%}
               {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
-            {%- endif -%}   
+            {%- endif -%}
           </a>
         {%- else -%}
           {{
@@ -90,7 +92,7 @@
       data-media-id="{{ video_id }}"
       {% if poster != null %}
         style="--ratio-percent: {{ 1 | divided_by: poster.aspect_ratio | times: 100 }}%;"
-      {% endif %} 
+      {% endif %}
     >
       <button
         id="Deferred-Poster-Modal-{{ video_id }}"
@@ -99,11 +101,11 @@
         aria-label="{{ alt }}"
       >
         {%- if poster != null -%}
-           {% render 'image', mobileSrc: section.settings.mobile_cover_image, desktopSrc:section.settings.cover_image %} 
+          {% render 'image', mobileSrc: section.settings.mobile_cover_image, desktopSrc: section.settings.cover_image %}
         {%- else -%}
           {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
         {%- endif -%}
-         <span class="deferred-media__poster-button motion-reduce">
+        <span class="deferred-media__poster-button motion-reduce">
           {%- render 'icon-play' -%}
         </span>
       </button>
@@ -125,7 +127,7 @@
         </div>
       </div>
       <template>
-         {%- if section.settings.video == null and section.settings.video_url != null -%}
+        {%- if section.settings.video == null and section.settings.video_url != null -%}
           {%- liquid
             assign loop = ''
             if section.settings.enable_video_looping
@@ -230,7 +232,7 @@
       "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
       "label": "t:sections.video.settings.video_url.label",
       "info": "t:sections.video.settings.video_url.info"
-    }, 
+    },
     {
       "type": "image_picker",
       "id": "cover_image",
@@ -253,7 +255,7 @@
       "label": "Text",
       "default":"Immerse In Studio Quality Sound"
     },
-    { 
+    {
       "type": "text",
       "id": "sub_text",
       "label": "Sub Text"

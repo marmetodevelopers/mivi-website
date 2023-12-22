@@ -331,6 +331,7 @@ picture.image_banner_home img {
   gap: 15px;
   position: relative;
   z-index: 999999;
+  flex-wrap:wrap;
 }
 .price-item {
   font-family: 'Gilroy Extra Bold';
@@ -1313,7 +1314,7 @@ li.product-usp--item {
   display: flex;
   align-items: center;
   gap: 20px;
-  width: 27%;
+  max-width: min-content;
 }
 .website__link {
   color: #962C25;
@@ -1417,7 +1418,7 @@ ul.mobile-facets__list {
   .product__info-wrapper fieldset.js.product-form__input.Color {
     display: flex;
     width: 100%;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
   }
   .main-product__main-container span.para-text-fs.usp__icon__text {
@@ -1440,6 +1441,7 @@ ul.mobile-facets__list {
   }
   ul.product-usp.flexbox.product_featured_tags {
     flex-wrap: nowrap;
+    gap:25px;
   }
   li.product-usp--item {
     display: block;
@@ -2461,6 +2463,7 @@ mm-product-form {
     right: 68px;
     top: 29px;
   }
+}
  
 /* account page */
 .account---info span {
@@ -2546,5 +2549,6 @@ tfoot tr {
 }
 .main__address__checkout {
   font-size: calc(14px + (16 - 14) * (100vw - 375px) / (1440 - 375));
- 
 }
+  
+ 

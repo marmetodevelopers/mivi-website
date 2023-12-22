@@ -3,8 +3,8 @@
 
 {%- style -%}
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    padding-top: {{ section.settings.padding_top_mb }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mb }}px;
   }
 
   @media screen and (min-width: 750px) {
@@ -15,28 +15,28 @@
   }
 {%- endstyle -%}
 
-<div class="color-{{ section.settings.color_scheme }} gradient page-width">
+<div class="color-{{ section.settings.color_scheme }} gradient page-width pdp_product__support_main-container section-{{ section.id }}-padding">
   <div class="collapsible-content collapsible-{{ section.settings.layout }}-layout isolate{% if section.settings.layout == 'section' %} page-width{% elsif section.settings.layout == 'none' %} content-container content-container--full-width{% endif %}">
-    <div class="collapsible-content__wrapper section-{{ section.id }}-padding{% if section.settings.layout == 'section' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}">
-      <div class="{% if section.settings.image == blank %}collapsible-content-wrapper-narrow{% else %}page-width{% endif %}">
+    <div class="collapsible-content__wrapper pdp-product__support-wrapper section-{{ section.id }}-padding{% if section.settings.layout == 'section' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}">
+      <div class="{% if section.settings.image == blank %}collapsible-content-wrapper-narrow pdp-product--support{% else %}page-width{% endif %}">
         <div
           class="collapsible-content__header{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
           style="text-align: {{ section.settings.heading_alignment }};"
-        > 
+        >
           {%- if section.settings.heading != blank -%}
-            <h2 class="collapsible-content__heading inline-richtext h4 {{ section.settings.heading_size }}">
+            <h2 class="collapsible-content__heading inline-richtext pdp-product-support-heading h4 {{ section.settings.heading_size }}">
               {{ section.settings.heading }}
             </h2>
           {%- else -%}
             <h2 class="visually-hidden">{{ 'accessibility.collapsible_content_title' | t }}</h2>
           {% endif %}
           {%- if section.settings.caption != blank -%}
-            <p class="caption-with-letter-spacing pdp-collapsible-content__caption">
+            <p class="caption-with-letter-spacing pdp-collapsible-content__caption pdp-product-support-section-caption">
               {{ section.settings.caption | escape }}
             </p>
           {% endif %}
         </div>
-        <div class="grid grid--1-col grid--2-col-tablet collapsible-content__grid{% if section.settings.desktop_layout == 'image_second' %} collapsible-content__grid--reverse{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        <div class="grid grid--1-col grid--2-col-tablet collapsible-content__grid{% if section.settings.desktop_layout == 'image_second' %} collapsible-content__grid--reverse{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in {% endif %}pdp-product-support-grid-content">
           {%- if section.settings.image != blank -%}
             <div class="grid__item collapsible-content__grid-item">
               <div
@@ -69,58 +69,143 @@
               </div>
             </div>
           {% endif %}
-          <div class="grid__item pdp__collapsible-content-grid__item">
-              {%- for block in section.blocks -%}
-              <div
-                class="accordion pdp-collapsible-content-accordion {% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}"
-                {{ block.shopify_attributes }}
-              >
-                <details
-                  id="Details-{{ block.id }}-{{ section.id }}"
-                  {% if section.settings.open_first_collapsible_row and forloop.first %}
-                    open
-                  {% endif %}
+          <div class="grid__item">
+            {%- for block in section.blocks -%}
+              {% if block.type == 'collapsible_row' %}
+                <div
+                  class="accordion pdp-collapsible-content-accordion {% if section.settings.layout == 'row' %} content-container color-{{ section.settings.container_color_scheme }} gradient{% endif %}"
+                  {{ block.shopify_attributes }}
                 >
-                  <summary id="Summary-{{ block.id }}-{{ section.id }}">
-                  <span class="hidden">{% render 'icon-accordion', icon: block.settings.icon %}</span>
-                    <h3 class="accordion__title inline-richtext h4">
-                      {{ block.settings.heading | default: block.settings.page.title }}
-                    </h3>
-                    {% render 'icon-caret' %}
-                  </summary>
-                  <div
-                    class="accordion__content rte"
-                    id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
-                    role="region"
-                    aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
+                  <details
+                    id="Details-{{ block.id }}-{{ section.id }}"
+                    class="pdp-product-support-details"
+                    {% if section.settings.open_first_collapsible_row and forloop.first %}
+                      open
+                    {% endif %}
                   >
-                    {{ block.settings.row_content }}
-                    {{ block.settings.page.content }}
+                    <summary id="Summary-{{ block.id }}-{{ section.id }}">
+                      <span class="hidden">{% render 'icon-accordion', icon: block.settings.icon %}</span>
+                      <h3 class="accordion__title inline-richtext h4 pdp-product-support-title font-bold">
+                        <span class="question pdp-metafield-qns">
+                          {{- block.settings.heading | default: block.settings.page.title -}}
+                        </span>
+                      </h3>
+                      {% render 'icon-caret' %}
+                    </summary>
+                    <div
+                      class="accordion__content rte pdp-product-support-accordion-content text__txt-body"
+                      id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}"
+                      role="region"
+                      aria-labelledby="Summary-{{ block.id }}-{{ section.id }}"
+                    >
+                      {{ block.settings.row_content }}
+                      {{ block.settings.page.content }}
+                    </div>
+                  </details>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+        <div class="pdp-product-support-download-container">
+          <div class="pdp-product-support-sub-container">
+            {% for block in section.blocks %}
+              {% if block.type == 'download__details' %}
+                <div class="pdp-product-support-caption">
+                  {% if block.settings.caption != blank %}
+                    <span class="small-element-8 pdp-product-caption">{{ block.settings.caption }}</span>
+                  {% endif %}
+                  <div class="pdp-product-support-download-details">
+                    <div class="pdp-product-support__content">
+                      {% if block.settings.image != blank %}
+                        <span>
+                          {%- render 'image',
+                            class: '',
+                            mobileSrc: block.settings.image,
+                            desktopSrc: block.settings.image
+                          -%}
+                        </span>
+                      {% endif %}
+                      {% if block.settings.text != blank %}
+                        <span class="text__txt-body pdp-product-text">{{ block.settings.text }}</span>
+                      {% endif %}
+                    </div>
+                    {% assign url = block.settings.url %}
+                    {% if block.settings.url != blank %}
+                      <div class="pdp-product-support-button small-hide medium-hide">
+                        <a href="{{ url.url }}">
+                          <button type="button" class="font-body-text">DOWNLOAD</button>
+                        </a>
+                      </div>
+                    {% endif %}
+                    <div class="pdp-product-support-button">
+                      <a href="{{ url.url }}">
+                        <span class="pdp-product-support-svg large-up-hide">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="14"
+                            height="14"
+                            viewBox="0 0 14 14"
+                            fill="none"
+                          >
+                            <path d="M7 0V12M7 12L13 7.125M7 12L1 7.125" stroke="black" stroke-width="2"/>
+                          </svg>
+                        </span>
+                      </a>
+                    </div>
                   </div>
-                </details>
-              </div>
-            {%- endfor -%}  
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
+          <div class="pdp-product-support-sub-container">
+            {% for block in section.blocks %}
+              {% if block.type == 'download__details-1' %}
+                <div class="pdp-product-support-caption">
+                  {% if block.settings.caption != blank %}
+                    <span class="small-element-8 pdp-product-caption">{{ block.settings.caption }} </span>
+                  {% endif %}
+                  <div class="pdp-product-support-download-details">
+                    <div class="pdp-product-support__content">
+                      {% if block.settings.html != blank %}
+                        <span>{{ block.settings.html }}</span>
+                      {% endif %}
+                      {% if block.settings.text != blank %}
+                        <span class="text__txt-body pdp-product-text">{{ block.settings.text }}</span>
+                      {% endif %}
+                    </div>
+                    <div>
+                      {% assign Url = block.settings.url_redirecting %}
+                      {% if Url != blank %}
+                        <a href="{{ Url }}">
+                          <span class="pdp-product-support-svg">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="10"
+                              height="16"
+                              viewBox="0 0 10 16"
+                              fill="none"
+                            >
+                              <path d="M1 1L8 8L1 15" stroke="#2E343F" stroke-width="2"/>
+                            </svg>
+                          </span>
+                        </a>
+                      {% endif %}
+                    </div>
+                  </div>
+                </div>
+              {% endif %}
+            {% endfor %}
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-<style>
-  @media (min-width:1024px){
-    .pdp__collapsible-content-grid__item{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 50px;
-    }
-  }
-  .collapsible-content__wrapper .pdp-collapsible-content__caption{
-    margin-top: 0;
-  }
-</style>
+
 {% schema %}
 {
-  "name": "t:sections.collapsible_content.name",
+  "name": "section product support",
   "tag": "section",
   "class": "section",
   "disabled_on": {
@@ -285,6 +370,26 @@
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mb",
+      "min": 0,
+      "max": 150,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Top(Mobile)",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mb",
+      "min": 0,
+      "max": 150,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding Bottom(Mobile)",
       "default": 36
     }
   ],
@@ -499,11 +604,69 @@
           "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.page.label"
         }
       ]
+    },
+    {
+      "type": "download__details",
+      "name": "Download details",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "text",
+          "id": "caption",
+          "default": "Manuals/guides",
+          "label": "Heading"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "URL"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "default": "Owner's guide",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "type": "download__details-1",
+      "name": "Download details-1",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "text",
+          "id": "caption",
+          "default": "More SUPPORT",
+          "label": "Heading"
+        },
+        {
+          "type": "html",
+          "id": "html",
+          "label": "PDF svg"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "default": "Troubleshooting",
+          "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "url_redirecting",
+          "label": "URL for redirecting"
+        }
+      ]
     }
   ],
   "presets": [
     {
-      "name": "t:sections.collapsible_content.presets.name",
+      "name": "section product support",
       "blocks": [
         {
           "type": "collapsible_row"
@@ -521,4 +684,4 @@
     }
   ]
 }
-{% endschema %}  
+{% endschema %}

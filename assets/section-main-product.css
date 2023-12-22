@@ -189,7 +189,7 @@ fieldset.product-form__input .form__label {
   border-color: rgb(var(--color-foreground));
 }
 .product-form__input input[type='radio']:checked + label {
-  border: 2px solid #0f0;
+  outline: 2px solid #0f0;
 }
 .product-form__input input[type='radio']:not(.disabled) + label > .visually-hidden {
   display: none;

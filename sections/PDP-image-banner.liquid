@@ -1,0 +1,107 @@
+{% style %}
+  .{{ section.id}}-padding {
+    display: block;
+    padding-top: {{ section.settings.padding_top | append: 'px'  }};
+    padding-bottom: {{ section.settings.padding_bottom |  append: 'px'  }};
+
+  }
+  @media screen and (min-width: 750px) {
+    .{{ section.id}}-padding {
+      padding-top: {{ section.settings.desktop_padding_top | append: 'px'  }};
+      padding-bottom: {{ section.settings.desktop_padding_bottom | append: 'px'  }};
+    }
+  }
+.section-banner-image_image img {
+  width:100%;
+  height:auto;
+  vertical-align: middle;
+}
+  .pdp-image-bannerr{
+    margin-top: -10px;
+  }
+{% endstyle %}
+
+<div class="pdp-image-bannerr {{ section.id}}-padding">
+  <div class="section-banner-image_image">
+    {% render 'image', class: '', mobileSrc: section.settings.image, desktopSrc: section.settings.desktop_image, alt:section.settings.alt_text %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "section banner image",
+  "tag": "section",
+  "class": "section-banner-image",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Mobile Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "desktop_image",
+      "label": "Desktop Image"
+    },
+    {
+      "type": "textarea",
+      "id": "alt_text",
+      "label": "Alternate Text",
+      "info": "Alternate text for image"
+    },
+    {
+      "type": "header",
+      "content": "Mobile section padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Desktop section padding"
+    },
+    {
+      "type": "range",
+      "id": "desktop_padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "desktop_padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "section Banner Image"
+    }
+  ]
+}
+{% endschema %}
