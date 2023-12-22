@@ -2548,7 +2548,7 @@ tfoot tr {
 .main__address__checkout {
   font-size: calc(14px + (16 - 14) * (100vw - 375px) / (1440 - 375));
 }
-   .product--8966889079061 .main---section{
+   .product--8966889079061,.product--8966912934165 .main---section{
     background:#000;
     color:#fff;
      
@@ -2565,3 +2565,4 @@ tfoot tr {
 .product--8966889079061 .predictive-search__result-group.price__sale{
   color:#000;
 }
+.product--8966912934165
