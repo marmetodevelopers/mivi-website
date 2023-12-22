@@ -2553,9 +2553,9 @@ tfoot tr {
     color:#fff;
      
   }
- #product .product__text,.price__container{
+ #product .product__text,.price__container,.main-product-form__label{
    color:#fff;
  }
- #product .main-product-form__label{
+ /* #product{
    color:#fff;
- }
+ } */
