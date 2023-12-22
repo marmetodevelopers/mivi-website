@@ -40,14 +40,14 @@
           "settings": {
             "class": "product_featured_tags",
             "product_tag_1": "new arrive",
-            "product_certification_icon_1": "shopify:\/\/shop_images\/Group_6b734b03-12a0-4da0-bdc5-6869757e55b6.png",
+            "product_certification_icon_1": "shopify:\/\/shop_images\/Group_76.png",
             "product_certification_text_1": "Free Shipping",
             "product_tag_2": "free shipping",
-            "product_certification_icon_2": "shopify:\/\/shop_images\/30_c8f8f738-396e-4fa4-b6cd-60d303bb033b.png",
+            "product_certification_icon_2": "shopify:\/\/shop_images\/Group_77.png",
             "product_certification_text_2": "1 year Warranty",
             "product_tag_3": "Best seller",
-            "product_certification_icon_3": "shopify:\/\/shop_images\/Group_974.png",
-            "product_certification_text_3": "Made in India",
+            "product_certification_icon_3": "shopify:\/\/shop_images\/Group_77.png",
+            "product_certification_text_3": "Ships Today",
             "product_tag_4": "",
             "product_certification_text_4": "",
             "product_tag_5": "",
@@ -141,20 +141,20 @@
         "template--21470378623253__876c7e56-be59-44e4-9255-4c4507aa334e-column-3"
       ],
       "settings": {
-        "title": "",
+        "title": "Multicolumn",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
         "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "",
+        "background_style": "primary",
+        "button_label": "Button label",
         "button_link": "",
         "color_scheme": "",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 36,
-        "padding_bottom": 64
+        "padding_bottom": 36
       }
     },
     "07c587a0-d15e-4dc8-8e99-7eff401066f7": {
@@ -162,11 +162,11 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_50.png",
         "desktop_image": "shopify:\/\/shop_images\/Frame_43.png",
-        "alt_text": "",
+        "alt_text": "Low Latency Gaming Mode 50 Hrs of Combined Playtime Powered by AI ENC IPX4 Water Resistant Swift Charge Technology 13mm Drivers Electroplated Vibrant Shades & Cool Design",
         "padding_top": 0,
-        "padding_bottom": 40,
+        "padding_bottom": 0,
         "desktop_padding_top": 0,
-        "desktop_padding_bottom": 85
+        "desktop_padding_bottom": 0
       }
     },
     "628199af-03ac-433d-9841-2c8752c2528c": {
@@ -174,7 +174,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Group_1534.png",
         "desktop_image": "shopify:\/\/shop_images\/Frame_44.png",
-        "alt_text": "",
+        "alt_text": "Crafted with Perfection by Mivi Design Studios The DuoPods feature the scintillating 'Starry Night Effect' on the case with an eye-catching shimmery effect down to the last detail. The makes the pods look premium and offers the most comfortable fit when plugged in.",
         "padding_top": 0,
         "padding_bottom": 0,
         "desktop_padding_top": 0,
@@ -186,7 +186,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_51.png",
         "desktop_image": "shopify:\/\/shop_images\/Frame_45.png",
-        "alt_text": "",
+        "alt_text": "Exceptional Call Clarity for Engaging Conversations The HDCalls Technology powered by AI-ENC reduces environmental noise effectively thus providing superior call clarity.",
         "padding_top": 0,
         "padding_bottom": 0,
         "desktop_padding_top": 0,
@@ -198,7 +198,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_53.png",
         "desktop_image": "shopify:\/\/shop_images\/11111.jpg",
-        "alt_text": "",
+        "alt_text": "Enjoy the Pulse of Music With Every Beat Powered by 13mm powerful drivers for clear highs, great mid, and crisp lows. MM DRIVERS",
         "padding_top": 0,
         "padding_bottom": 0,
         "desktop_padding_top": 0,
@@ -210,7 +210,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_52.png",
         "desktop_image": "shopify:\/\/shop_images\/Frame_47.png",
-        "alt_text": "",
+        "alt_text": "The Perfect Playtime ForYour Never-Ending Playlist50 Hrs Of Combined Playtime8.5 Hrs Of Playtime With Buds OnSwift Charge Technology For Fast Charging",
         "padding_top": 0,
         "padding_bottom": 0,
         "desktop_padding_top": 0,
@@ -222,7 +222,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Group_1736.png",
         "desktop_image": "shopify:\/\/shop_images\/Group_1732.png",
-        "alt_text": "",
+        "alt_text": "Step Into The Realm OfIntense Multiplayer GamingWith Ultra-Low Latency For Lag-Free Gaming AndClear In-Game Conversations.",
         "padding_top": 0,
         "padding_bottom": 0,
         "desktop_padding_top": 0,
@@ -234,7 +234,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_54.png",
         "desktop_image": "shopify:\/\/shop_images\/481.png",
-        "alt_text": "",
+        "alt_text": "Remain IntensivelyCharged For WorkoutsWith IPX 4.0 Sweat-Resistant DuoPods That Won't Break A Sweat On You During Your Workout.",
         "padding_top": 0,
         "padding_bottom": 0,
         "desktop_padding_top": 0,
@@ -245,8 +245,8 @@
       "type": "PDP-image-banner",
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_55.png",
-        "desktop_image": "shopify:\/\/shop_images\/Frame_49.png",
-        "alt_text": "",
+        "desktop_image": "shopify:\/\/shop_images\/4949.png",
+        "alt_text": "Truly IndianBy Heart And SoulOwn The Indian-Made And Say With Pride,\"Mivi Apna Hai.\"",
         "padding_top": 0,
         "padding_bottom": 0,
         "desktop_padding_top": 0,
