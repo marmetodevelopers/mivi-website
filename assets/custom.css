@@ -2553,7 +2553,7 @@ tfoot tr {
     color:#fff;
      
   }
- #product .product__text{
+ #product .product__text,.price__container,.price-item{
    color:#fff;
  }
  #product .main-product-form__label{
