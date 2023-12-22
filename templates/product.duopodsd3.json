@@ -144,14 +144,14 @@
         "template--21470378623253__876c7e56-be59-44e4-9255-4c4507aa334e-column-3"
       ],
       "settings": {
-        "title": "Multicolumn",
+        "title": "",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "primary",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "color_scheme": "",
         "columns_mobile": "1",
