@@ -111,7 +111,8 @@
             "title": "",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "alt_text": ""
           }
         },
         "template--21470345003285__249c31af-1f34-4918-ad03-0c15d669b2a1-column-2": {
@@ -121,7 +122,8 @@
             "title": "",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "alt_text": ""
           }
         },
         "template--21470345003285__249c31af-1f34-4918-ad03-0c15d669b2a1-column-3": {
@@ -131,7 +133,8 @@
             "title": "",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "alt_text": ""
           }
         }
       },
@@ -162,7 +165,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_129.png",
         "desktop_image": "shopify:\/\/shop_images\/Screenshot_2023-12-21_192345.png",
-        "alt_text": "50MS LOW LATENCY PREMIUM DESIGN 13 MM 50 DRIVERS HRS PLAYTIME LATEST BLUETOOTH 5.3",
+        "alt_text": "50MS LOW LATENCY, PREMIUM DESIGN, 13 MM 50 DRIVERS HRS PLAYTIME LATEST BLUETOOTH 5.3",
         "padding_top": 0,
         "padding_bottom": 0,
         "desktop_padding_top": 0,
