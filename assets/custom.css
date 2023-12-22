@@ -2548,21 +2548,5 @@ tfoot tr {
 .main__address__checkout {
   font-size: calc(14px + (16 - 14) * (100vw - 375px) / (1440 - 375));
 }
-   .product--8966889079061,.product--8966912934165 .main---section{
-    background:#000;
-    color:#fff;
-     
-  }
- .product--8966889079061,.product--8966912934165 .product__text,.price__container,.main-product-form__label,.product-page-website-info{
-   color:#fff;
- }
- .product--8966889079061,.product--8966912934165 s.price-item {
-   color:#fff;
- }
- .product--8966889079061,.product--8966912934165 .multicolumn____container{
-   margin-top:-1px;
- }
- .product--8966912934165 h5{
-   color:#fff;
- }
+  
  
