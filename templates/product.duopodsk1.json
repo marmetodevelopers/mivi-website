@@ -40,14 +40,14 @@
           "settings": {
             "class": "product_featured_tags",
             "product_tag_1": "new arrive",
-            "product_certification_icon_1": "shopify:\/\/shop_images\/Group_6b734b03-12a0-4da0-bdc5-6869757e55b6.png",
+            "product_certification_icon_1": "shopify:\/\/shop_images\/Group_76.png",
             "product_certification_text_1": "Free Shipping",
             "product_tag_2": "free shipping",
-            "product_certification_icon_2": "shopify:\/\/shop_images\/30_c8f8f738-396e-4fa4-b6cd-60d303bb033b.png",
+            "product_certification_icon_2": "shopify:\/\/shop_images\/Group_77.png",
             "product_certification_text_2": "1 year Warranty",
             "product_tag_3": "Best seller",
-            "product_certification_icon_3": "shopify:\/\/shop_images\/Group_974.png",
-            "product_certification_text_3": "Made in India",
+            "product_certification_icon_3": "shopify:\/\/shop_images\/Group_77.png",
+            "product_certification_text_3": "Ships Today",
             "product_tag_4": "",
             "product_certification_text_4": "",
             "product_tag_5": "",
@@ -141,13 +141,13 @@
         "template--21470378688789__770e1a1c-9555-44dd-b20e-76758c3115b9-column-3"
       ],
       "settings": {
-        "title": "",
+        "title": "Multicolumn",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
         "column_alignment": "left",
-        "background_style": "none",
+        "background_style": "primary",
         "button_label": "",
         "button_link": "",
         "color_scheme": "",
@@ -162,11 +162,11 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_59.png",
         "desktop_image": "shopify:\/\/shop_images\/Frame_56.png",
-        "alt_text": "",
+        "alt_text": "42+ HRS PLAYTIME Colors That Redefine Style Electroplated Drivers",
         "padding_top": 0,
-        "padding_bottom": 50,
+        "padding_bottom": 0,
         "desktop_padding_top": 0,
-        "desktop_padding_bottom": 100
+        "desktop_padding_bottom": 0
       }
     },
     "7292bbc0-21e2-4244-85b3-ec19923ad026": {
@@ -174,7 +174,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_60.png",
         "desktop_image": "shopify:\/\/shop_images\/Group_1739.png",
-        "alt_text": "",
+        "alt_text": "A ConcertIn Your Pocket Designed Keeping Your Ultimate Comfort And Much-Deserved Style In Mind, Duo Pods KI Brings With It Class And Convenience In A Design So Compact,You Will Barely Notice It Slid Into Your Pocket!",
         "padding_top": 0,
         "padding_bottom": 0,
         "desktop_padding_top": 0,
@@ -186,7 +186,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_61.png",
         "desktop_image": "shopify:\/\/shop_images\/Frame_57.png",
-        "alt_text": "",
+        "alt_text": "Music - Calls - Play - Repeat! For 42+ Combined Hours With Mivi DuoPods KTs Swift-Charge Battery, No More Spending Hours On End With Your Charger. Get A Full ChargeIn Just 1 Hour For A Battery That Does Not Give Up On You Mid-Way. Make The Most Of Its 42+ Hours Of Combined Buds And Capsule Playtime. Go On And On With Music, Calls, And Gaming Throughout Your Day!",
         "padding_top": 0,
         "padding_bottom": 0,
         "desktop_padding_top": 0,
@@ -198,7 +198,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_62.png",
         "desktop_image": "shopify:\/\/shop_images\/Group_1741.png",
-        "alt_text": "",
+        "alt_text": "Ferocious In Its Power! ELECTROPLATED DRIVERSThe Small Size Of DuoPods KI Has Nothing On Its Oh-So-PowerfuI Bass.Feel The Oomph In Every Single Beat While You Make Your Style Statement. Each Music SessionIs Now An Event With Its 10.5 Mm Dynamic Drivers.",
         "padding_top": 0,
         "padding_bottom": 0,
         "desktop_padding_top": 0,
@@ -210,7 +210,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_63.png",
         "desktop_image": "shopify:\/\/shop_images\/Group_1742.png",
-        "alt_text": "",
+        "alt_text": "Music That Doubles As An Accessory Who Says Audio Products Have To Look Bland And Boring? With DuoPods KI, We Bring You The Classiest And Cutest Colors Ever Made. Look Better Than The Rest While You Also Hear The Best. Black, Blue, Beige Or Coral -Make Your Pick To Suit Your Style!",
         "padding_top": 0,
         "padding_bottom": 0,
         "desktop_padding_top": 0,
@@ -222,7 +222,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_64.png",
         "desktop_image": "shopify:\/\/shop_images\/Group_1743.png",
-        "alt_text": "",
+        "alt_text": "Magical Calling ExperienceThe DuoPods KI Are Equipped With A1 Enabled ENC That Automatically Adjusts To Your Surroundings, Eliminating Distractions For Better Sound And Calling Wherever You Are.",
         "padding_top": 0,
         "padding_bottom": 0,
         "desktop_padding_top": 0,
@@ -234,7 +234,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_65.png",
         "desktop_image": "shopify:\/\/shop_images\/Group_1744.png",
-        "alt_text": "",
+        "alt_text": "Stay Protected From All Directions Splash Proof, Sweat Proof, Dust Proof, And Worry Proof - You Name It, And It Has Got It! The IPX4 Rating Aids Your Intense Workout, Gaming, And Music Sessions For A Convenient Wear And Use!",
         "padding_top": 0,
         "padding_bottom": 0,
         "desktop_padding_top": 0,
@@ -246,7 +246,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_66.png",
         "desktop_image": "shopify:\/\/shop_images\/Frame_58.png",
-        "alt_text": "",
+        "alt_text": "Your Personal Assistant What A Luxury It Would Be To Get Assistance At Your Command, Right? Presenting To You The Voice Assistance Feature To Bring You The Luxury You Desire. Now Connect With Virtual Assistants Like Siri And Google On Your Device With JustOne Long Tap!",
         "padding_top": 0,
         "padding_bottom": 0,
         "desktop_padding_top": 0,
@@ -258,7 +258,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Group_1755.png",
         "desktop_image": "shopify:\/\/shop_images\/Group_1746.png",
-        "alt_text": "",
+        "alt_text": "Made In India Indian Made, Just For You! Fastest Growing Indian Brand First Brand To Start Manufacturing In India Most Preferred Brand 2022",
         "padding_top": 0,
         "padding_bottom": 0,
         "desktop_padding_top": 0,
