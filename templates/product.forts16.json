@@ -111,7 +111,8 @@
             "title": "",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "alt_text": ""
           }
         },
         "template--21470378852629__bd2cfde0-53dd-4182-bb61-6b8e606f42a7-column-2": {
@@ -121,7 +122,8 @@
             "title": "",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "alt_text": ""
           }
         },
         "template--21470378852629__bd2cfde0-53dd-4182-bb61-6b8e606f42a7-column-3": {
@@ -131,7 +133,8 @@
             "title": "",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "",
+            "alt_text": ""
           }
         }
       },
@@ -141,7 +144,7 @@
         "template--21470378852629__bd2cfde0-53dd-4182-bb61-6b8e606f42a7-column-3"
       ],
       "settings": {
-        "title": "Multicolumn",
+        "title": "",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
