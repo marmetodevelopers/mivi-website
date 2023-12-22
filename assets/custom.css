@@ -2556,4 +2556,6 @@ tfoot tr {
  #product .product__text,.price__container,.main-product-form__label,.product-page-website-info{
    color:#fff;
  }
- 
+ #product s.price-item.price-item--regular.font-bold.small-element-3{
+   color:#fff;
+ }
