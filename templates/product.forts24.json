@@ -86,6 +86,7 @@
       ],
       "settings": {
         "enable_sticky_info": true,
+        "color_scheme": "",
         "media_size": "large",
         "constrain_to_viewport": true,
         "media_fit": "contain",
@@ -112,7 +113,7 @@
             "text": "",
             "link_label": "",
             "link": "",
-            "alt_text": "Bass is so good, I can’t stop dancing. - Saharsh"
+            "alt_text": ""
           }
         },
         "template--21467862073621__2aca8977-276f-430b-8670-0628af59df22-column-2": {
@@ -123,7 +124,7 @@
             "text": "",
             "link_label": "",
             "link": "",
-            "alt_text": "Powerfull speaker. Amazing quality - Rohan"
+            "alt_text": ""
           }
         },
         "template--21467862073621__2aca8977-276f-430b-8670-0628af59df22-column-3": {
@@ -134,7 +135,7 @@
             "text": "",
             "link_label": "",
             "link": "",
-            "alt_text": "Bass is so good, I can’t stop dancing.- Kritika"
+            "alt_text": ""
           }
         }
       },
@@ -185,7 +186,7 @@
         "sub_heading": "",
         "text": "",
         "sub_text": "",
-        "description": "",
+        "description": "Immerse yourself in-Entertainment-while listening to amazing sound",
         "full_width": true,
         "color_scheme": "",
         "padding_top": 36,
