@@ -2548,14 +2548,14 @@ tfoot tr {
 .main__address__checkout {
   font-size: calc(14px + (16 - 14) * (100vw - 375px) / (1440 - 375));
 }
-   #product .main---section{
+   .product--8966889079061 .main---section{
     background:#000;
     color:#fff;
      
   }
- #product .product__text,.price__container,.main-product-form__label,.product-page-website-info{
+ .product--8966889079061 .product__text,.price__container,.main-product-form__label,.product-page-website-info{
    color:#fff;
  }
- #product s.price-item {
+ .product--8966889079061 s.price-item {
    color:#fff;
  }
