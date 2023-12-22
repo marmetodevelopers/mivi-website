@@ -1417,7 +1417,7 @@ ul.mobile-facets__list {
   .product__info-wrapper fieldset.js.product-form__input.Color {
     display: flex;
     width: 100%;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
   }
   .main-product__main-container span.para-text-fs.usp__icon__text {
