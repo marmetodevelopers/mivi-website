@@ -40,14 +40,14 @@
           "settings": {
             "class": "product_featured_tags",
             "product_tag_1": "new arrive",
-            "product_certification_icon_1": "shopify:\/\/shop_images\/Group_6b734b03-12a0-4da0-bdc5-6869757e55b6.png",
+            "product_certification_icon_1": "shopify:\/\/shop_images\/Group_76.png",
             "product_certification_text_1": "Free Shipping",
             "product_tag_2": "free shipping",
-            "product_certification_icon_2": "shopify:\/\/shop_images\/30_c8f8f738-396e-4fa4-b6cd-60d303bb033b.png",
+            "product_certification_icon_2": "shopify:\/\/shop_images\/Group_77.png",
             "product_certification_text_2": "1 year Warranty",
             "product_tag_3": "Best seller",
-            "product_certification_icon_3": "shopify:\/\/shop_images\/Group_974.png",
-            "product_certification_text_3": "Made in India",
+            "product_certification_icon_3": "shopify:\/\/shop_images\/Group_77.png",
+            "product_certification_text_3": "Ships Today",
             "product_tag_4": "",
             "product_certification_text_4": "",
             "product_tag_5": "",
@@ -141,13 +141,13 @@
         "template--21470378852629__bd2cfde0-53dd-4182-bb61-6b8e606f42a7-column-3"
       ],
       "settings": {
-        "title": "",
+        "title": "Multicolumn",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
         "column_alignment": "left",
-        "background_style": "none",
+        "background_style": "primary",
         "button_label": "",
         "button_link": "",
         "color_scheme": "",
@@ -162,10 +162,10 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_234.png",
         "desktop_image": "shopify:\/\/shop_images\/Frame_202.png",
-        "alt_text": "",
-        "padding_top": 18,
+        "alt_text": "16W Cinematic Sound Of Battery Life9 MadeIn India Bluetooth Aux USB Micro SD Card Premium Fabric Design",
+        "padding_top": 0,
         "padding_bottom": 0,
-        "desktop_padding_top": 36,
+        "desktop_padding_top": 0,
         "desktop_padding_bottom": 0
       }
     },
@@ -194,19 +194,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_228.jpg",
         "desktop_image": "shopify:\/\/shop_images\/Frame_205.jpg",
-        "alt_text": "",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "desktop_padding_top": 0,
-        "desktop_padding_bottom": 0
-      }
-    },
-    "d0c6f39a-64f2-4d6e-98d3-1c62b8070a78": {
-      "type": "PDP-image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Frame_225.jpg",
-        "desktop_image": "shopify:\/\/shop_images\/Frame_206.jpg",
-        "alt_text": "",
+        "alt_text": "No Buzz Just BASS The bass is balanced, powerful, and rich, making each and everynote crisp and booming. Jump scares will now be anepic story to tell around.",
         "padding_top": 0,
         "padding_bottom": 0,
         "desktop_padding_top": 0,
@@ -218,11 +206,23 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_226.jpg",
         "desktop_image": "shopify:\/\/shop_images\/Frame_208.jpg",
-        "alt_text": "",
+        "alt_text": "Exceptional Sound All Around Enjoy an immersive experience with two speakers of 16W cinematic sound enabled with the Mivi Fort S16, to keep your ears filled with the sounds of glory and joy.",
         "padding_top": 0,
-        "padding_bottom": 30,
+        "padding_bottom": 0,
         "desktop_padding_top": 0,
-        "desktop_padding_bottom": 72
+        "desktop_padding_bottom": 0
+      }
+    },
+    "d0c6f39a-64f2-4d6e-98d3-1c62b8070a78": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Frame_225.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Frame_206.jpg",
+        "alt_text": "Surround yourself in the melodyWith a 2.0 channel detailed stere osound, you can listen to music,radio, audiobooks, and podcasts from all your favourite channels in a premium audio quality that keeps on giving.",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
       }
     },
     "c721e837-277f-404e-9139-9e98a9dd89e7": {
@@ -230,7 +230,19 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_224.jpg",
         "desktop_image": "shopify:\/\/shop_images\/Frame_209.jpg",
-        "alt_text": "",
+        "alt_text": "Head Turning Design Get your neighbours jealous when they set thei reyes on the Mivi Fort S16 with its stylish, premium fabric design with a touch of matte finish that pairs perfectly with your TV or PC set.",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "d4342bd0-53f3-41ec-897c-cf7d09b4700c": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Frame_223.jpg",
+        "desktop_image": "shopify:\/\/shop_images\/Frame_211.jpg",
+        "alt_text": "Brilliant Passive Radiators Move aside subwoofers. With two passive radiators,low frequencies are boosted for a balanced and powerful sound. Passive Radiators for the win.",
         "padding_top": 0,
         "padding_bottom": 0,
         "desktop_padding_top": 0,
@@ -242,22 +254,10 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_222.jpg",
         "desktop_image": "shopify:\/\/shop_images\/Frame_210.jpg",
-        "alt_text": "",
-        "padding_top": 40,
+        "alt_text": "Unstoppable Battery Life With a long-lasting 2000mAH battery capacity,the Mivi Fort S16 can go for 6 hours on end to make sure your gaming, shows, and movies are played on without any disruption.",
+        "padding_top": 0,
         "padding_bottom": 0,
-        "desktop_padding_top": 78,
-        "desktop_padding_bottom": 0
-      }
-    },
-    "d4342bd0-53f3-41ec-897c-cf7d09b4700c": {
-      "type": "PDP-image-banner",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Frame_223.jpg",
-        "desktop_image": "shopify:\/\/shop_images\/Frame_211.jpg",
-        "alt_text": "",
-        "padding_top": 32,
-        "padding_bottom": 0,
-        "desktop_padding_top": 70,
+        "desktop_padding_top": 0,
         "desktop_padding_bottom": 0
       }
     },
@@ -266,10 +266,10 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_221.jpg",
         "desktop_image": "shopify:\/\/shop_images\/Frame_212.jpg",
-        "alt_text": "",
-        "padding_top": 36,
+        "alt_text": "Hands  Free Assistance Set timers, check the news, and control smart home devices (TV or PC), all with asimple shout-out to Siri or GoogleHey Google, play the latest news Assistant. Stay lazy folks.works with Hey Google works with Hey Siri",
+        "padding_top": 0,
         "padding_bottom": 0,
-        "desktop_padding_top": 78,
+        "desktop_padding_top": 0,
         "desktop_padding_bottom": 0
       }
     },
@@ -278,10 +278,10 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_220.jpg",
         "desktop_image": "shopify:\/\/shop_images\/Frame_214.jpg",
-        "alt_text": "",
-        "padding_top": 32,
+        "alt_text": "Multi Channel Input Too many wires? Fear not. The Mivi Fort S16 can be connected to your TV or PC easily.Aux Cable Bluetooth 5.1 USB Micro SD Card",
+        "padding_top": 0,
         "padding_bottom": 0,
-        "desktop_padding_top": 70,
+        "desktop_padding_top": 0,
         "desktop_padding_bottom": 0
       }
     },
@@ -290,10 +290,10 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_218.jpg",
         "desktop_image": "shopify:\/\/shop_images\/Frame_216.jpg",
-        "alt_text": "",
-        "padding_top": 32,
+        "alt_text": "Proudly Made In India Made by Indians This piece of art is proudly designed and manufactured right here in India with our unique tastes & preferences in music we Indians have. INDIAN MADEINDIAN OWNED",
+        "padding_top": 0,
         "padding_bottom": 0,
-        "desktop_padding_top": 70,
+        "desktop_padding_top": 0,
         "desktop_padding_bottom": 0
       }
     }
@@ -304,11 +304,11 @@
     "c80b7b66-73cd-46aa-8936-cfdec765edb7",
     "c136558d-1ac7-4d6b-b7a2-1461554d661a",
     "3e65bf15-971e-4a0e-894b-f7c25d34a4b0",
-    "d0c6f39a-64f2-4d6e-98d3-1c62b8070a78",
     "b93a059a-de62-4de1-9e25-dbcfeca13f4e",
+    "d0c6f39a-64f2-4d6e-98d3-1c62b8070a78",
     "c721e837-277f-404e-9139-9e98a9dd89e7",
-    "4d05205b-3f9e-4561-9ca6-37141dc41232",
     "d4342bd0-53f3-41ec-897c-cf7d09b4700c",
+    "4d05205b-3f9e-4561-9ca6-37141dc41232",
     "3a133210-f612-48b2-8637-a70f71f01d63",
     "3e5b3a4b-2d93-42a6-a35e-fe475c8a9f2b",
     "5eddac9a-d80d-4baf-b828-bc6b0d75b58e"
