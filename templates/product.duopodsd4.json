@@ -86,6 +86,7 @@
       ],
       "settings": {
         "enable_sticky_info": true,
+        "color_scheme": "",
         "media_size": "large",
         "constrain_to_viewport": true,
         "media_fit": "contain",
@@ -112,7 +113,7 @@
             "text": "",
             "link_label": "",
             "link": "",
-            "alt_text": "Bass Is So Good, I Can't Stop Dancing."
+            "alt_text": "Bass is so good, I can’t stop dancing.-Saharsh"
           }
         },
         "template--21470344904981__dbe625c4-93a0-4ee0-b84d-01eba699a645-column-2": {
@@ -123,7 +124,7 @@
             "text": "",
             "link_label": "",
             "link": "",
-            "alt_text": "Powerfull Speaker. Amazing Quality"
+            "alt_text": "Powerfull speaker. Amazing quality-Rohan"
           }
         },
         "template--21470344904981__dbe625c4-93a0-4ee0-b84d-01eba699a645-column-3": {
@@ -134,7 +135,7 @@
             "text": "",
             "link_label": "",
             "link": "",
-            "alt_text": "Bass Is So Good, I Can't Stop Dancing."
+            "alt_text": "Bass is so good, I can’t stop dancing.-Kritika"
           }
         }
       },
