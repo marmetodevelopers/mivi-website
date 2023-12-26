@@ -66,7 +66,7 @@
   <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %} main-product__main-container">
     <div>
       {% if section.settings.product_title_mobile %}
-        <div class="product__title product__tilte-mobile" {{ block.shopify_attributes }}>
+        <div class="product__title product__tilte-mobile medium-hide large-up-hide" {{ block.shopify_attributes }}>
           <h2 class="h3">{{ product.title | escape }}</h2>
           <a href="{{ product.url }}" class="product__title">
             <h2 class="h1">
