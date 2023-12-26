@@ -1386,26 +1386,5 @@ a.product__text {
     margin: auto;
     margin-top: 32px;
   }
-  .product-usp.flexbox.product_featured_tags {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px;
-    padding: 0;
-    width: 100%;
-    gap: 0.8px;
-  }
-  li.product-usp--item {
-    display: block;
-    width: 100%;
-    justify-self: center;
-  }
-  li.product-usp--item .usp-icon {
-    width: 60px;
-    height: 60px;
-  }
-  li.product-usp--item img {
-    width: 40px;
-    height: auto;
-    white-space: unset;
-  }
+
 }
