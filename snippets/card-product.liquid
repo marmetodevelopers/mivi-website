@@ -203,7 +203,7 @@
             </div> {% endcomment %}
           <div class="nikhita">
               {{ product.metafields.custom.product_card_usp.value | json }}
-            {% for ingredient in product.metafields.custom.product_card_usp.value %}
+            {% for ingredient in card_product.metafields.custom.product_card_usp.value %}
               <li>{{ ingredient | json }}</li>
               {% endfor %}
               </div>
