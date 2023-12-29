@@ -187,7 +187,7 @@
                 <span class="caption">{{ 'products.product.volume_pricing.note' | t }}</span>
               </div>
             {%- endif -%} 
-            <div class="small-element-2 card-metafeild-description">
+            <!-- <div class="small-element-2 card-metafeild-description">
               <div class="font-semibold-1">
          {% render 'image' class="" desktopSrc:card_product.metafields.custom.product_cards.value.svg_1 %}      
             {{ card_product.metafields.custom.product_cards.value.text_1 }}
@@ -200,7 +200,26 @@
             {% render 'image' class="" desktopSrc:card_product.metafields.custom.product_cards.value.svg_3 %}
             {{ card_product.metafields.custom.product_cards.value.text_3 }}
               </div>
-            </div>
+            </div> -->
+
+  <div class="Usp-content"> 
+    {% assign icons-11 = product.metafields.custom.pdp_usp_image.value %} 
+      {% for image_url in icons-1 %} 
+        <div class="USP-sub-content">
+          {% if image_url != blank %} 
+            {% render 'image', class: '', mobileSrc: image_url, desktopSrc: image_url %}  
+          {% endif %}
+          {% if product.metafields.custom.product_card_usp != blank and product.metafields.custom.product_card_usp.value != blank %}
+            {% assign texts-11 = product.metafields.custom.product_card_usp.value | split: ',' %}
+            {% if texts-1[forloop.index0] != blank %}
+              <div class="product_meta_text usp-text">
+                {{ texts-1[forloop.index0] | replace: '[', '' | replace: ']', '' | replace: '"', '' }}
+              </div>
+            {% endif %}
+          {% endif %}
+        </div> 
+      {% endfor %}                   
+  </div> 
             <div class="product_variants"> 
               {% for options in card_product.options_with_values %}
                  <div class="product_option" >
