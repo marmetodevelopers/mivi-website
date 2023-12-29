@@ -2559,3 +2559,7 @@ tfoot tr {
   gap:10px;
   margin-bottom:8px;
 }
+font-semibold-1{
+  color:#4B4955;
+  opacity:0.8;
+}
