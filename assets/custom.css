@@ -2563,3 +2563,6 @@ tfoot tr {
   color:#4B4955;
   opacity:0.8;
 }
+span.deferred-media__poster-button.motion-reduce{
+  opacity:0;
+}
