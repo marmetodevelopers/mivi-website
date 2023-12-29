@@ -2427,6 +2427,9 @@ mm-product-form {
     right: 20px;
     top: 20px;
   }
+  deferred-media.video-section__media.deferred-media{
+    aspect-ratio:16/19;
+  }
 }
 .about-page-video-container .video-section span.deferred-media__poster-button.motion-reduce {
   opacity: 0;
@@ -2551,4 +2554,3 @@ tfoot tr {
   font-size: calc(14px + (16 - 14) * (100vw - 375px) / (1440 - 375));
 }
   
- 
