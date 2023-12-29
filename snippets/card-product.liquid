@@ -201,11 +201,11 @@
             {{ card_product.metafields.custom.product_cards.value.text_3 }}
               </div>
             </div> -->
-
+              <div>
             {% for ingredient in product.metafields.custom.product_card_usp.value %}
-<li>{{ ingredient }}</li>
-{% endfor %}
-   
+              <li>{{ ingredient }}</li>
+              {% endfor %}
+              </div>
             <div class="product_variants"> 
               {% for options in card_product.options_with_values %}
                  <div class="product_option" >
