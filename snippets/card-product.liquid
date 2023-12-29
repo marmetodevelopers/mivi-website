@@ -204,7 +204,7 @@
               <div class="nikhita">
               {{ product.metafields.custom.product_card_usp | json }}
             {% for ingredient in product.metafields.custom.product_card_usp.value %}
-              <li>{{ ingredient | json }}</li>
+              <li>{{ ingredient.value | json }}</li>
               {% endfor %}
               </div>
             <div class="product_variants"> 
