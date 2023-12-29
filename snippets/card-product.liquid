@@ -202,9 +202,8 @@
               </div>
             </div> {% endcomment %}
           <div class="nikhita">
-              {{ product.metafields.custom.product_card_usp.value | json }}
             {% for ingredient in card_product.metafields.custom.product_card_usp.value %}
-              <li>{{ ingredient | json }}</li>
+              <li>{{ ingredient}}</li>
               {% endfor %}
               </div>
             <div class="product_variants"> 
