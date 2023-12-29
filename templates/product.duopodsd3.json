@@ -6,6 +6,7 @@
         "title": {
           "type": "title",
           "settings": {
+            "hide_mobile_title": true
           }
         },
         "1ee9b14f-bfcb-4b8a-b9af-c6c764557c73": {
@@ -87,6 +88,7 @@
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "",
+        "product_title_mobile": true,
         "media_size": "large",
         "constrain_to_viewport": true,
         "media_fit": "contain",
@@ -168,9 +170,9 @@
         "desktop_image": "shopify:\/\/shop_images\/Frame_43.png",
         "alt_text": "Low Latency Gaming Mode 50 Hrs of Combined Playtime Powered by AI ENC IPX4 Water Resistant Swift Charge Technology 13mm Drivers Electroplated Vibrant Shades & Cool Design",
         "padding_top": 0,
-        "padding_bottom": 10,
+        "padding_bottom": 100,
         "desktop_padding_top": 0,
-        "desktop_padding_bottom": 10
+        "desktop_padding_bottom": 90
       }
     },
     "628199af-03ac-433d-9841-2c8752c2528c": {
