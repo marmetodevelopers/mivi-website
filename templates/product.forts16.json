@@ -6,6 +6,7 @@
         "title": {
           "type": "title",
           "settings": {
+            "hide_mobile_title": true
           }
         },
         "1ee9b14f-bfcb-4b8a-b9af-c6c764557c73": {
@@ -87,6 +88,7 @@
       "settings": {
         "enable_sticky_info": true,
         "color_scheme": "",
+        "product_title_mobile": true,
         "media_size": "large",
         "constrain_to_viewport": true,
         "media_fit": "contain",
@@ -183,8 +185,8 @@
         "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "cover_image": "shopify:\/\/shop_images\/Frame_204.jpg",
         "mobile_cover_image": "shopify:\/\/shop_images\/Frame_231.jpg",
-        "sub_heading": "Sound Quality",
-        "text": "Immerse In Studio Quality Sound",
+        "sub_heading": "",
+        "text": "",
         "sub_text": "",
         "description": "Immerse yourself in Entertainment while listening to amazing sound",
         "full_width": false,
