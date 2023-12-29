@@ -187,7 +187,7 @@
                 <span class="caption">{{ 'products.product.volume_pricing.note' | t }}</span>
               </div>
             {%- endif -%} 
-            <!-- <div class="small-element-2 card-metafeild-description">
+            {% comment %} <div class="small-element-2 card-metafeild-description">
               <div class="font-semibold-1">
          {% render 'image' class="" desktopSrc:card_product.metafields.custom.product_cards.value.svg_1 %}      
             {{ card_product.metafields.custom.product_cards.value.text_1 }}
@@ -200,8 +200,8 @@
             {% render 'image' class="" desktopSrc:card_product.metafields.custom.product_cards.value.svg_3 %}
             {{ card_product.metafields.custom.product_cards.value.text_3 }}
               </div>
-            </div> -->
-              <div class="nikhita">
+            </div> {% endcomment %}
+          <div class="nikhita">
               {{ product.metafields.custom.product_card_usp.value | json }}
             {% for ingredient in product.metafields.custom.product_card_usp.value %}
               <li>{{ ingredient | json }}</li>
