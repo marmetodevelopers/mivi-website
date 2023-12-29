@@ -2554,3 +2554,7 @@ tfoot tr {
   font-size: calc(14px + (16 - 14) * (100vw - 375px) / (1440 - 375));
 }
   
+.card_products__lists{
+  align-items:center;
+  gap:10px;
+}
