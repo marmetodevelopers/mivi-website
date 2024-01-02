@@ -237,6 +237,37 @@
         "padding_bottom_mb": 50
       }
     },
+    "ad8acd6a-a7de-48d7-9d99-ed036e20f957": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Earbuds",
+        "heading_size": "h2",
+        "description": "<p>Earbuds<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "earbuds",
+        "products_to_show": 5,
+        "columns_desktop": 5,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "enable_quick_add": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "slider_visual": "dots",
+        "padding_top": 150,
+        "padding_bottom": 50,
+        "padding_top_mb": 0,
+        "padding_bottom_mb": 50
+      }
+    },
     "d9c0f073-8abf-43ad-94fc-a5e6d6061436": {
       "type": "homepage-more-products",
       "blocks": {
@@ -358,6 +389,7 @@
     "fee80e2b-57dd-40b2-8e88-b46478691cee",
     "94a0a182-a3aa-4bc1-964f-23cfd135c254",
     "af3bf248-59fd-40c6-b0ed-28193696e6ec",
+    "ad8acd6a-a7de-48d7-9d99-ed036e20f957",
     "d9c0f073-8abf-43ad-94fc-a5e6d6061436",
     "cfe6150d-9b1a-4c6e-beba-cf2ac11bcbbf"
   ]
