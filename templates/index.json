@@ -89,6 +89,7 @@
         "9285b29c-bc74-4794-97c2-72da4db23984",
         "a5f31862-58bb-4e3c-b8f4-aa70bf2df06b"
       ],
+      "disabled": true,
       "settings": {
         "section_heading": "New Launch",
         "heading_align": "tw-text-center",
@@ -117,12 +118,12 @@
         ".card-product__view-details-button {display: none;}"
       ],
       "settings": {
-        "title": "True Wireless Earbuds",
+        "title": "New Launch",
         "heading_size": "h2",
         "description": "<p>Engineered to fit. Great calls and music, designed for compact comfort.<\/p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "earbuds",
+        "collection": "new-launch",
         "products_to_show": 5,
         "columns_desktop": 5,
         "full_width": false,
