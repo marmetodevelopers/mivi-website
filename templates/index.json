@@ -110,7 +110,11 @@
     "9654d635-fb54-43b7-81a4-e3321c709998": {
       "type": "featured-collection-true-wireless-earbuds",
       "custom_css": [
-
+        "@media screen and (min-width: 990px) {.grid--3-col-desktop .grid__item {width: calc(30% - var(--grid-desktop-horizontal-spacing) * 2 \/ 3); max-width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 2 \/ 3); }}",
+        ".slider-buttons {justify-content: space-between;}",
+        "@media screen and (max-width: 749px) {.slider-buttons {justify-content: center; }}",
+        "slideshow-component.slider-mobile-gutter {padding-right: 0;}",
+        ".card-product__view-details-button {display: none;}"
       ],
       "settings": {
         "title": "True Wireless Earbuds",
@@ -119,8 +123,8 @@
         "show_description": false,
         "description_style": "body",
         "collection": "earbuds",
-        "products_to_show": 6,
-        "columns_desktop": 3,
+        "products_to_show": 5,
+        "columns_desktop": 5,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
