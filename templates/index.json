@@ -108,8 +108,47 @@
         "padding_bottom_mb": 24
       }
     },
+    "94a0a182-a3aa-4bc1-964f-23cfd135c254": {
+      "type": "featured-collection",
+      "custom_css": [
+        "@media screen and (min-width: 990px) {.grid--3-col-desktop .grid__item {width: calc(30% - var(--grid-desktop-horizontal-spacing) * 2 \/ 3); max-width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 2 \/ 3); }}",
+        ".slider-buttons {justify-content: space-between;}",
+        "@media screen and (max-width: 749px) {.slider-buttons {justify-content: center; }}",
+        "slideshow-component.slider-mobile-gutter {padding-right: 0;}",
+        ".card-product__view-details-button {display: none;}"
+      ],
+      "settings": {
+        "title": "New Launch",
+        "heading_size": "h2",
+        "description": "<p>Unmatched sound signature with powerfull bass, designed to be carried with you.<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "new-launch",
+        "products_to_show": 5,
+        "columns_desktop": 5,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "enable_quick_add": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "slider_visual": "dots",
+        "padding_top": 150,
+        "padding_bottom": 0,
+        "padding_top_mb": 60,
+        "padding_bottom_mb": 50
+      }
+    },
     "9654d635-fb54-43b7-81a4-e3321c709998": {
       "type": "featured-collection-true-wireless-earbuds",
+      "disabled": true,
       "custom_css": [
         "@media screen and (min-width: 990px) {.grid--3-col-desktop .grid__item {width: calc(30% - var(--grid-desktop-horizontal-spacing) * 2 \/ 3); max-width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 2 \/ 3); }}",
         ".slider-buttons {justify-content: space-between;}",
@@ -122,7 +161,7 @@
         "heading_size": "h2",
         "description": "<p>Engineered to fit. Great calls and music, designed for compact comfort.<\/p>",
         "show_description": false,
-        "description_style": "body",
+        "description_style": "uppercase",
         "collection": "new-launch",
         "products_to_show": 5,
         "columns_desktop": 2,
@@ -201,15 +240,8 @@
         "padding_bottom_mb": 50
       }
     },
-    "94a0a182-a3aa-4bc1-964f-23cfd135c254": {
+    "4c050086-accc-418b-99b6-0db646ec2125": {
       "type": "featured-collection",
-      "custom_css": [
-        "@media screen and (min-width: 990px) {.grid--3-col-desktop .grid__item {width: calc(30% - var(--grid-desktop-horizontal-spacing) * 2 \/ 3); max-width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 2 \/ 3); }}",
-        ".slider-buttons {justify-content: space-between;}",
-        "@media screen and (max-width: 749px) {.slider-buttons {justify-content: center; }}",
-        "slideshow-component.slider-mobile-gutter {padding-right: 0;}",
-        ".card-product__view-details-button {display: none;}"
-      ],
       "settings": {
         "title": "Soundbars",
         "heading_size": "h2",
@@ -413,10 +445,11 @@
   "order": [
     "image_banner",
     "0d5e0dae-2cad-442a-bed4-1d07c2ce59ae",
+    "94a0a182-a3aa-4bc1-964f-23cfd135c254",
     "9654d635-fb54-43b7-81a4-e3321c709998",
     "fee80e2b-57dd-40b2-8e88-b46478691cee",
     "ad8acd6a-a7de-48d7-9d99-ed036e20f957",
-    "94a0a182-a3aa-4bc1-964f-23cfd135c254",
+    "4c050086-accc-418b-99b6-0db646ec2125",
     "af3bf248-59fd-40c6-b0ed-28193696e6ec",
     "d9c0f073-8abf-43ad-94fc-a5e6d6061436",
     "cfe6150d-9b1a-4c6e-beba-cf2ac11bcbbf"
