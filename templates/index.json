@@ -279,6 +279,30 @@
     "d9c0f073-8abf-43ad-94fc-a5e6d6061436": {
       "type": "homepage-more-products",
       "blocks": {
+        "9c2addc6-539a-4653-a35f-3a3b3c0c101c": {
+          "type": "image-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Earbuds.png",
+            "button_text": "TWS Earbuds",
+            "button_link": "shopify:\/\/collections\/earbuds"
+          }
+        },
+        "ffd7709e-fd8f-4656-80d8-db4f19d035cd": {
+          "type": "image-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Earphones.png",
+            "button_text": "SHOP EARPHONES",
+            "button_link": "shopify:\/\/collections\/earphones"
+          }
+        },
+        "ffdc36fb-30ef-49ef-9dee-a78e3b0a967f": {
+          "type": "image-item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Soundbars.png",
+            "button_text": "Soundbars",
+            "button_link": "shopify:\/\/collections\/soundbars"
+          }
+        },
         "75329905-3a84-4e28-957c-6ab9b27fd275": {
           "type": "image-item",
           "settings": {
@@ -287,16 +311,9 @@
             "button_link": "shopify:\/\/collections\/speakers"
           }
         },
-        "ffd7709e-fd8f-4656-80d8-db4f19d035cd": {
-          "type": "image-item",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/DSC_6298_1.png",
-            "button_text": "SHOP EARPHONES",
-            "button_link": "shopify:\/\/collections\/earphones"
-          }
-        },
         "55193d12-8e72-4194-bff3-6035c29d68fa": {
           "type": "image-item",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/android_1.png",
             "button_text": "SHOP CABLES",
@@ -305,6 +322,7 @@
         },
         "5034830b-9005-479d-9c97-e74d61044186": {
           "type": "image-item",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Group_181_1.png",
             "button_text": "SHOP CHARGERS",
@@ -313,8 +331,10 @@
         }
       },
       "block_order": [
-        "75329905-3a84-4e28-957c-6ab9b27fd275",
+        "9c2addc6-539a-4653-a35f-3a3b3c0c101c",
         "ffd7709e-fd8f-4656-80d8-db4f19d035cd",
+        "ffdc36fb-30ef-49ef-9dee-a78e3b0a967f",
+        "75329905-3a84-4e28-957c-6ab9b27fd275",
         "55193d12-8e72-4194-bff3-6035c29d68fa",
         "5034830b-9005-479d-9c97-e74d61044186"
       ],
