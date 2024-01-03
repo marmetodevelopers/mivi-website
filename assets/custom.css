@@ -38,7 +38,7 @@ sticky-header.header-wrapper {
 .list-unstyled {
   margin: auto;
   display: grid;
-  grid-auto-columns:1fr 1fr 1fr 1fr;
+  grid-template-columns:1fr 1fr 1fr 1fr;
   gap: 20px;
   border-bottom: 1px solid #ECECEC;
   padding-top: 26px;
