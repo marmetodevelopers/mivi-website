@@ -11,34 +11,34 @@
       assign available = current_variant.available | default: false
       assign featured_media = product.featured_media
       if current_variant.image != null
-      assign featured_media = current_variant.image
+        assign featured_media = current_variant.image
       endif
     -%}
     <a
       href="{{ product.url }}"
       class=""
     >
-      {% render 'image',class:"media media--portrait" mobileSrc: featured_media, desktopSrc: featured_media %}
-    </a> 
-  </div> 
-  <div class="product-card__info card__information"> 
+      {% render 'image', class: 'media media--portrait', mobileSrc: featured_media, desktopSrc: featured_media %}
+    </a>
+  </div>
+  <div class="product-card__info card__information">
     <div class="product-details small-element-1">
       <a href="{{ product.url }}" class="product-card__title">
         {{ product.title }}
-      </a> 
+      </a>
     </div>
-    
+
     <!-- Start of Judge.me code -->
-      <div class='jdgm-widget jdgm-preview-badge jdgm__homepage__ratings jdgm__product__ratings'>
-        {{ card_product.metafields.judgeme.badge }}
-      </div>
+    <div class="jdgm-widget jdgm-preview-badge jdgm__homepage__ratings jdgm__product__ratings">
+      {{ card_product.metafields.judgeme.badge }}
+    </div>
     <!-- End of Judge.me code -->
-    
+
     {% if settings.mm_show_vendor %}
       <div>
         {{ product.vendor }}
       </div>
-    {% endif %} 
+    {% endif %}
     <div class="price-cart_conatainer">
       <div class="product-price price price--on-sale " id="price-{{ product.id }}">
         <span class="{% if compare_at_price > price %} tw-font-bold price-item price-item--sale price-item--last font-bold small-element-3{% endif %}">
@@ -48,30 +48,29 @@
           {{ compare_at_price | money_without_trailing_zeros }}
         </span>
       </div>
-       <div class="small-element-2">
-              {% for ingredient in card_product.metafields.custom.product_card_usp.value %}
-                 <div class="card_products__lists flex">
-                <div> 
-                  <svg xmlns="http://www.w3.org/2000/svg" width="8" height="10" viewBox="0 0 8 10" fill="none">
-                    <path d="M4 0L8 2.5V7.5L4 10L0 7.5V2.5L4 0Z" fill="#00FF00"/>
-                  </svg>
-                </div>
-                <div class="font-semibold-1 small-element-2">{{ ingredient }}</div>
-                      </div>
-              {% endfor %}
-                    
+      <div class="small-element-2">
+        {% for ingredient in card_product.metafields.custom.product_card_usp.value %}
+          <div class="card_products__lists flex">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="10" viewBox="0 0 8 10" fill="none">
+                <path d="M4 0L8 2.5V7.5L4 10L0 7.5V2.5L4 0Z" fill="#00FF00"/>
+              </svg>
             </div>
+            <div class="font-semibold-1 small-element-2">{{ ingredient }}</div>
+          </div>
+        {% endfor %}
+      </div>
       {% render 'mm-product-variant-picker', product: product, picker_type: settings.mm_variant_select_style %}
-      <div class="flex mm-product__card_flex">  
+      <div class="flex mm-product__card_flex">
         <div class="card___product-button-content">
-          <a href="{{ product.url}}"> 
+          <a href="{{ product.url}}">
             <button class="card-product__view-details-button font-body-text">
               <span>{% render 'icon-eye' %}</span>
               <span class="mm-product__details__button">VIEW DETAILS</span>
             </button>
           </a>
-        </div> 
-      
+        </div>
+
         <mm-product-form>
           {%- form 'product',
             product,
@@ -80,54 +79,52 @@
             novalidate: 'novalidate',
             data-type: 'add-to-cart-form'
           -%}
-              <input
-                type="hidden"
-                name="id"
-                value="{{ product.selected_or_first_available_variant.id }}"
+            <input
+              type="hidden"
+              name="id"
+              value="{{ product.selected_or_first_available_variant.id }}"
+              disabled
+            >
+            <button
+              id="{{ product_form_id }}-submit"
+              type="submit"
+              name="add"
+              class="quick-add__submit button button--full-width{% if horizontal_quick_add %} card--horizontal__quick-add{% endif %}"
+              aria-haspopup="dialog"
+              aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ product.id }}"
+              aria-live="polite"
+              data-sold-out-message="true"
+              {% if product.selected_or_first_available_variant.available == false %}
                 disabled
-              >
-              <button
-                id="{{ product_form_id }}-submit"
-                type="submit"
-                name="add"
-                class="quick-add__submit button button--full-width{% if horizontal_quick_add %} card--horizontal__quick-add{% endif %}"
-                aria-haspopup="dialog"
-                aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ product.id }}"
-                aria-live="polite"
-                data-sold-out-message="true"
-                {% if product.selected_or_first_available_variant.available == false %}
-                  disabled
-                {% endif %}
-              >
-                <span>{% render 'icon-cart' %}</span>
-                <span class="font-body-text">
-                  {%- if product.selected_or_first_available_variant.available -%}
-                    {% if window_width > 768 %} ADD TO CARD {% else %} ADD TO CART {% endif %}
-                    {%- else -%}
-                    Sold Out
-                  {%- endif -%}
-                </span> 
-                <span class="sold-out-message hidden"> Sold Out </span>
-                {%- if horizontal_quick_add -%}
-                  <span class="icon-wrap">+</span>
+              {% endif %}
+            >
+              <span>{% render 'icon-cart' %}</span>
+              <span class="font-body-text">
+                {%- if product.selected_or_first_available_variant.available -%}
+                  {% if window_width > 768 %} ADD TO CARD {% else %} ADD TO CART {% endif %}
+                {%- else -%}
+                  Sold Out
                 {%- endif -%}
-                <div class="loading-overlay__spinner hidden">
-                  <svg
-                    aria-hidden="true"
-                    focusable="false"
-                    class="spinner"
-                    viewBox="0 0 66 66"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                  </svg>
-                </div>
-              </button>
-            </div>  
-        
+              </span>
+              <span class="sold-out-message hidden"> Sold Out </span>
+              {%- if horizontal_quick_add -%}
+                <span class="icon-wrap">+</span>
+              {%- endif -%}
+              <div class="loading-overlay__spinner hidden">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  class="spinner"
+                  viewBox="0 0 66 66"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                </svg>
+              </div>
+            </button>
           {%- endform -%}
-         
         </mm-product-form>
       </div>
     </div>
+  </div>
 </marmeto-product-card>
