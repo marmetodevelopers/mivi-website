@@ -37,7 +37,8 @@ sticky-header.header-wrapper {
 /*  Desktop mega-menu */
 .list-unstyled {
   margin: auto;
-  display: flex;
+  display: grid;
+  grid-auto-columns:1fr 1fr 1fr 1fr;
   gap: 20px;
   border-bottom: 1px solid #ECECEC;
   padding-top: 26px;
