@@ -65,49 +65,6 @@
         "padding_bottom": 120
       }
     },
-    "0d5e0dae-2cad-442a-bed4-1d07c2ce59ae": {
-      "type": "new-launch",
-      "blocks": {
-        "9285b29c-bc74-4794-97c2-72da4db23984": {
-          "type": "carousel_block",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Group_119_1.png",
-            "mobile_image": "shopify:\/\/shop_images\/Group_36.png",
-            "product": "roam"
-          }
-        },
-        "a5f31862-58bb-4e3c-b8f4-aa70bf2df06b": {
-          "type": "carousel_block",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Group_119.png",
-            "mobile_image": "shopify:\/\/shop_images\/Group_36.png",
-            "product": "4a-wall-charger"
-          }
-        }
-      },
-      "block_order": [
-        "9285b29c-bc74-4794-97c2-72da4db23984",
-        "a5f31862-58bb-4e3c-b8f4-aa70bf2df06b"
-      ],
-      "disabled": true,
-      "settings": {
-        "section_heading": "New Launch",
-        "heading_align": "tw-text-center",
-        "sub_text": "The upgrade with you have been waiting",
-        "desktop_background_image": "shopify:\/\/shop_images\/Union_9.png",
-        "mobile_background_image": "shopify:\/\/shop_images\/Union_8.png",
-        "enable_pagination": true,
-        "enable_autoplay": false,
-        "autoplay_speed": 2,
-        "slides_perpage": 3,
-        "section-padding-top": 36,
-        "section-padding-bottom": 36,
-        "padding_top": 0,
-        "padding_bottom": 120,
-        "padding_top_mb": 0,
-        "padding_bottom_mb": 24
-      }
-    },
     "94a0a182-a3aa-4bc1-964f-23cfd135c254": {
       "type": "featured-collection",
       "custom_css": [
@@ -144,44 +101,6 @@
         "padding_bottom": 0,
         "padding_top_mb": 60,
         "padding_bottom_mb": 50
-      }
-    },
-    "9654d635-fb54-43b7-81a4-e3321c709998": {
-      "type": "featured-collection-true-wireless-earbuds",
-      "disabled": true,
-      "custom_css": [
-        "@media screen and (min-width: 990px) {.grid--3-col-desktop .grid__item {width: calc(30% - var(--grid-desktop-horizontal-spacing) * 2 \/ 3); max-width: calc(33.33% - var(--grid-desktop-horizontal-spacing) * 2 \/ 3); }}",
-        ".slider-buttons {justify-content: space-between;}",
-        "@media screen and (max-width: 749px) {.slider-buttons {justify-content: center; }}",
-        "slideshow-component.slider-mobile-gutter {padding-right: 0;}",
-        ".card-product__view-details-button {display: none;}"
-      ],
-      "settings": {
-        "title": "New Launch",
-        "heading_size": "h2",
-        "description": "<p>Engineered to fit. Great calls and music, designed for compact comfort.<\/p>",
-        "show_description": false,
-        "description_style": "uppercase",
-        "collection": "new-launch",
-        "products_to_show": 5,
-        "columns_desktop": 2,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": true,
-        "color_scheme": "",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": true,
-        "enable_quick_add": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "slider_visual": "dots",
-        "padding_top": 0,
-        "padding_bottom": 176,
-        "padding_top_mb": 0,
-        "padding_bottom_mb": 28
       }
     },
     "fee80e2b-57dd-40b2-8e88-b46478691cee": {
@@ -444,9 +363,7 @@
   },
   "order": [
     "image_banner",
-    "0d5e0dae-2cad-442a-bed4-1d07c2ce59ae",
     "94a0a182-a3aa-4bc1-964f-23cfd135c254",
-    "9654d635-fb54-43b7-81a4-e3321c709998",
     "fee80e2b-57dd-40b2-8e88-b46478691cee",
     "ad8acd6a-a7de-48d7-9d99-ed036e20f957",
     "4c050086-accc-418b-99b6-0db646ec2125",
