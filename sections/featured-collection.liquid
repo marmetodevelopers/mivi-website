@@ -90,7 +90,8 @@
               <span class="slider-counter--total">{{ 5 }}</span>
               {%- else -%}
                 <div class="slideshow__control-wrapper">
-                  {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
+                  {% assign dot_to_display =  section.settings.products_to_show | minus: 2 %}
+                  {%- for product in section.settings.collection.products limit: dot_to_display -%}
                     <button
                       class="slider-counter__link slider-counter__link--{{ section.settings.slider_visual }} link"
                       aria-label="{{ 'sections.slideshow.load_slide' | t }} {{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
@@ -196,7 +197,8 @@
               <span class="slider-counter--total">{{ 5 }}</span>
             {%- else -%}
               <div class="slideshow__control-wrapper"> 
-                {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%} 
+                {% assign dot_to_display =  section.settings.products_to_show | minus: 2 %}
+                {%- for product in section.settings.collection.products limit: dot_to_display -%} 
                   <button
                     class="slider-counter__link slider-counter__link--{{ section.settings.slider_visual }} link"
                     aria-label="{{ 'sections.slideshow.load_slide' | t }} {{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"

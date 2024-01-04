@@ -37,8 +37,7 @@ sticky-header.header-wrapper {
 /*  Desktop mega-menu */
 .list-unstyled {
   margin: auto;
-  display: grid;
-  grid-template-columns:1fr 1fr 1fr 1fr;
+  display: flex;
   gap: 20px;
   border-bottom: 1px solid #ECECEC;
   padding-top: 26px;
@@ -329,10 +328,10 @@ picture.image_banner_home img {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
   position: relative;
   z-index: 999999;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
 }
 .price-item {
   font-family: 'Gilroy Extra Bold';
@@ -413,7 +412,6 @@ picture.image_banner_home img {
 .deal-of__the-day-section {
   margin-bottom: 6rem;
 }
-
 @media screen and (min-width:750px) {
   .deal-of-the-day-container {
     display: flex;
@@ -1442,7 +1440,7 @@ ul.mobile-facets__list {
   }
   ul.product-usp.flexbox.product_featured_tags {
     flex-wrap: nowrap;
-    gap:16px;
+    gap: 16px;
   }
   li.product-usp--item {
     display: block;
@@ -2129,9 +2127,6 @@ section.shopify-section.section.only__one_image_section {
 .collection_banner_image {
   width: 100%;
 }
-.collection-hero__title {
-  color: #fff;
-}
 .collection_banner_image img {
   width: 100%;
 }
@@ -2143,7 +2138,6 @@ h1.collection-hero__title.h4 {
 }
 .collection-hero__text-wrapper {
   position: absolute;
-  bottom: 20%;
   left: 0;
   width: 100%;
   text-align: center;
@@ -2315,7 +2309,6 @@ mm-product-form {
     padding: 22px 15px;
   }
 }
- 
 /* style for about page */
 .usp .multicolumn-card.content-container .multicolumn-card__image-wrapper {
   margin: 0 auto;
@@ -2428,8 +2421,8 @@ mm-product-form {
     right: 20px;
     top: 20px;
   }
-  deferred-media.video-section__media.deferred-media{
-    aspect-ratio:16/19;
+  deferred-media.video-section__media.deferred-media {
+    aspect-ratio: 16/19;
   }
 }
 .about-page-video-container .video-section span.deferred-media__poster-button.motion-reduce {
@@ -2468,7 +2461,6 @@ mm-product-form {
     top: 29px;
   }
 }
- 
 /* account page */
 .account---info span {
   line-height: 28px;
@@ -2554,16 +2546,28 @@ tfoot tr {
 .main__address__checkout {
   font-size: calc(14px + (16 - 14) * (100vw - 375px) / (1440 - 375));
 }
-  
-.card_products__lists{
-  align-items:center;
-  gap:10px;
-  margin-bottom:8px;
+.card_products__lists {
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
 }
-.font-semibold-1{
-  color:#4B4955;
-  opacity:0.8;
+.font-semibold-1 {
+  color: #4B4955;
+  opacity: 0.8;
 }
-span.deferred-media__poster-button.motion-reduce{
-  opacity:0;
+span.deferred-media__poster-button.motion-reduce {
+  opacity: 0;
+}
+button.product-media-modal__toggle {
+  background: #000;
+}
+#MegaMenu-Content-1 .list-unstyled {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+div#menu-drawer a.link.link--text {
+  color: #000;
+}
+#gb_container_8247439015 iframe#btnIframe.gb_protect {
+  z-index: 1 !important;
 }
