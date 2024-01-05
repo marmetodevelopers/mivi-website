@@ -224,8 +224,8 @@
                     {% endif %}>
                     {%- case item.object_type -%}
                       {%- when 'product' -%}
-                        {%- capture product_settings -%}{%- if section.settings.product_show_vendor -%}vendor,{%- endif -%}title,price{%- endcapture -%}
-                        {% render 'card-product',
+                       {%- capture product_settings -%}{%- if section.settings.product_show_vendor -%}vendor,{%- endif -%}title,price{%- endcapture -%}
+                         {% render 'card-product',
                           card_product: item,
                           media_aspect_ratio: section.settings.image_ratio,
                           image_shape: section.settings.image_shape,
@@ -233,8 +233,8 @@
                           show_vendor: section.settings.show_vendor,
                           show_rating: section.settings.show_rating,
                           lazy_load: lazy_load
-                        %}
-                      {%- when 'article' -%}
+                        %}  
+                       {%- when 'article' -%}
                         {% render 'article-card',
                           article: item,
                           show_image: true,
