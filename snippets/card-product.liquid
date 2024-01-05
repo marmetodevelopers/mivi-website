@@ -187,7 +187,7 @@
                 <span class="caption">{{ 'products.product.volume_pricing.note' | t }}</span>
               </div>
             {%- endif -%}
-            <div class="small-element-2">
+            <div class="small-element-2 card__product___description__metafield">
               {% for ingredient in card_product.metafields.custom.product_card_usp.value %}
                 <div class="card_products__lists flex">
                   <div>
@@ -246,7 +246,7 @@
               </a>
             </div>
           </div>
-          <div class="card__product-buttons">
+          <div class="card__product-buttons hidden">
             <div class="card___product-button-content">
               <a href="{{card_product.url}}">
                 <button class="card-product__view-details-button font-body-text">

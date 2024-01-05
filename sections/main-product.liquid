@@ -64,17 +64,25 @@
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
 
   <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %} main-product__main-container">
-
-      {% if section.settings.product_title_mobile %}
-        <div class="product__title product__tilte-mobile medium-hide large-up-hide" {{ block.shopify_attributes }}>
-          <h2 class="h3">{{ product.title | escape }}</h2>
-          <a href="{{ product.url }}" class="product__title">
-            <h2 class="h1">
-              {{ product.title | escape }}
-            </h2>
-          </a>
-        </div>
-      {% endif %}
+         
+          {% if section.settings.product_title_mobile %}
+            <div class="product__title product__tilte-mobile medium-hide large-up-hide" {{ block.shopify_attributes }}>
+              <h2 class="h3">{{ product.title | escape }}</h2>
+              <a href="{{ product.url }}" class="product__title">
+                <h2 class="h1">
+                  {{ product.title | escape }}
+                </h2>
+              </a>
+              <div align="center" class="pt-4">
+              <p
+                class="product__text inline-richtext small-element-10 large-up-hide medium-hide {% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
+                {{ block.shopify_attributes }}
+              >
+                {{- product.type -}}
+              </p>
+            </div>
+            </div>
+          {% endif %} 
       <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
         {% render 'product-media-gallery', variant_images: variant_images %}
       </div>
@@ -101,7 +109,7 @@
               </p>
             {%- when 'product-type' -%}
               <p
-                class="product__text inline-richtext small-element-10 {% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
+                class="product__text inline-richtext small-element-10 small-hide {% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
                 {{ block.shopify_attributes }}
               >
                 {{- product.type -}}
@@ -246,7 +254,7 @@
                   {{ block.settings.metafield_content }}
                 {% else %}
                   <div class="product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
-                    {{ product.description }}
+                  {{ product.description }}
                     <div>
                       {{ product.metafields.custom.product_description_tabs | metafield_tag }}
                     </div>

@@ -73,9 +73,6 @@ li.grid__item.card-media-picture.scroll-trigger.animate--slide-in .quick-add.no-
 #product-grid .collection__view-all a:not(.link) {
   margin-top: 1rem;
 }
-#product-grid .product___card-button {
-  display: none;
-}
 #product-grid .card__content {
   padding: 0;
 }

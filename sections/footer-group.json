@@ -63,13 +63,21 @@
             "heading": "About Us",
             "menu": "https-www-mivi-in-mivi-apna-hai"
           }
+        },
+        "6b3156d3-bd75-4f93-bc20-3269dcfcf001": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Shop",
+            "menu": "shop"
+          }
         }
       },
       "block_order": [
         "6003e57b-f961-40c8-9f83-f7aab64612eb",
         "6631c70a-4d83-43f9-b8fa-e1fc6efef67e",
         "32aaf3ec-06fc-4a47-a9e2-19b8b542bca6",
-        "0cd2a900-7f5c-420a-8306-31cdcbb6d520"
+        "0cd2a900-7f5c-420a-8306-31cdcbb6d520",
+        "6b3156d3-bd75-4f93-bc20-3269dcfcf001"
       ],
       "settings": {
         "color_scheme": "background-1",
