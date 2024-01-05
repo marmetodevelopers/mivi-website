@@ -84,6 +84,8 @@ button.menu-drawer__close-button.link.link--text.focus-inset {
   border-bottom: 1px solid #ECECEC;
   padding-top: 10px;
   color: #4B4955;
+  text-align:center;
+  margin:auto;
 }
 a.child_image {
   text-decoration: none;
