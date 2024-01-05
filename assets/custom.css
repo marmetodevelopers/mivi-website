@@ -131,9 +131,9 @@ a.menu-drawer__account.link.focus-inset.h5.medium-hide.large-up-hide {
   .menu-drawer__navigation details[open] .header__icon-minus {
     display: inline-block;
   }
-  .menu-drawer__navigation details[open] summary {
+  /* .menu-drawer__navigation details[open] summary {
     border: none;
-  }
+  } */
 }
 /* banner image */
 .banner__text {
