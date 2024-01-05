@@ -48,7 +48,9 @@
           {{ compare_at_price | money_without_trailing_zeros }}
         </span>
       </div>
-      <div class="small-element-2 pl-1">
+      <div
+        class="small-element-2 pl-1 .card__product___description__metafield {"
+      >
         {% for ingredient in product.metafields.custom.product_card_usp.value %}
           <div class="card_products__lists flex">
             <div>
