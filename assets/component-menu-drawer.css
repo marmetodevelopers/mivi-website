@@ -93,7 +93,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 .menu-drawer__menu-item {
   padding: 20px 20px 20px 0px;
   text-decoration: none;
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 2px solid #ECECEC;
 }
 .no-js .menu-drawer__menu-item {
   font-size: 1.6rem;
