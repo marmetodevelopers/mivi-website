@@ -1329,12 +1329,7 @@ facet-filters__label.caption-large {
   text-transform: uppercase;
   opacity: 0.43;
 }
-li.product-usp--item {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  width:28%;
-}
+
 .website__link {
   color: #962c25;
 }
@@ -1397,6 +1392,14 @@ ul.mobile-facets__list {
   font-weight: 800;
   line-height: 100%;
   text-transform: uppercase;
+}
+@media screen and (min-width: 750px) {
+li.product-usp--item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width:28%;
+}
 }
 @media screen and (min-width: 750px) {
   .product__info-container {
