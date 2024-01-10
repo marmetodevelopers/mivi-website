@@ -44,7 +44,7 @@
           <h2 id="predictive-search-pages-desktop" class="predictive-search__heading text-body caption-with-letter-spacing">
             {{- 'templates.search.pages' | t -}}
           </h2>
-          <ul id="predictive-search-results-pages-list-desktop" class="predictive-search__results-list list-unstyled" role="group" aria-labelledby="predictive-search-pages-desktop">
+          <ul id="predictive-search-results-pages-list-desktop" class="predictive-search__results-list" role="group" aria-labelledby="predictive-search-pages-desktop">
             {%- for page in predictive_search.resources.pages -%}
               <li id="predictive-search-option-page-desktop-{{ forloop.index }}" class="predictive-search__list-item" role="option" aria-selected="false">
                 <a href="{{ page.url }}" class="predictive-search__item link link--text" tabindex="-1">
