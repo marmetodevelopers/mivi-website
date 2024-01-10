@@ -2672,3 +2672,6 @@ div#menu-drawer a.link.link--text {
 .predictive-search__item-heading {
   color: #000;
 }
+.product-form__input input[type=radio]+label{
+  border:1px solid #f6f6f7;
+}
