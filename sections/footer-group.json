@@ -36,8 +36,23 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "037e3e4a-0cd4-4bf9-8f0c-a081ebe4a668": {
+          "type": "text",
+          "settings": {
+            "heading": "Customer Support",
+            "subtext": ""
+          }
+        },
+        "32aaf3ec-06fc-4a47-a9e2-19b8b542bca6": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Product Help",
+            "menu": "product-help"
+          }
+        },
         "6003e57b-f961-40c8-9f83-f7aab64612eb": {
           "type": "link_list",
+          "disabled": true,
           "settings": {
             "heading": "My Account",
             "menu": "footer"
@@ -52,16 +67,10 @@
         },
         "6631c70a-4d83-43f9-b8fa-e1fc6efef67e": {
           "type": "link_list",
+          "disabled": true,
           "settings": {
             "heading": "Warranty",
             "menu": "warranty"
-          }
-        },
-        "32aaf3ec-06fc-4a47-a9e2-19b8b542bca6": {
-          "type": "link_list",
-          "settings": {
-            "heading": "Product Help",
-            "menu": "product-help"
           }
         },
         "0cd2a900-7f5c-420a-8306-31cdcbb6d520": {
@@ -73,6 +82,7 @@
         },
         "11a3cc9d-1925-4fc7-aa14-ad4b34f261ef": {
           "type": "link_list",
+          "disabled": true,
           "settings": {
             "heading": "Quick links",
             "menu": "quick-links"
@@ -80,10 +90,11 @@
         }
       },
       "block_order": [
+        "037e3e4a-0cd4-4bf9-8f0c-a081ebe4a668",
+        "32aaf3ec-06fc-4a47-a9e2-19b8b542bca6",
         "6003e57b-f961-40c8-9f83-f7aab64612eb",
         "16c2e965-840b-42dd-99d7-09d7cd0a53b1",
         "6631c70a-4d83-43f9-b8fa-e1fc6efef67e",
-        "32aaf3ec-06fc-4a47-a9e2-19b8b542bca6",
         "0cd2a900-7f5c-420a-8306-31cdcbb6d520",
         "11a3cc9d-1925-4fc7-aa14-ad4b34f261ef"
       ],
