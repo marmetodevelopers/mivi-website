@@ -1333,7 +1333,7 @@ li.product-usp--item {
   display: flex;
   align-items: center;
   gap: 20px;
-  max-width: min-content;
+  width:28%;
 }
 .website__link {
   color: #962c25;
