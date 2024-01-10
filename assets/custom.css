@@ -2653,7 +2653,7 @@ div#menu-drawer a.link.link--text {
   line-height: 24px;
 }
 .product__description p {
-  color: #4b4955;
+  color: #626870;
   font-family: Gilroy Medium;
   font-size: calc(14px + (18 - 14) * (100vw - 375px) / (1440 - 375));
   font-style: normal;
