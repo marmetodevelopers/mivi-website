@@ -36,11 +36,13 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "037e3e4a-0cd4-4bf9-8f0c-a081ebe4a668": {
-          "type": "text",
+        "9277b9c5-9110-4ff9-a964-f1de65b3e312": {
+          "type": "emailtext",
           "settings": {
-            "heading": "Customer Support",
-            "subtext": ""
+            "email-heading": "Customer Support",
+            "email__subtext": "<p>(Mon-Sat, 10:00am-5:00pm)<\/p>",
+            "footer-mobile": "+918099973333",
+            "footer-email": "info@mivi.in"
           }
         },
         "32aaf3ec-06fc-4a47-a9e2-19b8b542bca6": {
@@ -90,7 +92,7 @@
         }
       },
       "block_order": [
-        "037e3e4a-0cd4-4bf9-8f0c-a081ebe4a668",
+        "9277b9c5-9110-4ff9-a964-f1de65b3e312",
         "32aaf3ec-06fc-4a47-a9e2-19b8b542bca6",
         "6003e57b-f961-40c8-9f83-f7aab64612eb",
         "16c2e965-840b-42dd-99d7-09d7cd0a53b1",
