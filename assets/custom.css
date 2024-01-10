@@ -2687,4 +2687,6 @@ div#menu-drawer a.link.link--text {
   letter-spacing:1.5px;
   text-transform:unset;
 }
- 
+.list-menu--inline{
+  align-items:center;
+}
