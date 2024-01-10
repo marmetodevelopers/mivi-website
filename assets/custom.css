@@ -2676,5 +2676,5 @@ div#menu-drawer a.link.link--text {
   border: 1px solid #ededed;
 }
 .product__main-container .price {
-  border-bottom:unset;
+  border-bottom:0;
 }
