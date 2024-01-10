@@ -2675,6 +2675,6 @@ div#menu-drawer a.link.link--text {
 .product-form__input input[type="radio"] + label {
   border: 1px solid #ededed;
 }
-.product__main-container .price {
+.main-product__main-container .price {
   border-bottom:0;
 }
