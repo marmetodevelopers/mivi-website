@@ -1463,6 +1463,7 @@ ul.mobile-facets__list {
     flex-wrap: nowrap;
     gap: 16px;
     justify-content:center;
+    align-items:center;
   }
   li.product-usp--item {
     display: block;
