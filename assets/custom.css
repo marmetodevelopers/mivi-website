@@ -2648,7 +2648,6 @@ div#menu-drawer a.link.link--text {
   font-size: calc(18px + (24 - 18) * (100vw - 375px) / (1440 - 375));
   font-weight: 800;
   line-height: 24px;
-  text-transform: uppercase;
 }
 .product__description p {
   color: #4b4955;
