@@ -316,6 +316,7 @@ picture.image_banner_home img {
     height: 25px;
     appearance: none;
     border-radius: 50%;
+    outline:1px solid #ededed;
   }
 }
 .product_option input[type="radio"]:checked {
