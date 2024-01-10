@@ -287,7 +287,6 @@ a.product__text {
 }
 .product__title > * {
   margin: 0;
-  color: #0f0;
 }
 .product__title > a {
   display: none;
