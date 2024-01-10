@@ -1440,6 +1440,7 @@ ul.mobile-facets__list {
     width: 100%;
     flex-wrap: wrap;
     align-items: center;
+    justify-content:center;
   }
   .main-product__main-container span.para-text-fs.usp__icon__text {
     font-size: 14px;
