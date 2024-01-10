@@ -155,7 +155,7 @@
         "slider_visual": "dots",
         "padding_top": 150,
         "padding_bottom": 50,
-        "padding_top_mb": 0,
+        "padding_top_mb": 60,
         "padding_bottom_mb": 50
       }
     },
