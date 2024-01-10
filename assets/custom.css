@@ -1312,7 +1312,8 @@ facet-filters__label.caption-large {
   padding-bottom: unset;
 }
 .product__text {
-  opacity: 0.5;
+  opacity: 0.8;
+  color: rgb(38, 40, 90);
 }
 .product__media-list.main-product-add-to-cart-button {
   font-family: "Gilroy black";
