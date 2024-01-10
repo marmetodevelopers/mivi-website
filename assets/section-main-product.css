@@ -1331,6 +1331,7 @@ a.product__text {
   .product__tilte-mobile {
     margin: auto;
     margin-top: 32px;
+    text-align:center;
   }
   #product .gb_main_container.gb_circle.gb_right #btnIframe {
     bottom: 45px;
