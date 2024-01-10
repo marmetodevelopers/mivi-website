@@ -1440,7 +1440,7 @@ ul.mobile-facets__list {
     width: 100%;
     flex-wrap: wrap;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
   }
   .main-product__main-container span.para-text-fs.usp__icon__text {
     font-size: 14px;
@@ -1463,8 +1463,8 @@ ul.mobile-facets__list {
   ul.product-usp.flexbox.product_featured_tags {
     flex-wrap: nowrap;
     gap: 16px;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
   }
   li.product-usp--item {
     display: block;
@@ -2672,6 +2672,6 @@ div#menu-drawer a.link.link--text {
 .predictive-search__item-heading {
   color: #000;
 }
-.product-form__input input[type=radio]+label{
-  border:1px solid #f6f6f7;
+.product-form__input input[type="radio"] + label {
+  border: 1px solid #ededed;
 }
