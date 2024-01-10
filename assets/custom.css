@@ -2687,3 +2687,6 @@ div#menu-drawer a.link.link--text {
   letter-spacing:1.5px;
   text-transform:unset;
 }
+header.header .header__menu-item span{
+  letter-spacing:unset;
+} 
