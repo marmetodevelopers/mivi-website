@@ -316,10 +316,7 @@ picture.image_banner_home img {
     height: 25px;
     appearance: none;
     border-radius: 50%;
-    outline:1px solid #ededed;
-  }
-  .slideshow__controls.slider-buttons {
-    display:none;
+    outline: 1px solid #ededed;
   }
 }
 .product_option input[type="radio"]:checked {
@@ -407,7 +404,7 @@ picture.image_banner_home img {
     height: 25px;
     appearance: none;
     border-radius: 50%;
-    outline:1px solid #ededed;
+    outline: 1px solid #ededed;
   }
 }
 .collection-true-wireless-earbuds-container .card__product-buttons {
@@ -2688,10 +2685,15 @@ div#menu-drawer a.link.link--text {
 .main-product__main-container .price {
   border-bottom: 0;
 }
-.main-product__main-container .product__text{
-  letter-spacing:1.5px;
-  text-transform:unset;
+.main-product__main-container .product__text {
+  letter-spacing: 1.5px;
+  text-transform: unset;
 }
-.list-menu--inline{
-  align-items:center;
+.list-menu--inline {
+  align-items: center;
+}
+@media screen and (max-width: 990px) {
+  .slideshow__controls.slider-buttons {
+    display: none;
+  }
 }
