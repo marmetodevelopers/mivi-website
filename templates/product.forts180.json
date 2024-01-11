@@ -6,6 +6,7 @@
         "title": {
           "type": "title",
           "settings": {
+            "hide_mobile_title": true
           }
         },
         "1ee9b14f-bfcb-4b8a-b9af-c6c764557c73": {
@@ -86,6 +87,8 @@
       ],
       "settings": {
         "enable_sticky_info": true,
+        "color_scheme": "",
+        "product_title_mobile": true,
         "media_size": "large",
         "constrain_to_viewport": true,
         "media_fit": "contain",
@@ -115,6 +118,7 @@
     },
     "2759a6ba-8313-478b-bdb7-0ba6ae129151": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h1",
