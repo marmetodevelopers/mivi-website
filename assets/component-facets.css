@@ -631,7 +631,7 @@ details.menu-opening .mobile-facets__close svg {
   right: 0px;
   bottom: 0px;
   display: block;
-  background-color: rgba(var(--color-foreground), 0.04);
+  /* background-color: rgba(var(--color-foreground), 0.04); */
 }
 .mobile-facets__summary {
   padding: 0rem 2.5rem;

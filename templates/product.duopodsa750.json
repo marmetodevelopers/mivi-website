@@ -6,6 +6,7 @@
         "title": {
           "type": "title",
           "settings": {
+            "hide_mobile_title": true
           }
         },
         "1ee9b14f-bfcb-4b8a-b9af-c6c764557c73": {
@@ -86,6 +87,8 @@
       ],
       "settings": {
         "enable_sticky_info": true,
+        "color_scheme": "",
+        "product_title_mobile": true,
         "media_size": "large",
         "constrain_to_viewport": true,
         "media_fit": "contain",
@@ -196,16 +199,6 @@
         "desktop_padding_top": 0,
         "desktop_padding_bottom": 0
       }
-    },
-    "c265c8bf-019d-468e-9d3f-7b0293ec90e3": {
-      "type": "PDP-image-banner",
-      "settings": {
-        "alt_text": "",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "desktop_padding_top": 0,
-        "desktop_padding_bottom": 0
-      }
     }
   },
   "order": [
@@ -217,7 +210,6 @@
     "d365869c-f08a-4017-b16e-29ac0d59befe",
     "9ed9c14e-af6a-4df0-a4f4-33319273fc2e",
     "5a607480-aabf-4bdf-b2eb-944744b0bde2",
-    "8a561307-3387-4beb-9dcf-6342b9357d5e",
-    "c265c8bf-019d-468e-9d3f-7b0293ec90e3"
+    "8a561307-3387-4beb-9dcf-6342b9357d5e"
   ]
 }
