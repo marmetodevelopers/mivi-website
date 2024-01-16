@@ -1292,27 +1292,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Target node to observe
 const targetNode = document.querySelector('.meta-container .splide__track');
-if(targetNode) {
-const textElements = document.querySelectorAll('.faqs-container .questions_wrapper')
-// Callback function to handle mutations
-const callback = function (mutationsList, observer) {
-  for (const mutation of mutationsList) {
-    if (mutation.type === 'attributes') {
-      const activeSplide = targetNode.querySelector('.is-active');
-      let activeSplideIndex = activeSplide.getAttribute('slide-index')
-      textElements.forEach((each) => {
-        each.classList.add('hidden');
-      })
-      document.querySelector(`.faqs-container .questions_wrapper[slide-index="${activeSplideIndex}"]`).classList.remove('hidden')
+if (targetNode) {
+  const textElements = document.querySelectorAll('.faqs-container .questions_wrapper')
+  // Callback function to handle mutations
+  const callback = function (mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'attributes') {
+        const activeSplide = targetNode.querySelector('.is-active');
+        let activeSplideIndex = activeSplide.getAttribute('slide-index')
+        textElements.forEach((each) => {
+          each.classList.add('hidden');
+        })
+        document.querySelector(`.faqs-container .questions_wrapper[slide-index="${activeSplideIndex}"]`).classList.remove('hidden')
+      }
     }
-  }
-};
-// Create a Mutation Observer instance with the callback
-const observer = new MutationObserver(callback);
-// Configure the observer
-const config = { attributes: true, childList: true, subtree: true };
-// Start observing the target node
-observer?.observe(targetNode, config);
+  };
+  // Create a Mutation Observer instance with the callback
+  const observer = new MutationObserver(callback);
+  // Configure the observer
+  const config = { attributes: true, childList: true, subtree: true };
+  // Start observing the target node
+  observer?.observe(targetNode, config);
 
 }
 

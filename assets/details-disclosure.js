@@ -41,6 +41,7 @@ class HeaderMenu extends DetailsDisclosure {
   onToggle() {
     if (!this.header) return;
     this.header.preventHide = this.mainDetailsToggle.open;
+    document.body.classList.toggle('overflow-hidden');
 
     if (document.documentElement.style.getPropertyValue('--header-bottom-position-desktop') !== '') return;
     document.documentElement.style.setProperty(
