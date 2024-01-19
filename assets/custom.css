@@ -2684,3 +2684,7 @@ div#menu-drawer a.link.link--text {
 .cd-cart-title{
   letter-spacing: 1.5px;
 }
+
+.question_wrapper .question{
+  font-size: 18px;
+}
