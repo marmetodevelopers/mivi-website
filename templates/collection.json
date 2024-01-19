@@ -67,6 +67,8 @@
       ],
       "disabled": true,
       "settings": {
+        "image": "{{ collection.metafields.custom.review_banner_desktop.value }}",
+        "mobile_image": "{{ collection.metafields.custom.review_banner_mobile.value }}",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
