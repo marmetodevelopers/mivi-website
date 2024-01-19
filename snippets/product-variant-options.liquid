@@ -68,7 +68,7 @@
       class="{% if option.name == 'length' %} product--varient_options{% endif %}"
     >
       {% if option.name == 'length' %}
-        <span class="product_varient_option___name">{{ option.name }}</span><br>
+        <span class="product_varient_option___name length">{{ option.name }}</span><br>
         <span class="product___varient_option_value small-element-2 font-bold">{{ value }} </span>
         <span class="product--variant__price"> {{ product.price | money_without_trailing_zeros }}</span>
       {% endif %}

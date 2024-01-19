@@ -15,8 +15,16 @@ class MarmetoProductCard extends HTMLElement {
       .then((responseText) => {
         const html = new DOMParser().parseFromString(responseText, "text/html");
         const responseCard = html.querySelector("marmeto-product-card");
-        this.innerHTML = responseCard.innerHTML;
-        console.log(responseCard.innerHTML);
+        this.querySelector(".mm-product_card__isolate").innerHTML =
+          responseCard.querySelector(".mm-product_card__isolate").innerHTML;
+        this.querySelector(".product-details").innerHTML =
+          responseCard.querySelector(".product-details").innerHTML;
+        this.querySelector(".product-price").innerHTML =
+          responseCard.querySelector(".product-price").innerHTML;
+        this.querySelector(".price-cart_conatainer").innerHTML =
+          responseCard.querySelector(".price-cart_conatainer").innerHTML;
+
+        // this.innerHTML = responseCard.innerHTML;
         this.querySelector(
           "marmeto-product-card .option-button_product"
         ).classList.add("selected");
