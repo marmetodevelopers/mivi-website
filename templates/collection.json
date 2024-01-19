@@ -135,7 +135,6 @@
         "column_tGj4W8",
         "column_pRNBkg"
       ],
-      "disabled": true,
       "settings": {
         "title": "{{ collection.metafields.custom.multicoulmn_1.value.main_title.value }}",
         "heading_size": "h1",
