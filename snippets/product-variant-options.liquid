@@ -14,7 +14,7 @@
     block: block
   %}
 {% endcomment %}
- {%- liquid
+{%- liquid
   assign variants_available_arr = product.variants | map: 'available'
   assign variants_option1_arr = product.variants | map: 'option1'
   assign variants_option2_arr = product.variants | map: 'option2'
@@ -59,16 +59,22 @@
         class="disabled"
       {% endif %}
     >
-       
-    <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"{% if option.name == 'Color' %} style="background: {{ value}}" {% endif%} class="{% if option.name == 'length' %} product--varient_options{% endif %}">
+
+    <label
+      for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+      {% if option.name == 'Color' %}
+        style="background: {{ value}}"
+      {% endif %}
+      class="{% if option.name == 'length' %} product--varient_options{% endif %}"
+    >
       {% if option.name == 'length' %}
-            <span class="product_varient_option___name">{{ option.name }}</span><br>
-            <span class="product___varient_option_value small-element-2 font-bold">{{value}} </span>
-           <span class="product--variant__price"> {{ product.price | money_without_trailing_zeros }}</span>
-        {%endif%}
+        <span class="product_varient_option___name length">{{ option.name }}</span><br>
+        <span class="product___varient_option_value small-element-2 font-bold">{{ value }} </span>
+        <span class="product--variant__price"> {{ product.price | money_without_trailing_zeros }}</span>
+      {% endif %}
       <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
     </label>
-   
+
   {%- elsif block.settings.picker_type == 'dropdown' -%}
     <option
       value="{{ value | escape }}"
