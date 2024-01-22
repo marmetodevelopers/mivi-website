@@ -159,6 +159,36 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "16625563505203379481": {
+        "type": "shopify:\/\/apps\/extendons-otp-login-with-phone\/blocks\/scripts_embedded_block\/c7f2efe3-e781-470b-96ef-267ca74ad469",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "12278696032673699304": {
+        "type": "shopify:\/\/apps\/email-sms-whatsapp-marketing\/blocks\/app-embed\/70d9c67e-448e-4001-9f78-84753c8bf461",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "13392549970259155148": {
+        "type": "shopify:\/\/apps\/xo-insert-code\/blocks\/insert-code-header\/72017b12-3679-442e-b23c-5c62460717f5",
+        "disabled": false,
+        "settings": {
+          "custom_liquid": "",
+          "custom_css": "",
+          "custom_js": ""
+        }
+      },
+      "10148494829067693542": {
+        "type": "shopify:\/\/apps\/xo-insert-code\/blocks\/insert-code-body\/72017b12-3679-442e-b23c-5c62460717f5",
+        "disabled": false,
+        "settings": {
+          "custom_liquid": "",
+          "custom_css": "",
+          "custom_js": ""
+        }
       }
     },
     "color_schemes": {

@@ -849,7 +849,6 @@ summary .icon-caret {
   height: 0.6rem;
   right: 1.5rem;
   top: calc(50% - 0.2rem);
-  display: none;
 }
 summary::-webkit-details-marker {
   display: none;
@@ -998,6 +997,7 @@ summary::-webkit-details-marker {
   }
   .title-wrapper-with-link {
     align-items: center;
+    justify-content: center;
   }
   .title-wrapper-with-link .title {
     margin-bottom: 0;
@@ -1019,6 +1019,7 @@ summary::-webkit-details-marker {
 .title-wrapper-with-link a {
   margin-top: 0;
   flex-shrink: 0;
+  display: none;
 }
 .title-wrapper--no-top-margin {
   margin-top: 0;
@@ -3422,4 +3423,40 @@ details-disclosure > details {
 }
 .gb_btn_container {
   font-family: "Gilroy Medium" !important;
+}
+
+h2.section__heading {
+  text-align: center;
+  font-size: 48px;
+  line-height: 52px;
+}
+
+.product-faq-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-faq-sub-container {
+  width: 65.77%;
+}
+
+.product-faq-sub-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.questions_wrapper {
+  background: #000;
+  color: #fff;
+  padding: 20px;
+}
+
+.product-faq-main-container
+  .product-faq-sub-container
+  .question_wrapper
+  .icon.icon-caret
+  svg {
+  display: block;
 }

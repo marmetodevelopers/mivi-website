@@ -1,0 +1,63 @@
+{%- if collection.metafields.custom.faq_questions != blank or collection.metafields.custom.faq_answers != blank -%}
+  <div class="product-faq-main-container wrapper">
+    <div class="section__header">
+      <h2
+        class="h2 section__heading"
+      >
+        {{ section.settings.title }}
+      </h2>
+    </div>
+    <div class="product-faq-sub-container">
+      {% for questions in collection.metafields.custom.faq_questions.value %}
+        <details class="questions_wrapper">
+          <summary class="question_wrapper">
+            <span class="question">{{ questions }}</span>
+            <svg aria-hidden="true" focusable="false" class="icon icon-caret" viewBox="0 0 10 6">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
+              </path>
+            </svg>
+          </summary>
+          <div class="answer">{{ collection.metafields.custom.faq_answers.value[forloop.index0] }}</div>
+        </details>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
+{% schema %}
+{
+  "name": "FAQ",
+  "settings": [
+    {
+      "label": "Heading",
+      "id": "title",
+      "type": "text",
+      "default": "Key Features"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 100
+    }
+  ],
+  "presets" : [
+    {
+      "name" : "FAQ"
+    }
+  ]
+}
+{% endschema %}

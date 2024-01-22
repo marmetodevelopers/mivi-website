@@ -2717,3 +2717,7 @@ div#menu-drawer a.link.link--text {
 .scroll-trigger.animate--slide-in {
   opacity: 1;
 }
+
+.question_wrapper .question {
+  font-size: 18px;
+}

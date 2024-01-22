@@ -60,6 +60,7 @@ slider-component.slider-component-full-width {
   }
   .slider.slider--mobile.contains-content-container .slider__slide {
     --focus-outline-padding: 0rem;
+    min-width: 65.7%;
   }
 }
 @media screen and (min-width: 750px) {
@@ -277,6 +278,7 @@ slider-component.slider-component-full-width {
   display: flex;
   align-items: center;
   justify-content: center;
+  display: none;
 }
 @media screen and (min-width: 990px) {
   .slider:not(.slider--everywhere):not(.slider--desktop) + .slider-buttons {
