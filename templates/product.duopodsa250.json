@@ -34,7 +34,7 @@
         "price": {
           "type": "price",
           "settings": {
-            "coupon_code_text": "Get 10% off. Use code <b>MIVISALE<\/b>"
+            "coupon_code_text": "Get 10% off. Use code <b>MIVISALE<b><\/b><\/b>"
           }
         },
         "70be4f5a-04b5-48b7-a273-bc4fe885f72e": {
