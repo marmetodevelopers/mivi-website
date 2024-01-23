@@ -2723,4 +2723,6 @@ div#menu-drawer a.link.link--text {
 }
 .small-element-coupon b{
   font-weight: 600;
+  color: red;
+  text-decoration: underline;
 }
