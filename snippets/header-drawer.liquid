@@ -45,7 +45,12 @@
                               {% render 'icon-arrow' %}
                               {{ link.title | escape }}
                             </button>
-                            <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+                            {% assign hasNoProducts = true %}
+                            {% assign firstChild = link.links[0] %}
+                            {% if firstChild.url contains '/products' %}
+                              {% assign hasNoProducts = false %}
+                            {% endif %}
+                            <ul class="menu-drawer__menu list-menu {% if hasNoProducts %}makeDisplayBlock{% endif %}" role="list" tabindex="-1">
                               {%- for childlink in link.links -%}
                                 <li>
                                   {%- if childlink.links == blank -%} 
@@ -57,11 +62,13 @@
                                         aria-current="page"
                                       {% endif %}
                                     >  {% endcomment %}
-                                     <div class="childlink_content"> <a href="" class="child_image">
-                                      <div class="mobile_menu_product_imag">
-                                        {% render 'image' class="" desktopSrc:childlink.object.featured_image %}
-                                      </div> 
-                                 <div class="childlink_title text__txt-body font-bold">   {{ childlink.object.title }} </div>
+                                     <div class="childlink_content"> <a href="{{ childlink.url }}" class="child_image">
+                                      {% if childlink.object.featured_image != blank %}
+                                        <div class="mobile_menu_product_imag">
+                                          {% render 'image' class="" desktopSrc:childlink.object.featured_image %}
+                                        </div> 
+                                      {% endif %}
+                                 <div class="childlink_title text__txt-body font-bold">   {{ childlink.title }} </div>
                                    </a>   
                                      {%- else -%}
                                     <details id="Details-menu-drawer-{{ link.handle }}-{{ childlink.handle }}">
