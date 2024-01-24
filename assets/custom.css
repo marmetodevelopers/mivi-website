@@ -2180,11 +2180,8 @@ h1.collection-hero__title.h4 {
   position: relative;
 }
 .collection-hero__text-wrapper {
-  position: absolute;
-  left: 0;
   width: 100%;
   text-align: center;
-  padding: 0 8rem;
 }
 fieldset.js.product-form__input.Color input[type="radio"] + label {
   padding: unset;
@@ -2726,6 +2723,12 @@ div#menu-drawer a.link.link--text {
   color: red;
   text-decoration: underline;
 }
+<<<<<<< Updated upstream
 #link-support .makeDisplayBlock{
   display: block;
+=======
+.collection-hero__description{
+  width: 80%;
+  margin: 0 auto;
+>>>>>>> Stashed changes
 }
