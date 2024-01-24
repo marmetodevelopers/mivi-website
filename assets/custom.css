@@ -2726,3 +2726,6 @@ div#menu-drawer a.link.link--text {
   color: red;
   text-decoration: underline;
 }
+#link-support .makeDisplayBlock{
+  display: block;
+}
