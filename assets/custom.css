@@ -2723,12 +2723,10 @@ div#menu-drawer a.link.link--text {
   color: red;
   text-decoration: underline;
 }
-<<<<<<< Updated upstream
 #link-support .makeDisplayBlock{
   display: block;
-=======
+}
 .collection-hero__description{
   width: 80%;
   margin: 0 auto;
->>>>>>> Stashed changes
 }
