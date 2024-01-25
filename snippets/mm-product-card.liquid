@@ -41,7 +41,7 @@
     {% endif %}
     <div class="price-cart_conatainer">
       <div class="product-price price price--on-sale " id="price-{{ product.id }}">
-        <span class="{% if compare_at_price > price %} tw-font-bold price-item price-item--sale price-item--last font-bold small-element-3 {% else %} font-bold   {% endif %}">
+        <span class="{% if compare_at_price > price %} tw-font-bold price-item price-item--sale price-item--last font-bold small-element-3 {% else %} tw-font-bold price-item price-item--sale price-item--last font-bold small-element-3   {% endif %}">
           {{ price | money_without_trailing_zeros }}
         </span>
         <span class="tw-line-through price-item price-item--regular font-bold small-element-3 {% unless compare_at_price > price %} hidden{% endunless %}">
