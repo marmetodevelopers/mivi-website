@@ -139,6 +139,8 @@
     "pdp_image_banner_PHrJKN": {
       "type": "PDP-image-banner",
       "settings": {
+        "image": "shopify:\/\/shop_images\/13_mm_Drivers_mobile.png",
+        "desktop_image": "shopify:\/\/shop_images\/13_mm_Drivers_mobile.png",
         "alt_text": "",
         "padding_top": 0,
         "padding_bottom": 0,
