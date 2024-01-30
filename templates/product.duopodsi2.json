@@ -188,6 +188,18 @@
         "desktop_padding_top": 0,
         "desktop_padding_bottom": 0
       }
+    },
+    "pdp_image_banner_qdzxCJ": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Colors_mobile.png",
+        "desktop_image": "shopify:\/\/shop_images\/Colors_desktop.png",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -197,6 +209,7 @@
     "pdp_image_banner_PHrJKN",
     "17024434664207c3bb",
     "pdp_image_banner_6Tk9GX",
-    "pdp_image_banner_tdgnDP"
+    "pdp_image_banner_tdgnDP",
+    "pdp_image_banner_qdzxCJ"
   ]
 }
