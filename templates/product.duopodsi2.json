@@ -136,6 +136,16 @@
         "desktop_padding_bottom": 0
       }
     },
+    "pdp_image_banner_PHrJKN": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
     "17024434664207c3bb": {
       "type": "apps",
       "blocks": {
@@ -157,6 +167,7 @@
     "main",
     "related-products",
     "pdp_image_banner_knPP3a",
+    "pdp_image_banner_PHrJKN",
     "17024434664207c3bb"
   ]
 }
