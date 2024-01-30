@@ -160,8 +160,21 @@
       "block_order": [
         "57f24ce9-27b9-4957-bd86-c2fd7ba988ed"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
+      }
+    },
+    "pdp_image_banner_6Tk9GX": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/AI_ENC_mobile.png",
+        "desktop_image": "shopify:\/\/shop_images\/AI_ENC_desktop.png",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
       }
     }
   },
@@ -170,6 +183,7 @@
     "related-products",
     "pdp_image_banner_knPP3a",
     "pdp_image_banner_PHrJKN",
-    "17024434664207c3bb"
+    "17024434664207c3bb",
+    "pdp_image_banner_6Tk9GX"
   ]
 }
