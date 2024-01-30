@@ -582,6 +582,18 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "pdp_image_banner_knPP3a": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/13mm_mobile.png",
+        "desktop_image": "shopify:\/\/shop_images\/13mm_desktop.png",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -600,6 +612,7 @@
     "92d322a9-c1fa-465d-8e15-af33fed41c6c",
     "a2d83aae-424c-4d58-aa2a-2b2d29991839",
     "ecde087b-1465-4c2d-b67e-6016aa34c37d",
-    "17024434664207c3bb"
+    "17024434664207c3bb",
+    "pdp_image_banner_knPP3a"
   ]
 }
