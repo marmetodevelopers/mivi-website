@@ -34,6 +34,7 @@
         "price": {
           "type": "price",
           "settings": {
+            "coupon_code_text": ""
           }
         },
         "70be4f5a-04b5-48b7-a273-bc4fe885f72e": {
