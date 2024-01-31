@@ -6,6 +6,7 @@
         "title": {
           "type": "title",
           "settings": {
+            "hide_mobile_title": true
           }
         },
         "1ee9b14f-bfcb-4b8a-b9af-c6c764557c73": {
@@ -33,6 +34,7 @@
         "price": {
           "type": "price",
           "settings": {
+            "coupon_code_text": ""
           }
         },
         "70be4f5a-04b5-48b7-a273-bc4fe885f72e": {
@@ -86,6 +88,8 @@
       ],
       "settings": {
         "enable_sticky_info": true,
+        "color_scheme": "",
+        "product_title_mobile": true,
         "media_size": "large",
         "constrain_to_viewport": true,
         "media_fit": "contain",
