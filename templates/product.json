@@ -189,15 +189,6 @@
         "padding_bottom": 28
       }
     },
-    "fcd3e799-03ea-4a52-8de0-272f7f580361": {
-      "type": "USP-section",
-      "settings": {
-        "padding_top": 45,
-        "padding_bottom": 100,
-        "padding_top_mb": 150,
-        "padding_bottom_mb": 150
-      }
-    },
     "7cd6c00f-b400-46c6-9e6a-04de79e86a7b": {
       "type": "pdp-video-section",
       "disabled": true,
@@ -583,6 +574,8 @@
     "pdp_image_banner_PNnQm6": {
       "type": "PDP-image-banner",
       "settings": {
+        "image": "shopify:\/\/shop_images\/Grid_mobile_ba5d2cfb-1c70-4fdf-9993-d48d6500f3c7.png",
+        "desktop_image": "shopify:\/\/shop_images\/Grid_desktop_582cbff6-d96e-4811-bf06-bc4ebabb5e9b.png",
         "alt_text": "",
         "padding_top": 0,
         "padding_bottom": 0,
@@ -687,7 +680,6 @@
     "main",
     "68b3bea0-a4d0-4e91-9773-93b608a9e87a",
     "related-products",
-    "fcd3e799-03ea-4a52-8de0-272f7f580361",
     "7cd6c00f-b400-46c6-9e6a-04de79e86a7b",
     "f692c6f2-4606-4316-8e87-9a0fe759b7e5",
     "a7062727-dfd4-40a9-a52a-5808b7833db4",
