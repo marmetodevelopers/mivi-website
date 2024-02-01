@@ -641,6 +641,7 @@
         "b030ee7b-665f-4919-a754-3ed0a7f52f51",
         "d8380426-d99a-4287-a81b-7e8a9c91fb9a"
       ],
+      "disabled": true,
       "settings": {
         "caption": "{{ product.metafields.custom.pdp_product_support_capltion.value }}",
         "heading": "{{ product.metafields.custom.pdp_product_support_heading.value }}",
