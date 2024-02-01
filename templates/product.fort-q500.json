@@ -574,8 +574,8 @@
     "pdp_image_banner_PNnQm6": {
       "type": "PDP-image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Grid_mobile_ba5d2cfb-1c70-4fdf-9993-d48d6500f3c7.png",
-        "desktop_image": "shopify:\/\/shop_images\/Grid_desktop_582cbff6-d96e-4811-bf06-bc4ebabb5e9b.png",
+        "image": "shopify:\/\/shop_images\/Fort_Q500_Grid_-_Mobile.png",
+        "desktop_image": "shopify:\/\/shop_images\/Fort_Q500_Grid_-_Desktop.png",
         "alt_text": "",
         "padding_top": 0,
         "padding_bottom": 0,
@@ -586,8 +586,8 @@
     "pdp_image_banner_cx4rHk": {
       "type": "PDP-image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Mask_group_mob.png",
-        "desktop_image": "shopify:\/\/shop_images\/Mask_group_1.png",
+        "image": "shopify:\/\/shop_images\/Fort_Q500_Mobile.png",
+        "desktop_image": "shopify:\/\/shop_images\/S500_Desktop_2.png",
         "alt_text": "",
         "padding_top": 0,
         "padding_bottom": 0,
