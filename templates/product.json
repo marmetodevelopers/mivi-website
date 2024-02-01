@@ -584,6 +584,7 @@
       "type": "PDP-image-banner",
       "settings": {
         "image": "shopify:\/\/shop_images\/Grid_mobile_1a8a1b7d-6af2-4b6b-8558-9f5b391f2019.png",
+        "desktop_image": "shopify:\/\/shop_images\/Grid_desktop_4386059e-abd4-496b-afe2-4b70a40b5eeb.png",
         "alt_text": "",
         "padding_top": 0,
         "padding_bottom": 0,
