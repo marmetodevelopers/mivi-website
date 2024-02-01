@@ -580,6 +580,17 @@
         "padding_bottom_mb": 60
       }
     },
+    "pdp_image_banner_PNnQm6": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Grid_mobile_1a8a1b7d-6af2-4b6b-8558-9f5b391f2019.png",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
     "pdp_image_banner_cx4rHk": {
       "type": "PDP-image-banner",
       "settings": {
@@ -689,6 +700,7 @@
     "6bba2504-4a58-47ff-896f-b80449fe031d",
     "92d322a9-c1fa-465d-8e15-af33fed41c6c",
     "a2d83aae-424c-4d58-aa2a-2b2d29991839",
+    "pdp_image_banner_PNnQm6",
     "pdp_image_banner_cx4rHk",
     "ecde087b-1465-4c2d-b67e-6016aa34c37d",
     "17024434664207c3bb"
