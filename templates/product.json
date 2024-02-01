@@ -34,7 +34,7 @@
         "price": {
           "type": "price",
           "settings": {
-            "coupon_code_text": "Get 10% off. Use code <b>MIVISALE<\/b>"
+            "coupon_code_text": ""
           }
         },
         "70be4f5a-04b5-48b7-a273-bc4fe885f72e": {
@@ -150,6 +150,7 @@
         "template--21424888217877__68b3bea0-a4d0-4e91-9773-93b608a9e87a-column-3",
         "a2f93a4c-a1af-424d-a9a8-c0302295997e"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -199,6 +200,7 @@
     },
     "7cd6c00f-b400-46c6-9e6a-04de79e86a7b": {
       "type": "pdp-video-section",
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h1",
@@ -249,6 +251,7 @@
         "template--21382360531221__f692c6f2-4606-4316-8e87-9a0fe759b7e5-heading-1",
         "template--21382360531221__f692c6f2-4606-4316-8e87-9a0fe759b7e5-text-1"
       ],
+      "disabled": true,
       "settings": {
         "image": "{{ product.metafields.custom.image_with_text_1.value.image.value }}",
         "height": "adapt",
@@ -297,6 +300,7 @@
         "template--21392479977749__a7062727-dfd4-40a9-a52a-5808b7833db4-heading-1",
         "template--21392479977749__a7062727-dfd4-40a9-a52a-5808b7833db4-text-1"
       ],
+      "disabled": true,
       "settings": {
         "image": "{{ product.metafields.custom.banner_1.value.desktop_banner.value }}",
         "mobile_image": "{{ product.metafields.custom.banner_1.value.mobile_banner.value }}",
@@ -318,6 +322,7 @@
     },
     "c7e9f38a-cdfd-4310-a95f-989b0c9af85d": {
       "type": "pdp-superior-premium-section",
+      "disabled": true,
       "settings": {
         "section_heading": "",
         "heading_align": "tw-text-center",
@@ -365,6 +370,7 @@
         "template--21392479977749__7a7ea6f3-b660-4e7c-a5d7-e0ae9b3e9961-heading-1",
         "template--21392479977749__7a7ea6f3-b660-4e7c-a5d7-e0ae9b3e9961-text-1"
       ],
+      "disabled": true,
       "settings": {
         "image": "{{ product.metafields.custom.banner_2.value.desktop_banner.value }}",
         "mobile_image": "{{ product.metafields.custom.banner_2.value.mobile_banner.value }}",
@@ -415,6 +421,7 @@
         "template--21392479977749__0e119df3-4b63-45ca-ab03-8b39936d63ad-heading-1",
         "template--21392479977749__0e119df3-4b63-45ca-ab03-8b39936d63ad-text-1"
       ],
+      "disabled": true,
       "settings": {
         "image": "{{ product.metafields.custom.banner_3.value.desktop_banner.value }}",
         "mobile_image": "{{ product.metafields.custom.banner_3.value.mobile_banner.value }}",
@@ -436,6 +443,7 @@
     },
     "00cbf231-0c38-4000-80fa-4730a71f108d": {
       "type": "PDP-page-Perfect-In-Ear-Fit-section",
+      "disabled": true,
       "settings": {
         "section_heading": "",
         "heading_align": "tw-text-center",
@@ -481,6 +489,7 @@
         "template--21392479977749__979399b6-0b8e-46b2-95cf-1f1a196b14ad-heading-1",
         "template--21392479977749__979399b6-0b8e-46b2-95cf-1f1a196b14ad-text-1"
       ],
+      "disabled": true,
       "settings": {
         "image": "{{ product.metafields.custom.image_with_text_2.value.banner.value }}",
         "height": "adapt",
@@ -528,6 +537,7 @@
         "template--21392479977749__6bba2504-4a58-47ff-896f-b80449fe031d-heading-1",
         "template--21392479977749__6bba2504-4a58-47ff-896f-b80449fe031d-text-1"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -541,6 +551,7 @@
     },
     "92d322a9-c1fa-465d-8e15-af33fed41c6c": {
       "type": "pdp-only-image",
+      "disabled": true,
       "settings": {
         "image": "{{ product.metafields.custom.richtext.value.comaprison_image.value }}",
         "padding_top": 10,
@@ -551,6 +562,7 @@
     },
     "a2d83aae-424c-4d58-aa2a-2b2d29991839": {
       "type": "pdp-collapsible-tab",
+      "disabled": true,
       "settings": {
         "caption": "{{ product.metafields.custom.pdp_collapsible_tab_caption.value }}",
         "heading": "{{ product.metafields.custom.pdp_collapsible_tab_heading.value }}",
