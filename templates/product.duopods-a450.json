@@ -585,8 +585,6 @@
     "pdp_image_banner_cx4rHk": {
       "type": "PDP-image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/WebPage_Mob.png",
-        "desktop_image": "shopify:\/\/shop_images\/WP.png",
         "alt_text": "",
         "padding_top": 0,
         "padding_bottom": 0,
