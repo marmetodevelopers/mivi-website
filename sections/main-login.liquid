@@ -15,7 +15,7 @@
 {%- endstyle -%}
 
 <div class="customer login section-{{ section.id }}-padding">
-  <h1 id="recover" tabindex="-1">
+  <h1 id="recover" style="display: none;" tabindex="-1">
     {{ 'customer.recover_password.title' | t }}
   </h1>
   <div>
@@ -67,7 +67,7 @@
     {%- endform -%}
   </div>
 
-  <h1 id="login" tabindex="-1" class="account-order__font">
+  <h1 id="login" tabindex="-1" style="display: none;" class="account-order__font">
     {{ 'customer.login_page.title' | t }}
   </h1>
   <div>
@@ -96,7 +96,7 @@
         {{ form.errors | default_errors }}
       {%- endif -%}
 
-      <div class="field">
+      <div class="field" style="display: none;">
         <input
           type="email"
           name="customer[email]"
@@ -115,7 +115,7 @@
       </div>
 
       {%- if form.password_needed -%}
-        <div class="field">
+        <div class="field" style="display: none;">
           <input
             type="password"
             value=""
@@ -132,23 +132,23 @@
           </label>
         </div>
 
-        <a href="#recover" class="anchor__url">
+        <a href="#recover" class="anchor__url" style="display: none;">
           {{ 'customer.login_page.forgot_password' | t }}
         </a>
       {%- endif -%}
 
-      <button class="button-secondary">
+      <button class="button-secondary" style="display: none;">
         {{ 'customer.login_page.sign_in' | t }}
       </button>
 
-      <a href="{{ routes.account_register_url }}"  class="anchor__url">
+      <a href="{{ routes.account_register_url }}" class="anchor__url" style="display: none;">
         {{ 'customer.login_page.create_account' | t }}
       </a>
     {%- endform -%}
   </div>
 
   {%- if shop.checkout.guest_login -%}
-    <div>
+    <div style="display: none;">
       <hr>
       <h2>{{ 'customer.login_page.guest_title' | t }}</h2>
 
