@@ -574,8 +574,7 @@
     "pdp_image_banner_PNnQm6": {
       "type": "PDP-image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Grid_Mobile_4dafb5df-937f-4302-afaa-4d2970b77c16.png",
-        "desktop_image": "shopify:\/\/shop_images\/Grid_Desktop_c4ddbd0d-9447-4435-acf4-7c70c9c7eee1.png",
+        "desktop_image": "shopify:\/\/shop_images\/Grid_Desktop_3.png",
         "alt_text": "",
         "padding_top": 0,
         "padding_bottom": 0,
