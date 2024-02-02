@@ -574,8 +574,6 @@
     "pdp_image_banner_PNnQm6": {
       "type": "PDP-image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/Q120_mobile_Grid.png",
-        "desktop_image": "shopify:\/\/shop_images\/Q120_desktop_Grid.png",
         "alt_text": "",
         "padding_top": 0,
         "padding_bottom": 0,
