@@ -55,10 +55,23 @@
         "padding_top": 6,
         "padding_bottom": 6
       }
+    },
+    "pdp_image_banner_yB7pHk": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/vd_mob.png",
+        "desktop_image": "shopify:\/\/shop_images\/Artboard_1.png",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
     }
   },
   "order": [
     "announcement-bar",
-    "header"
+    "header",
+    "pdp_image_banner_yB7pHk"
   ]
 }
