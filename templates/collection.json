@@ -105,6 +105,7 @@
         "column_tGj4W8",
         "column_pRNBkg"
       ],
+      "disabled": true,
       "settings": {
         "title": "{{ collection.metafields.custom.multicoulmn_1.value.main_title.value }}",
         "heading_size": "h1",
@@ -176,6 +177,7 @@
         "column_YRVNEj",
         "column_6L86Qj"
       ],
+      "disabled": true,
       "settings": {
         "title": "{{ collection.metafields.custom.multicolumn_2.value.main_title.value }}",
         "heading_size": "h1",
@@ -195,6 +197,7 @@
     },
     "section_faq_KG7qda": {
       "type": "section-faq",
+      "disabled": true,
       "settings": {
         "title": "Frequently  Asked Questions",
         "padding_top": 100,
