@@ -366,6 +366,67 @@
         "padding_top_mb": 0,
         "padding_bottom_mb": 60
       }
+    },
+    "slideshow_ipaaJD": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_DT9j7B": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Artboard_1.png",
+            "mobile_image": "shopify:\/\/shop_images\/vd_mob.png",
+            "heading": "Image slide",
+            "product": "",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_6xHTwK": {
+          "type": "slide",
+          "settings": {
+            "heading": "Image slide",
+            "product": "",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_DT9j7B",
+        "slide_6xHTwK"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand",
+        "heading": "New Launch",
+        "sub_text": "The upgrade with you have been waiting",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
     }
   },
   "order": [
@@ -376,6 +437,7 @@
     "4c050086-accc-418b-99b6-0db646ec2125",
     "af3bf248-59fd-40c6-b0ed-28193696e6ec",
     "d9c0f073-8abf-43ad-94fc-a5e6d6061436",
-    "cfe6150d-9b1a-4c6e-beba-cf2ac11bcbbf"
+    "cfe6150d-9b1a-4c6e-beba-cf2ac11bcbbf",
+    "slideshow_ipaaJD"
   ]
 }
