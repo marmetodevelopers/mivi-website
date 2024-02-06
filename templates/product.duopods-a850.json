@@ -586,6 +586,8 @@
     "pdp_image_banner_cx4rHk": {
       "type": "PDP-image-banner",
       "settings": {
+        "image": "shopify:\/\/shop_images\/A850_-_Mobile.png",
+        "desktop_image": "shopify:\/\/shop_images\/A850_-_Desktop.png",
         "alt_text": "",
         "padding_top": 0,
         "padding_bottom": 0,
