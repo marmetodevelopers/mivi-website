@@ -65,11 +65,11 @@
         "padding_bottom": 120
       }
     },
-    "featured_collection_FBcgag": {
+    "featured_collection_rwkQAc": {
       "type": "featured-collection",
       "settings": {
         "title": "Valentine Day Sale",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
@@ -79,21 +79,21 @@
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": false,
+        "enable_desktop_slider": true,
         "color_scheme": "",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "image_shape": "default",
-        "show_secondary_image": false,
+        "show_secondary_image": true,
         "show_vendor": false,
-        "show_rating": false,
+        "show_rating": true,
         "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
         "slider_visual": "dots",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "padding_top_mb": 36,
-        "padding_bottom_mb": 36
+        "padding_top": 0,
+        "padding_bottom": 60,
+        "padding_top_mb": 60,
+        "padding_bottom_mb": 50
       }
     },
     "94a0a182-a3aa-4bc1-964f-23cfd135c254": {
@@ -463,7 +463,7 @@
   },
   "order": [
     "image_banner",
-    "featured_collection_FBcgag",
+    "featured_collection_rwkQAc",
     "94a0a182-a3aa-4bc1-964f-23cfd135c254",
     "fee80e2b-57dd-40b2-8e88-b46478691cee",
     "ad8acd6a-a7de-48d7-9d99-ed036e20f957",
