@@ -147,6 +147,7 @@
         "template--21470378623253__876c7e56-be59-44e4-9255-4c4507aa334e-column-2",
         "template--21470378623253__876c7e56-be59-44e4-9255-4c4507aa334e-column-3"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
