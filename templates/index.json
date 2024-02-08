@@ -22,7 +22,6 @@
         },
         "button": {
           "type": "buttons",
-          "disabled": true,
           "settings": {
             "button_label_1": "Valentine Day Sale",
             "button_link_1": "shopify:\/\/collections\/valentine-day-sale",
@@ -39,8 +38,8 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Artboard_1.png",
-        "mobile_image": "shopify:\/\/shop_images\/vd_mob.png",
+        "image": "shopify:\/\/shop_images\/ne.png",
+        "mobile_image": "shopify:\/\/shop_images\/V_Day_Sale_-_Mobile.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-left",
