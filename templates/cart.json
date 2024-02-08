@@ -36,7 +36,7 @@
           "type": "payment_gateway",
           "settings": {
             "payment__heading": "We accept many payment methods",
-            "payment__image": "shopify:\/\/shop_images\/payment_options.png"
+            "payment__image": "shopify:\/\/shop_images\/payment_options_-_2.png"
           }
         }
       },
