@@ -20,17 +20,9 @@
             "text_color": "#00ff00"
           }
         },
-        "79f29ad4-60f1-49ca-b8b0-3e8ac2272670": {
-          "type": "banner-body-text",
-          "disabled": true,
-          "settings": {
-            "body_text": "True Wireless Earbuds",
-            "text_style": "caption-with-letter-spacing",
-            "body_text_color": "#ffffff"
-          }
-        },
         "button": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
             "button_label_1": "Valantine Day Sale",
             "button_link_1": "shopify:\/\/collections\/valentine-day-sale",
@@ -44,7 +36,6 @@
       "block_order": [
         "heading",
         "e1570ec2-4351-4cb9-8cc5-5f23fb495123",
-        "79f29ad4-60f1-49ca-b8b0-3e8ac2272670",
         "button"
       ],
       "settings": {
