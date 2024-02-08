@@ -459,7 +459,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      "._1fragemnd {max-height: 24px;}"
+      "._1fragemnd .hmHjN{max-height: 24px;}"
     ]
   }
 }
