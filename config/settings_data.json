@@ -459,7 +459,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".agemmz .hmHjN {height:24px;}"
+      ".hmHjN {height: 24px;}"
     ]
   }
 }
