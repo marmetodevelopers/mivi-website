@@ -1,58 +1,5 @@
 {
   "sections": {
-    "image_banner_xhAgFU": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_debCm3": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
-        },
-        "text_PkYPge": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body",
-            "text_color": "#ffffff"
-          }
-        },
-        "buttons_gdVpLV": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_debCm3",
-        "text_PkYPge",
-        "buttons_gdVpLV"
-      ],
-      "settings": {
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true,
-        "padding_top": 20,
-        "padding_bottom": 20
-      }
-    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -84,10 +31,9 @@
         },
         "button": {
           "type": "buttons",
-          "disabled": true,
           "settings": {
-            "button_label_1": "Shop Now",
-            "button_link_1": "shopify:\/\/products\/duopods-a750-earbud",
+            "button_label_1": "Valantine Day Sale",
+            "button_link_1": "shopify:\/\/collections\/valentine-day-sale",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -102,8 +48,8 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/DuoPods_i2_Desktop_1.png",
-        "mobile_image": "shopify:\/\/shop_images\/DuoPods_i2_M1.png",
+        "image": "shopify:\/\/shop_images\/Artboard_1.png",
+        "mobile_image": "shopify:\/\/shop_images\/vd_mob.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-left",
@@ -522,7 +468,6 @@
     }
   },
   "order": [
-    "image_banner_xhAgFU",
     "image_banner",
     "featured_collection_rwkQAc",
     "94a0a182-a3aa-4bc1-964f-23cfd135c254",
