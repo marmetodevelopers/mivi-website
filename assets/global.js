@@ -1322,14 +1322,13 @@ class VariantSelects extends HTMLElement {
         if (source && destination) {
           destination.innerHTML = source.innerHTML;
           const addToCartBtn = source.querySelector(".main-product-add-to-cart-button").innerText
+           const mobileAddToCartBtn = document.querySelector('#myButton')
           if(addToCartBtn.trim() === "Sold out"){
-            document.querySelector('#myButton').innerHTML=addToCartBtn
-            document.querySelector('#myButton').setAttribute('disabled', 'disabled'); 
-           
+            mobileAddToCartBtn.innerHTML=addToCartBtn
+            mobileAddToCartBtn.setAttribute('disabled', 'disabled'); 
           }else{
-            document.querySelector('#myButton').innerHTML=addToCartBtn
-            document.querySelector('#myButton').removeAttribute('disabled'); 
-            
+            mobileAddToCartBtn.innerHTML=addToCartBtn
+            mobileAddToCartBtn.removeAttribute('disabled'); 
           }
         }
         if (inventorySource && inventoryDestination)
