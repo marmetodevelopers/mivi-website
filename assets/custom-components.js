@@ -124,11 +124,14 @@ class MMvariantSelects extends HTMLElement {
     if (!productForm) return;
     const addButton = productForm.querySelector('[name="add"]');
     const addButtonText = productForm.querySelector('[name="add"] > span');
+    console.log(addButton)
     if (!addButton) return;
 
     if (disable) {
+     
       addButton.setAttribute("disabled", "disabled");
       if (text) addButtonText.textContent = text;
+     
     } else {
       addButton.removeAttribute("disabled");
       addButtonText.textContent = window.variantStrings.addToCart;

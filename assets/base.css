@@ -369,6 +369,9 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 .shopify-challenge__container {
   margin: 7rem auto;
 }
+.shopify-challenge__container input.shopify-challenge__button.btn {
+  background-color: #00f000;
+}
 .rte-width {
   max-width: 82rem;
   margin: 0 auto 2rem;
@@ -3460,3 +3463,5 @@ h2.section__heading {
   svg {
   display: block;
 }
+
+

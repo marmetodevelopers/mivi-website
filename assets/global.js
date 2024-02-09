@@ -1319,7 +1319,19 @@ class VariantSelects extends HTMLElement {
           `Volume-${this.dataset.section}`
         );
 
-        if (source && destination) destination.innerHTML = source.innerHTML;
+        if (source && destination) {
+          destination.innerHTML = source.innerHTML;
+          const addToCartBtn = source.querySelector(".main-product-add-to-cart-button").innerText
+          if(addToCartBtn.trim() === "Sold out"){
+            document.querySelector('#myButton').innerHTML=addToCartBtn
+            document.querySelector('#myButton').setAttribute('disabled', 'disabled'); 
+           
+          }else{
+            document.querySelector('#myButton').innerHTML=addToCartBtn
+            document.querySelector('#myButton').removeAttribute('disabled'); 
+            
+          }
+        }
         if (inventorySource && inventoryDestination)
           inventoryDestination.innerHTML = inventorySource.innerHTML;
         if (skuSource && skuDestination) {
