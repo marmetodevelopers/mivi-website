@@ -2005,6 +2005,7 @@ details.pdp-details-content {
     background: #0f0;
     border: none;
     padding: 16px 14px;
+    text-transform: uppercase;
   }
   .mobile-add-to-cart-sticky-info {
     width: 41%;
