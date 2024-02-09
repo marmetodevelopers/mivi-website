@@ -1,0 +1,97 @@
+
+<script>
+  let  targetNodegk = document.querySelector('html')
+  let gkButtonCode = '<div class="gokwik-checkout" {% if settings.hideFlow %} style="display:none !important;" {% endif %}><button type="button" class="button" onclick="initiateLogin()"><span class="btn-text"><span>Checkout</span><span></span></span><span class="pay-opt-icon"></span><div style="display:none"><div class="cir-loader">Loading..</div></div></button></div>'
+  let buttonAdded = false;
+  let parsedBtnCode = new DOMParser().parseFromString(gkButtonCode, 'text/html').querySelectorAll('.gokwik-checkout')[0];
+
+  const sideCartCallback = function(mutationList){
+      mutationList.forEach((mutation) => {
+          let sidecart = document.querySelector('.cd-cart');          
+          let sideCartButtonParent = document.querySelector('.cd-cart-close-cart-button');
+          let buttonAdded = sideCartButtonParent && sideCartButtonParent.nextElementSibling && sideCartButtonParent.nextElementSibling.classList.contains('gokwik-checkout');
+          mutation.addedNodes.forEach((added_node) => { 
+               if(sidecart){
+                  if(sideCartButtonParent && !buttonAdded){
+                      buttonAdded = true
+                      sideCartButtonParent.after(parsedBtnCode)
+                  }
+              }
+          })
+      })
+    }
+     const config = { attributes: true, childList: true, subtree: true };
+
+  
+      const customBtn = new MutationObserver(sideCartCallback)
+      customBtn.observe(targetNodegk, config)
+</script>
+
+<style>
+
+.gokwik-checkout {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: end;
+  margin-bottom: 10px;
+}
+.gokwik-checkout button {
+  max-width:100%;
+  width: 100%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f0;
+  position: relative;
+  margin: 0;
+cursor: pointer;
+  padding: 5px 10px;
+  height:45px;
+}
+#gokwik-buy-now.disabled, .gokwik-disabled{
+  opacity:0.5;
+  cursor: not-allowed;
+  }
+  .gokwik-checkout button:focus {
+  outline: none;
+}
+.gokwik-checkout button > span {
+  display: flex;
+}
+.gokwik-checkout button > span.btn-text {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  align-items: flex-start;
+}
+.gokwik-checkout button > span.btn-text > span:last-child {
+	padding-top: 2px;
+    font-size: 10px;
+    line-height: 10px;
+    text-transform: initial;
+}
+.gokwik-checkout button > span.btn-text > span:first-child {
+   font-size: 15px;
+}
+.gokwik-checkout button > span.pay-opt-icon img:first-child {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+/*   Additional */
+button.cd-cart-checkout-button {
+    display: none!important;
+}
+  .cd-cart-overlay {
+    z-index: 99999!important;
+}
+  .cd-cart {
+    z-index: 99999!important;
+}
+</style> 
+
+
+
+

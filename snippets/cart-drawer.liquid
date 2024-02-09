@@ -525,7 +525,7 @@
             </button>
           </noscript>
 
-          <button
+          <!-- <button
             type="submit"
             id="CartDrawer-Checkout"
             class="cart__checkout-button button"
@@ -536,7 +536,8 @@
             {% endif %}
           >
             {{ 'sections.cart.checkout' | t }}
-          </button>
+          </button> -->
+          {% render 'gokwik-checkout' %}
         </div>
       </div>
     </div>

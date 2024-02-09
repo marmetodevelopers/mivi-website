@@ -30,25 +30,16 @@
         "padding_bottom": 100
       }
     },
-    "pdp_page_third_banner_image_3xJet4": {
-      "type": "pdp-page-third-banner-image",
+    "pdp_image_banner_QPp9V7": {
+      "type": "PDP-image-banner",
       "settings": {
-        "image": "{{ collection.metafields.custom.review_banner_desktop.value }}",
-        "mobile_image": "{{ collection.metafields.custom.review_banner_mobile.value }}",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 40,
-        "padding_top_mb": 36,
-        "padding_bottom_mb": 36,
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "image": "{{ collection.metafields.custom.review_banner_mobile.value }}",
+        "desktop_image": "{{ collection.metafields.custom.review_banner_desktop.value }}",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
       }
     },
     "multicolumn_GTHYAQ": {
@@ -195,6 +186,7 @@
     },
     "section_faq_KG7qda": {
       "type": "section-faq",
+      "disabled": true,
       "settings": {
         "title": "Frequently  Asked Questions",
         "padding_top": 100,
@@ -205,7 +197,7 @@
   "order": [
     "banner",
     "product-grid",
-    "pdp_page_third_banner_image_3xJet4",
+    "pdp_image_banner_QPp9V7",
     "multicolumn_GTHYAQ",
     "multicolumn_UgwEVC",
     "section_faq_KG7qda"

@@ -1,0 +1,103 @@
+<script>
+  function getCookie(cookieName) {
+    const name = cookieName + "=";
+    const decodedCookie = decodeURIComponent(document.cookie);
+    const cookieArray = decodedCookie.split(';');
+  
+    for (let i = 0; i < cookieArray.length; i++) {
+      let cookie = cookieArray[i];
+      while (cookie.charAt(0) === ' ') {
+        cookie = cookie.substring(1);
+      }
+      if (cookie.indexOf(name) === 0) {
+        return cookie.substring(name.length, cookie.length);
+      }
+    }
+    
+    return null; // Return null if cookie is not found
+  }
+
+          const getProducts = () => {
+        const addToCartFormGK = document.querySelector('[action="/cart/add"]');
+        const serializedForm = serialize(addToCartFormGK);
+        if (!serializedForm.id) {
+          serializedForm.id = (document.querySelector('[name="id"]'))?.value;
+        }
+        if (!serializedForm.quantity) {
+          serializedForm.quantity = (document.querySelector('[name="quantity"'))?.value;
+        }
+      
+        serializedForm.form_type = 'product';
+        serializedForm.utf8 = '✓';
+        return serializedForm;
+      };
+
+      const serialize = (productFormWrapper) => {
+        let obj = {};
+        let elements = productFormWrapper.querySelectorAll('input, select, textarea');
+        for (let i = 0; i < elements.length; ++i) {
+          let element = elements[i];
+          let name = element.name;
+          let value = element.value;
+      
+          if (name) {
+            obj[name] = value;
+          }
+        }
+        return obj;
+      };
+
+      window.addCartBuyNow = () => {
+        let products = getProducts();
+        makeXhr('POST', '/cart/clear.js', '', function (statusCode) {
+          if (statusCode === 200) {
+            makeXhr('POST', '/cart/add.js', products, function (j) {
+              if (j == 200) {
+                localStorage.setItem('gkbuynow', 'active');
+                initiateLogin();
+              }
+            });
+          }
+        });
+      };
+
+    const makeXhr = async (method, url, data, track) => {
+          let gokwikXhttp = new XMLHttpRequest();
+          gokwikXhttp.open(method, url, true);
+          gokwikXhttp.setRequestHeader('Content-type', 'application/json');
+          gokwikXhttp.onload = function () {
+            let status = gokwikXhttp.status;
+            let response = gokwikXhttp.response;
+            track(status, response);
+          };
+          let requestBody = data ? JSON.stringify(data) : null;
+          if (data?.['properties[_ftmx]']) {
+            requestBody = data;
+          }
+          gokwikXhttp.send(requestBody);
+        };
+</script>
+
+<div id="gk-modal" class="gk-modal">
+  <div class="gk-modal-content">
+    <center>
+       <div class="loader-content">
+    <div class="gk-loader">
+    </div>
+  </div>
+    </center>
+    <div class="gk-otp-popup">
+      <span class="gk-close"></span>
+      <iframe class="gk-login" title="description"> </iframe>
+    </div>
+    <div class="gk-modal-footer"></div>
+  </div>
+</div>
+
+<script>
+window.gkCustomerEmail = "{{ customer.email }}";
+window.gkLogOutUrl = "{{ routes.account_logout_url }}";
+window.gkShopifySessionId = getCookie('_shopify_s');
+window.gkMerchantId = '19g6ilrrgww3e';
+window.gkShopDomain = "mivi-website.myshopify.com";
+</script>
