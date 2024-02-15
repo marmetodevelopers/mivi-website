@@ -13,6 +13,9 @@ Monday Card Link: [<attach link here>]
 ### Impacted Areas
 <Explain other areas of the application that could be affected by this change.>
 
+### Preview link with store password
+<Add shopify preview link / development preview should not be added>
+
 ### Done Checklist
 - [ ] Performed unit testing to ensure functionality and identify potential issues.
 - [ ] Followed basic code standards and best practices. (indentation, media queries, basic customizer things)
