@@ -12,8 +12,8 @@
     <div class="collection_banner_image">
       {% render 'image',
         class: '',
-        mobileSrc: collection.metafields.custom.collection_banner,
-        desktopSrc: collection.metafields.custom.collection_banner_mobile
+        desktopSrc: collection.metafields.custom.collection_banner_mobile,
+        mobileSrc: collection.metafields.custom.collection_banner
       %}
     </div>
     {{ collection.metafields.custom.collection_banner_mobile | img_tag }}
