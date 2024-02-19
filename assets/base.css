@@ -3464,4 +3464,8 @@ h2.section__heading {
   display: block;
 }
 
+.mm___product_input .circle_radio{
+  cursor:pointer;
+}
+
 
