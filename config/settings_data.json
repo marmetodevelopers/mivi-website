@@ -118,6 +118,13 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
+    "mid": "19g6ilrrgww3e",
+    "envType": "production",
+    "fbpixel": "1047765645321932",
+    "priClr": "#00ff00",
+    "secClr": "#121212",
+    "goEnable": true,
+    "main-titile": "Place Order",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
@@ -447,7 +454,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      "._1fragemnd{max-height: 24px;}"
+      "._1fragemnd {max-height: 24px;}"
     ]
   }
 }

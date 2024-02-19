@@ -574,8 +574,8 @@
     "pdp_image_banner_PNnQm6": {
       "type": "PDP-image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/roam_pat_1_mob.png",
-        "desktop_image": "shopify:\/\/shop_images\/roam_pat_1_des.png",
+        "image": "shopify:\/\/shop_images\/Fort_R190_Grid_-_Mobile.png",
+        "desktop_image": "shopify:\/\/shop_images\/Fort_R190_Grid_-_Desktop.png",
         "alt_text": "",
         "padding_top": 0,
         "padding_bottom": 0,
@@ -586,8 +586,8 @@
     "pdp_image_banner_cx4rHk": {
       "type": "PDP-image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/roam_pat_2_mob.png",
-        "desktop_image": "shopify:\/\/shop_images\/roam_pat_2_des.png",
+        "image": "shopify:\/\/shop_images\/Fort_R190_Mobile.png",
+        "desktop_image": "shopify:\/\/shop_images\/Fort_R190_Desktop.png",
         "alt_text": "",
         "padding_top": 0,
         "padding_bottom": 0,
@@ -664,7 +664,6 @@
       "blocks": {
         "57f24ce9-27b9-4957-bd86-c2fd7ba988ed": {
           "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "disabled": true,
           "settings": {
           }
         }
@@ -672,7 +671,6 @@
       "block_order": [
         "57f24ce9-27b9-4957-bd86-c2fd7ba988ed"
       ],
-      "disabled": true,
       "settings": {
         "include_margins": true
       }

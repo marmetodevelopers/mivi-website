@@ -536,19 +536,6 @@
               {{ 'sections.cart.update' | t }}
             </button>
           </noscript>
-
-          <!-- <button
-            type="submit"
-            id="checkout"
-            class="cart__checkout-button button"
-            name="checkout"
-            {% if cart == empty %}
-              disabled
-            {% endif %}
-            form="cart"
-          >
-            {{ 'sections.cart.checkout' | t }}
-          </button> -->
           {% render 'gokwik-checkout' %}
         </div>
       </div>
@@ -671,7 +658,7 @@
       </button>
     </noscript>
 
-    <a
+    <!-- <a
       href="/checkout"
       type="submit"
       id="checkout"
@@ -683,7 +670,8 @@
       form="cart"
     >
       {{ 'sections.cart.checkout' | t }}
-    </a>
+    </a> -->
+    {% render 'gokwik-checkout' %}
   </div>
 </div>
 

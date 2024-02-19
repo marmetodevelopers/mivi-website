@@ -574,8 +574,8 @@
     "pdp_image_banner_PNnQm6": {
       "type": "PDP-image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/roam_pat_1_mob.png",
-        "desktop_image": "shopify:\/\/shop_images\/roam_pat_1_des.png",
+        "image": "shopify:\/\/shop_images\/Fort_S300_Grid_-_Mobile.png",
+        "desktop_image": "shopify:\/\/shop_images\/Fort_S300_Grid_-_Desktop.png",
         "alt_text": "",
         "padding_top": 0,
         "padding_bottom": 0,
@@ -586,13 +586,25 @@
     "pdp_image_banner_cx4rHk": {
       "type": "PDP-image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/roam_pat_2_mob.png",
-        "desktop_image": "shopify:\/\/shop_images\/roam_pat_2_des.png",
+        "image": "shopify:\/\/shop_images\/Fort_S300_Page_-_Mobile.png",
+        "desktop_image": "shopify:\/\/shop_images\/Fort_S300_Page_-_Desktop.png",
         "alt_text": "",
         "padding_top": 0,
         "padding_bottom": 0,
         "desktop_padding_top": 0,
         "desktop_padding_bottom": 0
+      }
+    },
+    "custom_liquid_Dwwiwj": {
+      "type": "custom-liquid",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "ecde087b-1465-4c2d-b67e-6016aa34c37d": {
@@ -695,6 +707,7 @@
     "a2d83aae-424c-4d58-aa2a-2b2d29991839",
     "pdp_image_banner_PNnQm6",
     "pdp_image_banner_cx4rHk",
+    "custom_liquid_Dwwiwj",
     "ecde087b-1465-4c2d-b67e-6016aa34c37d",
     "17024434664207c3bb"
   ]
