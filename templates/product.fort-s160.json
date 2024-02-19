@@ -574,8 +574,8 @@
     "pdp_image_banner_PNnQm6": {
       "type": "PDP-image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/roam_pat_1_mob.png",
-        "desktop_image": "shopify:\/\/shop_images\/roam_pat_1_des.png",
+        "image": "shopify:\/\/shop_images\/Fort_S160_Mobile_-_1.png",
+        "desktop_image": "shopify:\/\/shop_images\/Fort_S160_Desktop_-_1.png",
         "alt_text": "",
         "padding_top": 0,
         "padding_bottom": 0,
@@ -586,8 +586,68 @@
     "pdp_image_banner_cx4rHk": {
       "type": "PDP-image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/roam_pat_2_mob.png",
-        "desktop_image": "shopify:\/\/shop_images\/roam_pat_2_des.png",
+        "image": "shopify:\/\/shop_images\/Fort_S160_Mobile_-_2.png",
+        "desktop_image": "shopify:\/\/shop_images\/Fort_S160_Desktop_-_2.png",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "pdp_image_banner_aLq843": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Fort_S160_Mobile_-_3.png",
+        "desktop_image": "shopify:\/\/shop_images\/Fort_S160_Desktop_-_3.png",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "pdp_image_banner_tBpdRM": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Fort_S160_Mobile_-_4.png",
+        "desktop_image": "shopify:\/\/shop_images\/Fort_S160_Desktop_-_4.png",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "pdp_image_banner_CiVLA9": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Fort_S160_Mobile_-_5.png",
+        "desktop_image": "shopify:\/\/shop_images\/Fort_S160_Desktop_-_5.png",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "pdp_image_banner_gpUwpn": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Fort_S160_Mobile_-_6.png",
+        "desktop_image": "shopify:\/\/shop_images\/Fort_S160_Desktop_-_6.png",
+        "alt_text": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "desktop_padding_top": 0,
+        "desktop_padding_bottom": 0
+      }
+    },
+    "pdp_image_banner_xeEr4M": {
+      "type": "PDP-image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Fort_S160_Mobile_-_7.png",
+        "desktop_image": "shopify:\/\/shop_images\/Fort_S160_Desktop_-_7.png",
         "alt_text": "",
         "padding_top": 0,
         "padding_bottom": 0,
@@ -695,6 +755,11 @@
     "a2d83aae-424c-4d58-aa2a-2b2d29991839",
     "pdp_image_banner_PNnQm6",
     "pdp_image_banner_cx4rHk",
+    "pdp_image_banner_aLq843",
+    "pdp_image_banner_tBpdRM",
+    "pdp_image_banner_CiVLA9",
+    "pdp_image_banner_gpUwpn",
+    "pdp_image_banner_xeEr4M",
     "ecde087b-1465-4c2d-b67e-6016aa34c37d",
     "17024434664207c3bb"
   ]

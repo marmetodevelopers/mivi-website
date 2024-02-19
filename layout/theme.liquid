@@ -1,7 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}">
   <head>
-     <link rel="stylesheet" href="https://pdp.gokwik.co/checkout-enhancer/merchant-sdk/gokwik-sso-sdk.css"> 
     
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -276,8 +275,7 @@
   </head>
 
 
-  <body class="product--{{ product.id }} gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}" id="{{template.name}}">
-   {% render 'gokwik-sdk' %}   
+  <body class="product--{{ product.id }} gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}" id="{{template.name}}"> 
     <div class="overlay-site"></div>
 
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
@@ -346,7 +344,6 @@
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
   </body>
-  <script src="https://pdp.gokwik.co/checkout-enhancer/merchant-sdk/gokwik-sso-sdk.js"></script>
 </html>
 
 {% include 'gameball' %}

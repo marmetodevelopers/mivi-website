@@ -128,11 +128,7 @@
       </div>
     {% endif %}
     <div class="mobile-add-to-cart-sticky-button">
-      {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
-        <button type="button" class="font-body-text" id="myButton" disabled >Sold out</button>
-      {%- else -%}
-      <button type="button" class="font-body-text" id="myButton" data-varient={{product.selected_or_first_available_variant.available}} >ADD TO CART</button>
-      {%- endif -%}
+      <button type="button" class="font-body-text" id="myButton">ADD TO CART</button>
     </div>
   </div>
 </div>
