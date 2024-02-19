@@ -12,11 +12,10 @@
     <div class="collection_banner_image">
       {% render 'image',
         class: '',
-        desktopSrc: collection.metafields.custom.collection_banner_mobile,
-        mobileSrc: collection.metafields.custom.collection_banner
+        mobileSrc: collection.metafields.custom.collection_banner_mobile,
+        desktopSrc: collection.metafields.custom.collection_banner
       %}
     </div>
-    {{ collection.metafields.custom.collection_banner_mobile | img_tag }}
   </div>
   {% if collection.metafields.custom.collection_banner %}
     <div class="collection-hero__text-wrapper">
