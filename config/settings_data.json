@@ -154,12 +154,6 @@
         "settings": {
         }
       },
-      "8698826295320421822": {
-        "type": "shopify:\/\/apps\/social-bar-social-media-icon\/blocks\/app-embed\/0d821215-43b9-4a39-925d-44613cd0dd23",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "16625563505203379481": {
         "type": "shopify:\/\/apps\/extendons-otp-login-with-phone\/blocks\/scripts_embedded_block\/c7f2efe3-e781-470b-96ef-267ca74ad469",
         "disabled": false,
@@ -188,12 +182,6 @@
           "custom_liquid": "",
           "custom_css": "",
           "custom_js": ""
-        }
-      },
-      "1692329972272007824": {
-        "type": "shopify:\/\/apps\/zepto-product-personalizer\/blocks\/product_personalizer_main\/7411210d-7b32-4c09-9455-e129e3be4729",
-        "disabled": true,
-        "settings": {
         }
       }
     },
